@@ -35,18 +35,13 @@ public class PickUpObject : MonoBehaviour {
             // If it's an interactive object
             if (targetObject != null)
             {
-                // If it's not a interactive place
-                if(!targetObject.place)
-                {
-                    target.transform.GetComponent<Rigidbody>().isKinematic = true;
-                    target.transform.gameObject.layer = 9; // Player layer : avoid collisions between player and holded object
-                    target.transform.position = this.transform.position;
-                    target.transform.parent = fpsCamera.transform;
-                    target.transform.rotation = new Quaternion(0, 0, 0, 0);
-                    pickUpObject = true;
-                }
-            }
-           
+                target.transform.GetComponent<Rigidbody>().isKinematic = true;
+                target.transform.gameObject.layer = 9; // Player layer : avoid collisions between player and holded object
+                target.transform.position = this.transform.position;
+                target.transform.parent = fpsCamera.transform;
+                target.transform.rotation = new Quaternion(0, 0, 0, 0);
+                pickUpObject = true;
+            } 
         }
     }
 
