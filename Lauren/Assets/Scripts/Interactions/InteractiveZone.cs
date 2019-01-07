@@ -21,7 +21,6 @@ public class InteractiveZone : MonoBehaviour {
                 other.transform.rotation = new Quaternion(0,0,0,0);
                 other.enabled = false;
                 WinParticles.Play();
-                //Instantiate(WinParticles, transform.position, Quaternion.identity);
                 AudioManager.instance.Play(sound);
             }
         }

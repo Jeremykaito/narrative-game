@@ -28,7 +28,7 @@ public class PickUpObject : MonoBehaviour {
     private void PickUp()
     {
         // If the player look at an object
-        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range))
+        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1<<10))
         {
 
             InteractiveObject targetObject = target.transform.GetComponent<InteractiveObject>();
@@ -48,7 +48,7 @@ public class PickUpObject : MonoBehaviour {
     private void Release()
     {
             target.transform.GetComponent<Rigidbody>().isKinematic = false;
-            target.transform.gameObject.layer = 0;
+            target.transform.gameObject.layer = 10;
             target.transform.parent = GameObject.Find("Objects").transform;
             pickUpObject = false;
     }
