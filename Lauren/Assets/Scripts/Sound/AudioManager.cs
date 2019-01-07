@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("Storm");
+        Play("Theme");
     }
 
     // Update is called once per frame

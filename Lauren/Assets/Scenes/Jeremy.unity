@@ -2021,6 +2021,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - clip: {fileID: 8300000, guid: f376257a02d85be49bd3ca2b8e6043d4, type: 3}
+    name: Theme
+    volume: 0.061
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
 --- !u!4 &1546769951
 Transform:
   m_ObjectHideFlags: 0
@@ -2149,6 +2155,11 @@ Prefab:
         type: 2}
       propertyPath: id
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114897514459590310, guid: c3ef270a7ba3bb246bc886cc238a15f9,
+        type: 2}
+      propertyPath: sound
+      value: just1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 2}
