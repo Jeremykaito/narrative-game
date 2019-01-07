@@ -4,24 +4,6 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [System.Serializable]
-    public class Sound
-    {
-        public AudioClip clip;
-        public string name;
-
-        [Range(0f, 1f)]
-        public float volume;
-
-        [Range(0.1f, 3f)]
-        public float pitch;
-
-        public bool loop;
-
-        [HideInInspector]
-        public AudioSource source;
-    }
-
 
     public static AudioManager instance;
 
@@ -54,7 +36,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        //Play("Theme");
+        Play("Storm");
     }
 
     // Update is called once per frame

@@ -5,6 +5,7 @@ using UnityEngine;
 public class InteractiveZone : MonoBehaviour {
     public int id;
     public GameObject WinParticles;
+    public string sound;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,7 @@ public class InteractiveZone : MonoBehaviour {
                 other.transform.rotation = new Quaternion(0,0,0,0);
                 other.enabled = false;
                 Instantiate(WinParticles, transform.position, Quaternion.identity);
+                AudioManager.instance.Play(sound);
             }
         }
     }
