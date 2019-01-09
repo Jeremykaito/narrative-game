@@ -58,7 +58,7 @@ public class AudioManager : MonoBehaviour
         s.source.Stop();
     }
 
-    public void SetVolume(string name, int vol)
+    public void SetVolume(string name, float vol)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.volume = vol ;

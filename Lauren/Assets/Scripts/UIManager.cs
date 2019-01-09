@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
     }
 
     public void SetReticule(bool activation)
