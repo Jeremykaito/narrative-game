@@ -14,37 +14,44 @@ public class PickUpObject : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (pickUpObject)
         {
-            if (pickUpObject == true)
+            UIManager.instance.HideReticule();
+            if (Input.GetButtonDown("Fire1"))
             {
                 Release();
             }
+        }
+        else
+        {
+            if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
+            {
+                UIManager.instance.SetReticule(true);
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    PickUp(target);
+                }
+            }
             else
             {
-                PickUp();
+                UIManager.instance.SetReticule(false);
             }
         }
     }
 
-    private void PickUp()
+    private void PickUp(RaycastHit target)
     {
-        // If the player look at an object
-        if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
+        InteractiveObject targetObject = target.transform.GetComponent<InteractiveObject>();
+        // If it's an interactive object
+        if (targetObject != null)
         {
-
-            InteractiveObject targetObject = target.transform.GetComponent<InteractiveObject>();
-            // If it's an interactive object
-            if (targetObject != null)
-            {
-                target.transform.GetComponent<Rigidbody>().isKinematic = true;
-                target.transform.gameObject.layer = 9; // HeldObject : avoid collisions
-                target.transform.position = this.transform.position;
-                target.transform.localScale = target.transform.localScale * 2;
-                target.transform.parent = fpsCamera.transform;
-                target.transform.rotation = new Quaternion(0, 0, 0, 0);
-                pickUpObject = true;
-            }
+            target.transform.GetComponent<Rigidbody>().isKinematic = true;
+            target.transform.gameObject.layer = 9; // HeldObject : avoid collisions
+            target.transform.position = this.transform.position;
+            target.transform.localScale = target.transform.localScale * 2;
+            target.transform.parent = fpsCamera.transform;
+            target.transform.rotation = new Quaternion(0, 0, 0, 0);
+            pickUpObject = true;
         }
     }
 
