@@ -2,26 +2,38 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractiveZone : MonoBehaviour {
+public class InteractiveZone : MonoBehaviour
+{
     public int id;
     [SerializeField]
     private ParticleSystem WinParticles;
     [SerializeField]
     private string sound;
+    private RaycastHit targetZone;
+    private int range = 2;
+
+    public void Start()
+    {
+        this.gameObject.layer = 11;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        InteractiveObject targetObject = other.transform.GetComponent<InteractiveObject>();
-        if (targetObject != null)
+        // Raycast detect an interactive zone
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out targetZone, range, 1 << 11))
         {
-            if (targetObject.id == this.id)
+            InteractiveObject targetObject = other.transform.GetComponent<InteractiveObject>();
+            if (targetObject != null)
             {
-                other.transform.GetComponent<Rigidbody>().isKinematic = true;
-                other.transform.position = this.transform.position;
-                other.transform.rotation = new Quaternion(0,0,0,0);
-                other.enabled = false;
-                WinParticles.Play();
-                AudioManager.instance.Play(sound);
+                if (targetObject.id == this.id)
+                {
+                    other.transform.GetComponent<Rigidbody>().isKinematic = true;
+                    other.transform.position = this.transform.position;
+                    other.transform.rotation = new Quaternion(0, 0, 0, 0);
+                    other.enabled = false;
+                    WinParticles.Play();
+                    AudioManager.instance.Play(sound);
+                }
             }
         }
     }

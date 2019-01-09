@@ -24,6 +24,7 @@ public class PickUpObject : MonoBehaviour
         }
         else
         {
+            // Raycast detect an interactive object
             if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
             {
                 UIManager.instance.SetReticule(true);
