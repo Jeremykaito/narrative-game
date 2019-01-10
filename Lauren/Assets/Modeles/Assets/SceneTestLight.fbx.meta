@@ -1,0 +1,886 @@
+fileFormatVersion: 2
+guid: d534bce2a160ab74c9e432742929c8ce
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ampoule
+    100002: Anneau
+    100004: Bas
+    100006: Big_Tiroir
+    100008: Big_Tiroir1
+    100010: Boulette_de_papier
+    100012: Boulette_de_papier1
+    100014: Boulette_de_papier2
+    100016: Boulette_de_papier3
+    100018: Bras
+    100020: Bras 1
+    100022: Brin
+    100024: Brin 1
+    100026: Brin 2
+    100028: Brin 3
+    100030: Brin 4
+    100032: Brin1
+    100034: Brin2
+    100036: Brin3
+    100038: Brin4
+    100040: Brin5
+    100042: Bureau
+    100044: Caisson
+    100046: Chapeau
+    100048: Cheveux_high
+    100050: Cheveux_low
+    100052: Console
+    100054: Console 1
+    100056: Corbeille
+    100058: "Corbeille_\xE0_papier"
+    100060: Dalle
+    100062: Desk
+    100064: HIGH
+    100066: Joint
+    100068: Joint 1
+    100070: KeyBind1
+    100072: KeyBind1 1
+    100074: KeyBind1 2
+    100076: KeyBind1 3
+    100078: KeyBind1 4
+    100080: KeyBind1 5
+    100082: KeyBind10
+    100084: KeyBind10 1
+    100086: KeyBind10 2
+    100088: KeyBind10 3
+    100090: KeyBind10 4
+    100092: KeyBind10 5
+    100094: KeyBind11
+    100096: KeyBind12
+    100098: KeyBind13
+    100100: KeyBind14
+    100102: KeyBind15
+    100104: KeyBind15 1
+    100106: KeyBind16
+    100108: KeyBind16 1
+    100110: KeyBind17
+    100112: KeyBind18
+    100114: KeyBind19
+    100116: KeyBind2
+    100118: KeyBind2 1
+    100120: KeyBind2 2
+    100122: KeyBind2 3
+    100124: KeyBind2 4
+    100126: KeyBind2 5
+    100128: KeyBind20
+    100130: KeyBind21
+    100132: KeyBind22
+    100134: KeyBind23
+    100136: KeyBind23 1
+    100138: KeyBind24
+    100140: KeyBind24 1
+    100142: KeyBind25
+    100144: KeyBind3
+    100146: KeyBind3 1
+    100148: KeyBind3 2
+    100150: KeyBind3 3
+    100152: KeyBind3 4
+    100154: KeyBind4
+    100156: KeyBind4 1
+    100158: KeyBind4 2
+    100160: KeyBind4 3
+    100162: KeyBind4 4
+    100164: KeyBind5
+    100166: KeyBind5 1
+    100168: KeyBind5 2
+    100170: KeyBind5 3
+    100172: KeyBind5 4
+    100174: KeyBind6
+    100176: KeyBind6 1
+    100178: KeyBind6 2
+    100180: KeyBind6 3
+    100182: KeyBind6 4
+    100184: KeyBind7
+    100186: KeyBind7 1
+    100188: KeyBind7 2
+    100190: KeyBind7 3
+    100192: KeyBind7 4
+    100194: KeyBind8
+    100196: KeyBind8 1
+    100198: KeyBind8 2
+    100200: KeyBind8 3
+    100202: KeyBind8 4
+    100204: KeyBind8 5
+    100206: KeyBind9
+    100208: KeyBind9 1
+    100210: KeyBind9 2
+    100212: KeyBind9 3
+    100214: KeyBind9 4
+    100216: KeyBind9 5
+    100218: KeybindRow
+    100220: KeybindRow1
+    100222: KeybindRow2
+    100224: KeybindRow3
+    100226: KeybindRow4
+    100228: KeybindRow5
+    100230: Lampe
+    100232: Laptop
+    100234: Lauren_high
+    100236: Lauren_low
+    100238: LOW
+    100240: Moniteur
+    100242: Pied
+    100244: Pieds
+    100246: Plante
+    100248: "Poign\xE9e"
+    100250: Porte_anneau
+    100252: Post_it1
+    100254: Post_it2
+    100256: Post_it3
+    100258: Post_it4
+    100260: Post_it5
+    100262: Pot
+    100264: pPlane1
+    100266: pPlane1 1
+    100268: pPlane1 2
+    100270: pPlane1 3
+    100272: pPlane1 4
+    100274: pPlane2
+    100276: pPlane2 1
+    100278: pPlane2 2
+    100280: pPlane2 3
+    100282: pPlane2 4
+    100284: pPlane3
+    100286: pPlane3 1
+    100288: pPlane3 2
+    100290: pPlane3 3
+    100292: pPlane3 4
+    100294: pPlane4
+    100296: pPlane4 1
+    100298: pPlane4 2
+    100300: pPlane4 3
+    100302: pPlane4 4
+    100304: pPlane5
+    100306: pPlane5 1
+    100308: pPlane5 2
+    100310: pPlane5 3
+    100312: pPlane5 4
+    100314: pPlane6
+    100316: pPlane6 1
+    100318: pPlane6 2
+    100320: pPlane6 3
+    100322: pPlane6 4
+    100324: pPlane7
+    100326: pPlane7 1
+    100328: pPlane7 2
+    100330: pPlane7 3
+    100332: pPlane7 4
+    100334: //RootNode
+    100336: Screen
+    100338: Screen 1
+    100340: Socle
+    100342: Terre
+    100344: Tiroir
+    100346: "T\xEAte"
+    400000: Ampoule
+    400002: Anneau
+    400004: Bas
+    400006: Big_Tiroir
+    400008: Big_Tiroir1
+    400010: Boulette_de_papier
+    400012: Boulette_de_papier1
+    400014: Boulette_de_papier2
+    400016: Boulette_de_papier3
+    400018: Bras
+    400020: Bras 1
+    400022: Brin
+    400024: Brin 1
+    400026: Brin 2
+    400028: Brin 3
+    400030: Brin 4
+    400032: Brin1
+    400034: Brin2
+    400036: Brin3
+    400038: Brin4
+    400040: Brin5
+    400042: Bureau
+    400044: Caisson
+    400046: Chapeau
+    400048: Cheveux_high
+    400050: Cheveux_low
+    400052: Console
+    400054: Console 1
+    400056: Corbeille
+    400058: "Corbeille_\xE0_papier"
+    400060: Dalle
+    400062: Desk
+    400064: HIGH
+    400066: Joint
+    400068: Joint 1
+    400070: KeyBind1
+    400072: KeyBind1 1
+    400074: KeyBind1 2
+    400076: KeyBind1 3
+    400078: KeyBind1 4
+    400080: KeyBind1 5
+    400082: KeyBind10
+    400084: KeyBind10 1
+    400086: KeyBind10 2
+    400088: KeyBind10 3
+    400090: KeyBind10 4
+    400092: KeyBind10 5
+    400094: KeyBind11
+    400096: KeyBind12
+    400098: KeyBind13
+    400100: KeyBind14
+    400102: KeyBind15
+    400104: KeyBind15 1
+    400106: KeyBind16
+    400108: KeyBind16 1
+    400110: KeyBind17
+    400112: KeyBind18
+    400114: KeyBind19
+    400116: KeyBind2
+    400118: KeyBind2 1
+    400120: KeyBind2 2
+    400122: KeyBind2 3
+    400124: KeyBind2 4
+    400126: KeyBind2 5
+    400128: KeyBind20
+    400130: KeyBind21
+    400132: KeyBind22
+    400134: KeyBind23
+    400136: KeyBind23 1
+    400138: KeyBind24
+    400140: KeyBind24 1
+    400142: KeyBind25
+    400144: KeyBind3
+    400146: KeyBind3 1
+    400148: KeyBind3 2
+    400150: KeyBind3 3
+    400152: KeyBind3 4
+    400154: KeyBind4
+    400156: KeyBind4 1
+    400158: KeyBind4 2
+    400160: KeyBind4 3
+    400162: KeyBind4 4
+    400164: KeyBind5
+    400166: KeyBind5 1
+    400168: KeyBind5 2
+    400170: KeyBind5 3
+    400172: KeyBind5 4
+    400174: KeyBind6
+    400176: KeyBind6 1
+    400178: KeyBind6 2
+    400180: KeyBind6 3
+    400182: KeyBind6 4
+    400184: KeyBind7
+    400186: KeyBind7 1
+    400188: KeyBind7 2
+    400190: KeyBind7 3
+    400192: KeyBind7 4
+    400194: KeyBind8
+    400196: KeyBind8 1
+    400198: KeyBind8 2
+    400200: KeyBind8 3
+    400202: KeyBind8 4
+    400204: KeyBind8 5
+    400206: KeyBind9
+    400208: KeyBind9 1
+    400210: KeyBind9 2
+    400212: KeyBind9 3
+    400214: KeyBind9 4
+    400216: KeyBind9 5
+    400218: KeybindRow
+    400220: KeybindRow1
+    400222: KeybindRow2
+    400224: KeybindRow3
+    400226: KeybindRow4
+    400228: KeybindRow5
+    400230: Lampe
+    400232: Laptop
+    400234: Lauren_high
+    400236: Lauren_low
+    400238: LOW
+    400240: Moniteur
+    400242: Pied
+    400244: Pieds
+    400246: Plante
+    400248: "Poign\xE9e"
+    400250: Porte_anneau
+    400252: Post_it1
+    400254: Post_it2
+    400256: Post_it3
+    400258: Post_it4
+    400260: Post_it5
+    400262: Pot
+    400264: pPlane1
+    400266: pPlane1 1
+    400268: pPlane1 2
+    400270: pPlane1 3
+    400272: pPlane1 4
+    400274: pPlane2
+    400276: pPlane2 1
+    400278: pPlane2 2
+    400280: pPlane2 3
+    400282: pPlane2 4
+    400284: pPlane3
+    400286: pPlane3 1
+    400288: pPlane3 2
+    400290: pPlane3 3
+    400292: pPlane3 4
+    400294: pPlane4
+    400296: pPlane4 1
+    400298: pPlane4 2
+    400300: pPlane4 3
+    400302: pPlane4 4
+    400304: pPlane5
+    400306: pPlane5 1
+    400308: pPlane5 2
+    400310: pPlane5 3
+    400312: pPlane5 4
+    400314: pPlane6
+    400316: pPlane6 1
+    400318: pPlane6 2
+    400320: pPlane6 3
+    400322: pPlane6 4
+    400324: pPlane7
+    400326: pPlane7 1
+    400328: pPlane7 2
+    400330: pPlane7 3
+    400332: pPlane7 4
+    400334: //RootNode
+    400336: Screen
+    400338: Screen 1
+    400340: Socle
+    400342: Terre
+    400344: Tiroir
+    400346: "T\xEAte"
+    2100000: lambert1
+    2100002: lambert2
+    2100004: lambert3
+    2300000: Ampoule
+    2300002: Anneau
+    2300004: Bas
+    2300006: Big_Tiroir
+    2300008: Big_Tiroir1
+    2300010: Boulette_de_papier
+    2300012: Boulette_de_papier1
+    2300014: Boulette_de_papier2
+    2300016: Boulette_de_papier3
+    2300018: Bras
+    2300020: Bras 1
+    2300022: Brin
+    2300024: Brin 1
+    2300026: Brin 2
+    2300028: Brin 3
+    2300030: Brin 4
+    2300032: Bureau
+    2300034: Caisson
+    2300036: Chapeau
+    2300038: Cheveux_high
+    2300040: Cheveux_low
+    2300042: Console 1
+    2300044: "Corbeille_\xE0_papier"
+    2300046: Dalle
+    2300048: Joint
+    2300050: Joint 1
+    2300052: KeyBind1
+    2300054: KeyBind1 1
+    2300056: KeyBind1 2
+    2300058: KeyBind1 3
+    2300060: KeyBind1 4
+    2300062: KeyBind1 5
+    2300064: KeyBind10
+    2300066: KeyBind10 1
+    2300068: KeyBind10 2
+    2300070: KeyBind10 3
+    2300072: KeyBind10 4
+    2300074: KeyBind10 5
+    2300076: KeyBind11
+    2300078: KeyBind12
+    2300080: KeyBind13
+    2300082: KeyBind14
+    2300084: KeyBind15
+    2300086: KeyBind15 1
+    2300088: KeyBind16
+    2300090: KeyBind16 1
+    2300092: KeyBind17
+    2300094: KeyBind18
+    2300096: KeyBind19
+    2300098: KeyBind2
+    2300100: KeyBind2 1
+    2300102: KeyBind2 2
+    2300104: KeyBind2 3
+    2300106: KeyBind2 4
+    2300108: KeyBind2 5
+    2300110: KeyBind20
+    2300112: KeyBind21
+    2300114: KeyBind22
+    2300116: KeyBind23
+    2300118: KeyBind23 1
+    2300120: KeyBind24
+    2300122: KeyBind24 1
+    2300124: KeyBind25
+    2300126: KeyBind3
+    2300128: KeyBind3 1
+    2300130: KeyBind3 2
+    2300132: KeyBind3 3
+    2300134: KeyBind3 4
+    2300136: KeyBind4
+    2300138: KeyBind4 1
+    2300140: KeyBind4 2
+    2300142: KeyBind4 3
+    2300144: KeyBind4 4
+    2300146: KeyBind5
+    2300148: KeyBind5 1
+    2300150: KeyBind5 2
+    2300152: KeyBind5 3
+    2300154: KeyBind5 4
+    2300156: KeyBind6
+    2300158: KeyBind6 1
+    2300160: KeyBind6 2
+    2300162: KeyBind6 3
+    2300164: KeyBind6 4
+    2300166: KeyBind7
+    2300168: KeyBind7 1
+    2300170: KeyBind7 2
+    2300172: KeyBind7 3
+    2300174: KeyBind7 4
+    2300176: KeyBind8
+    2300178: KeyBind8 1
+    2300180: KeyBind8 2
+    2300182: KeyBind8 3
+    2300184: KeyBind8 4
+    2300186: KeyBind8 5
+    2300188: KeyBind9
+    2300190: KeyBind9 1
+    2300192: KeyBind9 2
+    2300194: KeyBind9 3
+    2300196: KeyBind9 4
+    2300198: KeyBind9 5
+    2300200: Lauren_high
+    2300202: Lauren_low
+    2300204: Pied
+    2300206: Pieds
+    2300208: Porte_anneau
+    2300210: Post_it1
+    2300212: Post_it2
+    2300214: Post_it3
+    2300216: Post_it4
+    2300218: Post_it5
+    2300220: Pot
+    2300222: pPlane1
+    2300224: pPlane1 1
+    2300226: pPlane1 2
+    2300228: pPlane1 3
+    2300230: pPlane1 4
+    2300232: pPlane2
+    2300234: pPlane2 1
+    2300236: pPlane2 2
+    2300238: pPlane2 3
+    2300240: pPlane2 4
+    2300242: pPlane3
+    2300244: pPlane3 1
+    2300246: pPlane3 2
+    2300248: pPlane3 3
+    2300250: pPlane3 4
+    2300252: pPlane4
+    2300254: pPlane4 1
+    2300256: pPlane4 2
+    2300258: pPlane4 3
+    2300260: pPlane4 4
+    2300262: pPlane5
+    2300264: pPlane5 1
+    2300266: pPlane5 2
+    2300268: pPlane5 3
+    2300270: pPlane5 4
+    2300272: pPlane6
+    2300274: pPlane6 1
+    2300276: pPlane6 2
+    2300278: pPlane6 3
+    2300280: pPlane6 4
+    2300282: pPlane7
+    2300284: pPlane7 1
+    2300286: pPlane7 2
+    2300288: pPlane7 3
+    2300290: pPlane7 4
+    2300292: Screen 1
+    2300294: Socle
+    2300296: Terre
+    3300000: Ampoule
+    3300002: Anneau
+    3300004: Bas
+    3300006: Big_Tiroir
+    3300008: Big_Tiroir1
+    3300010: Boulette_de_papier
+    3300012: Boulette_de_papier1
+    3300014: Boulette_de_papier2
+    3300016: Boulette_de_papier3
+    3300018: Bras
+    3300020: Bras 1
+    3300022: Brin
+    3300024: Brin 1
+    3300026: Brin 2
+    3300028: Brin 3
+    3300030: Brin 4
+    3300032: Bureau
+    3300034: Caisson
+    3300036: Chapeau
+    3300038: Cheveux_high
+    3300040: Cheveux_low
+    3300042: Console 1
+    3300044: "Corbeille_\xE0_papier"
+    3300046: Dalle
+    3300048: Joint
+    3300050: Joint 1
+    3300052: KeyBind1
+    3300054: KeyBind1 1
+    3300056: KeyBind1 2
+    3300058: KeyBind1 3
+    3300060: KeyBind1 4
+    3300062: KeyBind1 5
+    3300064: KeyBind10
+    3300066: KeyBind10 1
+    3300068: KeyBind10 2
+    3300070: KeyBind10 3
+    3300072: KeyBind10 4
+    3300074: KeyBind10 5
+    3300076: KeyBind11
+    3300078: KeyBind12
+    3300080: KeyBind13
+    3300082: KeyBind14
+    3300084: KeyBind15
+    3300086: KeyBind15 1
+    3300088: KeyBind16
+    3300090: KeyBind16 1
+    3300092: KeyBind17
+    3300094: KeyBind18
+    3300096: KeyBind19
+    3300098: KeyBind2
+    3300100: KeyBind2 1
+    3300102: KeyBind2 2
+    3300104: KeyBind2 3
+    3300106: KeyBind2 4
+    3300108: KeyBind2 5
+    3300110: KeyBind20
+    3300112: KeyBind21
+    3300114: KeyBind22
+    3300116: KeyBind23
+    3300118: KeyBind23 1
+    3300120: KeyBind24
+    3300122: KeyBind24 1
+    3300124: KeyBind25
+    3300126: KeyBind3
+    3300128: KeyBind3 1
+    3300130: KeyBind3 2
+    3300132: KeyBind3 3
+    3300134: KeyBind3 4
+    3300136: KeyBind4
+    3300138: KeyBind4 1
+    3300140: KeyBind4 2
+    3300142: KeyBind4 3
+    3300144: KeyBind4 4
+    3300146: KeyBind5
+    3300148: KeyBind5 1
+    3300150: KeyBind5 2
+    3300152: KeyBind5 3
+    3300154: KeyBind5 4
+    3300156: KeyBind6
+    3300158: KeyBind6 1
+    3300160: KeyBind6 2
+    3300162: KeyBind6 3
+    3300164: KeyBind6 4
+    3300166: KeyBind7
+    3300168: KeyBind7 1
+    3300170: KeyBind7 2
+    3300172: KeyBind7 3
+    3300174: KeyBind7 4
+    3300176: KeyBind8
+    3300178: KeyBind8 1
+    3300180: KeyBind8 2
+    3300182: KeyBind8 3
+    3300184: KeyBind8 4
+    3300186: KeyBind8 5
+    3300188: KeyBind9
+    3300190: KeyBind9 1
+    3300192: KeyBind9 2
+    3300194: KeyBind9 3
+    3300196: KeyBind9 4
+    3300198: KeyBind9 5
+    3300200: Lauren_high
+    3300202: Lauren_low
+    3300204: Pied
+    3300206: Pieds
+    3300208: Porte_anneau
+    3300210: Post_it1
+    3300212: Post_it2
+    3300214: Post_it3
+    3300216: Post_it4
+    3300218: Post_it5
+    3300220: Pot
+    3300222: pPlane1
+    3300224: pPlane1 1
+    3300226: pPlane1 2
+    3300228: pPlane1 3
+    3300230: pPlane1 4
+    3300232: pPlane2
+    3300234: pPlane2 1
+    3300236: pPlane2 2
+    3300238: pPlane2 3
+    3300240: pPlane2 4
+    3300242: pPlane3
+    3300244: pPlane3 1
+    3300246: pPlane3 2
+    3300248: pPlane3 3
+    3300250: pPlane3 4
+    3300252: pPlane4
+    3300254: pPlane4 1
+    3300256: pPlane4 2
+    3300258: pPlane4 3
+    3300260: pPlane4 4
+    3300262: pPlane5
+    3300264: pPlane5 1
+    3300266: pPlane5 2
+    3300268: pPlane5 3
+    3300270: pPlane5 4
+    3300272: pPlane6
+    3300274: pPlane6 1
+    3300276: pPlane6 2
+    3300278: pPlane6 3
+    3300280: pPlane6 4
+    3300282: pPlane7
+    3300284: pPlane7 1
+    3300286: pPlane7 2
+    3300288: pPlane7 3
+    3300290: pPlane7 4
+    3300292: Screen 1
+    3300294: Socle
+    3300296: Terre
+    4300000: Bureau
+    4300002: Big_Tiroir
+    4300004: Big_Tiroir1
+    4300006: Joint
+    4300008: Dalle
+    4300010: Bras
+    4300012: Socle
+    4300014: Post_it1
+    4300016: Post_it2
+    4300018: Terre
+    4300020: Pot
+    4300022: pPlane3
+    4300024: pPlane4
+    4300026: Brin
+    4300028: pPlane7
+    4300030: pPlane6
+    4300032: pPlane5
+    4300034: pPlane2
+    4300036: pPlane1
+    4300038: pPlane3
+    4300040: pPlane4
+    4300042: Brin
+    4300044: pPlane7
+    4300046: pPlane6
+    4300048: pPlane5
+    4300050: pPlane2
+    4300052: pPlane1
+    4300054: pPlane3
+    4300056: pPlane4
+    4300058: Brin
+    4300060: pPlane7
+    4300062: pPlane6
+    4300064: pPlane5
+    4300066: pPlane2
+    4300068: pPlane1
+    4300070: pPlane3
+    4300072: pPlane4
+    4300074: Brin
+    4300076: pPlane7
+    4300078: pPlane6
+    4300080: pPlane5
+    4300082: pPlane2
+    4300084: pPlane1
+    4300086: pPlane3
+    4300088: pPlane4
+    4300090: Brin
+    4300092: pPlane7
+    4300094: pPlane6
+    4300096: pPlane5
+    4300098: pPlane2
+    4300100: pPlane1
+    4300102: Pied
+    4300104: Bras
+    4300106: Chapeau
+    4300108: Ampoule
+    4300110: Bas
+    4300112: KeyBind1
+    4300114: KeyBind2
+    4300116: KeyBind3
+    4300118: KeyBind4
+    4300120: KeyBind5
+    4300122: KeyBind6
+    4300124: KeyBind7
+    4300126: KeyBind8
+    4300128: KeyBind9
+    4300130: KeyBind10
+    4300132: KeyBind23
+    4300134: KeyBind24
+    4300136: KeyBind1
+    4300138: KeyBind2
+    4300140: KeyBind3
+    4300142: KeyBind4
+    4300144: KeyBind5
+    4300146: KeyBind6
+    4300148: KeyBind7
+    4300150: KeyBind8
+    4300152: KeyBind9
+    4300154: KeyBind10
+    4300156: KeyBind11
+    4300158: KeyBind20
+    4300160: KeyBind21
+    4300162: KeyBind1
+    4300164: KeyBind2
+    4300166: KeyBind3
+    4300168: KeyBind4
+    4300170: KeyBind5
+    4300172: KeyBind6
+    4300174: KeyBind7
+    4300176: KeyBind8
+    4300178: KeyBind9
+    4300180: KeyBind10
+    4300182: KeyBind12
+    4300184: KeyBind13
+    4300186: KeyBind14
+    4300188: KeyBind22
+    4300190: KeyBind1
+    4300192: KeyBind2
+    4300194: KeyBind3
+    4300196: KeyBind4
+    4300198: KeyBind5
+    4300200: KeyBind6
+    4300202: KeyBind7
+    4300204: KeyBind8
+    4300206: KeyBind9
+    4300208: KeyBind10
+    4300210: KeyBind15
+    4300212: KeyBind16
+    4300214: KeyBind19
+    4300216: KeyBind1
+    4300218: KeyBind2
+    4300220: KeyBind3
+    4300222: KeyBind4
+    4300224: KeyBind5
+    4300226: KeyBind6
+    4300228: KeyBind7
+    4300230: KeyBind8
+    4300232: KeyBind9
+    4300234: KeyBind10
+    4300236: KeyBind15
+    4300238: KeyBind16
+    4300240: KeyBind17
+    4300242: KeyBind18
+    4300244: KeyBind1
+    4300246: KeyBind2
+    4300248: KeyBind8
+    4300250: KeyBind9
+    4300252: KeyBind10
+    4300254: KeyBind23
+    4300256: KeyBind24
+    4300258: KeyBind25
+    4300260: Post_it3
+    4300262: Post_it4
+    4300264: Post_it5
+    4300266: Screen
+    4300268: Joint
+    4300270: Boulette_de_papier
+    4300272: "Corbeille_\xE0_papier"
+    4300274: Boulette_de_papier1
+    4300276: Boulette_de_papier2
+    4300278: Boulette_de_papier3
+    4300280: Console
+    4300282: Pieds
+    4300284: Caisson
+    4300286: Porte_anneau
+    4300288: Anneau
+    4300290: Lauren_low
+    4300292: Cheveux_low
+    4300294: Cheveux_high
+    4300296: Lauren_high
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
