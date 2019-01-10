@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2228651116" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_Soundbank</ObjectPath>
+			<ShortName>Main_Soundbank</ShortName>
+			<Path>Main_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3942153980" Name="Play_Palais_mental__including_Lauren_s_Theme_" ObjectPath="\Events\Default Work Unit\Play_Palais_mental__including_Lauren_s_Theme_"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="829221468" Language="SFX">
+					<ShortName>Coup de fil.wav</ShortName>
+					<Path>SFX\Coup de fil_8956FC97.wem</Path>
+				</File>
+				<File Id="855168412" Language="SFX">
+					<ShortName>Palais mental (including Lauren's Theme).wav</ShortName>
+					<Path>SFX\Palais mental (including Lauren's Theme)_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
