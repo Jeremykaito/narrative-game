@@ -893,6 +893,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 10
+  moveable: 1
+  step: 
 --- !u!4 &578950189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 389552ae93a808749bfbc36c8dcfc46e,
@@ -948,6 +950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  moveable: 1
+  step: fin
 --- !u!54 &625003507
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1504,6 +1508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  moveable: 1
+  step: fauteuil
 --- !u!65 &1031111940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1772,6 +1778,7 @@ GameObject:
   - component: {fileID: 1200315965}
   - component: {fileID: 1200315964}
   - component: {fileID: 1200315967}
+  - component: {fileID: 1200315968}
   m_Layer: 0
   m_Name: ILamp
   m_TagString: Untagged
@@ -1862,6 +1869,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1200315968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1200315962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a13335aca492eb4b81128cd8456921f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  moveable: 0
+  step: fenetre
 --- !u!4 &1232914810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4109852653954662, guid: b0c5a45abe2bf864bad0cf69746126bd,

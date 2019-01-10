@@ -37,6 +37,11 @@ public class LevelManager : MonoBehaviour {
 
     public void StartStep(string name)
     {
+        foreach (Step step in steps)
+        {
+            step.StepGameObject.SetActive(false);
+        }
+
         Step s = Array.Find(steps, step =>step.name == name);
         if (s == null)
         {
