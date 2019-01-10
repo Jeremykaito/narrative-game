@@ -1,5 +1,6 @@
 ﻿using UnityEngine.Audio;
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -36,10 +37,16 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        Play("Theme");
+        AkSoundEngine.PostEvent("Set_Switch_Palais_mental", gameObject);
+        AkLogger.Message("Init Palais mental theme");
     }
 
-    // Update is called once per frame
+    public void PlayMusicTrack(string clipName)
+    {
+        AkSoundEngine.PostEvent("Set_Switch_" + clipName, gameObject);
+        AkLogger.Message("Init " + clipName + " theme");
+    }
+
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
@@ -51,7 +58,7 @@ public class AudioManager : MonoBehaviour
         s.source.Play();
     }
 
-    // Update is called once per frame
+
     public void Stop(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);

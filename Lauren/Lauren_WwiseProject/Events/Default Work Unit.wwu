@@ -17,6 +17,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Music_Switch_Container___Bg_music_loop" ID="{6D55E4C0-D6DC-41EA-9E2D-F833DC551635}">
+					<ChildrenList>
+						<Action Name="" ID="{A02BD049-627D-4312-ABE6-523DCC1B8A9E}" ShortID="645156457">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Switch Container - Bg music loop" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Switch_Coup_de_fil" ID="{B3BF2E43-F514-4750-AF6A-A3044910664A}">
+					<ChildrenList>
+						<Action Name="" ID="{9B15E457-66FA-48D0-B4B4-DC896C0B5A28}" ShortID="892064405">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Switch_Palais_mental" ID="{DA6AD27E-2AAA-4CCA-ACE0-51C8014E05F3}">
+					<ChildrenList>
+						<Action Name="" ID="{F919F4E9-2AC3-4ACD-8FA3-FB18AC12E597}" ShortID="614492184">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -2341,26 +2341,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1374843923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e25d657fd87ced428ac569197ba52d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 58346fdc513a0834190b1bc3050c20cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
   data:
     valueGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: fe32fc40969b6bb428cc29b3e8383bf5,
+    groupGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c18ec20377578744b1415b6f2ca4f63,
       type: 2}
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
   valueGuid: 
-  multiPositionArray: []
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
+  groupGuid: 
 --- !u!114 &1374843927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2404,6 +2396,34 @@ MonoBehaviour:
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
   valueGuid: 
+--- !u!114 &1374843929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1374843923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e25d657fd87ced428ac569197ba52d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: a8adf3ca0a8130649816274ad37e4025,
+      type: 2}
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 
+  multiPositionArray: []
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
 --- !u!1 &1491897119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,6 +2759,7 @@ GameObject:
   - component: {fileID: 1703080067}
   - component: {fileID: 1703080066}
   - component: {fileID: 1703080069}
+  - component: {fileID: 1703080071}
   m_Layer: 0
   m_Name: Step1
   m_TagString: Untagged
@@ -2825,7 +2846,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   step: bureau
-  chapterClip: CoupDeFil
+  chapterClip: Coup_de_fil
+--- !u!114 &1703080071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703080064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dfd3ebd10dfa9140b8321ba90c89543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1721673453
 GameObject:
   m_ObjectHideFlags: 0
