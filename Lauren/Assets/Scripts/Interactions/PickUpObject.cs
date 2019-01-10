@@ -30,7 +30,19 @@ public class PickUpObject : MonoBehaviour
                 UIManager.instance.SetReticule(true);
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    PickUp(target);
+                    InteractiveObject targetObject = target.transform.GetComponent<InteractiveObject>();
+                    // If it's an interactive object
+                    if (targetObject != null)
+                    {
+                        if (targetObject.moveable)
+                        {
+                            PickUp(target);
+                        }
+                        else
+                        {
+                            Interact(targetObject);
+                        }
+                    }
                 }
             }
             else
@@ -42,18 +54,15 @@ public class PickUpObject : MonoBehaviour
 
     private void PickUp(RaycastHit target)
     {
-        InteractiveObject targetObject = target.transform.GetComponent<InteractiveObject>();
-        // If it's an interactive object
-        if (targetObject != null)
-        {
-            target.transform.GetComponent<Rigidbody>().isKinematic = true;
-            target.transform.gameObject.layer = 9; // HeldObject : avoid collisions
-            target.transform.position = this.transform.position;
-            target.transform.localScale = target.transform.localScale * 2;
-            target.transform.parent = fpsCamera.transform;
-            target.transform.rotation = new Quaternion(0, 0, 0, 0);
-            pickUpObject = true;
-        }
+
+        target.transform.GetComponent<Rigidbody>().isKinematic = true;
+        target.transform.gameObject.layer = 9; // HeldObject : avoid collisions
+        target.transform.position = this.transform.position;
+        target.transform.localScale = target.transform.localScale * 2;
+        target.transform.parent = fpsCamera.transform;
+        target.transform.rotation = new Quaternion(0, 0, 0, 0);
+        pickUpObject = true;
+
     }
 
     private void Release()
@@ -64,5 +73,11 @@ public class PickUpObject : MonoBehaviour
 
         target.transform.localScale = target.transform.localScale / 2;
         pickUpObject = false;
+    }
+
+    private void Interact(InteractiveObject target)
+    {
+        //Changer l'état de l'objet
+        LevelManager.instance.StartStep(target.step);
     }
 }

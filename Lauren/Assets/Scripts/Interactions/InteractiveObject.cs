@@ -5,6 +5,8 @@ using UnityEngine;
 public class InteractiveObject : MonoBehaviour
 {
     public int id;
+    public bool moveable;
+    public string step;
 
     public void Start()
     {

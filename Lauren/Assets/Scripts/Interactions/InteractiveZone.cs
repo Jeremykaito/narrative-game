@@ -33,6 +33,7 @@ public class InteractiveZone : MonoBehaviour
                     other.enabled = false;
                     WinParticles.Play();
                     AudioManager.instance.Play(sound);
+                    LevelManager.instance.StartStep(targetObject.step);
                 }
             }
         }
