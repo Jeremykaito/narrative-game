@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID LPF_EFFECT = 1505908803U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID SET_COUP_DE_FIL_ITEM1 = 270700608U;

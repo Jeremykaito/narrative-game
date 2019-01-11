@@ -496,13 +496,8 @@
 										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Music Playlist Container- Palais mental" ID="{35F67C6D-BB4F-44C2-99E9-21F38D2219CF}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
-										</Reference>
-									</ReferenceList>
+									<ReferenceList/>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{088ABE78-C396-45D4-8D18-E9C47FF16B4A}">
@@ -518,7 +513,7 @@
 											<MusicFade Name="Destination Fade-in" ID="{810B5E60-F4C9-4819-991A-E8FFBB515382}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="7"/>
-													<Property Name="FadeTime" Type="Real64" Value="4"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>

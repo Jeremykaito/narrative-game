@@ -27,34 +27,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Set_Music_Coup_de_fil" ID="{B3BF2E43-F514-4750-AF6A-A3044910664A}">
-					<ChildrenList>
-						<Action Name="" ID="{9B15E457-66FA-48D0-B4B4-DC896C0B5A28}" ShortID="892064405">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="23"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Set_Music_Palais_mental" ID="{DA6AD27E-2AAA-4CCA-ACE0-51C8014E05F3}">
-					<ChildrenList>
-						<Action Name="" ID="{F919F4E9-2AC3-4ACD-8FA3-FB18AC12E597}" ShortID="614492184">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="23"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Set_Coup_de_fil_Item1" ID="{10A11444-6983-4768-A709-5B77D8D03BE1}">
 					<ChildrenList>
 						<Action Name="" ID="{1B65D273-C4DA-4EE2-AC5C-E3498EB40204}" ShortID="125085920">
@@ -127,20 +99,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}">
-					<ChildrenList>
-						<Action Name="" ID="{F237BF1B-6CDC-44CE-86D6-048A376A7F0A}" ShortID="59892648">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Coup_de_fil" ID="{2F2F6EB9-25C6-4F68-AD2B-D6409B447071}">
 					<ChildrenList>
 						<Action Name="" ID="{BF357C23-23EC-493E-AE26-81C1163DC89B}" ShortID="511079602">
@@ -165,15 +123,114 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}">
+				<Event Name="Reset_Voice_Low_pass_Filter_All" ID="{25336C09-1326-4FCB-8D3D-F76462F9ABA5}">
 					<ChildrenList>
-						<Action Name="" ID="{9EE32407-860E-4989-B9D8-C9D713E77E7D}" ShortID="831252379">
+						<Action Name="" ID="{790526A6-828A-4305-A5B5-59E80E9F1BC6}" ShortID="769163881">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="ActionType" Type="int16" Value="28"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Game states" ID="{C8AD2C77-F52E-487C-9F5C-50414FB0D210}" ShortID="68068915">
+					<ChildrenList>
+						<Event Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}">
+							<ChildrenList>
+								<Action Name="" ID="{F237BF1B-6CDC-44CE-86D6-048A376A7F0A}" ShortID="59892648">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}">
+							<ChildrenList>
+								<Action Name="" ID="{9EE32407-860E-4989-B9D8-C9D713E77E7D}" ShortID="831252379">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Set Music" ID="{D8CF6F34-2165-4E51-8626-200DF7119D10}" ShortID="554389439">
+					<ChildrenList>
+						<Event Name="Set_Music_Palais_mental" ID="{DA6AD27E-2AAA-4CCA-ACE0-51C8014E05F3}">
+							<ChildrenList>
+								<Action Name="" ID="{F919F4E9-2AC3-4ACD-8FA3-FB18AC12E597}" ShortID="614492184">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Music_Coup_de_fil" ID="{B3BF2E43-F514-4750-AF6A-A3044910664A}">
+							<ChildrenList>
+								<Action Name="" ID="{9B15E457-66FA-48D0-B4B4-DC896C0B5A28}" ShortID="892064405">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A60FF27F-D030-4E6F-8D15-BDF45993054F}" ShortID="202088664">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LPF_Effect" ID="{10E3A333-9294-4F79-AB5C-6F4EC8020DA6}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="LPF_Effect" ID="{10E3A333-9294-4F79-AB5C-6F4EC8020DA6}">
+					<ChildrenList>
+						<Action Name="" ID="{B17270A1-5166-4897-850D-787EB481F5C4}" ShortID="1053034973">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="26"/>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Lowpass" Type="int16" Value="65"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+									<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{641922B7-909F-4834-9471-BBE381655055}" ShortID="18049879">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="27"/>
+								<Property Name="Delay" Type="Real64" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

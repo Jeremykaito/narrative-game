@@ -21,11 +21,15 @@
 							<ObjectRef Name="Set_Music_Coup_de_fil" ID="{B3BF2E43-F514-4750-AF6A-A3044910664A}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 							<Position X="1" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Reset_Voice_Low_pass_Filter_All" ID="{25336C09-1326-4FCB-8D3D-F76462F9ABA5}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Intro" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
-						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+						<CurrentStateRef Name="None" ID="{A8115197-B966-44BC-AE21-117CC302FE3E}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
