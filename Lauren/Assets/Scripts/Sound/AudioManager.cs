@@ -37,14 +37,31 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        AkSoundEngine.PostEvent("Set_Switch_Palais_mental", gameObject);
+        AkSoundEngine.PostEvent("Set_Music_Palais_mental", gameObject);
         AkLogger.Message("Init Palais mental theme");
+    }
+
+    private IEnumerator TestItemPicking()
+    {
+        yield return new WaitForSeconds(5);
+        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item1", gameObject);
+        AkLogger.Message("Set item1");
+        
+        yield return new WaitForSeconds(5);
+        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item2", gameObject);
+        AkLogger.Message("Set item2");
+
+        
+        yield return new WaitForSeconds(5);
+        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item3", gameObject);
+        AkLogger.Message("Set item3");
     }
 
     public void PlayMusicTrack(string clipName)
     {
-        AkSoundEngine.PostEvent("Set_Switch_" + clipName, gameObject);
+        AkSoundEngine.PostEvent("Set_Music_" + clipName, gameObject);
         AkLogger.Message("Init " + clipName + " theme");
+        StartCoroutine("TestItemPicking");
     }
 
     public void Play(string name)

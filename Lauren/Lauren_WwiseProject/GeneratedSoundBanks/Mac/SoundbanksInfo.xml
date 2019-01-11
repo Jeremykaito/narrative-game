@@ -21,19 +21,33 @@
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3011020991" Name="Play_Music_Switch_Container___Bg_music_loop" ObjectPath="\Events\Default Work Unit\Play_Music_Switch_Container___Bg_music_loop"/>
-				<Event Id="3942153980" Name="Play_Palais_mental__including_Lauren_s_Theme_" ObjectPath="\Events\Default Work Unit\Play_Palais_mental__including_Lauren_s_Theme_"/>
-				<Event Id="2228003834" Name="Set_Switch_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Set_Switch_Coup_de_fil" MaxAttenuation="0.000000"/>
-				<Event Id="2864246711" Name="Set_Switch_Palais_mental" ObjectPath="\Events\Default Work Unit\Set_Switch_Palais_mental" MaxAttenuation="0.000000"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="270700608" Name="Set_Coup_de_fil_Item1" ObjectPath="\Events\Default Work Unit\Set_Coup_de_fil_Item1" MaxAttenuation="0.000000"/>
+				<Event Id="270700611" Name="Set_Coup_de_fil_Item2" ObjectPath="\Events\Default Work Unit\Set_Coup_de_fil_Item2" MaxAttenuation="0.000000"/>
+				<Event Id="270700610" Name="Set_Coup_de_fil_Item3" ObjectPath="\Events\Default Work Unit\Set_Coup_de_fil_Item3" MaxAttenuation="0.000000"/>
+				<Event Id="1947713803" Name="Set_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Set_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
+				<Event Id="1357233606" Name="Set_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Set_Music_Palais_mental" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="829221468" Language="SFX">
-					<ShortName>Coup de fil.wav</ShortName>
-					<Path>SFX\Coup de fil_8956FC97.wem</Path>
+				<File Id="685272064" Language="SFX">
+					<ShortName>Coup de fil Basses - 1.wav</ShortName>
+					<Path>SFX\Coup de fil Basses - 1_8956FC97.wem</Path>
+				</File>
+				<File Id="688072795" Language="SFX">
+					<ShortName>Coup de fil Theme Piano - 3.wav</ShortName>
+					<Path>SFX\Coup de fil Theme Piano - 3_8956FC97.wem</Path>
+				</File>
+				<File Id="851880145" Language="SFX">
+					<ShortName>Coup de fil Riff Piano - 2.wav</ShortName>
+					<Path>SFX\Coup de fil Riff Piano - 2_8956FC97.wem</Path>
 				</File>
 				<File Id="855168412" Language="SFX">
 					<ShortName>Palais mental (including Lauren's Theme).wav</ShortName>
 					<Path>SFX\Palais mental (including Lauren's Theme)_8956FC97.wem</Path>
+				</File>
+				<File Id="932380002" Language="SFX">
+					<ShortName>Coup de fil Core Piano - 0.wav</ShortName>
+					<Path>SFX\Coup de fil Core Piano - 0_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

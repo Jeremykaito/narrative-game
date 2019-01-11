@@ -13,11 +13,30 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_MUSIC_SWITCH_CONTAINER___BG_MUSIC_LOOP = 3011020991U;
-        static const AkUniqueID PLAY_PALAIS_MENTAL__INCLUDING_LAUREN_S_THEME_ = 3942153980U;
-        static const AkUniqueID SET_SWITCH_COUP_DE_FIL = 2228003834U;
-        static const AkUniqueID SET_SWITCH_PALAIS_MENTAL = 2864246711U;
+        static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID SET_COUP_DE_FIL_ITEM1 = 270700608U;
+        static const AkUniqueID SET_COUP_DE_FIL_ITEM2 = 270700611U;
+        static const AkUniqueID SET_COUP_DE_FIL_ITEM3 = 270700610U;
+        static const AkUniqueID SET_MUSIC_COUP_DE_FIL = 1947713803U;
+        static const AkUniqueID SET_MUSIC_PALAIS_MENTAL = 1357233606U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace STATE_GROUP__COUP_DE_FIL
+        {
+            static const AkUniqueID GROUP = 1749108375U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INTRO = 1125500713U;
+                static const AkUniqueID ITEM1 = 2151963113U;
+                static const AkUniqueID ITEM2 = 2151963114U;
+                static const AkUniqueID ITEM3 = 2151963115U;
+            } // namespace STATE
+        } // namespace STATE_GROUP__COUP_DE_FIL
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -43,6 +62,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
