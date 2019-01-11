@@ -43,18 +43,26 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator TestItemPicking()
     {
-        yield return new WaitForSeconds(5);
-        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item1", gameObject);
-        AkLogger.Message("Set item1");
+        yield return new WaitForSeconds(2);
+        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item1", gameObject,
+            (uint) AkCallbackType.AK_EndOfEvent, OnSpeechEnd, null);
+        AkLogger.Message("Item1 taken");
         
-        yield return new WaitForSeconds(5);
-        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item2", gameObject);
-        AkLogger.Message("Set item2");
+        
+//        yield return new WaitForSeconds(5);
+//        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item2", gameObject);
+//        AkLogger.Message("Item2 taken");
 
         
-        yield return new WaitForSeconds(5);
-        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item3", gameObject);
-        AkLogger.Message("Set item3");
+//        yield return new WaitForSeconds(5);
+//        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item3", gameObject);
+//        AkLogger.Message("Item3 taken");
+    }
+
+    private void OnSpeechEnd(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
+    {
+        AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
+        AkLogger.Message("Return to exploring state");
     }
 
     public void PlayMusicTrack(string clipName)

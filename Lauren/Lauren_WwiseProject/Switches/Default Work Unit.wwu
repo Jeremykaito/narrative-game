@@ -4,9 +4,19 @@
 		<WorkUnit Name="Default Work Unit" ID="{DB835D0F-0144-44A4-B838-7092304E28C6}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="Switch_Group__Memories" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 						<Switch Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Coup_de_fil__steps" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}">
+					<ChildrenList>
+						<Switch Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}"/>
+						<Switch Name="Coup_de_fil_step2" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
+						<Switch Name="Coup_de_fil_step3" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

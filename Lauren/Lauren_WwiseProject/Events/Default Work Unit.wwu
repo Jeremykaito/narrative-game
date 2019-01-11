@@ -67,6 +67,36 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{54AB89AF-D397-4451-BA5D-0E8424768299}" ShortID="504795037">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E190ED63-B246-4937-8F20-17024A91192F}" ShortID="383871984">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{620EA991-85F5-4CA1-94BF-E11AECF84D78}" ShortID="357378442">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Set_Coup_de_fil_Item2" ID="{3ACCA7C4-2850-4C92-AE41-E4A4921BC101}">
@@ -92,6 +122,58 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Item3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}">
+					<ChildrenList>
+						<Action Name="" ID="{F237BF1B-6CDC-44CE-86D6-048A376A7F0A}" ShortID="59892648">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Coup_de_fil" ID="{2F2F6EB9-25C6-4F68-AD2B-D6409B447071}">
+					<ChildrenList>
+						<Action Name="" ID="{BF357C23-23EC-493E-AE26-81C1163DC89B}" ShortID="511079602">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{484FE770-99BE-4577-94A9-8A09989F928D}" ShortID="61740251">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}">
+					<ChildrenList>
+						<Action Name="" ID="{9EE32407-860E-4989-B9D8-C9D713E77E7D}" ShortID="831252379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

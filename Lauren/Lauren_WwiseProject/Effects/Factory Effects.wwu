@@ -31,8 +31,8 @@
 						</Effect>
 						<Effect Name="Dialog_Leveler_Hard" ID="{865FB36F-8717-4D30-AD05-14E56375CD40}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 							<PropertyList>
-								<Property Name="Ratio" Type="Real32" Value="6"/>
-								<Property Name="Threshold" Type="Real32" Value="-20"/>
+								<Property Name="AttackTime" Type="Real32" Value="0.73"/>
+								<Property Name="Ratio" Type="Real32" Value="20.1"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Dialog_Too_Quiet" ID="{F9C77BF1-1CCC-415B-B93F-B048979CA620}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -736,12 +736,13 @@
 								<Property Name="WetLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 						</Effect>
-						<Effect Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+						<Effect Name="Voice_Reverb" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
+								<Property Name="DryLevel" Type="Real32" Value="0"/>
 								<Property Name="HFRatio" Type="Real32" Value="10"/>
 								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="1.5"/>
-								<Property Name="WetLevel" Type="Real32" Value="-30"/>
+								<Property Name="ReverbTime" Type="Real32" Value="2"/>
+								<Property Name="WetLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">

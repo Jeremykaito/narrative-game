@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1749108375	State_Group__Coup_de_fil			\Default Work Unit\State_Group__Coup_de_fil	
+	2721494480	Game_States			\Default Work Unit\Game_States	
 
 State	ID	Name	State Group			Notes
 	0	None	State_Group__Coup_de_fil			
@@ -7,11 +8,21 @@ State	ID	Name	State Group			Notes
 	2151963113	Item1	State_Group__Coup_de_fil			
 	2151963114	Item2	State_Group__Coup_de_fil			
 	2151963115	Item3	State_Group__Coup_de_fil			
+	0	None	Game_States			
+	1823678183	Exploring	Game_States			
+	2418513123	Speaking	Game_States			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	322049327	Speaking	Game_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	3170124113	Voice			\Default Work Unit\Master Audio Bus\Voice	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Effect plug-ins	ID	Name	Type				Notes
+	120271863	Wwise Gain (Custom)	Wwise Gain			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

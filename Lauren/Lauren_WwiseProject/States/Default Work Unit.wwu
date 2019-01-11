@@ -20,6 +20,21 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="Game_States" ID="{129272AE-C27C-480A-9A01-77A5A8B82B0F}">
+					<ChildrenList>
+						<State Name="None" ID="{A8115197-B966-44BC-AE21-117CC302FE3E}"/>
+						<State Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+						<State Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+							<EndState Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

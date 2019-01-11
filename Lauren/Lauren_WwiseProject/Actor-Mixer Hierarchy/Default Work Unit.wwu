@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" SchemaVersion="89">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Lauren" ID="{EDE6FB8E-0E43-4B72-91EC-7F8754D6FDDF}" ShortID="690056704">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Voice" ID="{3B643489-75A5-4E11-BCDA-7B814B827116}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" ShortID="506809399">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Coup_de_fil__steps" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="just1" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}" ShortID="678186298">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="just1" ID="{2101FBEC-3486-41E7-A739-5BBB726FACFD}" ShortID="540102252">
+											<Language>SFX</Language>
+											<AudioFile>just1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="just1" ID="{2101FBEC-3486-41E7-A739-5BBB726FACFD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="just2" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}" ShortID="828148544">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="just2" ID="{4E5C8545-549D-401F-92C7-420B0E4A0EB8}" ShortID="595208390">
+											<Language>SFX</Language>
+											<AudioFile>just2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="just2" ID="{4E5C8545-549D-401F-92C7-420B0E4A0EB8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="just3" ID="{670995EA-4338-4032-A8F1-81485F23C792}" ShortID="633803848">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="just3" ID="{A5EBFA1F-E095-4C54-B13F-951E77065CF1}" ShortID="934366993">
+											<Language>SFX</Language>
+											<AudioFile>just3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="just3" ID="{A5EBFA1F-E095-4C54-B13F-951E77065CF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="just1" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="just2" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="just3" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Coup_de_fil_step3" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
+										<ItemList>
+											<ItemRef Name="just3" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}"/>
+										<ItemList>
+											<ItemRef Name="just1" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Coup_de_fil_step2" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
+										<ItemList>
+											<ItemRef Name="just2" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
