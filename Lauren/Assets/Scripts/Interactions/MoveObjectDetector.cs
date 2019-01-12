@@ -1,8 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class PickUpObject : MonoBehaviour
-{
-
+public class MoveObjectDetector : MonoBehaviour {
     // Max range to pick up object
     public float range = 2f;
     // Player Main camera
@@ -11,12 +11,12 @@ public class PickUpObject : MonoBehaviour
     private bool pickUpObject = false;
     // The interactive object
     private RaycastHit target;
-    private InteractiveObject targetObject;
+    private MoveObject targetObject;
     private RaycastHit ZoneTarget;
 
     void Update()
     {
-        // When the player has an object
+        // When the player have an object
         if (pickUpObject)
         {
             UIManager.instance.HideReticule();
@@ -27,7 +27,7 @@ public class PickUpObject : MonoBehaviour
                 if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out ZoneTarget, range, 1 << 11))
                 {
                     // When the object match with the zone
-                    if (targetObject.GetComponent<MoveObject>().CheckZone(ZoneTarget.transform.gameObject))
+                    if (targetObject.CheckZone(ZoneTarget.transform.gameObject))
                     {
                         ReleaseInZone();
                     }
@@ -50,18 +50,11 @@ public class PickUpObject : MonoBehaviour
                 UIManager.instance.SetReticule(true);
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    targetObject = target.transform.GetComponent<InteractiveObject>();
+                    targetObject = target.transform.GetComponent<MoveObject>();
                     // If it's an interactive object
                     if (targetObject != null)
                     {
-                        if (targetObject.GetComponent<MoveObject>() != null)
-                        {
                             PickUp(target);
-                        }
-                        else if(targetObject.GetComponent<SwitchObject>() != null)
-                        {
-                            Interact(targetObject);
-                        }
                     }
                 }
             }
@@ -106,11 +99,5 @@ public class PickUpObject : MonoBehaviour
 
         StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
         pickUpObject = false;
-    }
-
-    private void Interact(InteractiveObject target)
-    {
-        //Changer l'état de l'objet
-        StartCoroutine(LevelManager.instance.StartStep(target.Step));
     }
 }
