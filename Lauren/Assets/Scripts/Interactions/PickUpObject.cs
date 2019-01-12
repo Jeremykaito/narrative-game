@@ -4,13 +4,15 @@ public class PickUpObject : MonoBehaviour
 {
 
     // Max range to pick up object
-    public float range = 15f;
+    public float range = 2f;
     // Player Main camera
     public Camera fpsCamera;
     // State to know is there an object in your hand
     private bool pickUpObject = false;
     // The interactive object
     private RaycastHit target;
+    private InteractiveObject targetObject;
+    private RaycastHit ZoneTarget;
 
     void Update()
     {
@@ -19,7 +21,22 @@ public class PickUpObject : MonoBehaviour
             UIManager.instance.HideReticule();
             if (Input.GetButtonDown("Fire1"))
             {
-                Release();
+                if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out ZoneTarget, range, 1 << 11))
+                {
+                    if (targetObject.CheckZone(ZoneTarget.transform.gameObject))
+                    {
+                        ReleaseInZone();
+                    }
+                    else
+                    {
+                        Release();
+                    }
+                }
+                else
+                {
+                    Release();
+                }
+
             }
         }
         else
@@ -30,7 +47,7 @@ public class PickUpObject : MonoBehaviour
                 UIManager.instance.SetReticule(true);
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    InteractiveObject targetObject = target.transform.GetComponent<InteractiveObject>();
+                    targetObject = target.transform.GetComponent<InteractiveObject>();
                     // If it's an interactive object
                     if (targetObject != null)
                     {
@@ -72,6 +89,19 @@ public class PickUpObject : MonoBehaviour
         target.transform.parent = GameObject.Find("Objects").transform;
 
         target.transform.localScale = target.transform.localScale / 2;
+        pickUpObject = false;
+    }
+
+    private void ReleaseInZone()
+    {
+        target.transform.gameObject.layer = 10;
+        target.transform.parent = GameObject.Find("Objects").transform;
+        target.transform.localScale = target.transform.localScale / 2;
+        target.transform.position = this.transform.position;
+        target.transform.rotation = new Quaternion(0, 0, 0, 0);
+        target.transform.gameObject.SetActive(false);
+
+        LevelManager.instance.StartStep(targetObject.Step);
         pickUpObject = false;
     }
 

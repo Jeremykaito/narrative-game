@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class InteractiveObject : MonoBehaviour
 {
-    private RaycastHit target;
-    private int range = 2;
-
     [SerializeField]
     private ParticleSystem WinParticles;
     [SerializeField]
@@ -14,9 +11,6 @@ public class InteractiveObject : MonoBehaviour
     [SerializeField]
     private string step;
 
-
-    [SerializeField]
-    private string sound;
     public bool moveable;
 
     public string Step
@@ -35,5 +29,10 @@ public class InteractiveObject : MonoBehaviour
     public void Start()
     {
         this.gameObject.layer = 10; // Layer InteractiveObject
+    }
+
+    public bool CheckZone(GameObject zone) 
+    {
+        return CorrectZone == zone;
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.99999946, g: 0.99999946, b: 0.99999946, a: 1}
+  m_IndirectSpecularColor: {r: 0.12939444, g: 0.13330045, b: 0.12939444, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -344,6 +344,14 @@ Prefab:
     - target: {fileID: 4977706375376722, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864376901540532, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0798
+      objectReference: {fileID: 0}
+    - target: {fileID: 4864376901540532, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.03362429
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 2}
@@ -891,9 +899,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a13335aca492eb4b81128cd8456921f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 10
-  moveable: 1
+  WinParticles: {fileID: 0}
+  CorrectZone: {fileID: 1009913002}
   step: 
+  moveable: 1
 --- !u!4 &578950189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: 389552ae93a808749bfbc36c8dcfc46e,
@@ -948,9 +957,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a13335aca492eb4b81128cd8456921f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
-  moveable: 1
+  WinParticles: {fileID: 0}
+  CorrectZone: {fileID: 0}
   step: fin
+  moveable: 1
 --- !u!54 &625003507
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1306,6 +1316,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c5a45abe2bf864bad0cf69746126bd, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1009913002 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1893449711507224, guid: c3ef270a7ba3bb246bc886cc238a15f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 86875718}
 --- !u!1 &1011550093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,9 +1521,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a13335aca492eb4b81128cd8456921f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
-  moveable: 1
+  WinParticles: {fileID: 0}
+  CorrectZone: {fileID: 1053944073}
   step: fauteuil
+  moveable: 1
 --- !u!65 &1031111940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1650,6 +1666,11 @@ Transform:
   m_Father: {fileID: 1621560360}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1053944073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1893449711507224, guid: c3ef270a7ba3bb246bc886cc238a15f9,
+    type: 2}
+  m_PrefabInternal: {fileID: 297566164}
 --- !u!1001 &1054421864
 Prefab:
   m_ObjectHideFlags: 0
@@ -1879,9 +1900,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a13335aca492eb4b81128cd8456921f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  moveable: 0
+  WinParticles: {fileID: 0}
+  CorrectZone: {fileID: 0}
   step: fenetre
+  moveable: 0
 --- !u!4 &1232914810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4109852653954662, guid: b0c5a45abe2bf864bad0cf69746126bd,
