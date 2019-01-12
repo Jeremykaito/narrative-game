@@ -78,6 +78,6 @@ public class PickUpObject : MonoBehaviour
     private void Interact(InteractiveObject target)
     {
         //Changer l'état de l'objet
-        LevelManager.instance.StartStep(target.step);
+        LevelManager.instance.StartStep(target.Step);
     }
 }

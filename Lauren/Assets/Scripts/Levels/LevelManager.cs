@@ -52,14 +52,15 @@ public class LevelManager : MonoBehaviour {
         AudioManager.instance.Play(s.soundName);
     }
 
-    public void StopStep(string name)
+    public IEnumerator StopStep(string name)
     {
         Step s = Array.Find(steps, step => step.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Step :" + name + " wasn't found.");
-            return;
-        }
+        yield return new WaitForSeconds(1f);
         s.StepGameObject.SetActive(false);
+    }
+
+    private IEnumerator Disappear()
+    { 
+        yield return new WaitForSeconds(.1f);
     }
 }

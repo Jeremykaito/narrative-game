@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
+    // Singleton
     public static UIManager instance = null;
+
+    // UI elements
     [SerializeField]
     private Image reticuleOn;
     [SerializeField]
     private Image reticuleOff;
 
+    // Singletion initialization
     void Awake()
     {
         if (instance == null)
@@ -21,9 +25,9 @@ public class UIManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
     }
 
+    // Set the reticule black or white
     public void SetReticule(bool activation)
     {
         if(activation)
@@ -38,6 +42,7 @@ public class UIManager : MonoBehaviour {
         }
     }
 
+    // Hide the reticule when holding an object
     public void HideReticule()
     {
         reticuleOn.enabled = false;
