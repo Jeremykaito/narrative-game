@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
 
+    private Step activeStep = null;
+
     [SerializeField]
     public Step[] steps;
 
@@ -35,32 +37,18 @@ public class LevelManager : MonoBehaviour {
 		
 	}
 
-    public void StartStep(string name)
+    public IEnumerator StartStep(string name)
     {
-        foreach (Step step in steps)
-        {
-            step.StepGameObject.SetActive(false);
-        }
-
         Step s = Array.Find(steps, step =>step.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Step :" + name + " wasn't found.");
-            return;
-        }
+
         s.StepGameObject.SetActive(true);
         AudioManager.instance.Play(s.soundName);
-    }
+        if (activeStep != null)
+        {
+            yield return new WaitForSeconds(2f);
+            activeStep.StepGameObject.SetActive(false);
+        }
+        activeStep = s;
 
-    public IEnumerator StopStep(string name)
-    {
-        Step s = Array.Find(steps, step => step.name == name);
-        yield return new WaitForSeconds(1f);
-        s.StepGameObject.SetActive(false);
-    }
-
-    private IEnumerator Disappear()
-    { 
-        yield return new WaitForSeconds(.1f);
     }
 }

@@ -16,14 +16,18 @@ public class PickUpObject : MonoBehaviour
 
     void Update()
     {
+        // When the player have an object
         if (pickUpObject)
         {
             UIManager.instance.HideReticule();
+            // On click
             if (Input.GetButtonDown("Fire1"))
             {
+                // Check the raycasting of an interactive zone
                 if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out ZoneTarget, range, 1 << 11))
                 {
-                    if (targetObject.CheckZone(ZoneTarget.transform.gameObject))
+                    // When the object match with the zone
+                    if (targetObject.GetComponent<MoveObject>().CheckZone(ZoneTarget.transform.gameObject))
                     {
                         ReleaseInZone();
                     }
@@ -36,7 +40,6 @@ public class PickUpObject : MonoBehaviour
                 {
                     Release();
                 }
-
             }
         }
         else
@@ -51,11 +54,11 @@ public class PickUpObject : MonoBehaviour
                     // If it's an interactive object
                     if (targetObject != null)
                     {
-                        if (targetObject.moveable)
+                        if (targetObject.GetComponent<MoveObject>() != null)
                         {
                             PickUp(target);
                         }
-                        else
+                        else if(targetObject.GetComponent<SwitchObject>() != null)
                         {
                             Interact(targetObject);
                         }
@@ -101,13 +104,13 @@ public class PickUpObject : MonoBehaviour
         target.transform.rotation = new Quaternion(0, 0, 0, 0);
         target.transform.gameObject.SetActive(false);
 
-        LevelManager.instance.StartStep(targetObject.Step);
+        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
         pickUpObject = false;
     }
 
     private void Interact(InteractiveObject target)
     {
         //Changer l'état de l'objet
-        LevelManager.instance.StartStep(target.Step);
+        StartCoroutine(LevelManager.instance.StartStep(target.Step));
     }
 }
