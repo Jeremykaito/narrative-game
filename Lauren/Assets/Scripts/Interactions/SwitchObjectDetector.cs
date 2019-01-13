@@ -8,12 +8,12 @@ public class SwitchObjectDetector : MonoBehaviour
     public float range = 2f;
     // Player Main camera
     public Camera fpsCamera;
-    // State to know is there an object in your hand
-    private bool pickUpObject = false;
+
     // The interactive object
     private RaycastHit target;
     private SwitchObject targetObject;
-    private RaycastHit ZoneTarget;
+
+    private bool nextstep = false;
     // Use this for initialization
     void Start()
     {
@@ -33,7 +33,12 @@ public class SwitchObjectDetector : MonoBehaviour
                 // If it's an interactive object
                 if (targetObject != null)
                 {
-                    Interact();
+                    targetObject.Switch();
+                    if(!nextstep)
+                    {
+                        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
+                        nextstep = true;
+                    }
                 }
             }
         }
@@ -42,12 +47,4 @@ public class SwitchObjectDetector : MonoBehaviour
             UIManager.instance.SetReticule(false);
         }
     }
-
-    private void Interact()
-    {
-        //Changer l'état de l'objet
-        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
-    }
-
-
 }

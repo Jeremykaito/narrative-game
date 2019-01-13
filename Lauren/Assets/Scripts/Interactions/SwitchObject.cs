@@ -8,31 +8,23 @@ public class SwitchObject : InteractiveObject {
     [SerializeField]
     private GameObject switchTarget;
 
-    public bool State
+    protected override void Start()
     {
-        get
-        {
-            return state;
-        }
-
-        set
-        {
-            state = value;
-        }
+        base.Start();
+        switchTarget.SetActive(false);
     }
 
     public void Switch()
     {
-        if(State)
+        if (state)
         {
-            State = false;
+            state = false;
         }
         else
         {
-            State = true;
-            
+            state = true;
         }
-        switchTarget.SetActive(State);
+        switchTarget.SetActive(state);
     }
 
 }

@@ -92,10 +92,10 @@ public class MoveObjectDetector : MonoBehaviour {
     {
         target.transform.gameObject.layer = 10;
         target.transform.parent = GameObject.Find("Objects").transform;
-        target.transform.localScale = target.transform.localScale / 2;
-        target.transform.position = this.transform.position;
-        target.transform.rotation = new Quaternion(0, 0, 0, 0);
+
         target.transform.gameObject.SetActive(false);
+
+        targetObject.CorrectObjectCloneSwitch();
 
         StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
         pickUpObject = false;

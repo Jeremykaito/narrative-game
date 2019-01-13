@@ -22,7 +22,7 @@ abstract public class InteractiveObject : MonoBehaviour
         }
     }
 
-    void Start()
+    protected virtual void Start()
     {
         this.gameObject.layer = 10; // Layer InteractiveObject
     }
