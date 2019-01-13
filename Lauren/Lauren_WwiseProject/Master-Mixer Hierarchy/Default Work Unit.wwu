@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}" SchemaVersion="89">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{912DCD03-1E0E-4133-A37F-60BC72684374}" WorkUnitID="{77969AC9-20D0-4156-A1B0-87B5E78E1CD7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Game_States" ID="{129272AE-C27C-480A-9A01-77A5A8B82B0F}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+										<State Name="" ID="{6CAF5AB8-CD70-4147-9968-3628A5C5DE8D}" ShortID="322049327">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+										<State Name="" ID="{3D9B2806-4C75-4B2D-BD39-5A962BEDAB07}" ShortID="181146857"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+						<Bus Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}"/>
+						<Bus Name="Voice" ID="{3B643489-75A5-4E11-BCDA-7B814B827116}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{E6DD9BDD-C854-48FF-93B4-C77385525BF1}" ShortID="120271863" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+											<PropertyList>
+												<Property Name="FullBandGain" Type="Real32" Value="5"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
+									<ObjectRef Name="Voice_Reverb" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Game_States" ID="{129272AE-C27C-480A-9A01-77A5A8B82B0F}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+										<State Name="" ID="{AF4D483D-4BC3-4A3E-B195-420F0E66E285}" ShortID="648376676"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+										<State Name="" ID="{8BF8F615-4B39-4597-8F3C-15ED6A63EAA2}" ShortID="216366163"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

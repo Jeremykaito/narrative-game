@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChapterZone : MonoBehaviour
 {
+    private const string defaultChapterClip = "Palais_mental";
+    
     [SerializeField]
     private string step;
     [SerializeField]
@@ -12,11 +14,11 @@ public class ChapterZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Player" )
+        if (other.gameObject.name == "Player")
         {
-            AudioManager.instance.Play(chapterClip);
-            //TODO lancer tous les instru en silencieux
-            AudioManager.instance.SetVolume("Theme", 0);
+
+            AudioManager.instance.PlayMusicTrack(chapterClip);
+            
             if(!activated)
             {
                 activated = true;
@@ -29,9 +31,7 @@ public class ChapterZone : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            AudioManager.instance.Stop(chapterClip);
-            //TODO stopper tous les instru
-            AudioManager.instance.SetVolume("Theme", 0.06f);
+            AudioManager.instance.PlayMusicTrack(defaultChapterClip);
         }
     }
 }
