@@ -20,7 +20,7 @@ public class ChapterZone : MonoBehaviour
             if(!activated)
             {
                 activated = true;
-                LevelManager.instance.StartStep(step);
+                StartCoroutine(LevelManager.instance.StartStep(step));
             }
         }
     }

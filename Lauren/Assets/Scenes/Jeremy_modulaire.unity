@@ -6116,6 +6116,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1096616203}
   - component: {fileID: 1096616204}
+  - component: {fileID: 1096616206}
+  - component: {fileID: 1096616205}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -6142,9 +6144,35 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1096616202}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0918288c1d282f64db90753ef113d3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 2
+  fpsCamera: {fileID: 1598950155}
+--- !u!114 &1096616205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096616202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264e3e49738fab441a1b73982dd3a930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 2
+  fpsCamera: {fileID: 1598950155}
+--- !u!114 &1096616206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1096616202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6ad4c65144ff54293a3728fe18b72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   range: 2
