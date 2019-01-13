@@ -45,13 +45,13 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public IEnumerator ItemValidation(string name)
+   /* public IEnumerator ItemValidation(string name)
     {
         AkSoundEngine.PostEvent(name, gameObject,
             (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, null);
         AkLogger.Message(name);
         yield return new WaitForSeconds(2);
-    }
+    }*/
 
     private IEnumerator TestItemPicking()
     {
