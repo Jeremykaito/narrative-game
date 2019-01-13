@@ -42,7 +42,7 @@ public class LevelManager : MonoBehaviour {
         Step s = Array.Find(steps, step =>step.name == name);
 
         s.StepGameObject.SetActive(true);
-        AudioManager.instance.Play(s.soundName);
+        AudioManager.instance.ItemValidation(s.soundName);
         if (activeStep != null)
         {
             yield return new WaitForSeconds(2f);

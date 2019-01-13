@@ -35,10 +35,22 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+
+
+
     private void Start()
     {
         AkSoundEngine.PostEvent("Set_Music_Palais_mental", gameObject);
         AkLogger.Message("Init Palais mental theme");
+    }
+
+
+    public IEnumerator ItemValidation(string name)
+    {
+        AkSoundEngine.PostEvent(name, gameObject,
+            (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, null);
+        AkLogger.Message(name);
+        yield return new WaitForSeconds(2);
     }
 
     private IEnumerator TestItemPicking()
