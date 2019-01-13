@@ -93,8 +93,6 @@ public class MoveObjectDetector : MonoBehaviour {
         target.transform.gameObject.layer = 10;
         target.transform.parent = GameObject.Find("Objects").transform;
 
-        target.transform.gameObject.SetActive(false);
-
         targetObject.CorrectObjectCloneSwitch();
 
         StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
