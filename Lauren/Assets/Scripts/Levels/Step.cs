@@ -4,7 +4,6 @@
 public class Step
 {
     public string name;
-    public string soundName;
+    public string soundItem;
     public GameObject StepGameObject;
-
 }

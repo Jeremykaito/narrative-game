@@ -45,13 +45,13 @@ public class AudioManager : MonoBehaviour
     }
 
 
-   /* public IEnumerator ItemValidation(string name)
+    public IEnumerator ItemValidation(string name)
     {
         AkSoundEngine.PostEvent(name, gameObject,
             (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, null);
         AkLogger.Message(name);
-        yield return new WaitForSeconds(2);
-    }*/
+        yield return new WaitForSeconds(5f);
+    }
 
     private IEnumerator TestItemPicking()
     {
@@ -81,7 +81,6 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Set_Music_" + clipName, gameObject);
         AkLogger.Message("Init " + clipName + " theme");
-        StartCoroutine("TestItemPicking");
     }
 
     public void Play(string name)

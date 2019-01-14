@@ -6,8 +6,8 @@ using System;
 public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
-
-    private Step activeStep = null;
+    [SerializeField]
+    private Step activeStep;
 
     [SerializeField]
     public Step[] steps;
@@ -26,28 +26,32 @@ public class LevelManager : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-		foreach(Step s in steps)
+        activeStep = null;
+        foreach (Step s in steps)
         {
             s.StepGameObject.SetActive(false);
         }
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 
     public IEnumerator StartStep(string name)
     {
-        Step s = Array.Find(steps, step =>step.name == name);
+        Step nextStep = Array.Find(steps, step =>step.name == name);
 
-        s.StepGameObject.SetActive(true);
-        if (activeStep != null)
+        nextStep.StepGameObject.SetActive(true);
+        // Wait 2 seconds then stop the active step
+        if (activeStep!=null)
         {
             yield return new WaitForSeconds(2f);
             activeStep.StepGameObject.SetActive(false);
         }
-        activeStep = s;
+        StartCoroutine(AudioManager.instance.ItemValidation(nextStep.soundItem));
+        // The new active step
+        activeStep = nextStep;
 
     }
 }
