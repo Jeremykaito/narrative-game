@@ -13,15 +13,20 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID INIT_ALL_STATES = 3327006228U;
         static const AkUniqueID LPF_EFFECT = 1505908803U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
-        static const AkUniqueID SET_COUP_DE_FIL_ITEM1 = 270700608U;
-        static const AkUniqueID SET_COUP_DE_FIL_ITEM2 = 270700611U;
-        static const AkUniqueID SET_COUP_DE_FIL_ITEM3 = 270700610U;
+        static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
+        static const AkUniqueID SET_COUP_DE_FIL_STEP0 = 1722557384U;
+        static const AkUniqueID SET_COUP_DE_FIL_STEP1 = 1722557385U;
+        static const AkUniqueID SET_COUP_DE_FIL_STEP2 = 1722557386U;
+        static const AkUniqueID SET_COUP_DE_FIL_STEP3 = 1722557387U;
         static const AkUniqueID SET_MUSIC_COUP_DE_FIL = 1947713803U;
         static const AkUniqueID SET_MUSIC_PALAIS_MENTAL = 1357233606U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
+        static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
     namespace STATES
@@ -37,18 +42,18 @@ namespace AK
             } // namespace STATE
         } // namespace GAME_STATES
 
-        namespace STATE_GROUP__COUP_DE_FIL
+        namespace STATE_COUP_DE_FIL
         {
-            static const AkUniqueID GROUP = 1749108375U;
+            static const AkUniqueID GROUP = 3725819248U;
 
             namespace STATE
             {
-                static const AkUniqueID INTRO = 1125500713U;
-                static const AkUniqueID ITEM1 = 2151963113U;
-                static const AkUniqueID ITEM2 = 2151963114U;
-                static const AkUniqueID ITEM3 = 2151963115U;
+                static const AkUniqueID STEP0 = 1718617341U;
+                static const AkUniqueID STEP1 = 1718617340U;
+                static const AkUniqueID STEP2 = 1718617343U;
+                static const AkUniqueID STEP3 = 1718617342U;
             } // namespace STATE
-        } // namespace STATE_GROUP__COUP_DE_FIL
+        } // namespace STATE_COUP_DE_FIL
 
     } // namespace STATES
 
@@ -60,6 +65,7 @@ namespace AK
 
             namespace SWITCH
             {
+                static const AkUniqueID COUP_DE_FIL_STEP0 = 264031245U;
                 static const AkUniqueID COUP_DE_FIL_STEP1 = 264031244U;
                 static const AkUniqueID COUP_DE_FIL_STEP2 = 264031247U;
                 static const AkUniqueID COUP_DE_FIL_STEP3 = 264031246U;

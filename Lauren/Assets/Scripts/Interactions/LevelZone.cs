@@ -18,15 +18,20 @@ public class LevelZone : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            // Start the Level theme clip
-            AudioManager.instance.PlayMusicTrack(chapterClip);
             // Play the first step only once
-            if(!activated)
+            if (!activated)
             {
                 // Start the firstStep of the zone
                 StartCoroutine(LevelManager.instance.StartStep(firstStep));
                 activated = true;
             }
+            else
+            {
+                // Start the Level theme clip
+                AudioManager.instance.PlayMusicTrack(chapterClip);
+            }
+
+            LevelManager.instance.currentZone = chapterClip;
         }
     }
     // When the player exit the level
@@ -34,6 +39,7 @@ public class LevelZone : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
+            LevelManager.instance.currentZone = defaultChapterClip;
             AudioManager.instance.PlayMusicTrack(defaultChapterClip);
         }
     }

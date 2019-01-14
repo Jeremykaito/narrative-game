@@ -21,15 +21,20 @@
 			<ShortName>Main_Soundbank</ShortName>
 			<Path>Main_Soundbank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3327006228" Name="Init_all_states" ObjectPath="\Events\Default Work Unit\Init_all_states" MaxAttenuation="0.000000"/>
 				<Event Id="1505908803" Name="LPF_Effect" ObjectPath="\Events\Default Work Unit\LPF_Effect" MaxAttenuation="0.000000"/>
-				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play_Coup_de_fil"/>
+				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
-				<Event Id="270700608" Name="Set_Coup_de_fil_Item1" ObjectPath="\Events\Default Work Unit\Set_Coup_de_fil_Item1"/>
-				<Event Id="270700611" Name="Set_Coup_de_fil_Item2" ObjectPath="\Events\Default Work Unit\Set_Coup_de_fil_Item2" MaxAttenuation="0.000000"/>
-				<Event Id="270700610" Name="Set_Coup_de_fil_Item3" ObjectPath="\Events\Default Work Unit\Set_Coup_de_fil_Item3" MaxAttenuation="0.000000"/>
+				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
+				<Event Id="1722557384" Name="Set_Coup_de_fil_Step0" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step0"/>
+				<Event Id="1722557385" Name="Set_Coup_de_fil_Step1" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step1"/>
+				<Event Id="1722557386" Name="Set_Coup_de_fil_Step2" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step2"/>
+				<Event Id="1722557387" Name="Set_Coup_de_fil_Step3" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step3"/>
 				<Event Id="1947713803" Name="Set_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Set Music\Set_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="1357233606" Name="Set_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Set Music\Set_Music_Palais_mental" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
+				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="540102252" Language="SFX">

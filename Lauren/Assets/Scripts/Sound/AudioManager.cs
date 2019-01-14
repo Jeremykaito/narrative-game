@@ -1,15 +1,16 @@
 ﻿using UnityEngine.Audio;
 using System;
 using System.Collections;
+using Sound;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
 
+    private bool isSpeaking = false;
+    
     public static AudioManager instance;
 
-    [SerializeField]
-    public Sound[] sounds;
 
     void Awake()
     {
@@ -25,17 +26,7 @@ public class AudioManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
-        foreach (Sound s in sounds)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.loop;
-        }
     }
-
-
 
 
     private void Start()
@@ -45,65 +36,39 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public IEnumerator ItemValidation(string name)
+    public void ItemValidation(string name, EventCbCookie cookie, bool isSpeaking = true)
     {
-        AkSoundEngine.PostEvent(name, gameObject,
-            (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, null);
+        if (isSpeaking) this.isSpeaking = true;
+        
+        AkSoundEngine.PostEvent("Set_" + name, gameObject,
+            (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, cookie);
         AkLogger.Message(name);
-        yield return new WaitForSeconds(5f);
     }
 
-    private IEnumerator TestItemPicking()
+    private void OnSpeechEnd(object cookie, AkCallbackType in_type, AkCallbackInfo in_info)
     {
-        yield return new WaitForSeconds(2);
-        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item1", gameObject,
-            (uint) AkCallbackType.AK_EndOfEvent, OnSpeechEnd, null);
-        AkLogger.Message("Item1 taken");
         
-        
-//        yield return new WaitForSeconds(5);
-//        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item2", gameObject);
-//        AkLogger.Message("Item2 taken");
+        EventCbCookie callbackCookie = (EventCbCookie) cookie;
+        if (callbackCookie.isIntro)
+        {
+            AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
+            AkLogger.Message("Return to exploring state with music");
+        }
+        else
+        {
+            AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
+            AkSoundEngine.PostEvent("Set_Music_" + LevelManager.instance.currentZone, gameObject);
+            AkLogger.Message("Return to exploring state");
+        }
 
-        
-//        yield return new WaitForSeconds(5);
-//        AkSoundEngine.PostEvent("Set_Coup_de_fil_Item3", gameObject);
-//        AkLogger.Message("Item3 taken");
-    }
-
-    private void OnSpeechEnd(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
-    {
-        AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
-        AkLogger.Message("Return to exploring state");
+        this.isSpeaking = false;
     }
 
     public void PlayMusicTrack(string clipName)
     {
+        if (isSpeaking) return;
+        
         AkSoundEngine.PostEvent("Set_Music_" + clipName, gameObject);
         AkLogger.Message("Init " + clipName + " theme");
-    }
-
-    public void Play(string name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Sound :" + name + "wasn't found.");
-            return;
-        }
-        s.source.Play();
-    }
-
-
-    public void Stop(string name)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        s.source.Stop();
-    }
-
-    public void SetVolume(string name, float vol)
-    {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        s.source.volume = vol ;
     }
 }

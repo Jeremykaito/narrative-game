@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Sound;
 
 public class LevelManager : MonoBehaviour {
 
@@ -11,6 +12,9 @@ public class LevelManager : MonoBehaviour {
 
     [SerializeField]
     public Step[] steps;
+
+    public string currentZone;
+    
 
     void Awake()
     {
@@ -44,12 +48,14 @@ public class LevelManager : MonoBehaviour {
 
         nextStep.StepGameObject.SetActive(true);
         // Wait 2 seconds then stop the active step
-        if (activeStep!=null)
+        if (activeStep != null)
         {
             yield return new WaitForSeconds(2f);
             activeStep.StepGameObject.SetActive(false);
         }
-        StartCoroutine(AudioManager.instance.ItemValidation(nextStep.soundItem));
+
+        AudioManager.instance.ItemValidation(nextStep.soundItem,
+            new EventCbCookie(nextStep.isIntro, nextStep.sceneTrack));
         // The new active step
         activeStep = nextStep;
 

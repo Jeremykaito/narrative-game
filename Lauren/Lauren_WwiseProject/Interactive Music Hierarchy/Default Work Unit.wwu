@@ -3,7 +3,7 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSwitchContainer Name="Music Switch Container - Bg music loop" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" ShortID="1054755296">
+				<MusicSwitchContainer Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" ShortID="1054755296">
 					<PropertyList>
 						<Property Name="ContinuePlay" Type="bool" Value="False"/>
 					</PropertyList>
@@ -130,13 +130,6 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Music Playlist Container - Coup de fil" ID="{D4AE15A3-7FE3-4E42-B9DF-06A1E6B45CCE}" ShortID="206279957">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -183,24 +176,24 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo MusicSyncType="7">
-														<StateGroupRef Name="State_Group__Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Item1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{DC1439E0-C7C6-4BCD-894A-A3A607DB9EFC}" ShortID="843067594"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Item3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{97CF526E-FFCA-48A8-B499-F49B02F1B8DF}" ShortID="530284486"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Item2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{69662140-9B67-4322-A549-185E1EC9CF7B}" ShortID="236793870"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Intro" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{9BD38F8B-9E15-4267-969A-C2DBE614B965}" ShortID="186594817">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -289,12 +282,12 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="State_Group__Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Item1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{3AF6B244-E56F-48EE-9563-6F3F837CF4ED}" ShortID="117058868">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -302,15 +295,15 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Item3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{40A01355-4AFE-4E63-8AF1-0A9561F295DE}" ShortID="205951841"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Item2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{8997432D-3789-4721-AC9E-28EFAC47A7B2}" ShortID="427879511"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Intro" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{B4BB8872-F058-4A3D-B62D-A72CFD0083AA}" ShortID="694706536">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -364,12 +357,12 @@
 											<StateInfo>
 												<StateGroupList>
 													<StateGroupInfo>
-														<StateGroupRef Name="State_Group__Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Item1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{9259827D-3A4D-4106-A113-333F52BBB56F}" ShortID="310300311">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -377,11 +370,11 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Item3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{F2AD9925-625D-4888-9709-B7606F5FEFF8}" ShortID="724502443"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Item2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{3158740C-BB89-43B0-97E1-109A862F5580}" ShortID="674426258">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -389,7 +382,7 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Intro" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{EDB26B48-DC9F-48F0-97B8-B92AD710D651}" ShortID="86045495">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -476,44 +469,56 @@
 							<ChildrenList>
 								<MusicTransition Name="Transition" ID="{3D1026F3-36E0-4BB7-A0F4-93A9C6530F77}">
 									<PropertyList>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 									</PropertyList>
 									<TransitionInfo>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{DCC77543-9B47-4885-85C9-C3EA3C34E833}">
 												<PropertyList>
-													<Property Name="FadeCurve" Type="int16" Value="8"/>
-													<Property Name="FadeOffset" Type="Real64" Value="2"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
 										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{CCA59F78-2B30-4320-9D4A-988FE0608C9B}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="2"/>
+													<Property Name="FadeTime" Type="Real64" Value="3"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{B5B2E042-73C3-409F-9CCC-386C9000921C}">
+								<MusicTransition Name="Transition" ID="{F8BF6772-7B33-4BD5-A9C5-DBB9E21D19E7}">
 									<PropertyList>
-										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
 									</PropertyList>
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Music Playlist Container- Palais mental" ID="{35F67C6D-BB4F-44C2-99E9-21F38D2219CF}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
 									<TransitionInfo>
 										<SourceFadeOut>
-											<MusicFade Name="Source Fade-out" ID="{088ABE78-C396-45D4-8D18-E9C47FF16B4A}">
+											<MusicFade Name="Source Fade-out" ID="{542DD38B-477D-43C9-863D-B9E5EFDD8C7F}">
 												<PropertyList>
-													<Property Name="FadeCurve" Type="int16" Value="8"/>
-													<Property Name="FadeOffset" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
 										</SourceFadeOut>
 										<DestinationFadeIn>
-											<MusicFade Name="Destination Fade-in" ID="{810B5E60-F4C9-4819-991A-E8FFBB515382}">
+											<MusicFade Name="Destination Fade-in" ID="{523D4BE8-B8CB-40FE-8D34-3812A464EFA4}">
 												<PropertyList>
-													<Property Name="FadeCurve" Type="int16" Value="7"/>
-													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeCurve" Type="int16" Value="6"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>

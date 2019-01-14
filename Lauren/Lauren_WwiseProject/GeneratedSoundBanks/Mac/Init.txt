@@ -1,16 +1,16 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	1749108375	State_Group__Coup_de_fil			\Default Work Unit\State_Group__Coup_de_fil	
 	2721494480	Game_States			\Default Work Unit\Game_States	
+	3725819248	State_Coup_de_fil			\Default Work Unit\State_Coup_de_fil	
 
 State	ID	Name	State Group			Notes
-	0	None	State_Group__Coup_de_fil			
-	1125500713	Intro	State_Group__Coup_de_fil			
-	2151963113	Item1	State_Group__Coup_de_fil			
-	2151963114	Item2	State_Group__Coup_de_fil			
-	2151963115	Item3	State_Group__Coup_de_fil			
 	0	None	Game_States			
 	1823678183	Exploring	Game_States			
 	2418513123	Speaking	Game_States			
+	0	None	State_Coup_de_fil			
+	1718617340	Step1	State_Coup_de_fil			
+	1718617341	Step0	State_Coup_de_fil			
+	1718617342	Step3	State_Coup_de_fil			
+	1718617343	Step2	State_Coup_de_fil			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	322049327	Speaking	Game_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		

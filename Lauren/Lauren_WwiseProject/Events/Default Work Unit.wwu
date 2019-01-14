@@ -11,113 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music Switch Container - Bg music loop" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{B7A5BD42-39E8-4A00-9E4D-683F66E0A582}" ShortID="668741266">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Intro" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Set_Coup_de_fil_Item1" ID="{10A11444-6983-4768-A709-5B77D8D03BE1}">
-					<ChildrenList>
-						<Action Name="" ID="{1B65D273-C4DA-4EE2-AC5C-E3498EB40204}" ShortID="125085920">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Item1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{54AB89AF-D397-4451-BA5D-0E8424768299}" ShortID="504795037">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{E190ED63-B246-4937-8F20-17024A91192F}" ShortID="383871984">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="23"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{620EA991-85F5-4CA1-94BF-E11AECF84D78}" ShortID="357378442">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Set_Coup_de_fil_Item2" ID="{3ACCA7C4-2850-4C92-AE41-E4A4921BC101}">
-					<ChildrenList>
-						<Action Name="" ID="{720676F5-17DA-48CD-A1DC-613A6809FDFF}" ShortID="753606667">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Item2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Set_Coup_de_fil_Item3" ID="{FEA249D8-169E-45DA-9D90-8E772C8838E2}">
-					<ChildrenList>
-						<Action Name="" ID="{5C468A14-11DF-4ED6-B448-3EB7580E581F}" ShortID="913397650">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Item3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Coup_de_fil" ID="{2F2F6EB9-25C6-4F68-AD2B-D6409B447071}">
-					<ChildrenList>
-						<Action Name="" ID="{BF357C23-23EC-493E-AE26-81C1163DC89B}" ShortID="511079602">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{484FE770-99BE-4577-94A9-8A09989F928D}" ShortID="61740251">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+									<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -169,6 +63,16 @@
 					<ChildrenList>
 						<Event Name="Set_Music_Palais_mental" ID="{DA6AD27E-2AAA-4CCA-ACE0-51C8014E05F3}">
 							<ChildrenList>
+								<Action Name="" ID="{039E40D5-AE6D-45BA-B8F1-ABFE7B132864}" ShortID="213067531">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LPF_Effect" ID="{10E3A333-9294-4F79-AB5C-6F4EC8020DA6}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{F919F4E9-2AC3-4ACD-8FA3-FB18AC12E597}" ShortID="614492184">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -183,6 +87,16 @@
 						</Event>
 						<Event Name="Set_Music_Coup_de_fil" ID="{B3BF2E43-F514-4750-AF6A-A3044910664A}">
 							<ChildrenList>
+								<Action Name="" ID="{6AB7C3D6-1101-40E7-8094-0AAF1611E5FF}" ShortID="225754581">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LPF_Effect" ID="{10E3A333-9294-4F79-AB5C-6F4EC8020DA6}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{9B15E457-66FA-48D0-B4B4-DC896C0B5A28}" ShortID="892064405">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -190,16 +104,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{A60FF27F-D030-4E6F-8D15-BDF45993054F}" ShortID="202088664">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LPF_Effect" ID="{10E3A333-9294-4F79-AB5C-6F4EC8020DA6}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -226,6 +130,7 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="27"/>
 								<Property Name="Delay" Type="Real64" Value="3"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
 								<Property Name="FadeTime" Type="Real64" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
@@ -236,6 +141,325 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}">
+					<ChildrenList>
+						<Action Name="" ID="{CEBD1589-2918-44F7-BD70-D635268C09EB}" ShortID="675407732">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Coup de fil" ID="{FB8B6BA7-A0D1-49B1-8148-450A7270AFC4}" ShortID="624916701">
+					<ChildrenList>
+						<Event Name="Set_Coup_de_fil_Step0" ID="{10A11444-6983-4768-A709-5B77D8D03BE1}">
+							<ChildrenList>
+								<Action Name="" ID="{1B65D273-C4DA-4EE2-AC5C-E3498EB40204}" ShortID="125085920">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E190ED63-B246-4937-8F20-17024A91192F}" ShortID="383871984">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coup_de_fil_step0" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{54AB89AF-D397-4451-BA5D-0E8424768299}" ShortID="504795037">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A7E0BAFC-7F3A-4B9F-B187-EE097AF8BF5F}" ShortID="228612035">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{620EA991-85F5-4CA1-94BF-E11AECF84D78}" ShortID="357378442">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Coup_de_fil_Step1" ID="{595E0023-B15E-40D0-B2E2-77AD733B1D66}">
+							<ChildrenList>
+								<Action Name="" ID="{543608D0-907C-4464-AA1B-243A8D29C47E}" ShortID="643570394">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{983A3728-CD26-4957-A28F-91A9CDF9359D}" ShortID="252158769">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9989E804-B91C-45F0-ABC1-DC2BD9B73DD0}" ShortID="808742399">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C78D6F37-BFB4-4D41-A719-70B1E0284326}" ShortID="688926698">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Coup_de_fil_Step2" ID="{94E7D2C9-5F73-49FB-A155-21F07A3C9A0F}">
+							<ChildrenList>
+								<Action Name="" ID="{5588480E-7D58-44CB-969F-D8F36E46D5BE}" ShortID="128662435">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{836D79A0-FF11-41F8-9CA4-F22C55C04248}" ShortID="662740608">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coup_de_fil_step2" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{574AAE4E-D5ED-4273-84F2-1DA452F49529}" ShortID="747213251">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C062BBAF-D827-4316-AC26-53757B60017F}" ShortID="64053595">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Coup_de_fil_Step3" ID="{85607EB7-E17C-492B-A8B5-86BCCD11B6C6}">
+							<ChildrenList>
+								<Action Name="" ID="{2BB3E2F2-4252-4ED7-9DE1-37389700D334}" ShortID="624645447">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2F292220-5C7D-4C69-A8BC-95A961F45829}" ShortID="309004383">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coup_de_fil_step3" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E2DDD294-DFF4-43AA-82A7-5201D6D894B4}" ShortID="1051534733">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EE91632C-FA54-4E80-A112-5FC32BC19122}" ShortID="749813882">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Init_all_states" ID="{8169E906-9D6F-4BD7-B71B-FA3D6C649B6B}">
+					<ChildrenList>
+						<Action Name="" ID="{B3800620-E12D-417B-B244-80FB76F9D653}" ShortID="1011501796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8C7C1793-1946-4B0E-BAE6-63404B43FDB1}" ShortID="935665137">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B7A5BD42-39E8-4A00-9E4D-683F66E0A582}" ShortID="668741266">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Play Music" ID="{509F57D9-ACA6-4409-8D6A-B664A9C429F2}" ShortID="680878877">
+					<ChildrenList>
+						<Event Name="Play_Coup_de_fil" ID="{2F2F6EB9-25C6-4F68-AD2B-D6409B447071}">
+							<ChildrenList>
+								<Action Name="" ID="{87ED854E-DE3A-4F6F-9BD5-7356AFA192D2}" ShortID="215938388">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{381F57DA-1D33-4D30-874A-ED352932F011}" ShortID="85907519">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_Music_Coup_de_fil" ID="{B3BF2E43-F514-4750-AF6A-A3044910664A}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{28C779D4-1CEC-4C34-9584-829176D196F4}" ShortID="79838069">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Palais_mental" ID="{87A68802-B126-4221-9731-307F77DA4BA6}">
+							<ChildrenList>
+								<Action Name="" ID="{08FAB6EF-AD8B-4C4B-B7BC-FF1251C9066F}" ShortID="299661022">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB088053-8757-483B-B3D4-F4215060A628}" ShortID="1011281379">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_Music_Palais_mental" ID="{DA6AD27E-2AAA-4CCA-ACE0-51C8014E05F3}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A34D9719-8FBD-4CF1-9ECE-1DB075DE1B58}" ShortID="432014530">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
