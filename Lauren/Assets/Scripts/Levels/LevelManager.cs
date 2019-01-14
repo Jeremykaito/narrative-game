@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour {
 
     public static LevelManager instance;
     [SerializeField]
-    private Step activeStep;
+    private GameObject activeStep;
 
     [SerializeField]
     public Step[] steps;
@@ -51,13 +51,13 @@ public class LevelManager : MonoBehaviour {
         if (activeStep != null)
         {
             yield return new WaitForSeconds(2f);
-            activeStep.StepGameObject.SetActive(false);
+            activeStep.SetActive(false);
         }
 
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.isIntro, nextStep.sceneTrack));
         // The new active step
-        activeStep = nextStep;
+        activeStep = nextStep.StepGameObject;
 
     }
 }

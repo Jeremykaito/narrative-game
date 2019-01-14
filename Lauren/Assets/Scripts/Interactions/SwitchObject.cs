@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class SwitchObject : InteractiveObject {
     [SerializeField]
-    private bool state = false;
+    private bool state;
     [SerializeField]
     private GameObject switchTarget;
 
     protected override void Start()
     {
         base.Start();
-        switchTarget.SetActive(false);
+        switchTarget.SetActive(state);
     }
 
     public void Switch()
