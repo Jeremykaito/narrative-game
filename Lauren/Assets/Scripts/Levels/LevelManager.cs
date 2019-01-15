@@ -14,7 +14,7 @@ public class LevelManager : MonoBehaviour {
     public Step[] steps;
 
     public string currentZone;
-    
+    private bool stayActive;
 
     void Awake()
     {
@@ -48,16 +48,16 @@ public class LevelManager : MonoBehaviour {
 
         nextStep.StepGameObject.SetActive(true);
         // Wait 2 seconds then stop the active step
-        if (activeStep != null)
+        if (activeStep != null && !stayActive)
         {
-            yield return new WaitForSeconds(2f);
-            activeStep.SetActive(false);
+                yield return new WaitForSeconds(1f);
+                activeStep.SetActive(false);
         }
 
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.isIntro, nextStep.sceneTrack));
         // The new active step
         activeStep = nextStep.StepGameObject;
-
+        stayActive = nextStep.stayActive;
     }
 }
