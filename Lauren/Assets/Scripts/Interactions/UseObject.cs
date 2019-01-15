@@ -5,16 +5,16 @@ using UnityEngine;
 
 public class UseObject : InteractiveObject {
     [SerializeField]
-    private GameObject[] correctZones;
+    private int nbUse;
+
+    private int nbstep;
     [SerializeField]
-    private GameObject pickedObject;
-    [SerializeField]
-    private int nbUse = 1;
+    private String[] steps;
     // Use this for initialization
     protected override void Start()
     {
         base.Start();
-
+        nbstep = 0;
     }
 	
 	// Update is called once per frame
@@ -25,28 +25,15 @@ public class UseObject : InteractiveObject {
     public void UseItem()
     {
         nbUse--;
+        nbstep++;
         if (nbUse<=0)
         {
-            pickedObject.SetActive(false);
+            this.gameObject.SetActive(false);
         }
     }
 
-    public bool CheckZone(GameObject zone)
+    public String GetStep()
     {
-
-      foreach(GameObject correctZone in correctZones)
-        {
-            if (zone== correctZone)
-            {
-                return true;
-            };
-        }
-        return false;
-
-    }
-
-    public GameObject GetPickedObject ()
-    {
-        return pickedObject;
+        return steps[nbstep];
     }
 }

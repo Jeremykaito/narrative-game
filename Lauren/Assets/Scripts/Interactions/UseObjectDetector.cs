@@ -11,9 +11,8 @@ public class UseObjectDetector : MonoBehaviour {
     private bool pickUpObject = false;
     // The interactive object
     private RaycastHit target;
-    private UseObject targetObject;
-    private RaycastHit ZoneTarget;
-
+    private RaycastHit zoneTarget;
+    private UseZone useZoneTarget;
     private GameObject pickedObject;
 
     void Update()
@@ -26,12 +25,13 @@ public class UseObjectDetector : MonoBehaviour {
             if (Input.GetButtonDown("Fire1"))
             {
                 // Check the raycasting of an interactive zone
-                if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out ZoneTarget, range, 1 << 11))
+                if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out zoneTarget, range, 1 << 11))
                 {
                     // When the object match with the zone
-                    if (targetObject.CheckZone(ZoneTarget.transform.gameObject))
+                    if (useZoneTarget.CheckZone(zoneTarget.transform.gameObject))
                     {
-                        targetObject.UseItem();
+                        pickedObject.GetComponent<UseObject>().UseItem();
+                        StartCoroutine(LevelManager.instance.StartStep(pickedObject.GetComponent<UseObject>().GetStep()));
                     }
                     else
                     {
@@ -52,11 +52,11 @@ public class UseObjectDetector : MonoBehaviour {
                 UIManager.instance.SetReticule(true);
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    targetObject = target.transform.GetComponent<UseObject>();
+                    useZoneTarget = target.transform.GetComponent<UseZone>();
                     // If it's an interactive object
-                    if (targetObject != null)
+                    if (useZoneTarget != null)
                     {
-                        PickOne();
+                        PickUseObject();
                     }
                 }
             }
@@ -68,9 +68,9 @@ public class UseObjectDetector : MonoBehaviour {
     }
 
 
-    private void PickOne()
+    private void PickUseObject()
     {
-        pickedObject = targetObject.GetPickedObject();
+        pickedObject = useZoneTarget.GetPickedObject();
         pickedObject = (GameObject)Instantiate(pickedObject);
         pickedObject.transform.GetComponent<Rigidbody>().isKinematic = true;
         pickedObject.transform.gameObject.layer = 9; // HeldObject : avoid collisions
