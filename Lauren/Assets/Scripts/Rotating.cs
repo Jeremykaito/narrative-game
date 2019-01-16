@@ -5,13 +5,13 @@ using UnityEngine;
 public class Rotating : MonoBehaviour
 {
     [SerializeField]
-    private float rotationSpeed;
+    private float rotationSpeed = 10;
     [SerializeField]
-    private float rotationX;
+    private float rotationX = 6;
     [SerializeField]
-    private float rotationY;
+    private float rotationY = 4;
     [SerializeField]
-    private float rotationZ;
+    private float rotationZ = 2;
     // Start is called before the first frame update
     void Start()
     {

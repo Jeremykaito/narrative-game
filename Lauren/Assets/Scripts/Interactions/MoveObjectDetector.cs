@@ -12,7 +12,7 @@ public class MoveObjectDetector : MonoBehaviour {
     // The interactive object
     private RaycastHit target;
     private MoveObject targetObject;
-    private RaycastHit ZoneTarget;
+    private RaycastHit targetZone;
 
     void Update()
     {
@@ -24,10 +24,10 @@ public class MoveObjectDetector : MonoBehaviour {
             if (Input.GetButtonDown("Fire1"))
             {
                 // Check the raycasting of an interactive zone
-                if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out ZoneTarget, range, 1 << 11))
+                if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out targetZone, range, 1 << 11))
                 {
                     // When the object match with the zone
-                    if (targetObject.CheckZone(ZoneTarget.transform.gameObject))
+                    if (targetObject.CheckZone(targetZone.transform.gameObject))
                     {
                         ReleaseInZone();
                     }
@@ -96,6 +96,16 @@ public class MoveObjectDetector : MonoBehaviour {
         targetObject.CorrectObjectCloneSwitch();
 
         StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
-        pickUpObject = false;
+
+        ExchangeObjectZone exZone = targetZone.transform.GetComponent<ExchangeObjectZone>();
+        if(exZone != null)
+        {
+            exZone.ExchangeObject();
+            pickUpObject = true;
+        }
+        else
+        {
+            pickUpObject = false;
+        }
     }
 }
