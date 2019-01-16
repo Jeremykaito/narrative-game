@@ -47,6 +47,7 @@ public class LevelManager : MonoBehaviour {
         Step nextStep = Array.Find(steps, step =>step.name == name);
 
         nextStep.StepGameObject.SetActive(true);
+        GameObject.Find("Test_Dissolve").GetComponent<Dissolve>().isActive = true;
         // Wait 2 seconds then stop the active step
         if (activeStep != null && !stayActive)
         {
