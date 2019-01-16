@@ -14,6 +14,19 @@ public class MoveObjectDetector : MonoBehaviour {
     private MoveObject targetObject;
     private RaycastHit targetZone;
 
+    public bool PickUpObject
+    {
+        get
+        {
+            return pickUpObject;
+        }
+
+        set
+        {
+            pickUpObject = value;
+        }
+    }
+
     void Update()
     {
         // When the player have an object

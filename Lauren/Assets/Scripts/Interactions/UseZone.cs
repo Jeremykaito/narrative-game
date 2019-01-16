@@ -5,8 +5,37 @@ using UnityEngine;
 public class UseZone : MonoBehaviour {
     [SerializeField]
     private GameObject useObjectPrefab;
+
     [SerializeField]
-    private GameObject[] correctZones;
+    private GameObject correctZone;
+    [SerializeField]
+    private GameObject correctObjectClone;
+
+    public GameObject CorrectZone
+    {
+        get
+        {
+            return correctZone;
+        }
+
+        set
+        {
+            correctZone = value;
+        }
+    }
+
+    public GameObject CorrectObjectClone
+    {
+        get
+        {
+            return correctObjectClone;
+        }
+
+        set
+        {
+            correctObjectClone = value;
+        }
+    }
 
     // Use this for initialization
     void Start () {
@@ -21,20 +50,5 @@ public class UseZone : MonoBehaviour {
     public GameObject GetPickedObject()
     {
         return useObjectPrefab;
-    }
-
-
-    public bool CheckZone(GameObject zone)
-    {
-
-        foreach (GameObject correctZone in correctZones)
-        {
-            if (zone == correctZone)
-            {
-                return true;
-            };
-        }
-        return false;
-
     }
 }

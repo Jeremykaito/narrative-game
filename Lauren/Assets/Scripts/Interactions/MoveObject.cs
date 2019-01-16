@@ -2,12 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObject : InteractiveObject {
+public class MoveObject : InteractiveObject
+{
     [SerializeField]
-    private GameObject CorrectZone;
+    private GameObject correctZone;
     [SerializeField]
-    private GameObject CorrectObjectClone;
+    private GameObject correctObjectClone;
 
+    public GameObject CorrectZone
+    {
+        get { return correctZone; }
+        set { correctZone = value; }
+    }
+
+    public GameObject CorrectObjectClone
+    {
+        get { return correctObjectClone; }
+        set { correctObjectClone = value; }
+    }
 
     protected override void Start()
     {

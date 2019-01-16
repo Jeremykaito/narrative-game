@@ -8,9 +8,17 @@ public class ExchangeObjectZone : MonoBehaviour
     GameObject prefabObject;
     GameObject pickedObject;
 
+    [SerializeField]
+    private GameObject correctZone;
+    [SerializeField]
+    private GameObject correctObjectClone;
+
     public void ExchangeObject()
     {
         pickedObject = (GameObject)Instantiate(prefabObject);
+        pickedObject.GetComponent<MoveObject>().CorrectZone = this.correctZone;
+        pickedObject.GetComponent<MoveObject>().CorrectZone = this.correctObjectClone;
+
         pickedObject.transform.GetComponent<Rigidbody>().isKinematic = true;
         pickedObject.transform.gameObject.layer = 9; // HeldObject : avoid collisions
         pickedObject.transform.position = this.transform.position;
