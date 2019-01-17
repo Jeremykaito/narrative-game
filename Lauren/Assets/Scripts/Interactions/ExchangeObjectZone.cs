@@ -17,7 +17,7 @@ public class ExchangeObjectZone : MonoBehaviour
     {
         pickedObject = (GameObject)Instantiate(prefabObject);
         pickedObject.GetComponent<MoveObject>().CorrectZone = this.correctZone;
-        pickedObject.GetComponent<MoveObject>().CorrectZone = this.correctObjectClone;
+        pickedObject.GetComponent<MoveObject>().CorrectObjectClone = this.correctObjectClone;
 
         pickedObject.transform.GetComponent<Rigidbody>().isKinematic = true;
         pickedObject.transform.gameObject.layer = 9; // HeldObject : avoid collisions

@@ -38,8 +38,7 @@ public class UseObjectDetector : MonoBehaviour
 
     private void PickOneObject()
     {
-        pickedObject = useZoneTarget.GetPickedObject();
-        pickedObject = (GameObject)Instantiate(pickedObject);
+        pickedObject = (GameObject)Instantiate(useZoneTarget.GetPickedObject());
 
         pickedObject.GetComponent<MoveObject>().CorrectZone = useZoneTarget.CorrectZone;
         pickedObject.GetComponent<MoveObject>().CorrectObjectClone = useZoneTarget.CorrectObjectClone;
@@ -51,6 +50,7 @@ public class UseObjectDetector : MonoBehaviour
         pickedObject.transform.rotation = new Quaternion(0, 0, 0, 0);
 
         this.gameObject.GetComponent<MoveObjectDetector>().PickUpObject = true;
+        this.gameObject.GetComponent<MoveObjectDetector>().TargetObject = pickedObject.GetComponent<MoveObject>(); 
 
 
     }

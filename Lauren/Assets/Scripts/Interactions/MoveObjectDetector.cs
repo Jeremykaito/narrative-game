@@ -28,11 +28,25 @@ public class MoveObjectDetector : MonoBehaviour {
         }
     }
 
+    public MoveObject TargetObject
+    {
+        get
+        {
+            return targetObject;
+        }
+
+        set
+        {
+            targetObject = value;
+        }
+    }
+
     void Update()
     {
         // When the player have an object
         if (pickUpObject)
         {
+            Debug.Log("dd");
             UIManager.instance.HideReticule();
             // On click
             if (Input.GetButtonDown("Fire1"))
