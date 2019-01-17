@@ -13,7 +13,8 @@ public class MoveObjectDetector : MonoBehaviour {
     private RaycastHit target;
     private MoveObject targetObject;
     private RaycastHit targetZone;
-
+    [SerializeField]
+    private ParticleSystem objectParticles;
     public bool PickUpObject
     {
         get
@@ -88,6 +89,7 @@ public class MoveObjectDetector : MonoBehaviour {
         target.transform.parent = fpsCamera.transform;
         target.transform.rotation = new Quaternion(0, 0, 0, 0);
         pickUpObject = true;
+        objectParticles.Play();
 
     }
 
@@ -99,6 +101,7 @@ public class MoveObjectDetector : MonoBehaviour {
 
         target.transform.localScale = target.transform.localScale / 2;
         pickUpObject = false;
+        objectParticles.Stop();
     }
 
     private void ReleaseInZone()
@@ -119,6 +122,7 @@ public class MoveObjectDetector : MonoBehaviour {
         else
         {
             pickUpObject = false;
+            objectParticles.Stop();
         }
     }
 }
