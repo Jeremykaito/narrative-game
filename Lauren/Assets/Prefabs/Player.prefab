@@ -252,8 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1408039907036354174}
   - component: {fileID: 1408039907036354171}
-  - component: {fileID: 1408039907036354172}
-  - component: {fileID: 1408039907036354173}
+  - component: {fileID: 2546527367396883792}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -290,8 +289,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 1.2
   fpsCamera: {fileID: 1408039905753890316}
-  objectParticles: {fileID: 0}
---- !u!114 &1408039907036354172
+  objectParticles: {fileID: 5644170973322655564}
+--- !u!114 &2546527367396883792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,21 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264e3e49738fab441a1b73982dd3a930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 1.2
-  fpsCamera: {fileID: 1408039905753890316}
---- !u!114 &1408039907036354173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408039907036354175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5699b46baf20e1c48907d9bcf5ee1220, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 1.2
+  range: 2
   fpsCamera: {fileID: 1408039905753890316}
 --- !u!1 &1408039907675822399
 GameObject:

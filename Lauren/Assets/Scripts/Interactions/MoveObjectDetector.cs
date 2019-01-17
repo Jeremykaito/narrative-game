@@ -45,16 +45,14 @@ public class MoveObjectDetector : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log(pickUpObject);
+  
         // When the player have an object
         if (pickUpObject)
         {
-            Debug.Log("dd");
             UIManager.instance.HideReticule();
             // On click
             if (Input.GetButtonDown("Fire1"))
             {
-                Debug.Log("ddgggg");
                 // Check the raycasting of an interactive zone
                 if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out targetZone, range, 1 << 11))
                 {
@@ -62,6 +60,7 @@ public class MoveObjectDetector : MonoBehaviour {
                     if (targetObject.CheckZone(targetZone.transform.gameObject))
                     {
                         ReleaseInZone();
+                        Debug.Log("releaseinzone");
                     }
                     else
                     {
@@ -82,17 +81,26 @@ public class MoveObjectDetector : MonoBehaviour {
                 UIManager.instance.SetReticule(true);
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    targetObject = target.transform.GetComponent<MoveObject>();
-                    // If it's an interactive object
-                    if (targetObject != null)
-                    {
-                            PickUp(targetObject);
-                    }
                     useZoneTarget = target.transform.GetComponent<UseZone>();
                     // If it's an interactive object
                     if (useZoneTarget != null)
                     {
-                        PickOneObject();
+                        GameObject storedObject = (GameObject)Instantiate(useZoneTarget.GetStoredObject());
+                        targetObject = storedObject.GetComponent<MoveObject>();
+                        targetObject.CorrectZone = useZoneTarget.CorrectZone;
+                        targetObject.CorrectObjectClone = useZoneTarget.CorrectObjectClone;
+                        storedObject.GetComponent<Rotating>().isRotate = true;
+                        PickUp(targetObject);
+                    }
+                    else
+                    {
+                        MoveObject newTargetedObject = target.transform.GetComponent<MoveObject>();
+                        // If it's an interactive object
+                        if (newTargetedObject != null)
+                        {
+                            targetObject = newTargetedObject;
+                            PickUp(targetObject);
+                        }
                     }
                 }
             }
@@ -103,44 +111,41 @@ public class MoveObjectDetector : MonoBehaviour {
         }
     }
 
-    public void PickUp(MoveObject target)
+    public void PickUp(MoveObject targetO)
     {
-
-        target.transform.GetComponent<Rigidbody>().isKinematic = true;
-        target.transform.gameObject.layer = 9; // HeldObject : avoid collisions
-        target.transform.position = this.transform.position;
-        target.transform.localScale = target.transform.localScale * 2;
-        target.transform.parent = fpsCamera.transform;
-        target.transform.rotation = new Quaternion(0, 0, 0, 0);
-        pickUpObject = true;
+        targetO.transform.GetComponent<Rigidbody>().isKinematic = true;
+        targetO.transform.gameObject.layer = 9; // HeldObject : avoid collisions
+        targetO.transform.position = this.transform.position;
+        targetO.transform.localScale = targetO.transform.localScale * 2.5f;
+        targetO.transform.parent = fpsCamera.transform;
+        targetO.transform.rotation = new Quaternion(0, 0, 0, 0);
+        targetO.transform.GetComponent<Rotating>().isRotate = true;
+        Debug.Log("pickup" + targetO.transform.GetComponent<Rotating>().isRotate);
         objectParticles.Play();
-
+        pickUpObject = true;
     }
 
     private void Release()
     {
-        target.transform.GetComponent<Rigidbody>().isKinematic = false;
-        target.transform.gameObject.layer = 10;
-        target.transform.parent = GameObject.Find("Objects").transform;
-
-        target.transform.localScale = target.transform.localScale / 2;
-        pickUpObject = false;
+        Debug.Log("PickOneObject");
+        targetObject.transform.GetComponent<Rotating>().isRotate = false;
+        targetObject.transform.GetComponent<Rigidbody>().isKinematic = false;
+        targetObject.transform.gameObject.layer = 10;
         objectParticles.Stop();
+        targetObject.transform.parent = GameObject.Find("Objects").transform;
+        targetObject.transform.localScale = targetObject.transform.localScale / 2.5f;
+        pickUpObject = false;
     }
 
     private void ReleaseInZone()
     {
-        target.transform.gameObject.layer = 10;
-        target.transform.parent = GameObject.Find("Objects").transform;
-
         targetObject.CorrectObjectCloneSwitch();
-
-        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
-
+        targetObject.transform.parent = GameObject.Find("Objects").transform;
+        
         ExchangeObjectZone exZone = targetZone.transform.GetComponent<ExchangeObjectZone>();
-        if(exZone != null)
+        if (exZone != null)
         {
-            exZone.ExchangeObject();
+            exZone.ExchangeObject(this.transform.position);
             pickUpObject = true;
         }
         else
@@ -148,16 +153,8 @@ public class MoveObjectDetector : MonoBehaviour {
             pickUpObject = false;
             objectParticles.Stop();
         }
-    }
 
-    private void PickOneObject()
-    {
-        GameObject zone = (GameObject)Instantiate(useZoneTarget.GetPickedObject());
-        targetObject = zone.GetComponent<MoveObject>();
-        targetObject.CorrectZone = useZoneTarget.CorrectZone;
-        targetObject.GetComponent<MoveObject>().CorrectObjectClone = useZoneTarget.CorrectObjectClone;
-        PickUp(targetObject);
-
+        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
 
     }
 }

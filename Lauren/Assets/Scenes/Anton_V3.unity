@@ -7277,6 +7277,7 @@ MonoBehaviour:
   rotationX: 6
   rotationY: 4
   rotationZ: 2
+  isRotate: 0
 --- !u!1 &1998068061
 GameObject:
   m_ObjectHideFlags: 0
@@ -7307,8 +7308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WinParticles: {fileID: 0}
   step: fauteuil
-  CorrectZone: {fileID: 1677769569}
-  CorrectObjectClone: {fileID: 1998068057}
+  correctZone: {fileID: 1677769569}
+  correctObjectClone: {fileID: 1998068057}
 --- !u!1 &1998068063
 GameObject:
   m_ObjectHideFlags: 0
@@ -22064,6 +22065,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248530955}
     m_Modifications:
+    - target: {fileID: 5025610744832241572, guid: f14c6eee78a710c428a4e989c981fc7f,
+        type: 3}
+      propertyPath: m_Name
+      value: Scene Settings
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025610744832241572, guid: f14c6eee78a710c428a4e989c981fc7f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5025610744832241499, guid: f14c6eee78a710c428a4e989c981fc7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22118,16 +22129,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025610744832241572, guid: f14c6eee78a710c428a4e989c981fc7f,
-        type: 3}
-      propertyPath: m_Name
-      value: Scene Settings
-      objectReference: {fileID: 0}
-    - target: {fileID: 5025610744832241572, guid: f14c6eee78a710c428a4e989c981fc7f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f14c6eee78a710c428a4e989c981fc7f, type: 3}

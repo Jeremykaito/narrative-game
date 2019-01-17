@@ -47,7 +47,7 @@ public class UseZone : MonoBehaviour {
 		
 	}
 
-    public GameObject GetPickedObject()
+    public GameObject GetStoredObject()
     {
         return useObjectPrefab;
     }

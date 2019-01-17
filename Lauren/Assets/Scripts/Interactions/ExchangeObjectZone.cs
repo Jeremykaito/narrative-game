@@ -13,7 +13,7 @@ public class ExchangeObjectZone : MonoBehaviour
     [SerializeField]
     private GameObject correctObjectClone;
 
-    public void ExchangeObject()
+    public void ExchangeObject(Vector3 pos)
     {
         pickedObject = (GameObject)Instantiate(prefabObject);
         pickedObject.GetComponent<MoveObject>().CorrectZone = this.correctZone;
@@ -21,7 +21,7 @@ public class ExchangeObjectZone : MonoBehaviour
 
         pickedObject.transform.GetComponent<Rigidbody>().isKinematic = true;
         pickedObject.transform.gameObject.layer = 9; // HeldObject : avoid collisions
-        pickedObject.transform.position = this.transform.position;
+        pickedObject.transform.position = pos;
         pickedObject.transform.localScale = pickedObject.transform.localScale * 2;
         pickedObject.transform.parent = Camera.main.transform;
         pickedObject.transform.rotation = new Quaternion(0, 0, 0, 0);
