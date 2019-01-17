@@ -89,7 +89,6 @@ public class MoveObjectDetector : MonoBehaviour {
                         targetObject = storedObject.GetComponent<MoveObject>();
                         targetObject.CorrectZone = useZoneTarget.CorrectZone;
                         targetObject.CorrectObjectClone = useZoneTarget.CorrectObjectClone;
-                        storedObject.GetComponent<Rotating>().isRotate = true;
                         PickUp(targetObject);
                     }
                     else
@@ -127,13 +126,12 @@ public class MoveObjectDetector : MonoBehaviour {
 
     private void Release()
     {
-        Debug.Log("PickOneObject");
         targetObject.transform.GetComponent<Rotating>().isRotate = false;
         targetObject.transform.GetComponent<Rigidbody>().isKinematic = false;
         targetObject.transform.gameObject.layer = 10;
         objectParticles.Stop();
         targetObject.transform.parent = GameObject.Find("Objects").transform;
-        targetObject.transform.localScale = targetObject.transform.localScale / 2.5f;
+        targetObject.transform.localScale = targetObject.transform.localScale / 2f;
         pickUpObject = false;
     }
 
@@ -145,7 +143,8 @@ public class MoveObjectDetector : MonoBehaviour {
         ExchangeObjectZone exZone = targetZone.transform.GetComponent<ExchangeObjectZone>();
         if (exZone != null)
         {
-            exZone.ExchangeObject(this.transform.position);
+            //Debug.Log("is exZone "+ targetZone.transform.gameObject.name);
+           // exZone.ExchangeObject(this.transform.position);
             pickUpObject = true;
         }
         else
