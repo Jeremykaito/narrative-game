@@ -119,7 +119,6 @@ public class MoveObjectDetector : MonoBehaviour {
         targetO.transform.parent = fpsCamera.transform;
         targetO.transform.rotation = new Quaternion(0, 0, 0, 0);
         targetO.transform.GetComponent<Rotating>().isRotate = true;
-        Debug.Log("pickup" + targetO.transform.GetComponent<Rotating>().isRotate);
         objectParticles.Play();
         pickUpObject = true;
     }
@@ -131,7 +130,7 @@ public class MoveObjectDetector : MonoBehaviour {
         targetObject.transform.gameObject.layer = 10;
         objectParticles.Stop();
         targetObject.transform.parent = GameObject.Find("Objects").transform;
-        targetObject.transform.localScale = targetObject.transform.localScale / 2f;
+        targetObject.transform.localScale = targetObject.transform.localScale / 2.5f;
         pickUpObject = false;
     }
 
