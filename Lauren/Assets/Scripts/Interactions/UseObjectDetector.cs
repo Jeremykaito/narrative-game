@@ -39,18 +39,10 @@ public class UseObjectDetector : MonoBehaviour
     private void PickOneObject()
     {
         pickedObject = (GameObject)Instantiate(useZoneTarget.GetPickedObject());
-
         pickedObject.GetComponent<MoveObject>().CorrectZone = useZoneTarget.CorrectZone;
         pickedObject.GetComponent<MoveObject>().CorrectObjectClone = useZoneTarget.CorrectObjectClone;
-        pickedObject.GetComponent<Rigidbody>().isKinematic = true;
-        pickedObject.transform.gameObject.layer = 9; // HeldObject : avoid collisions
-        pickedObject.transform.position = this.transform.position;
-        pickedObject.transform.localScale = pickedObject.transform.localScale * 2;
-        pickedObject.transform.parent = fpsCamera.transform;
-        pickedObject.transform.rotation = new Quaternion(0, 0, 0, 0);
 
-        this.gameObject.GetComponent<MoveObjectDetector>().PickUpObject = true;
-        this.gameObject.GetComponent<MoveObjectDetector>().TargetObject = pickedObject.GetComponent<MoveObject>(); 
+        this.gameObject.GetComponent<MoveObjectDetector>().PickUp(pickedObject.GetComponent<MoveObject>());
 
 
     }

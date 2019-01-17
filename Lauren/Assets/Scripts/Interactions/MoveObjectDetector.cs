@@ -15,6 +15,8 @@ public class MoveObjectDetector : MonoBehaviour {
     private RaycastHit targetZone;
     [SerializeField]
     private ParticleSystem objectParticles;
+
+    private UseZone useZoneTarget;
     public bool PickUpObject
     {
         get
@@ -43,6 +45,7 @@ public class MoveObjectDetector : MonoBehaviour {
 
     void Update()
     {
+        Debug.Log(pickUpObject);
         // When the player have an object
         if (pickUpObject)
         {
@@ -51,6 +54,7 @@ public class MoveObjectDetector : MonoBehaviour {
             // On click
             if (Input.GetButtonDown("Fire1"))
             {
+                Debug.Log("ddgggg");
                 // Check the raycasting of an interactive zone
                 if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out targetZone, range, 1 << 11))
                 {
@@ -82,7 +86,13 @@ public class MoveObjectDetector : MonoBehaviour {
                     // If it's an interactive object
                     if (targetObject != null)
                     {
-                            PickUp(target);
+                            PickUp(targetObject);
+                    }
+                    useZoneTarget = target.transform.GetComponent<UseZone>();
+                    // If it's an interactive object
+                    if (useZoneTarget != null)
+                    {
+                        PickOneObject();
                     }
                 }
             }
@@ -93,7 +103,7 @@ public class MoveObjectDetector : MonoBehaviour {
         }
     }
 
-    private void PickUp(RaycastHit target)
+    public void PickUp(MoveObject target)
     {
 
         target.transform.GetComponent<Rigidbody>().isKinematic = true;
@@ -138,5 +148,16 @@ public class MoveObjectDetector : MonoBehaviour {
             pickUpObject = false;
             objectParticles.Stop();
         }
+    }
+
+    private void PickOneObject()
+    {
+        GameObject zone = (GameObject)Instantiate(useZoneTarget.GetPickedObject());
+        targetObject = zone.GetComponent<MoveObject>();
+        targetObject.CorrectZone = useZoneTarget.CorrectZone;
+        targetObject.GetComponent<MoveObject>().CorrectObjectClone = useZoneTarget.CorrectObjectClone;
+        PickUp(targetObject);
+
+
     }
 }
