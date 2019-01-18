@@ -8,6 +8,8 @@ public class Dissolve : MonoBehaviour
     private float dissolveVal;
 
     [SerializeField]
+    private float disolveFrameRate;
+    [SerializeField]
     private bool isActive;
     [SerializeField]
     private bool isDisolved;
@@ -37,9 +39,9 @@ public class Dissolve : MonoBehaviour
         {
             if(isDisolved)
             {
-                if(dissolveVal > 0.05)
+                if(dissolveVal > 0.06f)
                 {
-                    dissolveVal -= 0.01f;
+                    dissolveVal -= disolveFrameRate;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
                 }
                 else
@@ -50,9 +52,9 @@ public class Dissolve : MonoBehaviour
             }
             else
             {
-                if (dissolveVal < 0.95f)
+                if (dissolveVal < 0.94f)
                 {
-                    dissolveVal += 0.01f;
+                    dissolveVal += disolveFrameRate;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
                 }
                 else

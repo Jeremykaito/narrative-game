@@ -47,7 +47,7 @@ public class MoveObjectDetector : MonoBehaviour {
 
     void Update()
     {
-        if(fpsCamera.transform.localRotation.x > 0.5f)
+        if(fpsCamera.transform.localRotation.x > 0.4f)
         {
             range = rangeTofoot;
         }
