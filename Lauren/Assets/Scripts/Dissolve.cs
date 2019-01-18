@@ -9,10 +9,19 @@ public class Dissolve : MonoBehaviour
 
     [SerializeField]
     private bool isActive;
+    [SerializeField]
+    private bool isDisolved;
+
     public bool IsActive
     {
         get { return isActive; }
         set { isActive = value; }
+    }
+
+    public bool IsDisolved
+    {
+        get { return isDisolved; }
+        set { isDisolved = value; }
     }
     // Start is called before the first frame update
     void Start()
@@ -24,11 +33,36 @@ public class Dissolve : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dissolveVal < 1 && isActive)
+        if(isActive)
         {
-            Debug.Log("test" + dissolveVal);
-            dissolveVal += 0.01f;
-            dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
+            if(isDisolved)
+            {
+                if(dissolveVal > 0)
+                {
+                    dissolveVal -= 0.01f;
+                    dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
+                }
+                else
+                {
+                    isDisolved = false;
+                    isActive = false;
+                }
+            }
+            else
+            {
+                if (dissolveVal < 1)
+                {
+                    dissolveVal += 0.01f;
+                    dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
+                }
+                else
+                {
+                    isDisolved = true;
+                    isActive = false;
+
+                }
+            }
         }
+       
     }
 }

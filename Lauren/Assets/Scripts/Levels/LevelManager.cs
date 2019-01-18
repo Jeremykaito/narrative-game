@@ -42,14 +42,17 @@ public class LevelManager : MonoBehaviour {
     {
         Step nextStep = Array.Find(steps, step =>step.name == name);
 
-        nextStep.StepGameObject.SetActive(true);
+        this.GetComponent<Dissolve>().IsActive = true;
         //GameObject.Find("Test_Dissolve").GetComponent<Dissolve>().IsActive = true;
         // Wait 2 seconds then stop the active step
         if (activeStep != null && !stayActive)
         {
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(5f);
                 activeStep.SetActive(false);
+
         }
+        this.GetComponent<Dissolve>().IsActive = true;
+        nextStep.StepGameObject.SetActive(true);
 
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.isIntro, nextStep.sceneTrack));
