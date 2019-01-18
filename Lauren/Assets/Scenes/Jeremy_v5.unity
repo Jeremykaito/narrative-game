@@ -1857,7 +1857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4278944412549544, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4278944412549544, guid: c3ef270a7ba3bb246bc886cc238a15f9, type: 3}
       propertyPath: m_LocalScale.z
@@ -20386,6 +20386,16 @@ PrefabInstance:
         type: 3}
       propertyPath: rangeArm
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408039907675822398, guid: a1a113329a16c6848a61f435288da27a,
+        type: 3}
+      propertyPath: movementSettings.BackwardSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408039907675822398, guid: a1a113329a16c6848a61f435288da27a,
+        type: 3}
+      propertyPath: movementSettings.StrafeSpeed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1408039907036354173, guid: a1a113329a16c6848a61f435288da27a, type: 3}
