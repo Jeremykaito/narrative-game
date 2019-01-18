@@ -31,13 +31,13 @@ public class Dissolve : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(isActive)
         {
             if(isDisolved)
             {
-                if(dissolveVal > 0)
+                if(dissolveVal > 0.05)
                 {
                     dissolveVal -= 0.01f;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
@@ -50,7 +50,7 @@ public class Dissolve : MonoBehaviour
             }
             else
             {
-                if (dissolveVal < 1)
+                if (dissolveVal < 0.95f)
                 {
                     dissolveVal += 0.01f;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);

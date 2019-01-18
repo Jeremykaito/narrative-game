@@ -47,7 +47,7 @@ public class LevelManager : MonoBehaviour {
         // Wait 2 seconds then stop the active step
         if (activeStep != null && !stayActive)
         {
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(3f);
                 activeStep.SetActive(false);
 
         }
