@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408039905753890318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.66, z: 0}
+  m_LocalPosition: {x: -0.002, y: 0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1408039907036354174}
@@ -268,7 +268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408039907036354175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7742667551040884097}
@@ -287,7 +287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6ad4c65144ff54293a3728fe18b72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 1.2
+  rangeArm: 0.8
+  rangeTofoot: 3
   fpsCamera: {fileID: 1408039905753890316}
   objectParticles: {fileID: 5644170973322655564}
 --- !u!114 &2546527367396883792
@@ -302,7 +303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 264e3e49738fab441a1b73982dd3a930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 2
+  rangeArm: 0.8
+  rangeTofoot: 3
   fpsCamera: {fileID: 1408039905753890316}
 --- !u!1 &1408039907675822399
 GameObject:
@@ -364,7 +366,7 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
+  m_Radius: 0.4
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}

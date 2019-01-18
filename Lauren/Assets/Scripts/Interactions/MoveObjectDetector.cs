@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoveObjectDetector : MonoBehaviour {
     // Max range to pick up object
-    public float range = 2f;
+    public float rangeArm = 2f;
+    public float rangeTofoot = 2f;
+    private float range;
     // Player Main camera
     public Camera fpsCamera;
     // State to know is there an object in your hand
@@ -45,7 +47,14 @@ public class MoveObjectDetector : MonoBehaviour {
 
     void Update()
     {
-  
+        if(fpsCamera.transform.localRotation.x > 0.5f)
+        {
+            range = rangeTofoot;
+        }
+        else
+        {
+            range = rangeArm;
+        }
         // When the player have an object
         if (pickUpObject)
         {
@@ -115,7 +124,7 @@ public class MoveObjectDetector : MonoBehaviour {
         targetO.transform.GetComponent<Rigidbody>().isKinematic = true;
         targetO.transform.gameObject.layer = 9; // HeldObject : avoid collisions
         targetO.transform.position = this.transform.position;
-        targetO.transform.localScale = targetO.transform.localScale * 2.5f;
+        targetO.transform.localScale = targetO.transform.localScale * 2;
         targetO.transform.parent = fpsCamera.transform;
         targetO.transform.rotation = new Quaternion(0, 0, 0, 0);
         targetO.transform.GetComponent<Rotating>().isRotate = true;
@@ -130,7 +139,7 @@ public class MoveObjectDetector : MonoBehaviour {
         targetObject.transform.gameObject.layer = 10;
         objectParticles.Stop();
         targetObject.transform.parent = GameObject.Find("Objects").transform;
-        targetObject.transform.localScale = targetObject.transform.localScale / 2.5f;
+        targetObject.transform.localScale = targetObject.transform.localScale / 2;
         pickUpObject = false;
     }
 

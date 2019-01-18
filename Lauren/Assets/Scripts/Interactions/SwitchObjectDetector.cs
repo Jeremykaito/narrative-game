@@ -5,7 +5,9 @@ using UnityEngine;
 public class SwitchObjectDetector : MonoBehaviour
 {
     // Max range to pick up object
-    public float range = 2f;
+    public float rangeArm = 2f;
+    public float rangeTofoot = 2f;
+    private float range;
     // Player Main camera
     public Camera fpsCamera;
 
@@ -23,6 +25,14 @@ public class SwitchObjectDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (fpsCamera.transform.localRotation.x > 0.5f)
+        {
+            range = rangeTofoot;
+        }
+        else
+        {
+            range = rangeArm;
+        }
         // Raycast detect an interactive object
         if (Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
         {
