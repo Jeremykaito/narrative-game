@@ -124,8 +124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WinParticles: {fileID: 0}
   step: fauteuil
-  CorrectZone: {fileID: 0}
-  CorrectObjectClone: {fileID: 0}
+  layerO: 10
+  correctZone: {fileID: 0}
+  correctObjectClone: {fileID: 0}
 --- !u!114 &7789290202696407257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +143,4 @@ MonoBehaviour:
   rotationX: 6
   rotationY: 4
   rotationZ: 2
+  isRotate: 0

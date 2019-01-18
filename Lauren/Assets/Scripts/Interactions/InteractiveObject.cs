@@ -8,6 +8,8 @@ abstract public class InteractiveObject : MonoBehaviour
     private ParticleSystem WinParticles;
     [SerializeField]
     private string step;
+    [SerializeField]
+    private int layerO;
 
     public string Step
     {
@@ -24,7 +26,7 @@ abstract public class InteractiveObject : MonoBehaviour
 
     protected virtual void Start()
     {
-        this.gameObject.layer = 10; // Layer InteractiveObject
+        this.gameObject.layer = layerO; // Layer InteractiveObject
     }
 
    // abstract public void InteractWith();

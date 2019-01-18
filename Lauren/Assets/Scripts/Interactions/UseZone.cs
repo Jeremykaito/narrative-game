@@ -41,11 +41,6 @@ public class UseZone : MonoBehaviour {
     void Start () {
         this.gameObject.layer = 10;
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     public GameObject GetStoredObject()
     {
