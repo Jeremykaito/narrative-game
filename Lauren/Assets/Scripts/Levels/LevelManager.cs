@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour {
     public static LevelManager instance;
     [SerializeField]
     private GameObject activeStep;
+    private GameObject lastStep;
 
     [SerializeField]
     public Step[] steps;
@@ -39,25 +40,46 @@ public class LevelManager : MonoBehaviour {
 
     }
 
+    private IEnumerator StartDissolveAppearFx(Step nextStep)
+    {
+        Debug.Log("next step: " + nextStep.name);
+        // Wait 2 seconds then stop the active step
+        if (activeStep && !stayActive)
+        {
+            this.GetComponent<Dissolve>().IsActive = true;
+
+            yield return new WaitForSeconds(3.5f);
+
+            lastStep.SetActive(false);
+            
+            this.GetComponent<Dissolve>().IsActive = true;
+            nextStep.StepGameObject.SetActive(true);
+        }
+    }
+    
+    public void OnSpeechEnd(string soundItem, Step nextStep)
+    {
+        if (!nextStep.isIntro)
+            StartCoroutine(StartDissolveAppearFx(nextStep));
+    }
+
     public IEnumerator StartStep(string name)
     {
         Step nextStep = Array.Find(steps, step =>step.name == name);
 
-        // Wait 2 seconds then stop the active step
-        if (activeStep != null && !stayActive)
+        if (nextStep.isIntro)
         {
-            this.GetComponent<Dissolve>().IsActive = true;
-            yield return new WaitForSeconds(3.5f);
-            activeStep.SetActive(false);
-            this.GetComponent<Dissolve>().IsActive = true;
-            
+            nextStep.StepGameObject.SetActive(true);
         }
-        nextStep.StepGameObject.SetActive(true);
-
+        
         AudioManager.instance.ItemValidation(nextStep.soundItem,
-            new EventCbCookie(nextStep.isIntro, nextStep.sceneTrack));
+            new EventCbCookie(nextStep.soundItem, nextStep, nextStep.isIntro, nextStep.sceneTrack));
+
+        lastStep = activeStep;
         // The new active step
         activeStep = nextStep.StepGameObject;
         stayActive = nextStep.stayActive;
+
+        yield return null;
     }
 }

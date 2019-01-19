@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using Sound;
 using UnityEngine;
 
@@ -12,6 +13,13 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
 
+    private string lastZone = null;
+
+    /**
+     * Describe dialogue lines that should be played right after the current one is over
+     */
+    private readonly Dictionary<string, string> shouldPlayAfter = new Dictionary<string,string>();
+    
     void Awake()
     {
 
@@ -31,44 +39,69 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        AkSoundEngine.PostEvent("Set_Music_Palais_mental", gameObject);
+        // Init
+        shouldPlayAfter.Add("C4", "C5");
+        
+        AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
         AkLogger.Message("Init Palais mental theme");
     }
 
 
-    public void ItemValidation(string name, EventCbCookie cookie, bool isSpeaking = true)
+    public void ItemValidation(string soundItem, EventCbCookie cookie, bool isSpeaking = true)
     {
         if (isSpeaking) this.isSpeaking = true;
         
-        AkSoundEngine.PostEvent("Set_" + name, gameObject,
+        AkSoundEngine.PostEvent("Play_" + soundItem, gameObject,
             (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, cookie);
-        AkLogger.Message(name);
+        AkLogger.Message("Play_" + soundItem);
     }
 
     private void OnSpeechEnd(object cookie, AkCallbackType in_type, AkCallbackInfo in_info)
     {
-        
         EventCbCookie callbackCookie = (EventCbCookie) cookie;
+        string nextDialogue;
+        
+        AkLogger.Message("OnSpeechEnd: " + callbackCookie.soundItem);
+        
         if (callbackCookie.isIntro)
         {
             AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
-            AkLogger.Message("Return to exploring state with music");
+            AkLogger.Message("Play_" + LevelManager.instance.currentZone);
         }
         else
         {
-            AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
-            AkSoundEngine.PostEvent("Set_Music_" + LevelManager.instance.currentZone, gameObject);
-            AkLogger.Message("Return to exploring state");
+            // Don't reset the exploring state if we are going to speak in the few seconds
+            if (!shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
+            {
+                AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
+                AkLogger.Message("Set_State_Exploring");
+            }
+            
+            // If the last zone is different from where the player stands, switch the music accordingly
+            if (this.lastZone != LevelManager.instance.currentZone)
+            {
+                AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
+                AkLogger.Message("Play_" + LevelManager.instance.currentZone);
+            }
+        }
+        
+        if (shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
+        {
+           ItemValidation(nextDialogue, new EventCbCookie(nextDialogue, null, false, LevelManager.instance.currentZone));
         }
 
         this.isSpeaking = false;
+        this.lastZone = LevelManager.instance.currentZone;
+        
+        if (callbackCookie.nextStep != null)
+            LevelManager.instance.OnSpeechEnd(callbackCookie.soundItem, callbackCookie.nextStep);
     }
 
     public void PlayMusicTrack(string clipName)
     {
         if (isSpeaking) return;
         
-        AkSoundEngine.PostEvent("Set_Music_" + clipName, gameObject);
-        AkLogger.Message("Init " + clipName + " theme");
+        AkSoundEngine.PostEvent("Switch_Music_" + clipName, gameObject);
+        AkLogger.Message("Switch_Music " + clipName);
     }
 }

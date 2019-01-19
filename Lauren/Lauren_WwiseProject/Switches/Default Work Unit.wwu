@@ -3,21 +3,38 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{DB835D0F-0144-44A4-B838-7092304E28C6}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Switch_Group__Memories" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}">
-					<PropertyList>
-						<Property Name="UseGameParameter" Type="bool" Value="True"/>
-					</PropertyList>
+				<SwitchGroup Name="Scenes" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}">
+					<Comment>Controls which music track should play, according to the current scene</Comment>
 					<ChildrenList>
 						<Switch Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 						<Switch Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+						<Switch Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="Coup_de_fil__steps" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}">
+				<SwitchGroup Name="Coup_de_fil" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
-						<Switch Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}"/>
-						<Switch Name="Coup_de_fil_step2" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
-						<Switch Name="Coup_de_fil_step3" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
-						<Switch Name="Coup_de_fil_step0" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
+						<Switch Name="C2" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}"/>
+						<Switch Name="C3" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
+						<Switch Name="C4" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
+						<Switch Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
+						<Switch Name="C5" ID="{BABD6775-8114-4B08-9AD8-4B90D6F82EBF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Feu_de_camp" ID="{667590E1-DD27-4510-8CE1-4A35084B38C6}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="F2" ID="{F9C5D81E-E0C5-4C0C-A1A8-D38150FF3227}"/>
+						<Switch Name="F3_1" ID="{CA4F0EA4-C8D3-4991-A4C0-5A37E1547F4C}"/>
+						<Switch Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
+						<Switch Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
+						<Switch Name="F3_2" ID="{DE843C77-191F-4480-80BE-ECA1B3DB086A}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
