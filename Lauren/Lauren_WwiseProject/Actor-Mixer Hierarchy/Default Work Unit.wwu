@@ -258,7 +258,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-8</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -271,13 +271,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="F3-1" ID="{7B9C0A96-984A-480C-AFC6-16EEEFB0778E}" ShortID="971365258">
+										<AudioFileSource Name="F3-1-fx" ID="{3D555FEC-8F3A-4EEB-8B73-41A93C58AA59}" ShortID="674499736">
 											<Language>SFX</Language>
-											<AudioFile>F3-1.wav</AudioFile>
+											<AudioFile>F3-1-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="F3-1" ID="{7B9C0A96-984A-480C-AFC6-16EEEFB0778E}" Platform="Linked"/>
+										<ActiveSource Name="F3-1-fx" ID="{3D555FEC-8F3A-4EEB-8B73-41A93C58AA59}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}" ShortID="474012020">
@@ -306,6 +306,11 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -316,13 +321,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="F3-2" ID="{02C046EA-FB57-4C90-9754-20A1F7C187D6}" ShortID="237861401">
+										<AudioFileSource Name="F3-2-fx" ID="{F189754C-E36E-4156-8941-6F8166B6EA5C}" ShortID="108980559">
 											<Language>SFX</Language>
-											<AudioFile>F3-2.wav</AudioFile>
+											<AudioFile>F3-2-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="F3-2" ID="{02C046EA-FB57-4C90-9754-20A1F7C187D6}" Platform="Linked"/>
+										<ActiveSource Name="F3-2-fx" ID="{F189754C-E36E-4156-8941-6F8166B6EA5C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
