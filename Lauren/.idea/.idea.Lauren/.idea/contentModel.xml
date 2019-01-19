@@ -7,12 +7,14 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Materials" t="Include">
+        <e p="Render" t="Include">
           <e p="Shaders" t="Include">
             <e p="DoubleSided.shader" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CustomGravity.cs" t="Include" />
+          <e p="Dissolve.cs" t="Include" />
           <e p="FP Controller" t="Include">
             <e p="FirstPersonController.cs" t="Include" />
             <e p="HeadBob.cs" t="Include" />
@@ -20,7 +22,9 @@
             <e p="RigidbodyFirstPersonController.cs" t="Include" />
           </e>
           <e p="FullMaterials.cs" t="Include" />
+          <e p="InfiniteFall.cs" t="Include" />
           <e p="Interactions" t="Include">
+            <e p="ExchangeObjectZone.cs" t="Include" />
             <e p="InteractiveObject.cs" t="Include" />
             <e p="InteractiveZone.cs" t="Include" />
             <e p="LevelZone.cs" t="Include" />
@@ -29,17 +33,25 @@
             <e p="PickUpObject.cs" t="Include" />
             <e p="SwitchObject.cs" t="Include" />
             <e p="SwitchObjectDetector.cs" t="Include" />
-            <e p="UseObject.cs" t="Include" />
-            <e p="UseObjectDetector.cs" t="Include" />
             <e p="UseZone.cs" t="Include" />
           </e>
           <e p="Levels" t="Include">
             <e p="LevelManager.cs" t="Include" />
             <e p="Step.cs" t="Include" />
           </e>
+          <e p="Rotating.cs" t="Include" />
           <e p="Sound" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="EventCBCookie.cs" t="Include" />
+          </e>
+          <e p="TestScripts" t="Include">
+            <e p="Distributor.cs" t="Include" />
+            <e p="Interactive.cs" t="Include" />
+            <e p="Moveable.cs" t="Include" />
+            <e p="MoveableComplex.cs" t="Include" />
+            <e p="PlayerRaycast.cs" t="Include" />
+            <e p="Switch.cs" t="Include" />
+            <e p="Zone.cs" t="Include" />
           </e>
           <e p="UIManager.cs" t="Include" />
         </e>
