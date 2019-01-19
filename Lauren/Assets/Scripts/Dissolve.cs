@@ -29,7 +29,7 @@ public class Dissolve : MonoBehaviour
     void Start()
     {
         dissolveVal = dissolveMat.GetFloat("Vector1_D3B2B4");
-        dissolveMat.SetFloat("Vector1_D3B2B4",0);
+        dissolveMat.SetFloat("Vector1_D3B2B4",0.06f);
     }
 
     // Update is called once per frame
