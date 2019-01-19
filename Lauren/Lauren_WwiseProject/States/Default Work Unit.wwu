@@ -3,24 +3,32 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}">
+				<StateGroup Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{2F6D494E-3266-403F-9739-920717DCDF58}"/>
-						<State Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
-						<State Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
-						<State Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
-						<State Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+						<State Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+						<State Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+						<State Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+						<State Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 					</ChildrenList>
 					<TransitionList>
 						<Transition>
 							<StartState Name="None" ID="{2F6D494E-3266-403F-9739-920717DCDF58}"/>
-							<EndState Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+							<EndState Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 							<Time>0</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Game_States" ID="{129272AE-C27C-480A-9A01-77A5A8B82B0F}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{A8115197-B966-44BC-AE21-117CC302FE3E}"/>
 						<State Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
@@ -34,6 +42,19 @@
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Feu_de_camp" ID="{E5FF716B-CD40-4FFF-A03E-A56B8357D829}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{20BB0259-ECA1-427D-9136-AD09CCFB8CB5}"/>
+						<State Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
+						<State Name="Step2" ID="{21DF5558-AE86-4949-AB32-2E0ACBA5D56E}"/>
+						<State Name="Step3" ID="{849DFA6A-C96A-4616-9156-5E9247121ADB}"/>
+						<State Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
+					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

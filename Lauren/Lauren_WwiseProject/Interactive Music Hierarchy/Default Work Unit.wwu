@@ -41,47 +41,36 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Palais mental (including Lauren's Theme)" ID="{AE79C395-7E29-4AF1-88DE-75FF58C2F339}" ShortID="553232935">
+										<MusicTrack Name="Palais mental (drone)" ID="{3DB1A0C6-0F05-4CC9-A4C0-D40473E4A166}" ShortID="109270145">
 											<ReferenceList>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 												</Reference>
-												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="Switch_Group__Memories" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Palais mental (including Lauren's Theme)" ID="{53D3836D-1A6F-4F51-8D05-A7D24248BC80}" ShortID="855168412">
+												<AudioFileSource Name="Palais mental (drone)" ID="{9CC87EDA-75A6-4708-934C-D8F2F7E245C9}" ShortID="129770791">
 													<Language>SFX</Language>
-													<AudioFile>Palais mental (including Lauren's Theme).wav</AudioFile>
+													<AudioFile>Palais mental (drone).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{0809A1FE-5648-4ED1-8AAC-125863DD4D2E}">
+												<MusicTransition Name="Root" ID="{639A68D8-688D-4DDA-BE0A-216FEC094999}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ChildrenList>
-														<MusicTransition Name="Transition" ID="{74769784-37A7-4925-8BC8-964789B0EB29}">
-															<TransitionInfo/>
-														</MusicTransition>
-													</ChildrenList>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{91BE22A5-E291-4F8E-B3C9-D50B6A51FD16}">
+												<MusicTrackSequence Name="" ID="{CCDAB3C7-B4E1-47B5-9E0F-E7D3FB299389}">
 													<ClipList>
-														<MusicClip Name="Palais mental (including Lauren's Theme)" ID="{51B9EA77-18C9-4399-9339-ABD2917D0C26}">
+														<MusicClip Name="Palais mental (drone)" ID="{4D24CDF1-C8FE-412F-8192-938B7EEA7912}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="106666.666666667"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="21333.3333333333"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Palais mental (including Lauren's Theme)" ID="{53D3836D-1A6F-4F51-8D05-A7D24248BC80}"/>
+															<AudioSourceRef Name="Palais mental (drone)" ID="{9CC87EDA-75A6-4708-934C-D8F2F7E245C9}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -175,25 +164,25 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="7">
-														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+													<StateGroupInfo MusicSyncType="2">
+														<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{DC1439E0-C7C6-4BCD-894A-A3A607DB9EFC}" ShortID="843067594"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{97CF526E-FFCA-48A8-B499-F49B02F1B8DF}" ShortID="530284486"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{69662140-9B67-4322-A549-185E1EC9CF7B}" ShortID="236793870"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{9BD38F8B-9E15-4267-969A-C2DBE614B965}" ShortID="186594817">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -281,13 +270,13 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+													<StateGroupInfo MusicSyncType="2">
+														<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{3AF6B244-E56F-48EE-9563-6F3F837CF4ED}" ShortID="117058868">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -295,15 +284,15 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{40A01355-4AFE-4E63-8AF1-0A9561F295DE}" ShortID="205951841"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{8997432D-3789-4721-AC9E-28EFAC47A7B2}" ShortID="427879511"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{B4BB8872-F058-4A3D-B62D-A72CFD0083AA}" ShortID="694706536">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -356,13 +345,13 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo>
-														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+													<StateGroupInfo MusicSyncType="2">
+														<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{9259827D-3A4D-4106-A113-333F52BBB56F}" ShortID="310300311">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -370,11 +359,11 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{F2AD9925-625D-4888-9709-B7606F5FEFF8}" ShortID="724502443"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{3158740C-BB89-43B0-97E1-109A862F5580}" ShortID="674426258">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -382,7 +371,7 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{EDB26B48-DC9F-48F0-97B8-B92AD710D651}" ShortID="86045495">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -460,6 +449,500 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<MusicSwitchContainer Name="Music Switch Container - Feu de camp" ID="{AF513879-10CD-41ED-831C-A73EB95E9626}" ShortID="295567923">
+							<PropertyList>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="144"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="Feu de camp1" ID="{9BA3E56F-E9EE-4359-A954-6F9502E00ADF}" ShortID="590221405">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Feu de camp 0" ID="{C773864E-0E14-465B-98ED-6CA2667C39BA}" ShortID="362124597">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="20000"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Feu de camp 0" ID="{D559301B-8C1E-4345-ABBB-98C3E7372B10}" ShortID="58591956">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Feu de camp 0" ID="{D87EC6F7-64B0-4E0C-B3CE-526AA8D5A008}" ShortID="333133724">
+															<Language>SFX</Language>
+															<AudioFile>Feu de camp 0.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{D35AE5D9-256A-4128-B38F-498E1D9BC0C6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{F1C554C8-4EF9-47BA-A147-9D7FDAC30C9D}">
+															<ClipList>
+																<MusicClip Name="Feu de camp 0" ID="{765BCF1A-3F32-4A15-AF03-77A4BCD90B31}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Feu de camp 0" ID="{D87EC6F7-64B0-4E0C-B3CE-526AA8D5A008}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{F53D8F87-9DF8-44B5-968F-CA53AE7D2FE6}"/>
+												<MusicCue Name="Exit Cue" ID="{BBA02091-7E49-4419-A8BB-4EB34323D059}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="20000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{56B5418F-8FAA-4EFB-B1C0-00399793965A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{3941FF6E-095D-4F8A-AB8A-F4646C56E3F4}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{BFBC1C98-AD42-4D4D-B8CB-273B1713D7B3}" ShortID="147277950">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{03C47943-100D-414C-AA11-449376099A12}" ShortID="484501245">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Feu de camp 0" ID="{C773864E-0E14-465B-98ED-6CA2667C39BA}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="Feu de camp2" ID="{32B5C3F7-E0A9-4EC4-A189-5D49179D1177}" ShortID="640801754">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Feu de camp 1" ID="{B963CB1E-F638-4BF0-8CDB-491646BE44CE}" ShortID="568796472">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="20000"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Feu de camp 1" ID="{C433319C-F0A2-4135-8BCE-7A28C6392F3A}" ShortID="1070464771">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Feu de camp 1" ID="{0A3DF0D3-9CD2-44E7-AAD1-AF883E200B61}" ShortID="755526102">
+															<Language>SFX</Language>
+															<AudioFile>Feu de camp 1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{E6A64F96-D171-41B0-9FDE-E03573D39380}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{D6DA8277-F1C3-47C5-BEF3-F9A2FACB2885}">
+															<ClipList>
+																<MusicClip Name="Feu de camp 1" ID="{E76337B6-F998-4C2C-851C-E0EF4B778CDB}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Feu de camp 1" ID="{0A3DF0D3-9CD2-44E7-AAD1-AF883E200B61}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{FD4CB9BC-9DDF-4DAF-8169-7F026C312E9C}"/>
+												<MusicCue Name="Exit Cue" ID="{547F6D56-CAFF-4A82-9BFD-4CC67E97F0BD}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="20000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4E2B34E3-C267-4F3B-AA89-FA6EBAE04C88}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{01107588-F092-4100-81A0-F15E6B5F37A2}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{C9ED059D-6A26-4B6C-B88F-D69617EBAB04}" ShortID="272849956">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{CC21081A-888C-4938-99D7-1ECF2EF70EAC}" ShortID="107162537">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Feu de camp 1" ID="{B963CB1E-F638-4BF0-8CDB-491646BE44CE}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="Feu de camp3" ID="{E77843C9-2F28-466C-B6AF-88DFFEDE7F7A}" ShortID="195201322">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Feu de camp 2 v2" ID="{54DF13E4-00B8-4033-B28C-DB8B3E9B7073}" ShortID="203843449">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="20000"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Feu de camp 2 v2" ID="{7E11BD14-828F-4947-8F85-5540C4EEEBF0}" ShortID="1032778870">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Feu de camp 2 v2" ID="{4AD915A0-E79A-41C7-BC28-760F960E7699}" ShortID="416711375">
+															<Language>SFX</Language>
+															<AudioFile>Feu de camp 2 v2.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{FEC45483-21E5-49E5-AD12-5F971A06C123}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7E37BEC7-CD57-4D07-A23F-7F38ABFA4AF8}">
+															<ClipList>
+																<MusicClip Name="Feu de camp 2 v2" ID="{562960A9-677F-4F76-A63E-DEB44DAF68C8}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="20000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Feu de camp 2 v2" ID="{4AD915A0-E79A-41C7-BC28-760F960E7699}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{9DB8F37B-CE4D-4261-A36A-7B6561545C8B}"/>
+												<MusicCue Name="Exit Cue" ID="{A862183A-59F8-498C-A1F6-A7A4B6FB20C8}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="20000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{3D9E49AC-073A-4AE0-9B1B-27BEA7A3F5DD}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{9ADCF1F1-A2F3-4D6F-8421-2EAD387AD0CD}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{29F97FA4-18D9-483C-A9C7-9742983B4C59}" ShortID="1001453039">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{95C4B351-2352-484D-93F7-024E57539FB1}" ShortID="679119483">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Feu de camp 2 v2" ID="{54DF13E4-00B8-4033-B28C-DB8B3E9B7073}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="Feu de camp4" ID="{910E7FDC-7380-41A9-BEF4-296247993670}" ShortID="866714319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Feu de camp 3" ID="{20BB457F-65D3-4E9E-8005-54C624A287F0}" ShortID="245870713">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="50000"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Feu de camp 3" ID="{AE1D7F0D-E682-43BC-B381-EA4EEE307A91}" ShortID="512618582">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Feu de camp 3" ID="{BB3B1DB5-C146-4D50-81E2-9158A5F763E4}" ShortID="387983491">
+															<Language>SFX</Language>
+															<AudioFile>Feu de camp 3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{676B7327-674E-4783-B5D6-D8015165EED5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{9F69DFC0-A072-460F-A6CA-D8FB2FA0597F}">
+															<ClipList>
+																<MusicClip Name="Feu de camp 3" ID="{41B4FE3E-600C-4032-898E-573370B74C13}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="50000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Feu de camp 3" ID="{BB3B1DB5-C146-4D50-81E2-9158A5F763E4}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{88646614-1C2F-4917-BEC8-8C889E488A71}"/>
+												<MusicCue Name="Exit Cue" ID="{96295CF4-7D47-429F-BE9D-E9BD39C9ED99}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="50000"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{A2B8A459-BF5E-47FC-BFB5-726E65197B10}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{7D4B582A-45B1-4A39-8707-9C7877FCD71C}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{A8CAAD30-BCFF-4631-B544-46AB34933A3E}" ShortID="980310813">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{789D2577-BA35-4630-AC3F-D60F48759A21}" ShortID="386484109">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Feu de camp 3" ID="{20BB457F-65D3-4E9E-8005-54C624A287F0}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{33053D9A-6225-49E0-9437-34B9261D81FF}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{DAF925F3-888F-4E7C-891A-FA19196EDC8A}">
+											<PropertyList>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+											</PropertyList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{5EE13025-9C1F-43C3-91E3-2D7204165780}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{2EC1B44E-915A-4AD3-8119-507E85002ED1}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ArgumentList>
+								<ArgumentRef Name="Feu_de_camp" ID="{E5FF716B-CD40-4FFF-A03E-A56B8357D829}"/>
+							</ArgumentList>
+							<EntryList>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Feu_de_camp" ID="{E5FF716B-CD40-4FFF-A03E-A56B8357D829}"/>
+									</Path>
+									<AudioNodeInfo>
+										<NoObject Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Feu de camp1" ID="{9BA3E56F-E9EE-4359-A954-6F9502E00ADF}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step2" ID="{21DF5558-AE86-4949-AB32-2E0ACBA5D56E}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Feu de camp2" ID="{32B5C3F7-E0A9-4EC4-A189-5D49179D1177}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step3" ID="{849DFA6A-C96A-4616-9156-5E9247121ADB}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Feu de camp3" ID="{E77843C9-2F28-466C-B6AF-88DFFEDE7F7A}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="Feu de camp4" ID="{910E7FDC-7380-41A9-BEF4-296247993670}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+							</EntryList>
+						</MusicSwitchContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{4BF38887-0904-469D-ABBF-981509529289}">
@@ -478,7 +961,7 @@
 											<MusicFade Name="Source Fade-out" ID="{DCC77543-9B47-4885-85C9-C3EA3C34E833}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="6"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -487,7 +970,7 @@
 											<MusicFade Name="Destination Fade-in" ID="{CCA59F78-2B30-4320-9D4A-988FE0608C9B}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="2"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>
@@ -496,6 +979,7 @@
 								<MusicTransition Name="Transition" ID="{F8BF6772-7B33-4BD5-A9C5-DBB9E21D19E7}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 										<Property Name="SourceContextType" Type="int16" Value="1"/>
@@ -519,6 +1003,7 @@
 											<MusicFade Name="Destination Fade-in" ID="{523D4BE8-B8CB-40FE-8D34-3812A464EFA4}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>
@@ -529,7 +1014,7 @@
 						</MusicTransition>
 					</TransitionList>
 					<ArgumentList>
-						<ArgumentRef Name="Switch_Group__Memories" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}"/>
+						<ArgumentRef Name="Switch_Group_Scenes" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}"/>
 					</ArgumentList>
 					<EntryList>
 						<Entry>
@@ -546,6 +1031,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Music Playlist Container- Palais mental" ID="{35F67C6D-BB4F-44C2-99E9-21F38D2219CF}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Music Switch Container - Feu de camp" ID="{AF513879-10CD-41ED-831C-A73EB95E9626}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

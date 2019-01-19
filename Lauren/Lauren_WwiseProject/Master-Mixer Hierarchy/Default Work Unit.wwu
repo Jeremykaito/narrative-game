@@ -21,7 +21,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -36,7 +36,7 @@
 										<StateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
 										<State Name="" ID="{6CAF5AB8-CD70-4147-9968-3628A5C5DE8D}" ShortID="322049327">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="45"/>
 												<Property Name="Volume" Type="Real64" Value="-10"/>
 											</PropertyList>
 										</State>

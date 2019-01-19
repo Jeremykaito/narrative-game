@@ -23,27 +23,52 @@
 			<IncludedEvents>
 				<Event Id="3327006228" Name="Init_all_states" ObjectPath="\Events\Default Work Unit\Init_all_states" MaxAttenuation="0.000000"/>
 				<Event Id="1505908803" Name="LPF_Effect" ObjectPath="\Events\Default Work Unit\LPF_Effect" MaxAttenuation="0.000000"/>
+				<Event Id="2346744638" Name="Play_C1" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C1"/>
+				<Event Id="2346744637" Name="Play_C2" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C2"/>
+				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
+				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
+				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
 				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil"/>
+				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
+				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
+				<Event Id="2262856451" Name="Play_F3" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3"/>
+				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
-				<Event Id="1722557384" Name="Set_Coup_de_fil_Step0" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step0"/>
-				<Event Id="1722557385" Name="Set_Coup_de_fil_Step1" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step1"/>
-				<Event Id="1722557386" Name="Set_Coup_de_fil_Step2" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step2"/>
-				<Event Id="1722557387" Name="Set_Coup_de_fil_Step3" ObjectPath="\Events\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step3"/>
-				<Event Id="1947713803" Name="Set_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Set Music\Set_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
-				<Event Id="1357233606" Name="Set_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Set Music\Set_Music_Palais_mental" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
+				<Event Id="606726776" Name="Switch_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Palais_mental" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="540102252" Language="SFX">
-					<ShortName>just1.wav</ShortName>
-					<Path>SFX\just1_56D34C19.wem</Path>
+				<File Id="55619799" Language="SFX">
+					<ShortName>C3.wav</ShortName>
+					<Path>SFX\C3_56D34C19.wem</Path>
 				</File>
-				<File Id="595208390" Language="SFX">
-					<ShortName>just2.wav</ShortName>
-					<Path>SFX\just2_56D34C19.wem</Path>
+				<File Id="129770791" Language="SFX">
+					<ShortName>Palais mental (drone).wav</ShortName>
+					<Path>SFX\Palais mental (drone)_8956FC97.wem</Path>
+				</File>
+				<File Id="139295601" Language="SFX">
+					<ShortName>C5.wav</ShortName>
+					<Path>SFX\C5_56D34C19.wem</Path>
+				</File>
+				<File Id="275291589" Language="SFX">
+					<ShortName>C1.wav</ShortName>
+					<Path>SFX\C1_56D34C19.wem</Path>
+				</File>
+				<File Id="333133724" Language="SFX">
+					<ShortName>Feu de camp 0.wav</ShortName>
+					<Path>SFX\Feu de camp 0_8956FC97.wem</Path>
+				</File>
+				<File Id="387983491" Language="SFX">
+					<ShortName>Feu de camp 3.wav</ShortName>
+					<Path>SFX\Feu de camp 3_8956FC97.wem</Path>
+				</File>
+				<File Id="416711375" Language="SFX">
+					<ShortName>Feu de camp 2 v2.wav</ShortName>
+					<Path>SFX\Feu de camp 2 v2_8956FC97.wem</Path>
 				</File>
 				<File Id="685272064" Language="SFX">
 					<ShortName>Coup de fil Basses - 1.wav</ShortName>
@@ -53,21 +78,25 @@
 					<ShortName>Coup de fil Theme Piano - 3.wav</ShortName>
 					<Path>SFX\Coup de fil Theme Piano - 3_8956FC97.wem</Path>
 				</File>
+				<File Id="726474621" Language="SFX">
+					<ShortName>C2.wav</ShortName>
+					<Path>SFX\C2_56D34C19.wem</Path>
+				</File>
+				<File Id="755526102" Language="SFX">
+					<ShortName>Feu de camp 1.wav</ShortName>
+					<Path>SFX\Feu de camp 1_8956FC97.wem</Path>
+				</File>
 				<File Id="851880145" Language="SFX">
 					<ShortName>Coup de fil Riff Piano - 2.wav</ShortName>
 					<Path>SFX\Coup de fil Riff Piano - 2_8956FC97.wem</Path>
-				</File>
-				<File Id="855168412" Language="SFX">
-					<ShortName>Palais mental (including Lauren's Theme).wav</ShortName>
-					<Path>SFX\Palais mental (including Lauren's Theme)_8956FC97.wem</Path>
 				</File>
 				<File Id="932380002" Language="SFX">
 					<ShortName>Coup de fil Core Piano - 0.wav</ShortName>
 					<Path>SFX\Coup de fil Core Piano - 0_8956FC97.wem</Path>
 				</File>
-				<File Id="934366993" Language="SFX">
-					<ShortName>just3.wav</ShortName>
-					<Path>SFX\just3_56D34C19.wem</Path>
+				<File Id="1005651501" Language="SFX">
+					<ShortName>C4.wav</ShortName>
+					<Path>SFX\C4_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
