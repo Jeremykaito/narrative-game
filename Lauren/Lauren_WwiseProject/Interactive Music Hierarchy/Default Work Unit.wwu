@@ -41,47 +41,36 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Palais mental (including Lauren's Theme)" ID="{AE79C395-7E29-4AF1-88DE-75FF58C2F339}" ShortID="553232935">
+										<MusicTrack Name="Palais mental (drone)" ID="{3DB1A0C6-0F05-4CC9-A4C0-D40473E4A166}" ShortID="109270145">
 											<ReferenceList>
-												<Reference Name="DefaultSwitchOrState">
-													<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 												</Reference>
-												<Reference Name="SwitchGroupOrStateGroup">
-													<ObjectRef Name="Switch_Group__Memories" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Palais mental (including Lauren's Theme)" ID="{53D3836D-1A6F-4F51-8D05-A7D24248BC80}" ShortID="855168412">
+												<AudioFileSource Name="Palais mental (drone)" ID="{9CC87EDA-75A6-4708-934C-D8F2F7E245C9}" ShortID="129770791">
 													<Language>SFX</Language>
-													<AudioFile>Palais mental (including Lauren's Theme).wav</AudioFile>
+													<AudioFile>Palais mental (drone).wav</AudioFile>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{0809A1FE-5648-4ED1-8AAC-125863DD4D2E}">
+												<MusicTransition Name="Root" ID="{639A68D8-688D-4DDA-BE0A-216FEC094999}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
-													<ChildrenList>
-														<MusicTransition Name="Transition" ID="{74769784-37A7-4925-8BC8-964789B0EB29}">
-															<TransitionInfo/>
-														</MusicTransition>
-													</ChildrenList>
 													<TransitionInfo/>
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{91BE22A5-E291-4F8E-B3C9-D50B6A51FD16}">
+												<MusicTrackSequence Name="" ID="{CCDAB3C7-B4E1-47B5-9E0F-E7D3FB299389}">
 													<ClipList>
-														<MusicClip Name="Palais mental (including Lauren's Theme)" ID="{51B9EA77-18C9-4399-9339-ABD2917D0C26}">
+														<MusicClip Name="Palais mental (drone)" ID="{4D24CDF1-C8FE-412F-8192-938B7EEA7912}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="106666.666666667"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="21333.3333333333"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="Palais mental (including Lauren's Theme)" ID="{53D3836D-1A6F-4F51-8D05-A7D24248BC80}"/>
+															<AudioSourceRef Name="Palais mental (drone)" ID="{9CC87EDA-75A6-4708-934C-D8F2F7E245C9}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -181,19 +170,19 @@
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{DC1439E0-C7C6-4BCD-894A-A3A607DB9EFC}" ShortID="843067594"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{97CF526E-FFCA-48A8-B499-F49B02F1B8DF}" ShortID="530284486"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{69662140-9B67-4322-A549-185E1EC9CF7B}" ShortID="236793870"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{9BD38F8B-9E15-4267-969A-C2DBE614B965}" ShortID="186594817">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -281,13 +270,13 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo>
+													<StateGroupInfo MusicSyncType="7">
 														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{3AF6B244-E56F-48EE-9563-6F3F837CF4ED}" ShortID="117058868">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -295,15 +284,15 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{40A01355-4AFE-4E63-8AF1-0A9561F295DE}" ShortID="205951841"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{8997432D-3789-4721-AC9E-28EFAC47A7B2}" ShortID="427879511"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{B4BB8872-F058-4A3D-B62D-A72CFD0083AA}" ShortID="694706536">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -356,13 +345,13 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo>
+													<StateGroupInfo MusicSyncType="7">
 														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Step1" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+														<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
 														<State Name="" ID="{9259827D-3A4D-4106-A113-333F52BBB56F}" ShortID="310300311">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -370,11 +359,11 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step3" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+														<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 														<State Name="" ID="{F2AD9925-625D-4888-9709-B7606F5FEFF8}" ShortID="724502443"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step2" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+														<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
 														<State Name="" ID="{3158740C-BB89-43B0-97E1-109A862F5580}" ShortID="674426258">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -382,7 +371,7 @@
 														</State>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Step0" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+														<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 														<State Name="" ID="{EDB26B48-DC9F-48F0-97B8-B92AD710D651}" ShortID="86045495">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-96"/>
@@ -478,7 +467,7 @@
 											<MusicFade Name="Source Fade-out" ID="{DCC77543-9B47-4885-85C9-C3EA3C34E833}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="6"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
@@ -487,7 +476,7 @@
 											<MusicFade Name="Destination Fade-in" ID="{CCA59F78-2B30-4320-9D4A-988FE0608C9B}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="2"/>
-													<Property Name="FadeTime" Type="Real64" Value="3"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>

@@ -13,13 +13,13 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SwitchContainer Name="Switch Container - Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" ShortID="506809399">
+						<SwitchContainer Name="Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" ShortID="506809399">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+									<ObjectRef Name="C2" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
@@ -29,7 +29,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Coup_de_fil_line1" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}" ShortID="678186298">
+								<Sound Name="C2" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}" ShortID="678186298">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -39,16 +39,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="just1" ID="{2101FBEC-3486-41E7-A739-5BBB726FACFD}" ShortID="540102252">
+										<AudioFileSource Name="C2" ID="{0B2355DF-C9BC-4072-81A7-5E85D156F8A5}" ShortID="726474621">
 											<Language>SFX</Language>
-											<AudioFile>just1.wav</AudioFile>
+											<AudioFile>C2.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="just1" ID="{2101FBEC-3486-41E7-A739-5BBB726FACFD}" Platform="Linked"/>
+										<ActiveSource Name="C2" ID="{0B2355DF-C9BC-4072-81A7-5E85D156F8A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Coup_de_fil_line2" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}" ShortID="828148544">
+								<Sound Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}" ShortID="828148544">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -58,16 +58,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="just2" ID="{4E5C8545-549D-401F-92C7-420B0E4A0EB8}" ShortID="595208390">
+										<AudioFileSource Name="C3" ID="{A628930B-C0BE-4E89-89D2-39205CE38D30}" ShortID="55619799">
 											<Language>SFX</Language>
-											<AudioFile>just2.wav</AudioFile>
+											<AudioFile>C3.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="just2" ID="{4E5C8545-549D-401F-92C7-420B0E4A0EB8}" Platform="Linked"/>
+										<ActiveSource Name="C3" ID="{A628930B-C0BE-4E89-89D2-39205CE38D30}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Coup_de_fil_line3" ID="{670995EA-4338-4032-A8F1-81485F23C792}" ShortID="633803848">
+								<Sound Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}" ShortID="633803848">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -77,16 +77,16 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="just3" ID="{A5EBFA1F-E095-4C54-B13F-951E77065CF1}" ShortID="934366993">
+										<AudioFileSource Name="C4" ID="{73DFC921-F353-4B03-89E4-D5264EE1A5F6}" ShortID="1005651501">
 											<Language>SFX</Language>
-											<AudioFile>just3.wav</AudioFile>
+											<AudioFile>C4.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="just3" ID="{A5EBFA1F-E095-4C54-B13F-951E77065CF1}" Platform="Linked"/>
+										<ActiveSource Name="C4" ID="{73DFC921-F353-4B03-89E4-D5264EE1A5F6}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Coup_de_fil_line0" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}" ShortID="870405203">
+								<Sound Name="C1" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}" ShortID="870405203">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -96,57 +96,81 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="just1" ID="{F3B92632-AC45-4229-82BE-23E63B737F33}" ShortID="865280808">
+										<AudioFileSource Name="C1" ID="{7FD829C7-3161-4B14-86BD-4CA185567F4C}" ShortID="275291589">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.888166575292398"/>
+												<Property Name="LoopEnd" Type="Real64" Value="9.41225877192983"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>just1.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="540102252"/>
-											</ConvertedFileIDList>
+											<AudioFile>C1.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="just1" ID="{F3B92632-AC45-4229-82BE-23E63B737F33}" Platform="Linked"/>
+										<ActiveSource Name="C1" ID="{7FD829C7-3161-4B14-86BD-4CA185567F4C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="C5" ID="{C2A21435-47C6-43D5-BB56-630E582AC8A1}" ShortID="666943416">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="C5" ID="{58568E38-F180-447A-83F9-95C898E38A3C}" ShortID="139295601">
+											<Language>SFX</Language>
+											<AudioFile>C5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="C5" ID="{58568E38-F180-447A-83F9-95C898E38A3C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Coup_de_fil_line1" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}"/>
+										<ItemRef Name="C2" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Coup_de_fil_line0" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}"/>
+										<ItemRef Name="C5" ID="{C2A21435-47C6-43D5-BB56-630E582AC8A1}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Coup_de_fil_line2" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
+										<ItemRef Name="C1" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Coup_de_fil_line3" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
+										<ItemRef Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Coup_de_fil_step0" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
+										<SwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 										<ItemList>
-											<ItemRef Name="Coup_de_fil_line0" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}"/>
+											<ItemRef Name="C1" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Coup_de_fil_step3" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
+										<SwitchRef Name="C4" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
 										<ItemList>
-											<ItemRef Name="Coup_de_fil_line3" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
+											<ItemRef Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Coup_de_fil_step1" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}"/>
+										<SwitchRef Name="C2" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}"/>
 										<ItemList>
-											<ItemRef Name="Coup_de_fil_line1" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}"/>
+											<ItemRef Name="C2" ID="{0BEE4D30-13B7-4024-AFD1-5C11C8AE5544}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Coup_de_fil_step2" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
+										<SwitchRef Name="C3" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
 										<ItemList>
-											<ItemRef Name="Coup_de_fil_line2" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
+											<ItemRef Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

@@ -1,12 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	606726776	Switch_Music_Palais_mental			\Default Work Unit\Switch Music\Switch_Music_Palais_mental	
 	625636842	Set_State_Speaking			\Default Work Unit\Game states\Set_State_Speaking	
-	1357233606	Set_Music_Palais_mental			\Default Work Unit\Set Music\Set_Music_Palais_mental	
+	1379977405	Switch_Music_Coup_de_fil			\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil	
 	1505908803	LPF_Effect			\Default Work Unit\LPF_Effect	
-	1722557384	Set_Coup_de_fil_Step0			\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step0	
-	1722557385	Set_Coup_de_fil_Step1			\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step1	
-	1722557386	Set_Coup_de_fil_Step2			\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step2	
-	1722557387	Set_Coup_de_fil_Step3			\Default Work Unit\Coup de fil\Set_Coup_de_fil_Step3	
-	1947713803	Set_Music_Coup_de_fil			\Default Work Unit\Set Music\Set_Music_Coup_de_fil	
+	2346744635	Play_C4			\Default Work Unit\Coup de fil\Play_C4	
+	2346744636	Play_C3			\Default Work Unit\Coup de fil\Play_C3	
+	2346744637	Play_C2			\Default Work Unit\Coup de fil\Play_C2	
+	2346744638	Play_C1			\Default Work Unit\Coup de fil\Play_C1	
 	2526429843	Play_Coup_de_fil			\Default Work Unit\Play Music\Play_Coup_de_fil	
 	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
@@ -18,36 +18,37 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	2203862337	Coup_de_fil__steps			\Default Work Unit\Coup_de_fil__steps	
 
 Switch	ID	Name	Switch Group			Notes
-	264031244	Coup_de_fil_step1	Coup_de_fil__steps			
-	264031245	Coup_de_fil_step0	Coup_de_fil__steps			
-	264031246	Coup_de_fil_step3	Coup_de_fil__steps			
-	264031247	Coup_de_fil_step2	Coup_de_fil__steps			
+	1853303296	C4	Coup_de_fil__steps			
+	1853303301	C1	Coup_de_fil__steps			
+	1853303302	C2	Coup_de_fil__steps			
+	1853303303	C3	Coup_de_fil__steps			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	3725819248	State_Coup_de_fil			\Default Work Unit\State_Coup_de_fil	
 
 State	ID	Name	State Group			Notes
 	0	None	State_Coup_de_fil			
+	1718617337	Step4	State_Coup_de_fil			
 	1718617340	Step1	State_Coup_de_fil			
-	1718617341	Step0	State_Coup_de_fil			
 	1718617342	Step3	State_Coup_de_fil			
 	1718617343	Step2	State_Coup_de_fil			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	86045495	Step0	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
-	117058868	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
-	186594817	Step0	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		
-	310300311	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
-	674426258	Step2	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
-	694706536	Step0	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	86045495	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	117058868	Step2	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	186594817	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		
+	310300311	Step2	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	674426258	Step3	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	694706536	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	540102252	Coup_de_fil_line1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\just1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Switch Container - Coup de fil\Coup_de_fil_line1		1765708
-	595208390	Coup_de_fil_line2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\just2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Switch Container - Coup de fil\Coup_de_fil_line2		3987640
+	55619799	C3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C3		2052774
+	129770791	Palais mental (drone)	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Palais mental (drone)_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container- Palais mental\Palais mental (including Lauren's Theme)\Palais mental (drone)		3763264
+	275291589	C1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C1		1009944
 	685272064	Coup de fil Basses - 1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Coup de fil Basses - 1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		2666900
 	688072795	Coup de fil Theme Piano - 3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Coup de fil Theme Piano - 3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		2666900
+	726474621	C2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C2		1222950
 	851880145	Coup de fil Riff Piano - 2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Coup de fil Riff Piano - 2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		2666900
-	855168412	Palais mental (including Lauren's Theme)	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Palais mental (including Lauren's Theme)_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container- Palais mental\Palais mental (including Lauren's Theme)\Palais mental (including Lauren's Theme)		18816064
 	932380002	Coup de fil Core Piano - 0	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Coup de fil Core Piano - 0_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Core Piano - 0		2666900
-	934366993	Coup_de_fil_line3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\just3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Switch Container - Coup de fil\Coup_de_fil_line3		2628690
+	1005651501	C4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C4		1924506
 

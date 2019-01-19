@@ -15,18 +15,18 @@ namespace AK
     {
         static const AkUniqueID INIT_ALL_STATES = 3327006228U;
         static const AkUniqueID LPF_EFFECT = 1505908803U;
+        static const AkUniqueID PLAY_C1 = 2346744638U;
+        static const AkUniqueID PLAY_C2 = 2346744637U;
+        static const AkUniqueID PLAY_C3 = 2346744636U;
+        static const AkUniqueID PLAY_C4 = 2346744635U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
-        static const AkUniqueID SET_COUP_DE_FIL_STEP0 = 1722557384U;
-        static const AkUniqueID SET_COUP_DE_FIL_STEP1 = 1722557385U;
-        static const AkUniqueID SET_COUP_DE_FIL_STEP2 = 1722557386U;
-        static const AkUniqueID SET_COUP_DE_FIL_STEP3 = 1722557387U;
-        static const AkUniqueID SET_MUSIC_COUP_DE_FIL = 1947713803U;
-        static const AkUniqueID SET_MUSIC_PALAIS_MENTAL = 1357233606U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
+        static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
+        static const AkUniqueID SWITCH_MUSIC_PALAIS_MENTAL = 606726776U;
     } // namespace EVENTS
 
     namespace STATES
@@ -48,10 +48,10 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID STEP0 = 1718617341U;
                 static const AkUniqueID STEP1 = 1718617340U;
                 static const AkUniqueID STEP2 = 1718617343U;
                 static const AkUniqueID STEP3 = 1718617342U;
+                static const AkUniqueID STEP4 = 1718617337U;
             } // namespace STATE
         } // namespace STATE_COUP_DE_FIL
 
@@ -65,10 +65,10 @@ namespace AK
 
             namespace SWITCH
             {
-                static const AkUniqueID COUP_DE_FIL_STEP0 = 264031245U;
-                static const AkUniqueID COUP_DE_FIL_STEP1 = 264031244U;
-                static const AkUniqueID COUP_DE_FIL_STEP2 = 264031247U;
-                static const AkUniqueID COUP_DE_FIL_STEP3 = 264031246U;
+                static const AkUniqueID C1 = 1853303301U;
+                static const AkUniqueID C2 = 1853303302U;
+                static const AkUniqueID C3 = 1853303303U;
+                static const AkUniqueID C4 = 1853303296U;
             } // namespace SWITCH
         } // namespace COUP_DE_FIL__STEPS
 
