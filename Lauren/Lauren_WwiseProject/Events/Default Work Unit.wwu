@@ -232,7 +232,7 @@
 								<Action Name="" ID="{620EA991-85F5-4CA1-94BF-E11AECF84D78}" ShortID="357378442">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="3.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -399,6 +399,7 @@
 								<Action Name="" ID="{EFAB3950-D026-49C1-AFAB-FBED27C53A91}" ShortID="204498648">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -813,20 +814,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="Play_Fire" ID="{F9B0A76E-5330-4FFA-9F0E-07A7879C2AEE}">
-					<ChildrenList>
-						<Action Name="" ID="{E0EF7C17-B49A-43DB-AD0A-F8AA737DED7F}" ShortID="593309973">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="0987" ID="{59C9780D-0B5A-456D-A225-079FC457F9F0}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
