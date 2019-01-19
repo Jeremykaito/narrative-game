@@ -23,14 +23,17 @@ namespace AK
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_F1 = 2262856449U;
         static const AkUniqueID PLAY_F2 = 2262856450U;
-        static const AkUniqueID PLAY_F3 = 2262856451U;
+        static const AkUniqueID PLAY_F3_1 = 3454329123U;
+        static const AkUniqueID PLAY_F3_2 = 3454329120U;
         static const AkUniqueID PLAY_F4 = 2262856452U;
+        static const AkUniqueID PLAY_FEU_DE_CAMP = 249732036U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
+        static const AkUniqueID SWITCH_MUSIC_FEU_DE_CAMP = 1890048954U;
         static const AkUniqueID SWITCH_MUSIC_PALAIS_MENTAL = 606726776U;
     } // namespace EVENTS
 
@@ -99,15 +102,15 @@ namespace AK
             {
                 static const AkUniqueID F1 = 1802970442U;
                 static const AkUniqueID F2 = 1802970441U;
-                static const AkUniqueID F3 = 1802970440U;
+                static const AkUniqueID F3_1 = 2234653492U;
+                static const AkUniqueID F3_2 = 2234653495U;
                 static const AkUniqueID F4 = 1802970447U;
-                static const AkUniqueID F5 = 1802970446U;
             } // namespace SWITCH
         } // namespace FEU_DE_CAMP
 
-        namespace SWITCH_GROUP_SCENES
+        namespace SCENES
         {
-            static const AkUniqueID GROUP = 2703543839U;
+            static const AkUniqueID GROUP = 1544306542U;
 
             namespace SWITCH
             {
@@ -115,7 +118,7 @@ namespace AK
                 static const AkUniqueID FEU_DE_CAMP = 791499361U;
                 static const AkUniqueID PALAIS_MENTAL = 866457171U;
             } // namespace SWITCH
-        } // namespace SWITCH_GROUP_SCENES
+        } // namespace SCENES
 
     } // namespace SWITCHES
 

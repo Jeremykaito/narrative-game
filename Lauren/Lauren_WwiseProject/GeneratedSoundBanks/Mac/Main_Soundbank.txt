@@ -1,11 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	249732036	Play_Feu_de_camp			\Default Work Unit\Play Music\Play_Feu_de_camp	
 	606726776	Switch_Music_Palais_mental			\Default Work Unit\Switch Music\Switch_Music_Palais_mental	
 	625636842	Set_State_Speaking			\Default Work Unit\Game states\Set_State_Speaking	
 	1379977405	Switch_Music_Coup_de_fil			\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil	
 	1505908803	LPF_Effect			\Default Work Unit\LPF_Effect	
+	1890048954	Switch_Music_Feu_de_camp			\Default Work Unit\Switch Music\Switch_Music_Feu_de_camp	
 	2262856449	Play_F1			\Default Work Unit\Feu de camp\Play_F1	
 	2262856450	Play_F2			\Default Work Unit\Feu de camp\Play_F2	
-	2262856451	Play_F3			\Default Work Unit\Feu de camp\Play_F3	
 	2262856452	Play_F4			\Default Work Unit\Feu de camp\Play_F4	
 	2346744634	Play_C5			\Default Work Unit\Coup de fil\Play_C5	
 	2346744635	Play_C4			\Default Work Unit\Coup de fil\Play_C4	
@@ -17,12 +18,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	2932040671	Play_Music			\Default Work Unit\Play_Music	
 	2951726260	Set_State_Exploring			\Default Work Unit\Game states\Set_State_Exploring	
 	3327006228	Init_all_states			\Default Work Unit\Init_all_states	
+	3454329120	Play_F3_2			\Default Work Unit\Feu de camp\Play_F3_2	
+	3454329123	Play_F3_1			\Default Work Unit\Feu de camp\Play_F3_1	
 	4113650174	Play_Palais_mental			\Default Work Unit\Play Music\Play_Palais_mental	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
 
 Switch	ID	Name	Switch Group			Notes
+	1802970441	F2	Feu_de_camp			
+	1802970442	F1	Feu_de_camp			
+	1802970447	F4	Feu_de_camp			
+	2234653492	F3_1	Feu_de_camp			
+	2234653495	F3_2	Feu_de_camp			
 	1853303296	C4	Coup_de_fil			
 	1853303297	C5	Coup_de_fil			
 	1853303301	C1	Coup_de_fil			
@@ -55,11 +64,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	333133724	Feu de camp 0	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 0_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp1\Feu de camp 0\Feu de camp 0		3528064
 	387983491	Feu de camp 3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp4\Feu de camp 3\Feu de camp 3		8820064
 	416711375	Feu de camp 2 v2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 2 v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp3\Feu de camp 2 v2\Feu de camp 2 v2		3528064
+	647562819	F4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F4		600674
 	685272064	Coup de fil Basses - 1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Basses - 1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		2666900
 	688072795	Coup de fil Theme Piano - 3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Theme Piano - 3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		2666900
+	722194588	F2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F2		1310968
 	726474621	C2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C2		1222950
 	755526102	Feu de camp 1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp2\Feu de camp 1\Feu de camp 1		3528064
+	845284810	F1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F1		881300
 	851880145	Coup de fil Riff Piano - 2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Riff Piano - 2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		2666900
 	932380002	Coup de fil Core Piano - 0	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Core Piano - 0_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Core Piano - 0		2666900
 	1005651501	C4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C4		1924506
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	237861401	F3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-2_56D34C19.wem	237861401.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-2	
+	971365258	F3-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-1_56D34C19.wem	971365258.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-1	
 

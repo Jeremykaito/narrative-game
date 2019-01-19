@@ -200,8 +200,14 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Feu_de_camp" ID="{667590E1-DD27-4510-8CE1-4A35084B38C6}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -243,7 +249,19 @@
 										<ActiveSource Name="F2" ID="{2D9D0C67-0492-4163-8DE5-9BC2D2DB002E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="F3" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}" ShortID="423183007">
+								<Sound Name="F3-1" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}" ShortID="423183007">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -253,13 +271,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="F3" ID="{3D028062-AE7E-495B-9D4D-D71258355530}" ShortID="957508030">
+										<AudioFileSource Name="F3-1" ID="{7B9C0A96-984A-480C-AFC6-16EEEFB0778E}" ShortID="971365258">
 											<Language>SFX</Language>
-											<AudioFile>F3.wav</AudioFile>
+											<AudioFile>F3-1.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="F3" ID="{3D028062-AE7E-495B-9D4D-D71258355530}" Platform="Linked"/>
+										<ActiveSource Name="F3-1" ID="{7B9C0A96-984A-480C-AFC6-16EEEFB0778E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}" ShortID="474012020">
@@ -281,6 +299,32 @@
 										<ActiveSource Name="F4" ID="{20E8C564-2413-4AFF-92A3-C05D943355FA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="F3-2" ID="{A7D32580-AB28-40E1-B7E0-21260B462277}" ShortID="793115577">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F3-2" ID="{02C046EA-FB57-4C90-9754-20A1F7C187D6}" ShortID="237861401">
+											<Language>SFX</Language>
+											<AudioFile>F3-2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F3-2" ID="{02C046EA-FB57-4C90-9754-20A1F7C187D6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -291,12 +335,47 @@
 										<ItemRef Name="F2" ID="{36A22A24-3BDC-4278-8F38-586701A4730D}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="F3" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}"/>
+										<ItemRef Name="F3-1" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="F3-2" ID="{A7D32580-AB28-40E1-B7E0-21260B462277}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="F2" ID="{F9C5D81E-E0C5-4C0C-A1A8-D38150FF3227}"/>
+										<ItemList>
+											<ItemRef Name="F2" ID="{36A22A24-3BDC-4278-8F38-586701A4730D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="F3_2" ID="{DE843C77-191F-4480-80BE-ECA1B3DB086A}"/>
+										<ItemList>
+											<ItemRef Name="F3-2" ID="{A7D32580-AB28-40E1-B7E0-21260B462277}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
+										<ItemList>
+											<ItemRef Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
+										<ItemList>
+											<ItemRef Name="F1" ID="{DE40C310-68F1-460D-AB24-B6D11E865802}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="F3_1" ID="{CA4F0EA4-C8D3-4991-A4C0-5A37E1547F4C}"/>
+										<ItemList>
+											<ItemRef Name="F3-1" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>

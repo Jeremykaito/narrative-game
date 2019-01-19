@@ -8,7 +8,16 @@
 		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="237861401" Language="SFX">
+			<ShortName>F3-2.wav</ShortName>
+			<Path>SFX\F3-2_56D34C19.wem</Path>
+		</File>
+		<File Id="971365258" Language="SFX">
+			<ShortName>F3-1.wav</ShortName>
+			<Path>SFX\F3-1_56D34C19.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -31,16 +40,23 @@
 				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
 				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
-				<Event Id="2262856451" Name="Play_F3" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3"/>
+				<Event Id="3454329123" Name="Play_F3_1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_1"/>
+				<Event Id="3454329120" Name="Play_F3_2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_2"/>
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
+				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
+				<Event Id="1890048954" Name="Switch_Music_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="606726776" Name="Switch_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Palais_mental" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="237861401"/>
+				<File Id="971365258"/>
+			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="55619799" Language="SFX">
 					<ShortName>C3.wav</ShortName>
@@ -70,6 +86,10 @@
 					<ShortName>Feu de camp 2 v2.wav</ShortName>
 					<Path>SFX\Feu de camp 2 v2_8956FC97.wem</Path>
 				</File>
+				<File Id="647562819" Language="SFX">
+					<ShortName>F4.wav</ShortName>
+					<Path>SFX\F4_56D34C19.wem</Path>
+				</File>
 				<File Id="685272064" Language="SFX">
 					<ShortName>Coup de fil Basses - 1.wav</ShortName>
 					<Path>SFX\Coup de fil Basses - 1_8956FC97.wem</Path>
@@ -78,6 +98,10 @@
 					<ShortName>Coup de fil Theme Piano - 3.wav</ShortName>
 					<Path>SFX\Coup de fil Theme Piano - 3_8956FC97.wem</Path>
 				</File>
+				<File Id="722194588" Language="SFX">
+					<ShortName>F2.wav</ShortName>
+					<Path>SFX\F2_56D34C19.wem</Path>
+				</File>
 				<File Id="726474621" Language="SFX">
 					<ShortName>C2.wav</ShortName>
 					<Path>SFX\C2_56D34C19.wem</Path>
@@ -85,6 +109,10 @@
 				<File Id="755526102" Language="SFX">
 					<ShortName>Feu de camp 1.wav</ShortName>
 					<Path>SFX\Feu de camp 1_8956FC97.wem</Path>
+				</File>
+				<File Id="845284810" Language="SFX">
+					<ShortName>F1.wav</ShortName>
+					<Path>SFX\F1_56D34C19.wem</Path>
 				</File>
 				<File Id="851880145" Language="SFX">
 					<ShortName>Coup de fil Riff Piano - 2.wav</ShortName>

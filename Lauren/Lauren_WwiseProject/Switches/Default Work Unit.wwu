@@ -3,10 +3,8 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{DB835D0F-0144-44A4-B838-7092304E28C6}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Switch_Group_Scenes" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}">
-					<PropertyList>
-						<Property Name="UseGameParameter" Type="bool" Value="True"/>
-					</PropertyList>
+				<SwitchGroup Name="Scenes" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}">
+					<Comment>Controls which music track should play, according to the current scene</Comment>
 					<ChildrenList>
 						<Switch Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 						<Switch Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
@@ -33,10 +31,10 @@
 					</PropertyList>
 					<ChildrenList>
 						<Switch Name="F2" ID="{F9C5D81E-E0C5-4C0C-A1A8-D38150FF3227}"/>
-						<Switch Name="F3" ID="{CA4F0EA4-C8D3-4991-A4C0-5A37E1547F4C}"/>
+						<Switch Name="F3_1" ID="{CA4F0EA4-C8D3-4991-A4C0-5A37E1547F4C}"/>
 						<Switch Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
 						<Switch Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
-						<Switch Name="F5" ID="{BD094F27-218B-4081-A02F-DC88B74FDAA5}"/>
+						<Switch Name="F3_2" ID="{DE843C77-191F-4480-80BE-ECA1B3DB086A}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
