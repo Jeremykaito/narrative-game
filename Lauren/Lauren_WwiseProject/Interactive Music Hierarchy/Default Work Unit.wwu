@@ -120,7 +120,9 @@
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Music Playlist Container - Coup de fil" ID="{D4AE15A3-7FE3-4E42-B9DF-06A1E6B45CCE}" ShortID="206279957">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="127"/>
 							</PropertyList>
 							<ReferenceList>
@@ -454,7 +456,9 @@
 						</MusicPlaylistContainer>
 						<MusicSwitchContainer Name="Music Switch Container - Feu de camp" ID="{AF513879-10CD-41ED-831C-A73EB95E9626}" ShortID="295567923">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="144"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>

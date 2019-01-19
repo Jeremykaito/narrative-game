@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_F3_2 = 3454329120U;
         static const AkUniqueID PLAY_F4 = 2262856452U;
         static const AkUniqueID PLAY_FEU_DE_CAMP = 249732036U;
+        static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;

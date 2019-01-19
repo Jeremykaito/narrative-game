@@ -62,13 +62,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="C3" ID="{A628930B-C0BE-4E89-89D2-39205CE38D30}" ShortID="55619799">
+										<AudioFileSource Name="C3-fx" ID="{30D46CE0-4D36-4829-8D1C-100FC19786E7}" ShortID="967193595">
 											<Language>SFX</Language>
-											<AudioFile>C3.wav</AudioFile>
+											<AudioFile>C3-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="C3" ID="{A628930B-C0BE-4E89-89D2-39205CE38D30}" Platform="Linked"/>
+										<ActiveSource Name="C3-fx" ID="{30D46CE0-4D36-4829-8D1C-100FC19786E7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}" ShortID="633803848">
@@ -81,13 +81,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="C4" ID="{73DFC921-F353-4B03-89E4-D5264EE1A5F6}" ShortID="1005651501">
+										<AudioFileSource Name="C4-fx" ID="{590AAAC1-7DB6-4148-BCAF-16FE15D1FC89}" ShortID="877832525">
 											<Language>SFX</Language>
-											<AudioFile>C4.wav</AudioFile>
+											<AudioFile>C4-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="C4" ID="{73DFC921-F353-4B03-89E4-D5264EE1A5F6}" Platform="Linked"/>
+										<ActiveSource Name="C4-fx" ID="{590AAAC1-7DB6-4148-BCAF-16FE15D1FC89}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="C1" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}" ShortID="870405203">
@@ -380,6 +380,26 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<Folder Name="Coup de fil" ID="{1CA3BDAA-8BB4-4818-8671-48D1C5C985D1}" ShortID="72731888">
+					<ChildrenList>
+						<ActorMixer Name="Items" ID="{C96AF809-2A1C-4B43-9D06-A195B54869BF}" ShortID="999963541">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

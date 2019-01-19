@@ -44,6 +44,7 @@
 				<Event Id="3454329120" Name="Play_F3_2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_2"/>
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
 				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp"/>
+				<Event Id="3015324718" Name="Play_Fire" ObjectPath="\Events\Default Work Unit\Play_Fire" MaxAttenuation="5.000000"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
@@ -58,6 +59,10 @@
 				<File Id="971365258"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="51143065" Language="SFX">
+					<ShortName>0987.wav</ShortName>
+					<Path>SFX\0987_56D34C19.wem</Path>
+				</File>
 				<File Id="55619799" Language="SFX">
 					<ShortName>C3.wav</ShortName>
 					<Path>SFX\C3_56D34C19.wem</Path>

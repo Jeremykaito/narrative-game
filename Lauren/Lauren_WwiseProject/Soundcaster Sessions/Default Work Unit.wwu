@@ -14,10 +14,6 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Switch_Music_Palais_mental" ID="{DA6AD27E-2AAA-4CCA-ACE0-51C8014E05F3}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_Music" ID="{6D55E4C0-D6DC-41EA-9E2D-F833DC551635}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -45,23 +41,15 @@
 							<ObjectRef Name="Play_C5" ID="{38444461-231E-4F55-8344-2455079E93C1}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 							<Position X="2" Y="2"/>
 						</Module>
-						<Module>
-							<ObjectRef Name="Reset_Voice_Low_pass_Filter_All" ID="{25336C09-1326-4FCB-8D3D-F76462F9ABA5}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-							<Position X="3" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-							<Position X="3" Y="2"/>
-						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
-						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
-						<CurrentStateRef Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
+						<CurrentStateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+						<CurrentStateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
+						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
 						<CurrentSwitchRef Name="C5" ID="{BABD6775-8114-4B08-9AD8-4B90D6F82EBF}"/>
 						<CurrentSwitchRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
 					</CurrentSwitchList>
@@ -112,7 +100,7 @@
 						<CurrentStateRef Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
+						<CurrentSwitchRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 						<CurrentSwitchRef Name="C5" ID="{BABD6775-8114-4B08-9AD8-4B90D6F82EBF}"/>
 						<CurrentSwitchRef Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
 					</CurrentSwitchList>
