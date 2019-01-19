@@ -5,7 +5,8 @@ using System;
 using Sound;
 
 public class LevelManager : MonoBehaviour {
-
+    public Transform hand;
+    public bool isInteracting = false;
     public static LevelManager instance;
     [SerializeField]
     private GameObject activeStep;
