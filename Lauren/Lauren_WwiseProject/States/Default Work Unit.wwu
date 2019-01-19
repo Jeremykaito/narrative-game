@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<StateGroup Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
 						<Property Name="DefaultTransitionTime" Type="Real64" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{2F6D494E-3266-403F-9739-920717DCDF58}"/>
@@ -40,6 +42,19 @@
 							<IsShared>false</IsShared>
 						</Transition>
 					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="Feu_de_camp" ID="{E5FF716B-CD40-4FFF-A03E-A56B8357D829}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{20BB0259-ECA1-427D-9136-AD09CCFB8CB5}"/>
+						<State Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
+						<State Name="Step2" ID="{21DF5558-AE86-4949-AB32-2E0ACBA5D56E}"/>
+						<State Name="Step3" ID="{849DFA6A-C96A-4616-9156-5E9247121ADB}"/>
+						<State Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
+					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

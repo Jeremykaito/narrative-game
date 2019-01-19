@@ -19,7 +19,9 @@ namespace AK
         static const AkUniqueID PLAY_C2 = 2346744637U;
         static const AkUniqueID PLAY_C3 = 2346744636U;
         static const AkUniqueID PLAY_C4 = 2346744635U;
+        static const AkUniqueID PLAY_C5 = 2346744634U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
+        static const AkUniqueID PLAY_F1 = 2262856449U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
@@ -31,6 +33,19 @@ namespace AK
 
     namespace STATES
     {
+        namespace FEU_DE_CAMP
+        {
+            static const AkUniqueID GROUP = 791499361U;
+
+            namespace STATE
+            {
+                static const AkUniqueID STEP1 = 1718617340U;
+                static const AkUniqueID STEP2 = 1718617343U;
+                static const AkUniqueID STEP3 = 1718617342U;
+                static const AkUniqueID STEP4 = 1718617337U;
+            } // namespace STATE
+        } // namespace FEU_DE_CAMP
+
         namespace GAME_STATES
         {
             static const AkUniqueID GROUP = 2721494480U;
@@ -59,9 +74,9 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace COUP_DE_FIL__STEPS
+        namespace COUP_DE_FIL
         {
-            static const AkUniqueID GROUP = 2203862337U;
+            static const AkUniqueID GROUP = 1174450734U;
 
             namespace SWITCH
             {
@@ -69,19 +84,35 @@ namespace AK
                 static const AkUniqueID C2 = 1853303302U;
                 static const AkUniqueID C3 = 1853303303U;
                 static const AkUniqueID C4 = 1853303296U;
+                static const AkUniqueID C5 = 1853303297U;
             } // namespace SWITCH
-        } // namespace COUP_DE_FIL__STEPS
+        } // namespace COUP_DE_FIL
 
-        namespace SWITCH_GROUP__MEMORIES
+        namespace FEU_DE_CAMP
         {
-            static const AkUniqueID GROUP = 3272534494U;
+            static const AkUniqueID GROUP = 791499361U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID F1 = 1802970442U;
+                static const AkUniqueID F2 = 1802970441U;
+                static const AkUniqueID F3 = 1802970440U;
+                static const AkUniqueID F4 = 1802970447U;
+                static const AkUniqueID F5 = 1802970446U;
+            } // namespace SWITCH
+        } // namespace FEU_DE_CAMP
+
+        namespace SWITCH_GROUP_SCENES
+        {
+            static const AkUniqueID GROUP = 2703543839U;
 
             namespace SWITCH
             {
                 static const AkUniqueID COUP_DE_FIL = 1174450734U;
+                static const AkUniqueID FEU_DE_CAMP = 791499361U;
                 static const AkUniqueID PALAIS_MENTAL = 866457171U;
             } // namespace SWITCH
-        } // namespace SWITCH_GROUP__MEMORIES
+        } // namespace SWITCH_GROUP_SCENES
 
     } // namespace SWITCHES
 

@@ -74,8 +74,8 @@ public class LevelManager : MonoBehaviour {
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.soundItem, nextStep, nextStep.isIntro, nextStep.sceneTrack));
 
-        // The new active step
         lastStep = activeStep;
+        // The new active step
         activeStep = nextStep.StepGameObject;
         stayActive = nextStep.stayActive;
 

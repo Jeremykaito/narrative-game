@@ -14,6 +14,10 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="Coup de fil" ID="{EF42CA39-A3A1-4EE8-8ED6-ED878445E95B}" ShortID="506809399">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -25,7 +29,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 								</Reference>
 								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Coup_de_fil__steps" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+									<ObjectRef Name="Coup_de_fil" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -174,6 +178,119 @@
 										</ItemList>
 									</Grouping>
 								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Feu de camp" ID="{53ECAFF1-49C0-48FE-A8A8-A3C5D9ACB559}" ShortID="855416530">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="F1" ID="{DE40C310-68F1-460D-AB24-B6D11E865802}" ShortID="418711824">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F1" ID="{93940CC1-E5A1-4FFB-8732-F3576E2553E6}" ShortID="845284810">
+											<Language>SFX</Language>
+											<AudioFile>F1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F1" ID="{93940CC1-E5A1-4FFB-8732-F3576E2553E6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="F2" ID="{36A22A24-3BDC-4278-8F38-586701A4730D}" ShortID="590370803">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F2" ID="{2D9D0C67-0492-4163-8DE5-9BC2D2DB002E}" ShortID="722194588">
+											<Language>SFX</Language>
+											<AudioFile>F2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F2" ID="{2D9D0C67-0492-4163-8DE5-9BC2D2DB002E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="F3" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}" ShortID="423183007">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F3" ID="{3D028062-AE7E-495B-9D4D-D71258355530}" ShortID="957508030">
+											<Language>SFX</Language>
+											<AudioFile>F3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F3" ID="{3D028062-AE7E-495B-9D4D-D71258355530}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}" ShortID="474012020">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F4" ID="{20E8C564-2413-4AFF-92A3-C05D943355FA}" ShortID="647562819">
+											<Language>SFX</Language>
+											<AudioFile>F4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F4" ID="{20E8C564-2413-4AFF-92A3-C05D943355FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="F1" ID="{DE40C310-68F1-460D-AB24-B6D11E865802}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="F2" ID="{36A22A24-3BDC-4278-8F38-586701A4730D}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="F3" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
