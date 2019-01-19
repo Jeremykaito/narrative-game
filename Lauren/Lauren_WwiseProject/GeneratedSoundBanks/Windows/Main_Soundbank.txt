@@ -4,6 +4,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1379977405	Switch_Music_Coup_de_fil			\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil	
 	1505908803	LPF_Effect			\Default Work Unit\LPF_Effect	
 	2262856449	Play_F1			\Default Work Unit\Feu de camp\Play_F1	
+	2262856450	Play_F2			\Default Work Unit\Feu de camp\Play_F2	
+	2262856451	Play_F3			\Default Work Unit\Feu de camp\Play_F3	
+	2262856452	Play_F4			\Default Work Unit\Feu de camp\Play_F4	
 	2346744634	Play_C5			\Default Work Unit\Coup de fil\Play_C5	
 	2346744635	Play_C4			\Default Work Unit\Coup de fil\Play_C4	
 	2346744636	Play_C3			\Default Work Unit\Coup de fil\Play_C3	
@@ -27,26 +30,27 @@ Switch	ID	Name	Switch Group			Notes
 	1853303303	C3	Coup_de_fil			
 
 State Group	ID	Name			Wwise Object Path	Notes
-	3725819248	State_Coup_de_fil			\Default Work Unit\State_Coup_de_fil	
+	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
 
 State	ID	Name	State Group			Notes
-	0	None	State_Coup_de_fil			
-	1718617337	Step4	State_Coup_de_fil			
-	1718617340	Step1	State_Coup_de_fil			
-	1718617342	Step3	State_Coup_de_fil			
-	1718617343	Step2	State_Coup_de_fil			
+	0	None	Coup_de_fil			
+	1718617337	Step4	Coup_de_fil			
+	1718617340	Step1	Coup_de_fil			
+	1718617342	Step3	Coup_de_fil			
+	1718617343	Step2	Coup_de_fil			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	86045495	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
-	117058868	Step2	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
-	186594817	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		
-	310300311	Step2	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
-	674426258	Step3	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
-	694706536	Step1	State_Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	86045495	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	117058868	Step2	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	186594817	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		
+	310300311	Step2	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	674426258	Step3	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	694706536	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	55619799	C3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C3		2052774
 	129770791	Palais mental (drone)	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Palais mental (drone)_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container- Palais mental\Palais mental (including Lauren's Theme)\Palais mental (drone)		3763264
+	139295601	C5	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C5		529782
 	275291589	C1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\C1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C1		1009944
 	333133724	Feu de camp 0	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Feu de camp 0_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp1\Feu de camp 0\Feu de camp 0		3528064
 	387983491	Feu de camp 3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Feu de camp 3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp4\Feu de camp 3\Feu de camp 3		8820064

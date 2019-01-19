@@ -23,7 +23,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="C2" ID="{04081195-BFC9-487F-93B9-3B8351DB67B8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+									<ObjectRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
@@ -153,6 +153,12 @@
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="C5" ID="{BABD6775-8114-4B08-9AD8-4B90D6F82EBF}"/>
+										<ItemList>
+											<ItemRef Name="C5" ID="{C2A21435-47C6-43D5-BB56-630E582AC8A1}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 										<ItemList>

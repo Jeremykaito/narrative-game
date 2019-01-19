@@ -22,6 +22,9 @@ namespace AK
         static const AkUniqueID PLAY_C5 = 2346744634U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_F1 = 2262856449U;
+        static const AkUniqueID PLAY_F2 = 2262856450U;
+        static const AkUniqueID PLAY_F3 = 2262856451U;
+        static const AkUniqueID PLAY_F4 = 2262856452U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
@@ -33,6 +36,19 @@ namespace AK
 
     namespace STATES
     {
+        namespace COUP_DE_FIL
+        {
+            static const AkUniqueID GROUP = 1174450734U;
+
+            namespace STATE
+            {
+                static const AkUniqueID STEP1 = 1718617340U;
+                static const AkUniqueID STEP2 = 1718617343U;
+                static const AkUniqueID STEP3 = 1718617342U;
+                static const AkUniqueID STEP4 = 1718617337U;
+            } // namespace STATE
+        } // namespace COUP_DE_FIL
+
         namespace FEU_DE_CAMP
         {
             static const AkUniqueID GROUP = 791499361U;
@@ -56,19 +72,6 @@ namespace AK
                 static const AkUniqueID SPEAKING = 2418513123U;
             } // namespace STATE
         } // namespace GAME_STATES
-
-        namespace STATE_COUP_DE_FIL
-        {
-            static const AkUniqueID GROUP = 3725819248U;
-
-            namespace STATE
-            {
-                static const AkUniqueID STEP1 = 1718617340U;
-                static const AkUniqueID STEP2 = 1718617343U;
-                static const AkUniqueID STEP3 = 1718617342U;
-                static const AkUniqueID STEP4 = 1718617337U;
-            } // namespace STATE
-        } // namespace STATE_COUP_DE_FIL
 
     } // namespace STATES
 

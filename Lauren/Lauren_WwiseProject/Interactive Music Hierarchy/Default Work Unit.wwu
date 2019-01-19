@@ -164,8 +164,8 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="7">
-														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+													<StateGroupInfo MusicSyncType="2">
+														<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -270,8 +270,8 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="7">
-														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+													<StateGroupInfo MusicSyncType="2">
+														<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -345,8 +345,8 @@
 											</ChildrenList>
 											<StateInfo>
 												<StateGroupList>
-													<StateGroupInfo MusicSyncType="7">
-														<StateGroupRef Name="State_Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+													<StateGroupInfo MusicSyncType="2">
+														<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
 													</StateGroupInfo>
 												</StateGroupList>
 												<CustomStateList>
@@ -979,6 +979,7 @@
 								<MusicTransition Name="Transition" ID="{F8BF6772-7B33-4BD5-A9C5-DBB9E21D19E7}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 										<Property Name="SourceContextType" Type="int16" Value="1"/>
@@ -1002,6 +1003,7 @@
 											<MusicFade Name="Destination Fade-in" ID="{523D4BE8-B8CB-40FE-8D34-3812A464EFA4}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="6"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
 												</PropertyList>
 											</MusicFade>
 										</DestinationFadeIn>

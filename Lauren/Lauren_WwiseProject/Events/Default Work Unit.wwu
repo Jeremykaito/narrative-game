@@ -158,6 +158,10 @@
 					</ChildrenList>
 				</Event>
 				<Folder Name="Coup de fil" ID="{FB8B6BA7-A0D1-49B1-8148-450A7270AFC4}" ShortID="624916701">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Play_C1" ID="{10A11444-6983-4768-A709-5B77D8D03BE1}">
 							<ChildrenList>
@@ -216,7 +220,7 @@
 						</Event>
 						<Event Name="Play_C2" ID="{595E0023-B15E-40D0-B2E2-77AD733B1D66}">
 							<ChildrenList>
-								<Action Name="" ID="{543608D0-907C-4464-AA1B-243A8D29C47E}" ShortID="643570394">
+								<Action Name="" ID="{7D715A4F-C791-4B91-B9D5-3CE90E011CA7}" ShortID="692836976">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
@@ -414,6 +418,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{EBC5346C-4087-4870-BB35-A41875DE24FD}" ShortID="116531505">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="Play Music" ID="{509F57D9-ACA6-4409-8D6A-B664A9C429F2}" ShortID="680878877">
@@ -491,6 +505,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Feu de camp" ID="{40CA5A3D-38B7-4886-8888-D7E3FAEDC4C4}" ShortID="720652860">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="7"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Event Name="Play_F1" ID="{47CA0488-D92D-409F-9102-8FA194699D6E}">
 							<ChildrenList>
@@ -535,6 +553,171 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{EB0CBF25-56AD-491F-88CC-990BE88933CF}" ShortID="945820551">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Feu de camp" ID="{53ECAFF1-49C0-48FE-A8A8-A3C5D9ACB559}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_F2" ID="{2A09E46F-DE76-4F1F-87EA-6587A8BCF151}">
+							<ChildrenList>
+								<Action Name="" ID="{08CAC355-A2E1-40BF-8BB4-DB4BFB6A1C7D}" ShortID="976191282">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{ECD3F4DC-5C41-4E87-BE6D-064B2C240FEA}" ShortID="250719899">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EE096819-62F0-40CB-B3E7-520DA4DBDEAF}" ShortID="49202422">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{05DD7D98-0015-498D-B429-CBEA342F1E4F}" ShortID="210159108">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{82F33BB4-89D9-4436-BDF5-33C543D5BF02}" ShortID="1016152852">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Feu de camp" ID="{53ECAFF1-49C0-48FE-A8A8-A3C5D9ACB559}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_F3" ID="{459CE2EF-E97C-4D89-B0EA-B10E2DA81CFC}">
+							<ChildrenList>
+								<Action Name="" ID="{6528F0FD-0F41-4710-9840-432C23412855}" ShortID="991783258">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D93DF124-6AFD-49E0-A976-D5DE273FE110}" ShortID="8594049">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{02C7F151-DA11-462F-895D-45817B631A37}" ShortID="437690387">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB673C59-1E26-4E5B-B78A-56901FFFDA13}" ShortID="934572180">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A4903BB7-261E-4AC0-A121-8F2E4653F279}" ShortID="189811213">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Feu de camp" ID="{53ECAFF1-49C0-48FE-A8A8-A3C5D9ACB559}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_F4" ID="{0AF0FD61-BB7E-450C-AD4A-EE25860D5E1C}">
+							<ChildrenList>
+								<Action Name="" ID="{DC78131D-DFA6-473E-8253-BC96A1FD4E3D}" ShortID="744778344">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{31CE0F6E-1774-416D-9685-52F708C5F2FD}" ShortID="38488411">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B112EC26-E04A-48FB-8521-A742E0773AED}" ShortID="102384644">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6A55E7AB-4DF5-425B-BAB3-087E0280B537}" ShortID="124483284">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EDD96C38-2060-439C-B95F-70C1709A0A61}" ShortID="920235283">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 										<Property Name="Delay" Type="Real64" Value="1"/>
