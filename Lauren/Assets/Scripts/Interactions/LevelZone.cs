@@ -5,13 +5,15 @@ using UnityEngine;
 public class LevelZone : MonoBehaviour
 {
     private const string defaultChapterClip = "Palais_mental";
-    
+
+    [SerializeField]
+    private int itemNumber;
     [SerializeField]
     private string firstStep;
     [SerializeField]
     private string chapterClip;
 
-    private bool activated = false;
+    private bool isActivatedItem = true;
 
     // When the player enter the level
     private void OnTriggerEnter(Collider other)
@@ -19,11 +21,12 @@ public class LevelZone : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             // Play the first step only once
-            if (!activated)
+            if (isActivatedItem)
             {
                 // Start the firstStep of the zone
-                StartCoroutine(LevelManager.instance.StartStep(firstStep));
-                activated = true;
+                //StartCoroutine(LevelManager.instance.StartStep(firstStep));
+                LevelManager.instance.ActivateObject(itemNumber);
+                isActivatedItem = false;
             }
             else
             {

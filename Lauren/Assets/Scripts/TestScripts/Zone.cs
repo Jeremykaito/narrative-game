@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Zone : MonoBehaviour
 {
-    [SerializeField] private int nbZone;
+    [SerializeField] private int itemNumber;
+    [SerializeField] private GameObject substituteObject;
     private bool isActivated = false;
+
 
     public bool IsActivated
     {
@@ -19,14 +21,18 @@ public class Zone : MonoBehaviour
             isActivated = value;
         }
     }
-
+    private void Start()
+    {
+        substituteObject.SetActive(false);
+    }
     public void Activate()
     {
         if (!isActivated)
         {
-            Debug.Log("Zone " + nbZone + " activée");
-            //LevelManager.instance.ActivatedZone(nbZone);
+            Debug.Log("Zone " + " activée");
+            LevelManager.instance.ActivateObject(itemNumber);
             isActivated = true;
+            substituteObject.SetActive(true);
         }
     }
 }

@@ -6,7 +6,7 @@ public class Moveable : Interactive
 {
     protected bool isInteracting=false;
     protected float timer=0;
-    protected float maxTime=0.5f;
+    protected float maxTime=0.25f;
     protected bool timerInteractOn = false;
     protected bool timerStopInteractOn = false;
     [SerializeField] protected Zone zone1;
@@ -66,7 +66,7 @@ public class Moveable : Interactive
         this.transform.GetComponent<Rigidbody>().isKinematic = true;
         this.transform.gameObject.layer = 9; // HeldObject : avoid collisions
         this.transform.position = LevelManager.instance.hand.position;
-        this.transform.localScale = this.transform.localScale * 2;
+        this.transform.localScale = this.transform.localScale * 1.5f;
         this.transform.parent = Camera.main.transform;
         this.transform.rotation = new Quaternion(0, 0, 0, 0);
         this.transform.GetComponent<Rotating>().isRotate = true;
@@ -81,7 +81,7 @@ public class Moveable : Interactive
         this.transform.GetComponent<Rotating>().isRotate = false;
         this.transform.GetComponent<Rigidbody>().isKinematic = false;
         this.transform.parent = GameObject.Find("Objects").transform;
-        this.transform.localScale = this.transform.localScale / 2;
+        this.transform.localScale = this.transform.localScale / 1.5f;
         timerStopInteractOn = true;
     }
 
@@ -90,5 +90,6 @@ public class Moveable : Interactive
         this.isInteracting = false;
         LevelManager.instance.isInteracting = false;
         this.gameObject.SetActive(false);
+       
     }
 }

@@ -9,4 +9,18 @@ public class Step
     public string sceneTrack = null;
     public GameObject StepGameObject;
     public bool stayActive;
+    private bool activated;
+
+    public bool Activated
+    {
+        get
+        {
+            return activated;
+        }
+
+        set
+        {
+            activated = value;
+        }
+    }
 }

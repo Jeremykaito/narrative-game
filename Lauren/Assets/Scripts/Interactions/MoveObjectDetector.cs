@@ -156,7 +156,6 @@ public class MoveObjectDetector : MonoBehaviour {
         ExchangeObjectZone exZone = targetZone.transform.GetComponent<ExchangeObjectZone>();
         if (exZone != null)
         {
-            //Debug.Log("is exZone "+ targetZone.transform.gameObject.name);
            exZone.ExchangeObject(this.transform.position);
             pickUpObject = true;
         }

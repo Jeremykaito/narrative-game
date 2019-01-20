@@ -6,9 +6,12 @@ public class Switch : Interactive
 {
     [SerializeField]
     private bool state;
-
     [SerializeField]
     private GameObject switchTarget;
+    [SerializeField]
+    private bool isActivatedItem;
+    [SerializeField]
+    private int itemNumber;
 
     protected void Start()
     {
@@ -19,6 +22,10 @@ public class Switch : Interactive
     {
         state = !state;
         switchTarget.SetActive(state);
-        //LevelManager.instance.ActivatedStep();
+        if(isActivatedItem)
+        {
+            LevelManager.instance.ActivateObject(itemNumber);
+            isActivatedItem = false;
+        }
     }
 }
