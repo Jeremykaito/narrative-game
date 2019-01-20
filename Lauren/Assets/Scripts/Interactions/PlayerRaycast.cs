@@ -20,7 +20,7 @@ public class PlayerRaycast : MonoBehaviour
 
     void Update()
     {
-        if (fpsCamera.transform.localRotation.x > 0.4f)
+        if (fpsCamera.transform.localRotation.x > 0.38f)
         {
             range = rangeTofoot;
         }
