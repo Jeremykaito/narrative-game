@@ -178,6 +178,12 @@ Transform:
   m_Father: {fileID: 1422115667}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &111038537 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1408039905753890316, guid: a1a113329a16c6848a61f435288da27a,
+    type: 3}
+  m_PrefabInstance: {fileID: 935143758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &124602035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1649,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1408039907675822399, guid: a1a113329a16c6848a61f435288da27a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1408039905753890316, guid: a1a113329a16c6848a61f435288da27a,
         type: 3}
       propertyPath: far clip plane
@@ -1766,6 +1777,11 @@ PrefabInstance:
     - target: {fileID: 1408039905753890312, guid: a1a113329a16c6848a61f435288da27a,
         type: 3}
       propertyPath: backgroundColorHDR.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1408039905753890312, guid: a1a113329a16c6848a61f435288da27a,
+        type: 3}
+      propertyPath: clearColorMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1408039907675822398, guid: a1a113329a16c6848a61f435288da27a,
@@ -7059,6 +7075,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -11.269999
       objectReference: {fileID: 0}
+    - target: {fileID: 4469660062158134576, guid: cc2fa67aa341f8a4a9621e4f7c4d9fbe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc2fa67aa341f8a4a9621e4f7c4d9fbe, type: 3}
 --- !u!4 &4669117828703786218
@@ -7087,6 +7108,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: _UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421226434926001, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5014421226434926015, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
@@ -7141,6 +7167,56 @@ PrefabInstance:
     - target: {fileID: 5014421226434926015, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421226018392593, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421227002940577, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421227002940577, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421227569670733, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421227569670733, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: NaN
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421226018392605, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421226018392605, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 111038537}
+    - target: {fileID: 5014421226018392605, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_PlaneDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421226018392604, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5014421226018392604, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
