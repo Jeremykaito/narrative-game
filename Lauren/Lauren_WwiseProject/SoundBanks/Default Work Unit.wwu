@@ -6,15 +6,32 @@
 				<SoundBank Name="Main_Soundbank" ID="{8093E9CD-C1ED-4DDC-B99D-E756FECBB489}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Music" ID="{6D55E4C0-D6DC-41EA-9E2D-F833DC551635}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music Switch Container - Feu de camp" ID="{AF513879-10CD-41ED-831C-A73EB95E9626}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Palais_mental" ID="{87A68802-B126-4221-9731-307F77DA4BA6}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Coup de fil" ID="{462E1C0F-F876-435E-A625-4F75A513F632}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play Music" ID="{509F57D9-ACA6-4409-8D6A-B664A9C429F2}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music Playlist Container- Palais mental" ID="{35F67C6D-BB4F-44C2-99E9-21F38D2219CF}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music Switch Container - La Rupture" ID="{EDFF2660-D71D-465D-9A74-4430A3A1775F}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Master-Mixer Hierarchy" ID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" WorkUnitID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="La Rupture2" ID="{EA27DC56-5675-480E-87D0-BDAFB7F50CC1}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Game states" ID="{C8AD2C77-F52E-487C-9F5C-50414FB0D210}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Coup de fil" ID="{FB8B6BA7-A0D1-49B1-8148-450A7270AFC4}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="La Rupture4" ID="{9C29F3AE-3453-4B03-BB07-7D2016BCDC38}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Lauren" ID="{EDE6FB8E-0E43-4B72-91EC-7F8754D6FDDF}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Init_all_states" ID="{8169E906-9D6F-4BD7-B71B-FA3D6C649B6B}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dynamic Dialogue" ID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" WorkUnitID="{309AF5DE-031F-4CE0-9B9B-C0A536275343}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music Playlist Container - Coup de fil" ID="{D4AE15A3-7FE3-4E42-B9DF-06A1E6B45CCE}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Switch Music" ID="{D8CF6F34-2165-4E51-8626-200DF7119D10}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="La Rupture3" ID="{B9DAC901-3EBD-4EB9-8616-F3FA28E9FEAB}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="La Rupture1" ID="{104B6B29-B358-4F01-9C09-86AC5489BDF4}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Default Work Unit" ID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

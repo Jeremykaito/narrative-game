@@ -27,8 +27,19 @@ namespace AK
         static const AkUniqueID PLAY_F3_2 = 3454329120U;
         static const AkUniqueID PLAY_F4 = 2262856452U;
         static const AkUniqueID PLAY_FEU_DE_CAMP = 249732036U;
+        static const AkUniqueID PLAY_FIRE = 3015324718U;
+        static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_LA_RUPTURE = 2363683185U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
+        static const AkUniqueID PLAY_R1 = 2061525117U;
+        static const AkUniqueID PLAY_R2_1 = 1946098158U;
+        static const AkUniqueID PLAY_R2_2 = 1946098157U;
+        static const AkUniqueID PLAY_R3_1 = 3020012807U;
+        static const AkUniqueID PLAY_R3_2 = 3020012804U;
+        static const AkUniqueID PLAY_R3_3 = 3020012805U;
+        static const AkUniqueID PLAY_R3_4 = 3020012802U;
+        static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
@@ -76,6 +87,42 @@ namespace AK
             } // namespace STATE
         } // namespace GAME_STATES
 
+        namespace LA_RUPTURE
+        {
+            static const AkUniqueID GROUP = 2910108590U;
+
+            namespace STATE
+            {
+                static const AkUniqueID STEP1 = 1718617340U;
+                static const AkUniqueID STEP2 = 1718617343U;
+                static const AkUniqueID STEP3 = 1718617342U;
+                static const AkUniqueID STEP4 = 1718617337U;
+            } // namespace STATE
+        } // namespace LA_RUPTURE
+
+        namespace LA_RUPTURE_WRATH_PROGRESSION
+        {
+            static const AkUniqueID GROUP = 3388721943U;
+
+            namespace STATE
+            {
+                static const AkUniqueID STEP1 = 1718617340U;
+                static const AkUniqueID STEP2 = 1718617343U;
+            } // namespace STATE
+        } // namespace LA_RUPTURE_WRATH_PROGRESSION
+
+        namespace WASP
+        {
+            static const AkUniqueID GROUP = 1857115720U;
+
+            namespace STATE
+            {
+                static const AkUniqueID AWAY = 3552757243U;
+                static const AkUniqueID CRAZY = 2930662992U;
+                static const AkUniqueID IDDLE = 3013208399U;
+            } // namespace STATE
+        } // namespace WASP
+
     } // namespace STATES
 
     namespace SWITCHES
@@ -108,6 +155,36 @@ namespace AK
             } // namespace SWITCH
         } // namespace FEU_DE_CAMP
 
+        namespace FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 2385628198U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID CONCRETE = 841620460U;
+                static const AkUniqueID LEAVES = 582824249U;
+                static const AkUniqueID PALACE = 3945736061U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEPS
+
+        namespace LA_RUPTURE
+        {
+            static const AkUniqueID GROUP = 2910108590U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID R1 = 1601639078U;
+                static const AkUniqueID R2_1 = 2869132177U;
+                static const AkUniqueID R2_2 = 2869132178U;
+                static const AkUniqueID R3_1 = 2868985144U;
+                static const AkUniqueID R3_2 = 2868985147U;
+                static const AkUniqueID R3_3 = 2868985146U;
+                static const AkUniqueID R3_4 = 2868985149U;
+                static const AkUniqueID R4 = 1601639075U;
+            } // namespace SWITCH
+        } // namespace LA_RUPTURE
+
         namespace SCENES
         {
             static const AkUniqueID GROUP = 1544306542U;
@@ -116,6 +193,7 @@ namespace AK
             {
                 static const AkUniqueID COUP_DE_FIL = 1174450734U;
                 static const AkUniqueID FEU_DE_CAMP = 791499361U;
+                static const AkUniqueID LA_RUPTURE = 2910108590U;
                 static const AkUniqueID PALAIS_MENTAL = 866457171U;
             } // namespace SWITCH
         } // namespace SCENES
