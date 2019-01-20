@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0bf04be5db7bb4c9ae74889fb7f68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 0}
+  hand: {fileID: 235641059068265072, guid: 8d909eda4f46e4046ac35adfe8288c11, type: 3}
   isInteracting: 0
   activeStep: {fileID: 0}
   steps:
@@ -112,27 +112,27 @@ MonoBehaviour:
       type: 3}
     stayActive: 0
   - isIntro: 1
-    name: fin_fdc
-    soundItem: F4
-    sceneTrack: Feu_de_camp
+    name: voiture
+    soundItem: R1
+    sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
-    name: fin_fdc
-    soundItem: F4
-    sceneTrack: Feu_de_camp
-    StepGameObject: {fileID: 0}
-    stayActive: 0
-  - isIntro: 0
-    name: fin_fdc
+    name: lauren
     soundItem: R2_1
-    sceneTrack: Feu_de_camp
+    sceneTrack: La_Rupture
+    StepGameObject: {fileID: 0}
+    stayActive: 0
+  - isIntro: 0
+    name: tommy
+    soundItem: R2_1
+    sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fin_Rupture
     soundItem: R3_1
-    sceneTrack: Feu_de_camp
+    sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
     stayActive: 0
   currentZone: 
