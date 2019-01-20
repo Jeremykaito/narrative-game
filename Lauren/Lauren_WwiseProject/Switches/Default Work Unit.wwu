@@ -37,6 +37,18 @@
 						<Switch Name="F3_2" ID="{DE843C77-191F-4480-80BE-ECA1B3DB086A}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Footsteps" ID="{D071FD13-C140-4F57-BC39-CF05B1BBEA7B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="26"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Palace" ID="{D29D9B62-0F19-4C57-970B-9D3F1355CBB8}"/>
+						<Switch Name="Leaves" ID="{F97167D5-4094-4681-B740-27F0780398FC}"/>
+						<Switch Name="Carpet" ID="{89B50C0C-4A48-45D4-86D7-7F2D63E3F253}"/>
+						<Switch Name="Concrete" ID="{9B28ACBA-E8B5-4156-A4C1-8CE49432390F}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
