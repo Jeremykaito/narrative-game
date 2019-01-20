@@ -52,48 +52,6 @@
 										<ActiveSource Name="C2" ID="{0B2355DF-C9BC-4072-81A7-5E85D156F8A5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}" ShortID="828148544">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="C3-fx" ID="{30D46CE0-4D36-4829-8D1C-100FC19786E7}" ShortID="967193595">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimEnd" Type="Real64" Value="20.8197012061404"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>C3-fx.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="C3-fx" ID="{30D46CE0-4D36-4829-8D1C-100FC19786E7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}" ShortID="633803848">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="C4-fx" ID="{590AAAC1-7DB6-4148-BCAF-16FE15D1FC89}" ShortID="877832525">
-											<Language>SFX</Language>
-											<AudioFile>C4-fx.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="C4-fx" ID="{590AAAC1-7DB6-4148-BCAF-16FE15D1FC89}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="C1" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}" ShortID="870405203">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -144,6 +102,151 @@
 										<ActiveSource Name="C5" ID="{58568E38-F180-447A-83F9-95C898E38A3C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<BlendContainer Name="C3+dial" ID="{F07BACB4-E910-4A28-9FF1-EE4A1A69EDFF}" ShortID="776695899">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}" ShortID="828148544">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Voice" ID="{3B643489-75A5-4E11-BCDA-7B814B827116}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="C3-fx" ID="{30D46CE0-4D36-4829-8D1C-100FC19786E7}" ShortID="967193595">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="20.8197012061404"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>C3-fx.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="C3-fx" ID="{30D46CE0-4D36-4829-8D1C-100FC19786E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Phone Dial" ID="{08D6FD0B-66D0-44DB-8610-AB8F6EDDE4DE}" ShortID="898649642">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Phone Dial" ID="{4C73E20D-F9AF-4950-A50F-2B094650AE55}" ShortID="708958729">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.39072905477981"/>
+														<Property Name="LoopEnd" Type="Real64" Value="6.03275711600434"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.28647120032228"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Phone Dial.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Phone Dial" ID="{4C73E20D-F9AF-4950-A50F-2B094650AE55}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="C4+phone_off" ID="{42A4E351-56C6-419A-BD92-86E2B90CDB38}" ShortID="532112762">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}" ShortID="633803848">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Voice" ID="{3B643489-75A5-4E11-BCDA-7B814B827116}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="C4-fx" ID="{590AAAC1-7DB6-4148-BCAF-16FE15D1FC89}" ShortID="877832525">
+													<Language>SFX</Language>
+													<AudioFile>C4-fx.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="C4-fx" ID="{590AAAC1-7DB6-4148-BCAF-16FE15D1FC89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bip_phone" ID="{CBC629E0-ADF0-4303-8234-3C099A5DA235}" ShortID="904729569">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideOutput" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bip_phone" ID="{51358F8D-DECB-4F11-983D-38FBB7D76CA2}" ShortID="682574176">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.11440307116999E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.83444722918408E-03"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.209126984126984"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Bip_phone.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bip_phone" ID="{51358F8D-DECB-4F11-983D-38FBB7D76CA2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -154,13 +257,13 @@
 										<ItemRef Name="C5" ID="{C2A21435-47C6-43D5-BB56-630E582AC8A1}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="C4+phone_off" ID="{42A4E351-56C6-419A-BD92-86E2B90CDB38}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="C1" ID="{8D9140A2-680F-4435-8F1E-1231DA6EB60D}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
+										<ItemRef Name="C3+dial" ID="{F07BACB4-E910-4A28-9FF1-EE4A1A69EDFF}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
@@ -179,7 +282,7 @@
 									<Grouping>
 										<SwitchRef Name="C4" ID="{6F74B393-F678-415D-BB8B-C1F0919C49CB}"/>
 										<ItemList>
-											<ItemRef Name="C4" ID="{670995EA-4338-4032-A8F1-81485F23C792}"/>
+											<ItemRef Name="C4+phone_off" ID="{42A4E351-56C6-419A-BD92-86E2B90CDB38}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -191,7 +294,7 @@
 									<Grouping>
 										<SwitchRef Name="C3" ID="{2A7E8F9F-863F-4EF4-82B7-73D6FF72F8A4}"/>
 										<ItemList>
-											<ItemRef Name="C3" ID="{4E6704BD-B143-4339-A39D-CCE5BFC36E4B}"/>
+											<ItemRef Name="C3+dial" ID="{F07BACB4-E910-4A28-9FF1-EE4A1A69EDFF}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
@@ -674,13 +777,160 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<Folder Name="Coup de fil" ID="{1CA3BDAA-8BB4-4818-8671-48D1C5C985D1}" ShortID="72731888">
+					<ChildrenList>
+						<ActorMixer Name="Items" ID="{C96AF809-2A1C-4B43-9D06-A195B54869BF}" ShortID="999963541">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="New Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+						</ActorMixer>
+						<Sound Name="Light_switch" ID="{1E3FDD06-B009-4C60-80E3-43A47650DC92}" ShortID="202107225">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="23"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Switch_light" ID="{B21E3862-A41C-4007-8702-20DC5BED61B9}" ShortID="533466052">
+									<Language>SFX</Language>
+									<AudioFile>Switch_light.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Switch_light" ID="{B21E3862-A41C-4007-8702-20DC5BED61B9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Cigarette" ID="{29D9E8DA-3A96-4FC6-8BCD-06775FAB599A}" ShortID="675163884">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="23"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Cigarette" ID="{CB4C2D48-480A-4122-BBA3-735AB3857508}" ShortID="1066779966">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="23"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Match_crack" ID="{37B484A2-A702-4D0C-9A00-3E043F6EB464}" ShortID="994751051">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" ShortID="467794893">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="9.33270676691729E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.306646079484425"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Match_crack.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Match_fire" ID="{7C5F5447-F475-4663-929A-31812A730274}" ShortID="889347278">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Match_fire" ID="{C6EFD55D-B9E5-45F9-A15F-3A0EC9878933}" ShortID="669800585">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.103341389187254"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.879726697696617"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Match_fire.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Match_fire" ID="{C6EFD55D-B9E5-45F9-A15F-3A0EC9878933}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Match_crack" ID="{37B484A2-A702-4D0C-9A00-3E043F6EB464}"/>
+										<ItemRef Name="Match_fire" ID="{7C5F5447-F475-4663-929A-31812A730274}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Sound Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" ShortID="1068039169">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</Folder>
 				<SwitchContainer Name="Footsteps" ID="{09956A13-9137-4FEB-9CA8-F7655F2A45DA}" ShortID="684407606">
 					<PropertyList>
+<<<<<<< HEAD
+						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+=======
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-10</Value>
 							</ValueList>
 						</Property>
+>>>>>>> master
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1294,6 +1544,10 @@
 					</GroupingInfo>
 				</SwitchContainer>
 				<SwitchContainer Name="Wasp" ID="{21698F0C-E5A4-4D60-A7BD-2E23F3740910}" ShortID="794638585">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="6"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -1415,6 +1669,8 @@
 				<RandomSequenceContainer Name="Fire" ID="{C61CF87A-4697-43F2-AB18-2AE2C519CA30}" ShortID="741706910">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Color" Type="int16" Value="9"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">

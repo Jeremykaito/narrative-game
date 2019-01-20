@@ -409,6 +409,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_lightswitch" ID="{CEEEFDA2-B15E-424B-8D34-440898EB167A}">
+							<ChildrenList>
+								<Action Name="" ID="{A7CC54E0-31CB-48F2-A3EB-9CA235EEC3ED}" ShortID="334402873">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Light_switch" ID="{1E3FDD06-B009-4C60-80E3-43A47650DC92}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Init_all_states" ID="{8169E906-9D6F-4BD7-B71B-FA3D6C649B6B}">
