@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_LA_RUPTURE = 2363683185U;
+        static const AkUniqueID PLAY_LIGHTSWITCH = 979756790U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID PLAY_R1 = 2061525117U;

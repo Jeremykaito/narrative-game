@@ -785,7 +785,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="New Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
+									<ObjectRef Name="Default Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -906,6 +906,13 @@
 									</Playlist>
 								</RandomSequenceContainer>
 								<Sound Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" ShortID="1068039169">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -921,16 +928,13 @@
 				</Folder>
 				<SwitchContainer Name="Footsteps" ID="{09956A13-9137-4FEB-9CA8-F7655F2A45DA}" ShortID="684407606">
 					<PropertyList>
-<<<<<<< HEAD
 						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
-=======
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-10</Value>
 							</ValueList>
 						</Property>
->>>>>>> master
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

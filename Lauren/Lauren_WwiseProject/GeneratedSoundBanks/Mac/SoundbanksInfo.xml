@@ -47,6 +47,7 @@
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
 				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture"/>
+				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
 				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
@@ -173,9 +174,17 @@
 					<ShortName>Footsteps_palace_2.wav</ShortName>
 					<Path>SFX\Footsteps_palace_2_07080E8C.wem</Path>
 				</File>
+				<File Id="467794893" Language="SFX">
+					<ShortName>Match_crack.wav</ShortName>
+					<Path>SFX\Match_crack_5C305587.wem</Path>
+				</File>
 				<File Id="500796836" Language="SFX">
 					<ShortName>Wasp_foufou.wav</ShortName>
 					<Path>SFX\Wasp_foufou_8956FC97.wem</Path>
+				</File>
+				<File Id="533466052" Language="SFX">
+					<ShortName>Switch_light.wav</ShortName>
+					<Path>SFX\Switch_light_56D34C19.wem</Path>
 				</File>
 				<File Id="573536811" Language="SFX">
 					<ShortName>La Rupture step2 Basses.wav</ShortName>
@@ -201,6 +210,10 @@
 					<ShortName>F4.wav</ShortName>
 					<Path>SFX\F4_56D34C19.wem</Path>
 				</File>
+				<File Id="669800585" Language="SFX">
+					<ShortName>Match_fire.wav</ShortName>
+					<Path>SFX\Match_fire_9A0AB318.wem</Path>
+				</File>
 				<File Id="672282388" Language="SFX">
 					<ShortName>Footsteps_carpet_1.wav</ShortName>
 					<Path>SFX\Footsteps_carpet_1_56D34C19.wem</Path>
@@ -208,6 +221,10 @@
 				<File Id="681384233" Language="SFX">
 					<ShortName>R2-2.wav</ShortName>
 					<Path>SFX\R2-2_56D34C19.wem</Path>
+				</File>
+				<File Id="682574176" Language="SFX">
+					<ShortName>Bip_phone.wav</ShortName>
+					<Path>SFX\Bip_phone_345BFC9B.wem</Path>
 				</File>
 				<File Id="685272064" Language="SFX">
 					<ShortName>Coup de fil Basses - 1.wav</ShortName>
@@ -228,6 +245,10 @@
 				<File Id="701358030" Language="SFX">
 					<ShortName>Footsteps_concrete_6.wav</ShortName>
 					<Path>SFX\Footsteps_concrete_6_56D34C19.wem</Path>
+				</File>
+				<File Id="708958729" Language="SFX">
+					<ShortName>Phone Dial.wav</ShortName>
+					<Path>SFX\Phone Dial_0DC8BD64.wem</Path>
 				</File>
 				<File Id="718661293" Language="SFX">
 					<ShortName>Wasp_away.wav</ShortName>
