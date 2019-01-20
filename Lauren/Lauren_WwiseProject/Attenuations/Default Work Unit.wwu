@@ -3,7 +3,7 @@
 	<Attenuations>
 		<WorkUnit Name="Default Work Unit" ID="{8182614B-5707-40CD-A459-363BE15600BE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Attenuation Name="New Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" ShortID="1061247221">
+				<Attenuation Name="Default Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" ShortID="1061247221">
 					<PropertyList>
 						<Property Name="RadiusMax" Type="Real64" Value="5"/>
 					</PropertyList>
@@ -17,9 +17,9 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>-0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp2</SegmentShape>
+											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>5</XPos>
@@ -37,7 +37,32 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+								<Curve Name="LowPassFilter" ID="{B9ADC0AB-883A-4236-9EDE-0934E5ED36C7}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>Exp3</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>3.74608</XPos>
+											<YPos>16</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp3</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>5</XPos>
+											<YPos>100</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</LowPassFilterUsage>
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
