@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3958827111198375497}
   - component: {fileID: 3958827111198375502}
+  - component: {fileID: 148851087}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -43,60 +44,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0bf04be5db7bb4c9ae74889fb7f68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hand: {fileID: 0}
+  isInteracting: 0
   activeStep: {fileID: 0}
   steps:
   - isIntro: 1
     name: bureau
-    soundItem: Coup_de_fil_Step0
+    soundItem: C1
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fenetre
-    soundItem: Coup_de_fil_Step1
+    soundItem: C2
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fauteuil
-    soundItem: Coup_de_fil_Step2
+    soundItem: C3
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
-    stayActive: 1
+    stayActive: 0
   - isIntro: 0
-    name: cdf_fin
-    soundItem: Coup_de_fil_Step3
+    name: fin_cdf
+    soundItem: C4
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 1
     name: feu
-    soundItem: Coup_de_fil_Step0
-    sceneTrack: Coup_de_fil
+    soundItem: F1
+    sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: marshmallow
-    soundItem: Coup_de_fil_Step1
+    soundItem: F2
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
-    name: guepe
-    soundItem: Coup_de_fil_Step2
-    sceneTrack: Coup_de_fil
+    name: guepe1
+    soundItem: F3_1
+    sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: guepe2
-    soundItem: Coup_de_fil_Step3
-    sceneTrack: Coup_de_fil
+    soundItem: F3_2
+    sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
-    name: finfeu
-    soundItem: Coup_de_fil_Step3
-    sceneTrack: Coup_de_fil
+    name: fin_fdc
+    soundItem: F4
+    sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
     stayActive: 0
   currentZone: 
+  nbActivatedItems: 14
+--- !u!114 &148851087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3958827111198375496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57426bfb94e47949a5674c45919658b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dissolveMat: {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  disolveFrameRate: 0.007
+  isActive: 0
+  isDisolved: 0
