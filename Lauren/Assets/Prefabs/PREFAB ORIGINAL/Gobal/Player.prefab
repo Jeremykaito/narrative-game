@@ -251,8 +251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408039907036354174}
-  - component: {fileID: 1408039907036354171}
-  - component: {fileID: 2546527367396883792}
+  - component: {fileID: 829211205}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -275,7 +274,7 @@ Transform:
   m_Father: {fileID: 1408039905753890315}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1408039907036354171
+--- !u!114 &829211205
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,27 +283,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1408039907036354175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af6ad4c65144ff54293a3728fe18b72e, type: 3}
+  m_Script: {fileID: 11500000, guid: a6d020a63effadd4db6821d4d919e3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeArm: 0.8
-  rangeTofoot: 3
-  fpsCamera: {fileID: 1408039905753890316}
   objectParticles: {fileID: 5644170973322655564}
---- !u!114 &2546527367396883792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408039907036354175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 264e3e49738fab441a1b73982dd3a930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rangeArm: 0.8
-  rangeTofoot: 3
+  rangeArm: 2
+  rangeTofoot: 2
   fpsCamera: {fileID: 1408039905753890316}
 --- !u!1 &1408039907675822399
 GameObject:
@@ -485,7 +469,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -542,7 +526,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 1
+  moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -552,7 +536,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 7
+      scalar: 8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -605,7 +589,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.02
+      scalar: 0.017
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -721,8 +705,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.01
-      minScalar: 0.005
+      scalar: 0.005
+      minScalar: 0.001
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1037,7 +1021,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 20
+    maxNumParticles: 15
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -1100,7 +1084,7 @@ ParticleSystem:
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 0
+    radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -1183,7 +1167,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.01
+      value: 0.05
       mode: 0
       spread: 0
       speed:
@@ -1302,7 +1286,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1408,7 +1392,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 1
+    enabled: 0
     curve:
       serializedVersion: 2
       minMaxState: 1
