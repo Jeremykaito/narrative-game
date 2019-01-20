@@ -7218,6 +7218,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 591628835}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &594799994 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5644170973322655564, guid: a1a113329a16c6848a61f435288da27a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1408039906949133575}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &600705203
 GameObject:
   m_ObjectHideFlags: 0
@@ -7322,13 +7328,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611862527}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.532, y: 0.22, z: 10.554}
-  m_LocalScale: {x: 14.673173, y: 5, z: 15.104679}
+  m_LocalRotation: {x: -0, y: 0.22000039, z: -0, w: 0.97549975}
+  m_LocalPosition: {x: 10.255, y: 0.22, z: 11.386}
+  m_LocalScale: {x: 13.455299, y: 5, z: 13.835886}
   m_Children: []
   m_Father: {fileID: 563611500}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 25.418001, z: 0}
 --- !u!114 &611862529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8848,6 +8854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d020a63effadd4db6821d4d919e3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectParticles: {fileID: 594799994}
   rangeArm: 2
   rangeTofoot: 2
   fpsCamera: {fileID: 291208821}
@@ -20307,7 +20314,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329685383}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -40272,12 +40279,12 @@ PrefabInstance:
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: steps.Array.data[6].soundItem
-      value: F3
+      value: F3_1
       objectReference: {fileID: 0}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: steps.Array.data[7].soundItem
-      value: F3
+      value: F3_2
       objectReference: {fileID: 0}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}

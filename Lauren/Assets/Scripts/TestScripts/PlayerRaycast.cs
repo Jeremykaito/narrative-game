@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerRaycast : MonoBehaviour
 {
+    [SerializeField]
+    private ParticleSystem objectParticles;
     // Max range to pick up object
     public float rangeArm = 2f;
     public float rangeTofoot = 2f;
@@ -26,6 +28,7 @@ public class PlayerRaycast : MonoBehaviour
         {
             range = rangeArm;
         }
+        
         // Raycast detect an interactive object
         if (!LevelManager.instance.isInteracting && Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
         {
@@ -39,6 +42,17 @@ public class PlayerRaycast : MonoBehaviour
         else if(targetObject!=null)
         {
             targetObject.StopLooking();
+        }
+
+        if(LevelManager.instance.isInteracting)
+        {
+            objectParticles.gameObject.SetActive(true);
+            objectParticles.Play();
+        }
+        else
+        {
+            objectParticles.Stop();
+            objectParticles.gameObject.SetActive(false);
         }
     }
 }
