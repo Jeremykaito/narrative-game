@@ -41,6 +41,7 @@ public class AudioManager : MonoBehaviour
     {
         // Init
         shouldPlayAfter.Add("C4", "C5");
+        shouldPlayAfter.Add("F3_2", "F4");
         
         AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
         AkLogger.Message("Init Palais mental theme");
