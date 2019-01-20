@@ -870,6 +870,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_fire" ID="{73EA96B2-8B11-479F-B23E-193E21F3D886}">
+							<ChildrenList>
+								<Action Name="" ID="{BD2E49FF-44D6-4D02-A462-4101E2302226}" ShortID="804401921">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fire" ID="{C61CF87A-4697-43F2-AB18-2AE2C519CA30}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="La Rupture" ID="{F03DF352-D4CF-40D6-AD14-47FFC1C656D1}" ShortID="10759938">
@@ -1187,6 +1201,24 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Footsteps" ID="{C26B4D88-4D8A-4491-A1A2-26A20DA505EA}" ShortID="614258129">
+					<ChildrenList>
+						<Event Name="Play_footsteps" ID="{E0EEC757-7CFC-4250-97DB-3E0B30CF571C}">
+							<ChildrenList>
+								<Action Name="" ID="{96527FE7-4AA1-4A85-A57B-1080536B6A79}" ShortID="318309562">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Footsteps" ID="{09956A13-9137-4FEB-9CA8-F7655F2A45DA}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

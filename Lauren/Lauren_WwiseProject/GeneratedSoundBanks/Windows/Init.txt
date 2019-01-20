@@ -1,7 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1857115720	Wasp			\Default Work Unit\Wasp	
 	2721494480	Game_States			\Default Work Unit\Game_States	
+	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
+	3388721943	La_Rupture_Wrath_Progression			\Default Work Unit\La_Rupture_Wrath_Progression	
 
 State	ID	Name	State Group			Notes
 	0	None	Feu_de_camp			
@@ -14,9 +17,21 @@ State	ID	Name	State Group			Notes
 	1718617340	Step1	Coup_de_fil			
 	1718617342	Step3	Coup_de_fil			
 	1718617343	Step2	Coup_de_fil			
+	0	None	Wasp			
+	2930662992	crazy	Wasp			
+	3013208399	iddle	Wasp			
+	3552757243	away	Wasp			
 	0	None	Game_States			
 	1823678183	Exploring	Game_States			
 	2418513123	Speaking	Game_States			
+	0	None	La_Rupture			
+	1718617337	Step4	La_Rupture			
+	1718617340	Step1	La_Rupture			
+	1718617342	Step3	La_Rupture			
+	1718617343	Step2	La_Rupture			
+	0	None	La_Rupture_Wrath_Progression			
+	1718617340	Step1	La_Rupture_Wrath_Progression			
+	1718617343	Step2	La_Rupture_Wrath_Progression			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	322049327	Speaking	Game_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
