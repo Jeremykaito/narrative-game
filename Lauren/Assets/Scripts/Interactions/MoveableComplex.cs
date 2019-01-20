@@ -5,6 +5,8 @@ using UnityEngine;
 public class MoveableComplex : Moveable
 {
     private Zone zone2;
+    [SerializeField]
+    private bool multipleUse;
 
     public void SetZones(Zone zone1, Zone zone2)
     {
@@ -62,6 +64,12 @@ public class MoveableComplex : Moveable
 
     protected override void ReleasedInZone()
     {
+        if(!multipleUse)
+        {
+            this.isInteracting = false;
+            this.gameObject.SetActive(false);
+        }
+
         if(zone1.IsActivated && zone2.IsActivated)
         {
             this.isInteracting = false;
