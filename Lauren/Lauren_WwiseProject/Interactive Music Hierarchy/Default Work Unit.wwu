@@ -465,6 +465,7 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="144"/>
+								<Property Name="TimeSignatureUpper" Type="int16" Value="3"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>8</Value>
@@ -1047,6 +1048,978 @@
 								</Entry>
 							</EntryList>
 						</MusicSwitchContainer>
+						<MusicSwitchContainer Name="Music Switch Container - La Rupture" ID="{EDFF2660-D71D-465D-9A74-4430A3A1775F}" ShortID="745782193">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="La Rupture1" ID="{104B6B29-B358-4F01-9C09-86AC5489BDF4}" ShortID="473920830">
+									<PropertyList>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="116"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="La Rupture step1" ID="{8D69B9AC-0A0E-41B9-B744-E4725B2FADCB}" ShortID="324902437">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="8275.87301587302"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="La Rupture step1" ID="{28EF6C4E-CEF4-4017-A661-28BE5CB92BDC}" ShortID="788532096">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step1" ID="{3BA10892-DB58-47D7-ACD9-89A00836678E}" ShortID="384773467">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step1.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{EE843090-9FC7-4661-A347-F44C3F1BE1B2}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{9C877A16-2830-4121-8D87-E5C5C8D67FEC}">
+															<ClipList>
+																<MusicClip Name="La Rupture step1" ID="{A612C793-EC05-4AC0-B286-D5A1E2D54637}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step1" ID="{3BA10892-DB58-47D7-ACD9-89A00836678E}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{B7CA955E-7206-42C6-B7A7-BEFC90A84DCF}"/>
+												<MusicCue Name="Exit Cue" ID="{06A79527-6549-4231-9AA9-ED5B17B0D269}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="8275.87301587302"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D557F1AD-E05A-4144-9AE1-9C1E46C8A6C1}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{4990BFA2-DD77-427C-B640-6022575954CF}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{3B6A88A5-3853-43C8-A6FA-B2E1DBB56D8A}" ShortID="79124656">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{25E23B9B-AFD2-4755-93B5-1BE11F33BCDF}" ShortID="716123844">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="La Rupture step1" ID="{8D69B9AC-0A0E-41B9-B744-E4725B2FADCB}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="La Rupture2" ID="{EA27DC56-5675-480E-87D0-BDAFB7F50CC1}" ShortID="915189532">
+									<PropertyList>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="116"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Wrath" ID="{8B15C735-9390-414E-AD7F-137751778135}" ShortID="887762531">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="8275.87301587302"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="La Rupture step2 10Crash" ID="{524648A1-2B4D-4050-8DF1-5096B0DEE699}" ShortID="334738683">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step2 10Crash" ID="{7BEED67F-E053-4B28-B581-17E69DFFF07F}" ShortID="142233568">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step2 10Crash.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo MusicSyncType="4">
+																<StateGroupRef Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+																<State Name="" ID="{6291EF77-94DC-42CD-8CB1-FDDF2BA00B29}" ShortID="551570910"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+																<State Name="" ID="{189F4A8D-FCEB-4AFE-8577-40CA20FF504A}" ShortID="156662923">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{AF4C5973-55E5-426A-ACB5-777265828AF6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{17A8BF3A-F060-4F0C-85D7-A201AFA0886A}">
+															<ClipList>
+																<MusicClip Name="La Rupture step2 10Crash" ID="{3932F0FF-DF4A-4A76-96F9-F61294A812AA}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step2 10Crash" ID="{7BEED67F-E053-4B28-B581-17E69DFFF07F}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{302D3A5E-AD73-4F7F-B87E-EC668516D9B3}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.27587301587302</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{B92E303A-AB49-4A30-A6CF-95BDA4A69FC8}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.27587301587302</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{63D6D1F9-B3AB-4965-9703-F9CFD2C4168B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.27587301587302</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="La Rupture step2 Basses" ID="{BC7F8263-B880-4EB2-8553-259D3F687D8F}" ShortID="641989661">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step2 Basses" ID="{DB03103A-0B87-4D0B-AF5A-D10662226D42}" ShortID="573536811">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step2 Basses.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{E6D4C65E-069D-4400-A965-D4AE0EBEA6FE}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{D4D620A5-010B-41D9-95EA-6C6225B9FEF0}">
+															<ClipList>
+																<MusicClip Name="La Rupture step2 Basses" ID="{4E2875C5-98B6-4F0D-BABB-DD4BE9CABD4B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step2 Basses" ID="{DB03103A-0B87-4D0B-AF5A-D10662226D42}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="La Rupture step2 Drone" ID="{077AAE07-D160-4155-9E79-6D42872F0BB1}" ShortID="298525836">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step2 Drone" ID="{148B0D93-459E-40C6-9A59-74D87C8E70B0}" ShortID="961224482">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step2 Drone.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo MusicSyncType="4">
+																<StateGroupRef Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+																<State Name="" ID="{0FFAB6B3-4918-4350-82EA-96E02AEF2AEE}" ShortID="310807963"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+																<State Name="" ID="{05C39A5B-A8DB-4CB5-9145-676AACFF1B5B}" ShortID="1060565225">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{3E8D49A7-B296-4CFB-A923-302F9B0AEC04}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{3A3BD1F6-249F-4FD8-99DD-30F048DA56FF}">
+															<ClipList>
+																<MusicClip Name="La Rupture step2 Drone" ID="{CCB2FDA2-7FCE-4883-B9F3-1018A967554A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step2 Drone" ID="{148B0D93-459E-40C6-9A59-74D87C8E70B0}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="La Rupture step2 Melody" ID="{D0761411-692A-49CA-8186-836EEEE258B6}" ShortID="754280373">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step2 Melody" ID="{CCBE53EA-CFDA-40A9-9817-DD11BB2D9113}" ShortID="615544018">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step2 Melody.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{5AFBE891-64F5-448E-B8BD-2ABC2EB1AB62}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{2EB78E16-9AB3-49EB-97DC-5C8714737728}">
+															<ClipList>
+																<MusicClip Name="La Rupture step2 Melody" ID="{EC1AC974-81C5-4EF3-95E0-56078C4E9D32}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step2 Melody" ID="{CCBE53EA-CFDA-40A9-9817-DD11BB2D9113}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="La Rupture step2 A-Reverb" ID="{867BC645-022B-448D-B522-0D1542FDC236}" ShortID="667569877">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step2 A-Reverb" ID="{B10E0D7D-78E6-46DE-8A29-0635455105B7}" ShortID="993968870">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step2 A-Reverb.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo MusicSyncType="4">
+																<StateGroupRef Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+																<State Name="" ID="{FFC9524F-5E6B-4DF1-A63A-A78351EC8F93}" ShortID="749424006"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+																<State Name="" ID="{63A80947-24A4-46E9-8710-0BD04CEA4274}" ShortID="361789910">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{E36152B3-DD4B-4E09-A637-6E9E27CA91B6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{5045DED7-74D1-422B-B78C-193395B34671}">
+															<ClipList>
+																<MusicClip Name="La Rupture step2 A-Reverb" ID="{3BAD9B2E-34E5-44EE-9FA3-22F7DE056084}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step2 A-Reverb" ID="{B10E0D7D-78E6-46DE-8A29-0635455105B7}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="La Rupture step2 B-Delay" ID="{BD9A10A1-7E58-4561-8ED0-165ECE77533F}" ShortID="506272815">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step2 B-Delay" ID="{330DDD13-7455-43E7-86A6-9C4F006F5053}" ShortID="942281645">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step2 B-Delay.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo MusicSyncType="4">
+																<StateGroupRef Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+																<State Name="" ID="{BEE77752-97F7-46FD-B33B-5FA12942382B}" ShortID="980355469"/>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+																<State Name="" ID="{45133C00-FE4F-4A1C-8A9C-2DF851C781FA}" ShortID="25545999">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-96"/>
+																	</PropertyList>
+																</State>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{712D0899-CB39-49CD-8618-26F9007F8693}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{DE25686F-44A2-43EC-98A0-5E9D3CAE5EAB}">
+															<ClipList>
+																<MusicClip Name="La Rupture step2 B-Delay" ID="{E9DC29F4-26DF-4E29-8435-712F4F9B3584}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8275.87301587302"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step2 B-Delay" ID="{330DDD13-7455-43E7-86A6-9C4F006F5053}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{E4F3C180-54A0-4E39-BEF3-F5C50D1AC391}"/>
+												<MusicCue Name="Exit Cue" ID="{930106B2-8B0D-46DB-BA77-93779DD2D5CC}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="8275.87301587302"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="" ID="{66833105-7FFB-4AE8-BB5E-A28EC1B84C18}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="2"/>
+														<Property Name="TimeMs" Type="Real64" Value="4137.93103448276"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{41D4B030-06DD-4587-8D68-D92389664C99}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{2E3B7221-4F81-4B2F-B17E-4CC1AA332C73}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{07483C47-0F09-480C-97AA-6E34FE5801A1}" ShortID="294772790">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{FD4D5CA1-9105-4CEB-BD2B-DB5D07309BDD}" ShortID="937971458">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Wrath" ID="{8B15C735-9390-414E-AD7F-137751778135}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="La Rupture3" ID="{B9DAC901-3EBD-4EB9-8616-F3FA28E9FEAB}" ShortID="280270780">
+									<PropertyList>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="84"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="La Rupture step3" ID="{731D32D1-2A48-4A0B-9796-63A105B8864C}" ShortID="1047693543">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="45714.2857142857"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="La Rupture step3" ID="{4DDC03FF-1A0E-4763-A23D-BFB9914477B0}" ShortID="330775234">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step3" ID="{AA4ADD25-D021-4061-B318-3915324AD1CB}" ShortID="318342195">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step3.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{33D7651D-A24F-458F-AD76-58DC738A4FB5}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{8A8F79BC-7950-4CE0-9731-B30D6CDD2617}">
+															<ClipList>
+																<MusicClip Name="La Rupture step3" ID="{BA49A3B9-0392-4272-A6BB-C2222EE492F1}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="45714.2857142857"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step3" ID="{AA4ADD25-D021-4061-B318-3915324AD1CB}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{B1D8C15C-1629-474A-9517-D243958A068E}"/>
+												<MusicCue Name="Exit Cue" ID="{E7687B26-AEC2-4025-A377-D74704B37453}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="45714.2857142857"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E5BC484E-6738-486A-AA90-546340FA8181}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{C3498F41-8F58-4354-8686-7B7C2515B651}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{2074783D-54F3-40C5-AF01-353FDFFAC276}" ShortID="411516618">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{BFBDA72E-E2D3-408F-A009-528F04687602}" ShortID="109942302">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="La Rupture step3" ID="{731D32D1-2A48-4A0B-9796-63A105B8864C}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="La Rupture4" ID="{9C29F3AE-3453-4B03-BB07-7D2016BCDC38}" ShortID="891177283">
+									<PropertyList>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="84"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="La Rupture step4" ID="{1F64F480-7ED4-4BDA-B15D-E762D523DFFB}" ShortID="113042279">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="11428.5714285714"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="La Rupture step4" ID="{731CDE73-198C-49E6-A921-9FFFE7EB15E6}" ShortID="663085926">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="La Rupture step4" ID="{7E17AE99-DBE4-420A-8B56-7349C882993F}" ShortID="439755788">
+															<Language>SFX</Language>
+															<AudioFile>La Rupture step4.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{1AAE7772-7149-4680-A2E7-7CE74F09C1A1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{291F1611-CF34-483A-AF13-7790B3C59FA6}">
+															<ClipList>
+																<MusicClip Name="La Rupture step4" ID="{C6454C35-64D9-49D5-9FF9-341CFF2F318C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="11428.5714285714"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="La Rupture step4" ID="{7E17AE99-DBE4-420A-8B56-7349C882993F}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{01D1F4E1-3CC5-48E0-A406-9961D89C35FA}"/>
+												<MusicCue Name="Exit Cue" ID="{5F049E14-D07D-429F-92B9-54E33D9AB568}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="11428.5714285714"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{6BFA5964-90DA-4D80-A99F-84C4068A29A9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{6DA9C466-20C1-46BB-A4A4-7F1D9C60F6A0}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{F29E64B6-19F3-4645-AF13-59BAF89FE2B9}" ShortID="786193622">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{14AFB5EE-117C-473C-A1C6-D7879C41EC9D}" ShortID="455533378">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="La Rupture step4" ID="{1F64F480-7ED4-4BDA-B15D-E762D523DFFB}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{DABDB444-775F-4C1B-92CC-B43352BE0F27}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{326CB991-1AB4-4B6A-ABC9-89651134980D}">
+											<PropertyList>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+											</PropertyList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{1A69D153-F153-4F03-945B-7CFFB296BE2F}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{D7228390-2D27-450E-96EF-801B8F367AF2}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{73DE05FE-8231-494B-8495-1CC6702A9EC4}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="La Rupture1" ID="{104B6B29-B358-4F01-9C09-86AC5489BDF4}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{A63D6665-249B-4395-8FB7-A4E1EBB3E638}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="La Rupture2" ID="{EA27DC56-5675-480E-87D0-BDAFB7F50CC1}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="La Rupture1" ID="{104B6B29-B358-4F01-9C09-86AC5489BDF4}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{2919726B-D4D6-4385-B717-100421036E3F}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{1C0C3FA6-5795-4278-918C-6C10580EF4BE}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="La Rupture3" ID="{B9DAC901-3EBD-4EB9-8616-F3FA28E9FEAB}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="La Rupture2" ID="{EA27DC56-5675-480E-87D0-BDAFB7F50CC1}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{5B7456F8-D30F-4638-BE65-ACBAC6A85075}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{4A5D5BF2-2AF9-475E-9C91-291A8DB34ADE}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="3"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ArgumentList>
+								<ArgumentRef Name="La_Rupture" ID="{35877710-E7CA-4E08-8150-8B927A4BC07B}"/>
+							</ArgumentList>
+							<EntryList>
+								<Entry>
+									<Path>
+										<PathElementRef Name="La_Rupture" ID="{35877710-E7CA-4E08-8150-8B927A4BC07B}"/>
+									</Path>
+									<AudioNodeInfo>
+										<NoObject Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="La Rupture1" ID="{104B6B29-B358-4F01-9C09-86AC5489BDF4}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step3" ID="{539F25C1-D67D-4260-B5F3-78810F2CE1EB}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="La Rupture3" ID="{B9DAC901-3EBD-4EB9-8616-F3FA28E9FEAB}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step4" ID="{7F853644-BDB5-4738-8896-D4C881D3838C}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="La Rupture4" ID="{9C29F3AE-3453-4B03-BB07-7D2016BCDC38}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Step2" ID="{629B4534-2E88-477D-91CF-BCC4CE761291}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="La Rupture2" ID="{EA27DC56-5675-480E-87D0-BDAFB7F50CC1}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+							</EntryList>
+						</MusicSwitchContainer>
 					</ChildrenList>
 					<TransitionList>
 						<MusicTransition Name="Root" ID="{4BF38887-0904-469D-ABBF-981509529289}">
@@ -1163,6 +2136,23 @@
 										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{6BAD40B3-1A60-49BB-A671-F92C9DCA347F}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Music Switch Container - La Rupture" ID="{EDFF2660-D71D-465D-9A74-4430A3A1775F}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{08A93A96-A6B0-4278-A6D7-574C80804FEA}"/>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
@@ -1193,6 +2183,14 @@
 							</Path>
 							<AudioNodeInfo>
 								<AudioNodeRef Name="Music Switch Container - Feu de camp" ID="{AF513879-10CD-41ED-831C-A73EB95E9626}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Music Switch Container - La Rupture" ID="{EDFF2660-D71D-465D-9A74-4430A3A1775F}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}" Platform="Linked"/>
 							</AudioNodeInfo>
 						</Entry>
 					</EntryList>

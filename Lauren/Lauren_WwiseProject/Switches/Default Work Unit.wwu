@@ -9,6 +9,7 @@
 						<Switch Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 						<Switch Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
 						<Switch Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
+						<Switch Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Coup_de_fil" ID="{1990A2C2-07E4-44BA-AFFF-16E8B399F245}">
@@ -35,6 +36,22 @@
 						<Switch Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
 						<Switch Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
 						<Switch Name="F3_2" ID="{DE843C77-191F-4480-80BE-ECA1B3DB086A}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="La_Rupture" ID="{BA5A464B-6F6C-4E92-92E8-486FABAD576C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
+						<Switch Name="R2_1" ID="{520DBD39-BE71-4D9F-9C6F-65537FAF0258}"/>
+						<Switch Name="R2_2" ID="{BE93008E-1231-43D5-BAC7-6D33CD5843D5}"/>
+						<Switch Name="R3_1" ID="{FE8F8653-5928-4998-839A-579E42F9458B}"/>
+						<Switch Name="R3_2" ID="{B2D300DD-9C8A-4ABF-8D5D-5125C75D2993}"/>
+						<Switch Name="R3_3" ID="{F7AE6855-DE72-44F3-944E-D1873119EC83}"/>
+						<Switch Name="R3_4" ID="{48BD1787-3F81-4845-966E-F9D143AABAF0}"/>
+						<Switch Name="R4" ID="{C7E39771-84DF-420D-9079-9F4D0D247E50}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

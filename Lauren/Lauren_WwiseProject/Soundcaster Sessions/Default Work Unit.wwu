@@ -54,12 +54,15 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+						<CurrentStateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+						<CurrentStateRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
 						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
 						<CurrentSwitchRef Name="C5" ID="{BABD6775-8114-4B08-9AD8-4B90D6F82EBF}"/>
 						<CurrentSwitchRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
+						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Feu de camp" ID="{1FE8458D-787C-40C0-AE58-BB551FF5831D}">
@@ -103,14 +106,79 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
-						<CurrentStateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+						<CurrentStateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+						<CurrentStateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+						<CurrentStateRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
 						<CurrentStateRef Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
+						<CurrentSwitchRef Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}"/>
 						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 						<CurrentSwitchRef Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
+						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="La Rupture" ID="{8B320E09-A032-411F-ADA3-A472EEDE6D9A}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Init_all_states" ID="{8169E906-9D6F-4BD7-B71B-FA3D6C649B6B}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_La_Rupture" ID="{AA626F8F-427E-41CB-84F0-503543003622}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R3_1" ID="{82C55ADC-4937-41BE-A164-D94298BDF040}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{6D55E4C0-D6DC-41EA-9E2D-F833DC551635}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R2_1" ID="{D1FDB7E3-8C60-4C93-B0C3-63ABC4F019C6}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R3_2" ID="{1FBAAEA8-24DC-4796-8F0D-B5CD3AD93E8D}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R1" ID="{E2244E56-1ADC-4A54-8ECF-6FEA96746F27}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R2_2" ID="{E35EA740-1683-4972-AA2B-7367DF4AA0AA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R3_3" ID="{45BADE59-F16E-4D15-B969-BE5EF4C46075}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_R3_4" ID="{62FD0D06-9C41-489A-BCD7-B2BBF87EF25A}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+						<CurrentStateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+						<CurrentStateRef Name="Step3" ID="{539F25C1-D67D-4260-B5F3-78810F2CE1EB}"/>
+						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}"/>
+						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
+						<CurrentSwitchRef Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
+						<CurrentSwitchRef Name="R3_4" ID="{48BD1787-3F81-4845-966E-F9D143AABAF0}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
