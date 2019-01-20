@@ -453,11 +453,35 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{AB3FA06D-61F7-4607-85DC-E03DE497A38A}" ShortID="28070848">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9C06BB12-099D-4E3F-A035-5154E2DD06F4}" ShortID="161462110">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="Play Music" ID="{509F57D9-ACA6-4409-8D6A-B664A9C429F2}" ShortID="680878877">
 					<ChildrenList>
 						<Event Name="Play_Coup_de_fil" ID="{2F2F6EB9-25C6-4F68-AD2B-D6409B447071}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="1"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{87ED854E-DE3A-4F6F-9BD5-7356AFA192D2}" ShortID="215938388">
 									<PropertyList>
@@ -528,6 +552,10 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Feu_de_camp" ID="{D1C85C24-DCCB-495B-8E0D-4879D7B40690}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="7"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ChildrenList>
 								<Action Name="" ID="{AA899568-7661-41CE-8572-249CFF148FF2}" ShortID="167070048">
 									<PropertyList>
@@ -553,6 +581,44 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 										<Property Name="Delay" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_La_Rupture" ID="{AA626F8F-427E-41CB-84F0-503543003622}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{A382E207-756D-4BAB-93B9-F2CD6C4AB04A}" ShortID="326358747">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8C3B68B7-F94E-4B98-875C-E5E290A27651}" ShortID="680676617">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{70071A76-523E-47F4-B281-1B187865B870}" ShortID="101471905">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -799,6 +865,328 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Feu de camp" ID="{53ECAFF1-49C0-48FE-A8A8-A3C5D9ACB559}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="La Rupture" ID="{F03DF352-D4CF-40D6-AD14-47FFC1C656D1}" ShortID="10759938">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Play_R1" ID="{E2244E56-1ADC-4A54-8ECF-6FEA96746F27}">
+							<ChildrenList>
+								<Action Name="" ID="{1F693B7F-E7FB-42B6-A8CB-B067B3150C42}" ShortID="1045073526">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7922F06B-193F-4AD6-B0E2-E9A66B2EE775}" ShortID="1043272621">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{53E4C8E0-044A-4043-A117-E44AA32DB9B0}" ShortID="130892221">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A16386F1-5F88-49E2-954B-303BC5A7C925}" ShortID="364192835">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Stop_Music" ID="{252DB529-0564-4876-8DCC-37249F9B0217}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E51BFFA7-8491-49D5-8901-39FAE428EE16}" ShortID="429712541">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R2_1" ID="{D1FDB7E3-8C60-4C93-B0C3-63ABC4F019C6}">
+							<ChildrenList>
+								<Action Name="" ID="{4170E60C-8C5B-42EB-8C96-3E2C63366D5C}" ShortID="611484993">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step2" ID="{629B4534-2E88-477D-91CF-BCC4CE761291}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{70DC96F1-AD5A-4518-B609-BB95B00492E0}" ShortID="636343052">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8CA6ECC6-DA00-439E-B4CD-A91D053B0B61}" ShortID="777899869">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R2_1" ID="{520DBD39-BE71-4D9F-9C6F-65537FAF0258}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{80F28209-3DC1-4F9D-925F-E00D404CB0C3}" ShortID="831815252">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2C095172-445A-403D-A8B1-6D8516EBAC50}" ShortID="337277290">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R2_2" ID="{E35EA740-1683-4972-AA2B-7367DF4AA0AA}">
+							<ChildrenList>
+								<Action Name="" ID="{954E235A-560C-473F-9CE1-8273AE54F0D8}" ShortID="426559003">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R2_2" ID="{BE93008E-1231-43D5-BAC7-6D33CD5843D5}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DC9ED7FD-3949-4DF0-93AF-05012EB0A0DB}" ShortID="527818523">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9ED61578-83B6-4696-8894-5A77A7EE295E}" ShortID="397901728">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R3_1" ID="{82C55ADC-4937-41BE-A164-D94298BDF040}">
+							<ChildrenList>
+								<Action Name="" ID="{653FC2EA-AA44-42B7-983F-3BA7CEF1B3E0}" ShortID="834392237">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BE3A58CC-E558-4818-9355-382BD8C306F7}" ShortID="794234530">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R3_1" ID="{FE8F8653-5928-4998-839A-579E42F9458B}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8778B7CE-BD17-4A37-A37F-02D7F17DC42E}" ShortID="643074390">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4C6B7E53-4FE2-4488-B85C-46674783D982}" ShortID="636036572">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R3_2" ID="{1FBAAEA8-24DC-4796-8F0D-B5CD3AD93E8D}">
+							<ChildrenList>
+								<Action Name="" ID="{E04831B9-A530-4ECE-8735-4948794C8FDD}" ShortID="292249261">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R3_2" ID="{B2D300DD-9C8A-4ABF-8D5D-5125C75D2993}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{383825A9-FB11-4946-AFD5-D41671B98548}" ShortID="529413250">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{55BBC116-C5D2-4FC6-BFFC-BDB6DF737921}" ShortID="776973917">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R3_3" ID="{45BADE59-F16E-4D15-B969-BE5EF4C46075}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{6AFF4F09-A917-443E-AA89-7075E3E509E0}" ShortID="107733698">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step3" ID="{539F25C1-D67D-4260-B5F3-78810F2CE1EB}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0B025B43-A35B-4C89-B995-CADBD5215E44}" ShortID="586290497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R3_3" ID="{F7AE6855-DE72-44F3-944E-D1873119EC83}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9A1FA841-B60A-4899-8B2B-85DCBD4D9576}" ShortID="797487953">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1D2ED988-AD86-4781-B893-A15F49873FEE}" ShortID="316143448">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R3_4" ID="{62FD0D06-9C41-489A-BCD7-B2BBF87EF25A}">
+							<ChildrenList>
+								<Action Name="" ID="{CA736F4E-22EF-438C-857D-2F44FDBD121E}" ShortID="798032930">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R3_4" ID="{48BD1787-3F81-4845-966E-F9D143AABAF0}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C0C9FF6A-768B-4882-B411-3215C0D88DB5}" ShortID="624263087">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8146A0B4-CBB0-4B65-B472-CC92C62F66DC}" ShortID="823283832">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EA902794-A8B0-43E6-BE09-56B7B39822F8}" ShortID="140309133">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
