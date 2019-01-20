@@ -57,6 +57,38 @@
 						<State Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="La_Rupture" ID="{35877710-E7CA-4E08-8150-8B927A4BC07B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{B7BABBA2-5880-44C4-BC9D-8390D64D8395}"/>
+						<State Name="Step2" ID="{629B4534-2E88-477D-91CF-BCC4CE761291}"/>
+						<State Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
+						<State Name="Step3" ID="{539F25C1-D67D-4260-B5F3-78810F2CE1EB}"/>
+						<State Name="Step4" ID="{7F853644-BDB5-4738-8896-D4C881D3838C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="23"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{351C9D98-151F-40F2-BF52-0B32AC7DD6B7}"/>
+						<State Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+						<State Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+							<EndState Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
