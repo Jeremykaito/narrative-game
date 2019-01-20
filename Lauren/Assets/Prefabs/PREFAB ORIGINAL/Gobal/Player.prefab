@@ -252,6 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1408039907036354174}
   - component: {fileID: 829211205}
+  - component: {fileID: 156529393010808912}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -275,6 +276,22 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &829211205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408039907036354175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d020a63effadd4db6821d4d919e3ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectParticles: {fileID: 5644170973322655564}
+  rangeArm: 2
+  rangeTofoot: 2
+  fpsCamera: {fileID: 1408039905753890316}
+--- !u!114 &156529393010808912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,6 +389,7 @@ MonoBehaviour:
     BackwardSpeed: 2
     StrafeSpeed: 2
     RunMultiplier: 1
+    FootstepsDelay: 0.75
     RunKey: 304
     SlopeCurveModifier:
       serializedVersion: 2
