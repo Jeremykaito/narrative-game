@@ -921,15 +921,26 @@
 				</Folder>
 				<SwitchContainer Name="Footsteps" ID="{09956A13-9137-4FEB-9CA8-F7655F2A45DA}" ShortID="684407606">
 					<PropertyList>
+<<<<<<< HEAD
 						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+=======
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+>>>>>>> master
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Palace" ID="{D29D9B62-0F19-4C57-970B-9D3F1355CBB8}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+							<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Footsteps" ID="{D071FD13-C140-4F57-BC39-CF05B1BBEA7B}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
@@ -1080,7 +1091,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-15</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1211,6 +1222,11 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Carpet" ID="{45F91033-21F3-4D9D-9907-B00BB1180855}" ShortID="192632586">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>20</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-15</Value>
@@ -1344,6 +1360,11 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Palace" ID="{5D62BC2A-C9FE-4D1A-8EDD-068CA1AA2EE4}" ShortID="585237278">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>

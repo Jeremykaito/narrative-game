@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -15,6 +16,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             public float BackwardSpeed = 4.0f;  // Speed when walking backwards
             public float StrafeSpeed = 4.0f;    // Speed when walking sideways
             public float RunMultiplier = 2.0f;   // Speed when sprinting
+            public float FootstepsDelay = 0.75f; // Delay between footsteps sounds
 
 	        public KeyCode RunKey = KeyCode.LeftShift;
             public AnimationCurve SlopeCurveModifier = new AnimationCurve(new Keyframe(-90.0f, 1.0f), new Keyframe(0.0f, 1.0f), new Keyframe(90.0f, 0.0f));
@@ -100,7 +102,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 				return movementSettings.Running;
             }
         }
-
+        
+        private float timer;  
 
         private void Start()
         {
@@ -112,9 +115,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void Update()
         {
+            // Add the time since Update was last called to the timer
+            timer += Time.deltaTime;
             RotateView();
         }
 
+        private void PlayFootsteps()
+        {
+            if (timer >= movementSettings.FootstepsDelay)
+            {
+                AkSoundEngine.PostEvent("Play_footsteps", gameObject);
+                timer = 0f;
+            }
+        }
 
         private void FixedUpdate()
         {
@@ -135,6 +148,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 {
                     m_RigidBody.AddForce(desiredMove*SlopeMultiplier(), ForceMode.Impulse);
                 }
+
+                // Play footsteps sounds
+                PlayFootsteps();
             }
 
             if (m_IsGrounded)
