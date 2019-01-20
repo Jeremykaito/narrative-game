@@ -124,6 +124,11 @@
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="127"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -805,7 +810,7 @@
 									<ChildrenList>
 										<MusicSegment Name="Feu de camp 3" ID="{20BB457F-65D3-4E9E-8005-54C624A287F0}" ShortID="245870713">
 											<PropertyList>
-												<Property Name="EndPosition" Type="Real64" Value="50000"/>
+												<Property Name="EndPosition" Type="Real64" Value="110000"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -823,9 +828,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Feu de camp 3" ID="{BB3B1DB5-C146-4D50-81E2-9158A5F763E4}" ShortID="387983491">
+														<AudioFileSource Name="Feu de camp 3 v2" ID="{33BC9686-5FC4-404F-9E7D-8266BDAF348F}" ShortID="445191533">
 															<Language>SFX</Language>
-															<AudioFile>Feu de camp 3.wav</AudioFile>
+															<AudioFile>Feu de camp 3 v2.wav</AudioFile>
+														</AudioFileSource>
+														<AudioFileSource Name="Feu de camp 3 v2_01" ID="{C369D864-EA66-46E9-9536-1903F3CB17A6}" ShortID="917570817">
+															<Language>SFX</Language>
+															<AudioFile>Feu de camp 3 v2.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="445191533"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -839,13 +851,22 @@
 													<SequenceList>
 														<MusicTrackSequence Name="" ID="{9F69DFC0-A072-460F-A6CA-D8FB2FA0597F}">
 															<ClipList>
-																<MusicClip Name="Feu de camp 3" ID="{41B4FE3E-600C-4032-898E-573370B74C13}">
+																<MusicClip Name="Feu de camp 3 v2" ID="{6F654EE4-81D5-4168-A17B-B24554707240}">
 																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="50000"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="60000"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="Feu de camp 3" ID="{BB3B1DB5-C146-4D50-81E2-9158A5F763E4}"/>
+																	<AudioSourceRef Name="Feu de camp 3 v2_01" ID="{C369D864-EA66-46E9-9536-1903F3CB17A6}"/>
+																</MusicClip>
+																<MusicClip Name="Feu de camp 3 v2" ID="{41F896BE-E6E4-4E2F-BEB1-4E009FCDFCB8}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="60000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="50000"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="Feu de camp 3 v2" ID="{33BC9686-5FC4-404F-9E7D-8266BDAF348F}"/>
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>

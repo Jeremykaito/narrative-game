@@ -615,7 +615,7 @@
 								<Action Name="" ID="{EB0CBF25-56AD-491F-88CC-990BE88933CF}" ShortID="945820551">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -735,7 +735,7 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{2C79A6C4-2AB0-415B-BC19-490D044ED9ED}" ShortID="104139640">
+								<Action Name="" ID="{53E97E2F-B86D-4AA6-B862-FB96AB983A0A}" ShortID="295261606">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="41"/>
 									</PropertyList>
@@ -748,7 +748,7 @@
 								<Action Name="" ID="{EDD96C38-2060-439C-B95F-70C1709A0A61}" ShortID="920235283">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -799,17 +799,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Feu de camp" ID="{53ECAFF1-49C0-48FE-A8A8-A3C5D9ACB559}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{5FF85BA7-2BFA-4F79-B846-EEC842691EAF}" ShortID="269961076">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-										<Property Name="Delay" Type="Real64" Value="8"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
