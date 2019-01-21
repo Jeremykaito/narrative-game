@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	242827154	Set_State_Intro			\Default Work Unit\Speech states\Set_State_Intro	
 	249732036	Play_Feu_de_camp			\Default Work Unit\Play Music\Play_Feu_de_camp	
 	303595419	Play_Crash			\Default Work Unit\La Rupture\Play_Crash	
 	606726776	Switch_Music_Palais_mental			\Default Work Unit\Switch Music\Switch_Music_Palais_mental	
@@ -34,6 +35,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3448676939	Reset_Voice_Low_pass_Filter_All			\Default Work Unit\Reset_Voice_Low_pass_Filter_All	
 	3454329120	Play_F3_2			\Default Work Unit\Feu de camp\Play_F3_2	
 	3454329123	Play_F3_1			\Default Work Unit\Feu de camp\Play_F3_1	
+	3638057186	Set_State_Other			\Default Work Unit\Speech states\Set_State_Other	
 	3854155799	Play_footsteps			\Default Work Unit\Footsteps\Play_footsteps	
 	4113650174	Play_Palais_mental			\Default Work Unit\Play Music\Play_Palais_mental	
 
@@ -69,6 +71,7 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1424981396	Speech_States			\Default Work Unit\Speech_States	
 	2721494480	Game_States			\Default Work Unit\Game_States	
 	3388721943	La_Rupture_Wrath_Progression			\Default Work Unit\La_Rupture_Wrath_Progression	
 
@@ -78,6 +81,9 @@ State	ID	Name	State Group			Notes
 	1718617340	Step1	Coup_de_fil			
 	1718617342	Step3	Coup_de_fil			
 	1718617343	Step2	Coup_de_fil			
+	0	None	Speech_States			
+	1125500713	Intro	Speech_States			
+	2376466361	Other	Speech_States			
 	0	None	Game_States			
 	1823678183	Exploring	Game_States			
 	2418513123	Speaking	Game_States			
@@ -96,6 +102,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	361789910	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 A-Reverb		
 	674426258	Step3	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
 	694706536	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	845355564	Intro	Speech_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	1060565225	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 Drone		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1424981396	Speech_States			\Default Work Unit\Speech_States	
 	1857115720	Wasp			\Default Work Unit\Wasp	
 	2721494480	Game_States			\Default Work Unit\Game_States	
 	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
@@ -17,6 +18,9 @@ State	ID	Name	State Group			Notes
 	1718617340	Step1	Coup_de_fil			
 	1718617342	Step3	Coup_de_fil			
 	1718617343	Step2	Coup_de_fil			
+	0	None	Speech_States			
+	1125500713	Intro	Speech_States			
+	2376466361	Other	Speech_States			
 	0	None	Wasp			
 	2930662992	crazy	Wasp			
 	3013208399	iddle	Wasp			
@@ -35,12 +39,13 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	322049327	Speaking	Game_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	845355564	Intro	Speech_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	862699766	Normal Voice			\Default Work Unit\Master Audio Bus\Voice\Normal Voice	
 	1893602333	Cellphone Voice			\Default Work Unit\Master Audio Bus\Voice\Cellphone Voice	
-	2708055446	Flashback Voice			\Default Work Unit\Master Audio Bus\Voice\Flashback Voice	
+	2708055446	Flashback Voice			\Default Work Unit\Master Audio Bus\Voice\Flashback Voice	Flashback fx : duplicate -> reverse -> reverb - params de base, pas de damping - Room size 10 - pas de pre-delay - reverberance entre 35 et 55 - Pas de damping - wet only -> reverse Puis reverb Vocal 1 sur la principale Puis LPF 6db sur la principale
 	3170124113	Voice			\Default Work Unit\Master Audio Bus\Voice	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	

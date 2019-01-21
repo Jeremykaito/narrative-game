@@ -54,8 +54,8 @@
 				<Event Id="3020012805" Name="Play_R3_3" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_3"/>
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
+				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
-				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="108980559"/>
@@ -417,6 +417,8 @@
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="3448676939" Name="Reset_Voice_Low_pass_Filter_All" ObjectPath="\Events\Default Work Unit\Reset_Voice_Low_pass_Filter_All" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
+				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
+				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>

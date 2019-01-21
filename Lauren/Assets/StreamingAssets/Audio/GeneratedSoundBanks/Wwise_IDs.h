@@ -45,6 +45,8 @@ namespace AK
         static const AkUniqueID PLAY_R3_4 = 3020012802U;
         static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
+        static const AkUniqueID SET_STATE_INTRO = 242827154U;
+        static const AkUniqueID SET_STATE_OTHER = 3638057186U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
@@ -114,6 +116,17 @@ namespace AK
                 static const AkUniqueID STEP2 = 1718617343U;
             } // namespace STATE
         } // namespace LA_RUPTURE_WRATH_PROGRESSION
+
+        namespace SPEECH_STATES
+        {
+            static const AkUniqueID GROUP = 1424981396U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INTRO = 1125500713U;
+                static const AkUniqueID OTHER = 2376466361U;
+            } // namespace STATE
+        } // namespace SPEECH_STATES
 
         namespace WASP
         {
