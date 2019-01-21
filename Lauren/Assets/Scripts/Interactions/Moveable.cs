@@ -12,6 +12,7 @@ public class Moveable : Interactive
     [SerializeField] protected Zone zone1;
     protected RaycastHit targetZone;
     protected float range = 2.5f;
+    public float heldMultiplier = 1.3f;
 
     protected virtual void Update()
     {
@@ -66,7 +67,7 @@ public class Moveable : Interactive
         this.transform.GetComponent<Rigidbody>().isKinematic = true;
         this.transform.gameObject.layer = 9; // HeldObject : avoid collisions
         this.transform.position = LevelManager.instance.hand.position;
-        this.transform.localScale = this.transform.localScale * 1.5f;
+        this.transform.localScale = this.transform.localScale * heldMultiplier;
         this.transform.parent = Camera.main.transform;
         this.transform.rotation = new Quaternion(0, 0, 0, 0);
         this.transform.GetComponent<Rotating>().isRotate = true;
@@ -81,7 +82,7 @@ public class Moveable : Interactive
         this.transform.GetComponent<Rotating>().isRotate = false;
         this.transform.GetComponent<Rigidbody>().isKinematic = false;
         this.transform.parent = GameObject.Find("Objects").transform;
-        this.transform.localScale = this.transform.localScale / 1.5f;
+        this.transform.localScale = this.transform.localScale / heldMultiplier;
         timerStopInteractOn = true;
     }
 

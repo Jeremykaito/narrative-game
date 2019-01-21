@@ -67,6 +67,7 @@ public class MoveableComplex : Moveable
         if(!multipleUse)
         {
             this.isInteracting = false;
+            LevelManager.instance.isInteracting = false;
             this.gameObject.SetActive(false);
         }
 
