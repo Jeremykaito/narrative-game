@@ -147,97 +147,6 @@ Transform:
   m_Father: {fileID: 1638760474}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &71747369
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 71747370}
-  - component: {fileID: 71747373}
-  - component: {fileID: 71747372}
-  - component: {fileID: 71747371}
-  m_Layer: 0
-  m_Name: Rock_03_Low (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &71747370
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71747369}
-  m_LocalRotation: {x: -0.4212139, y: -0.23491317, z: 0.87416023, w: 0.05690828}
-  m_LocalPosition: {x: -17.27, y: 6.31, z: -27.72}
-  m_LocalScale: {x: 1, y: 1, z: 0.9999999}
-  m_Children: []
-  m_Father: {fileID: 2961109346499491171}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 21.27, y: -54.979004, z: 161.39001}
---- !u!65 &71747371
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71747369}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.2103271, y: 1.55833, z: 2.19381}
-  m_Center: {x: 0.11172563, y: -0.12686029, z: 0.27040505}
---- !u!23 &71747372
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71747369}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 88a0c6d9f35fe8f40b2caaef6f0cd818, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &71747373
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71747369}
-  m_Mesh: {fileID: 4300000, guid: 41a2af5bf2663ec449ec2b1362ec945d, type: 3}
 --- !u!1 &108508659
 GameObject:
   m_ObjectHideFlags: 0
@@ -8329,14 +8238,28 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 789092167926697188, guid: e508e2d85d4db7b4ab5574b747d07101,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1698204189685370984, guid: e508e2d85d4db7b4ab5574b747d07101,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772016525335970135, guid: e508e2d85d4db7b4ab5574b747d07101,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867370257606721585, guid: e508e2d85d4db7b4ab5574b747d07101,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e508e2d85d4db7b4ab5574b747d07101, type: 3}
---- !u!4 &2961109346499491171 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9137616073369778512, guid: e508e2d85d4db7b4ab5574b747d07101,
-    type: 3}
-  m_PrefabInstance: {fileID: 2961109346499491170}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &3443150206013482679
 MeshRenderer:
   m_ObjectHideFlags: 0
