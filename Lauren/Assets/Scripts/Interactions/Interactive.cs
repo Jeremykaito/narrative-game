@@ -13,11 +13,13 @@ using UnityEngine;
     public void Look()
     {
         UIManager.instance.SetReticule(true);
+        //Surbrillance
     }
 
     public void StopLooking()
     {
         UIManager.instance.SetReticule(false);
+        //Surbrillance
     }
 
     abstract public void Interact();
