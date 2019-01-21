@@ -42,7 +42,10 @@ public class AudioManager : MonoBehaviour
     {
         // Init
         shouldPlayAfter.Add("C4", "C5");
-        shouldPlayAfter.Add("F3_2", "F4");
+        shouldPlayAfter.Add("F3_3", "F4");
+        shouldPlayAfter.Add("R2_1", "R2_2");
+        shouldPlayAfter.Add("R3_1", "R3_2");
+        shouldPlayAfter.Add("R3_3", "R3_4");
         
         AkSoundEngine.PostEvent("Init_all_states", gameObject);
         AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
@@ -66,10 +69,11 @@ public class AudioManager : MonoBehaviour
         
         AkLogger.Message("OnSpeechEnd: " + callbackCookie.soundItem);
         
+        // Intro
         if (callbackCookie.isIntro)
         {
-            AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
-            AkLogger.Message("Play_" + LevelManager.instance.currentZone);
+            AkSoundEngine.PostEvent("Set_State_Others", gameObject);
+            AkLogger.Message("Set_State_Others");
         }
         else
         {
@@ -108,9 +112,21 @@ public class AudioManager : MonoBehaviour
         AkLogger.Message("Switch_Music " + clipName);
     }
     
-    public void PlaySoundEffect(string soundName, GameObject theGameobject)
+    public void PlaySoundEffect(string soundName, GameObject theGameobject = null)
     {
-        AkSoundEngine.PostEvent("Play_" + soundName, theGameobject);
+        GameObject gameObjectToUse;
+        if (theGameobject) gameObjectToUse = theGameobject;
+        else
+        {
+            switch (soundName)
+            {
+                case "fire":
+                    gameObjectToUse = this.sounds3D[1];
+                    break;
+                default: throw new ArgumentException("Wrong soundName");
+            }
+        }
+        AkSoundEngine.PostEvent("Play_" + soundName, gameObjectToUse);
         AkLogger.Message("Play_" + soundName);
     }
 }
