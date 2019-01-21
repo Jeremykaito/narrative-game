@@ -8,7 +8,16 @@
 		<ExternalSourcesOutputRoot>C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="108980559" Language="SFX">
+			<ShortName>F3-2-fx.wav</ShortName>
+			<Path>SFX\F3-2-fx_56D34C19.wem</Path>
+		</File>
+		<File Id="674499736" Language="SFX">
+			<ShortName>F3-1-fx.wav</ShortName>
+			<Path>SFX\F3-1-fx_56D34C19.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX">
@@ -20,6 +29,268 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Actor</ObjectPath>
 			<ShortName>Actor</ShortName>
 			<Path>Actor.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2346744638" Name="Play_C1" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C1"/>
+				<Event Id="2346744637" Name="Play_C2" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C2"/>
+				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
+				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
+				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
+				<Event Id="1982384146" Name="Play_Cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_Cigarette"/>
+				<Event Id="749864114" Name="Play_cigaretteallume" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigaretteallume"/>
+				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
+				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
+				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
+				<Event Id="3454329123" Name="Play_F3_1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_1"/>
+				<Event Id="3454329120" Name="Play_F3_2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_2"/>
+				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
+				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
+				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
+				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
+				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
+				<Event Id="1946098158" Name="Play_R2_1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_1"/>
+				<Event Id="1946098157" Name="Play_R2_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_2"/>
+				<Event Id="3020012807" Name="Play_R3_1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_1"/>
+				<Event Id="3020012804" Name="Play_R3_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_2"/>
+				<Event Id="3020012805" Name="Play_R3_3" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_3"/>
+				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
+				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
+				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="108980559"/>
+				<File Id="674499736"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="5066742" Language="SFX">
+					<ShortName>R3-2.wav</ShortName>
+					<Path>SFX\R3-2_56D34C19.wem</Path>
+				</File>
+				<File Id="9032680" Language="SFX">
+					<ShortName>R2-1.wav</ShortName>
+					<Path>SFX\R2-1_56D34C19.wem</Path>
+				</File>
+				<File Id="17898788" Language="SFX">
+					<ShortName>Footsteps_carpet_3.wav</ShortName>
+					<Path>SFX\Footsteps_carpet_3_56D34C19.wem</Path>
+				</File>
+				<File Id="39455890" Language="SFX">
+					<ShortName>R2-2.wav</ShortName>
+					<Path>SFX\R2-2_56D34C19.wem</Path>
+				</File>
+				<File Id="76854743" Language="SFX">
+					<ShortName>R3-4.wav</ShortName>
+					<Path>SFX\R3-4_56D34C19.wem</Path>
+				</File>
+				<File Id="139295601" Language="SFX">
+					<ShortName>C5.wav</ShortName>
+					<Path>SFX\C5_56D34C19.wem</Path>
+				</File>
+				<File Id="159739514" Language="SFX">
+					<ShortName>crash_fuite_1.wav</ShortName>
+					<Path>SFX\crash_fuite_1_4E334D61.wem</Path>
+				</File>
+				<File Id="163332930" Language="SFX">
+					<ShortName>Footsteps_concrete_4.wav</ShortName>
+					<Path>SFX\Footsteps_concrete_4_56D34C19.wem</Path>
+				</File>
+				<File Id="214384745" Language="SFX">
+					<ShortName>footsteps_palacen_5.wav</ShortName>
+					<Path>SFX\footsteps_palacen_5_1090C408.wem</Path>
+				</File>
+				<File Id="221251703" Language="SFX">
+					<ShortName>Footsteps_carpet_4.wav</ShortName>
+					<Path>SFX\Footsteps_carpet_4_56D34C19.wem</Path>
+				</File>
+				<File Id="229344842" Language="SFX">
+					<ShortName>footsteps_palacen_6.wav</ShortName>
+					<Path>SFX\footsteps_palacen_6_82B052F8.wem</Path>
+				</File>
+				<File Id="234507553" Language="SFX">
+					<ShortName>cigarette_loop_iddle.wav</ShortName>
+					<Path>SFX\cigarette_loop_iddle_0FC1849C.wem</Path>
+				</File>
+				<File Id="258200734" Language="SFX">
+					<ShortName>footsteps_palacen_2.wav</ShortName>
+					<Path>SFX\footsteps_palacen_2_8BA4E025.wem</Path>
+				</File>
+				<File Id="263734306" Language="SFX">
+					<ShortName>Footsteps_concrete_5.wav</ShortName>
+					<Path>SFX\Footsteps_concrete_5_56D34C19.wem</Path>
+				</File>
+				<File Id="275291589" Language="SFX">
+					<ShortName>C1.wav</ShortName>
+					<Path>SFX\C1_56D34C19.wem</Path>
+				</File>
+				<File Id="316984680" Language="SFX">
+					<ShortName>Footsteps_concrete_3.wav</ShortName>
+					<Path>SFX\Footsteps_concrete_3_56D34C19.wem</Path>
+				</File>
+				<File Id="354551808" Language="SFX">
+					<ShortName>Fire_amb.wav</ShortName>
+					<Path>SFX\Fire_amb_60AD4C27.wem</Path>
+				</File>
+				<File Id="361324877" Language="SFX">
+					<ShortName>R3-1.wav</ShortName>
+					<Path>SFX\R3-1_56D34C19.wem</Path>
+				</File>
+				<File Id="399739941" Language="SFX">
+					<ShortName>Footsteps_carpet_6.wav</ShortName>
+					<Path>SFX\Footsteps_carpet_6_56D34C19.wem</Path>
+				</File>
+				<File Id="401037475" Language="SFX">
+					<ShortName>Footsteps_concrete_2.wav</ShortName>
+					<Path>SFX\Footsteps_concrete_2_56D34C19.wem</Path>
+				</File>
+				<File Id="425693163" Language="SFX">
+					<ShortName>Footsteps_carpet_2.wav</ShortName>
+					<Path>SFX\Footsteps_carpet_2_56D34C19.wem</Path>
+				</File>
+				<File Id="446986608" Language="SFX">
+					<ShortName>Footsteps_leaves_1.wav</ShortName>
+					<Path>SFX\Footsteps_leaves_1_56D34C19.wem</Path>
+				</File>
+				<File Id="467794893" Language="SFX">
+					<ShortName>Match_crack.wav</ShortName>
+					<Path>SFX\Match_crack_5C305587.wem</Path>
+				</File>
+				<File Id="500796836" Language="SFX">
+					<ShortName>Wasp_foufou.wav</ShortName>
+					<Path>SFX\Wasp_foufou_8956FC97.wem</Path>
+				</File>
+				<File Id="522725829" Language="SFX">
+					<ShortName>matches_loop_fire.wav</ShortName>
+					<Path>SFX\matches_loop_fire_5D393EC8.wem</Path>
+				</File>
+				<File Id="533466052" Language="SFX">
+					<ShortName>Switch_light.wav</ShortName>
+					<Path>SFX\Switch_light_56D34C19.wem</Path>
+				</File>
+				<File Id="582111185" Language="SFX">
+					<ShortName>R4.wav</ShortName>
+					<Path>SFX\R4_56D34C19.wem</Path>
+				</File>
+				<File Id="610991903" Language="SFX">
+					<ShortName>Footsteps_leaves_4.wav</ShortName>
+					<Path>SFX\Footsteps_leaves_4_56D34C19.wem</Path>
+				</File>
+				<File Id="647562819" Language="SFX">
+					<ShortName>F4.wav</ShortName>
+					<Path>SFX\F4_56D34C19.wem</Path>
+				</File>
+				<File Id="669800585" Language="SFX">
+					<ShortName>Match_fire.wav</ShortName>
+					<Path>SFX\Match_fire_6A894A21.wem</Path>
+				</File>
+				<File Id="672282388" Language="SFX">
+					<ShortName>Footsteps_carpet_1.wav</ShortName>
+					<Path>SFX\Footsteps_carpet_1_56D34C19.wem</Path>
+				</File>
+				<File Id="682574176" Language="SFX">
+					<ShortName>Bip_phone.wav</ShortName>
+					<Path>SFX\Bip_phone_345BFC9B.wem</Path>
+				</File>
+				<File Id="688157937" Language="SFX">
+					<ShortName>Footsteps_carpet_5.wav</ShortName>
+					<Path>SFX\Footsteps_carpet_5_56D34C19.wem</Path>
+				</File>
+				<File Id="689694357" Language="SFX">
+					<ShortName>footsteps_palacen_4.wav</ShortName>
+					<Path>SFX\footsteps_palacen_4_0FCBBAD8.wem</Path>
+				</File>
+				<File Id="689853728" Language="SFX">
+					<ShortName>Crash_CarV2.wav</ShortName>
+					<Path>SFX\Crash_CarV2_F9E7D50C.wem</Path>
+				</File>
+				<File Id="697592777" Language="SFX">
+					<ShortName>R1.wav</ShortName>
+					<Path>SFX\R1_56D34C19.wem</Path>
+				</File>
+				<File Id="701358030" Language="SFX">
+					<ShortName>Footsteps_concrete_6.wav</ShortName>
+					<Path>SFX\Footsteps_concrete_6_56D34C19.wem</Path>
+				</File>
+				<File Id="708958729" Language="SFX">
+					<ShortName>Phone Dial.wav</ShortName>
+					<Path>SFX\Phone Dial_0DC8BD64.wem</Path>
+				</File>
+				<File Id="718661293" Language="SFX">
+					<ShortName>Wasp_away.wav</ShortName>
+					<Path>SFX\Wasp_away_56D34C19.wem</Path>
+				</File>
+				<File Id="722194588" Language="SFX">
+					<ShortName>F2.wav</ShortName>
+					<Path>SFX\F2_56D34C19.wem</Path>
+				</File>
+				<File Id="726474621" Language="SFX">
+					<ShortName>C2.wav</ShortName>
+					<Path>SFX\C2_56D34C19.wem</Path>
+				</File>
+				<File Id="766792368" Language="SFX">
+					<ShortName>Footsteps_leaves_2.wav</ShortName>
+					<Path>SFX\Footsteps_leaves_2_56D34C19.wem</Path>
+				</File>
+				<File Id="780788035" Language="SFX">
+					<ShortName>crash_fuiteloop_1.wav</ShortName>
+					<Path>SFX\crash_fuiteloop_1_7D7F260A.wem</Path>
+				</File>
+				<File Id="785791119" Language="SFX">
+					<ShortName>Footsteps_leaves_6.wav</ShortName>
+					<Path>SFX\Footsteps_leaves_6_56D34C19.wem</Path>
+				</File>
+				<File Id="789175688" Language="SFX">
+					<ShortName>footsteps_palacen_1.wav</ShortName>
+					<Path>SFX\footsteps_palacen_1_61F207B0.wem</Path>
+				</File>
+				<File Id="827415396" Language="SFX">
+					<ShortName>Wasp_iddle.wav</ShortName>
+					<Path>SFX\Wasp_iddle_477654BA.wem</Path>
+				</File>
+				<File Id="845284810" Language="SFX">
+					<ShortName>F1.wav</ShortName>
+					<Path>SFX\F1_56D34C19.wem</Path>
+				</File>
+				<File Id="877832525" Language="SFX">
+					<ShortName>C4-fx.wav</ShortName>
+					<Path>SFX\C4-fx_56D34C19.wem</Path>
+				</File>
+				<File Id="901589655" Language="SFX">
+					<ShortName>Match_crack.wav</ShortName>
+					<Path>SFX\Match_crack_7FA25173.wem</Path>
+				</File>
+				<File Id="910159220" Language="SFX">
+					<ShortName>Footsteps_concrete_1.wav</ShortName>
+					<Path>SFX\Footsteps_concrete_1_56D34C19.wem</Path>
+				</File>
+				<File Id="967193595" Language="SFX">
+					<ShortName>C3-fx.wav</ShortName>
+					<Path>SFX\C3-fx_6CB5FC2D.wem</Path>
+				</File>
+				<File Id="970006306" Language="SFX">
+					<ShortName>crash_fuitedrone_1.wav</ShortName>
+					<Path>SFX\crash_fuitedrone_1_578DC2FA.wem</Path>
+				</File>
+				<File Id="1011062777" Language="SFX">
+					<ShortName>Footsteps_leaves_3.wav</ShortName>
+					<Path>SFX\Footsteps_leaves_3_56D34C19.wem</Path>
+				</File>
+				<File Id="1018098808" Language="SFX">
+					<ShortName>Footsteps_leaves_5.wav</ShortName>
+					<Path>SFX\Footsteps_leaves_5_56D34C19.wem</Path>
+				</File>
+				<File Id="1036772537" Language="SFX">
+					<ShortName>Fire_ignit.wav</ShortName>
+					<Path>SFX\Fire_ignit_56D34C19.wem</Path>
+				</File>
+				<File Id="1054691929" Language="SFX">
+					<ShortName>R3-3.wav</ShortName>
+					<Path>SFX\R3-3_56D34C19.wem</Path>
+				</File>
+				<File Id="1068101995" Language="SFX">
+					<ShortName>footsteps_palacen_3.wav</ShortName>
+					<Path>SFX\footsteps_palacen_3_4FA97B58.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
