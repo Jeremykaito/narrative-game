@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
         shouldPlayAfter.Add("C4", "C5");
         shouldPlayAfter.Add("F3_2", "F4");
         
+        AkSoundEngine.PostEvent("Init_all_states", gameObject);
         AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
         AkLogger.Message("Init Palais mental theme");
     }
@@ -105,5 +106,11 @@ public class AudioManager : MonoBehaviour
         
         AkSoundEngine.PostEvent("Switch_Music_" + clipName, gameObject);
         AkLogger.Message("Switch_Music " + clipName);
+    }
+    
+    public void PlaySoundEffect(string soundName, GameObject theGameobject)
+    {
+        AkSoundEngine.PostEvent("Play_" + soundName, theGameobject);
+        AkLogger.Message("Play_" + soundName);
     }
 }

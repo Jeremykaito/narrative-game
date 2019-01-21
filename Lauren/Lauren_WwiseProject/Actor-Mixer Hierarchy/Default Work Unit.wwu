@@ -103,12 +103,15 @@
 									</ActiveSourceList>
 								</Sound>
 								<BlendContainer Name="C3+dial" ID="{F07BACB4-E910-4A28-9FF1-EE4A1A69EDFF}" ShortID="776695899">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+											<ObjectRef Name="Cellphone Voice" ID="{A9E4664D-1013-4BD7-B844-84D687F9E3B3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -180,12 +183,15 @@
 									</ChildrenList>
 								</BlendContainer>
 								<BlendContainer Name="C4+phone_off" ID="{42A4E351-56C6-419A-BD92-86E2B90CDB38}" ShortID="532112762">
+									<PropertyList>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+											<ObjectRef Name="Cellphone Voice" ID="{A9E4664D-1013-4BD7-B844-84D687F9E3B3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -779,22 +785,6 @@
 				</ActorMixer>
 				<Folder Name="Coup de fil" ID="{1CA3BDAA-8BB4-4818-8671-48D1C5C985D1}" ShortID="72731888">
 					<ChildrenList>
-						<ActorMixer Name="Items" ID="{C96AF809-2A1C-4B43-9D06-A195B54869BF}" ShortID="999963541">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Default Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-								</Reference>
-							</ReferenceList>
-						</ActorMixer>
 						<RandomSequenceContainer Name="cigarette+allumette" ID="{B84B1FEB-F9C5-4E70-83AA-9C4D967861DD}" ShortID="520319662">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
@@ -1010,6 +1000,11 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="23"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1054,7 +1049,7 @@
 				</Folder>
 				<SwitchContainer Name="Footsteps" ID="{09956A13-9137-4FEB-9CA8-F7655F2A45DA}" ShortID="684407606">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="2"/>
+						<Property Name="Color" Type="int16" Value="26"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1533,9 +1528,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footsteps_palace_2" ID="{C708364B-E6B7-4240-B37E-4C524BD52140}" ShortID="210281197">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>

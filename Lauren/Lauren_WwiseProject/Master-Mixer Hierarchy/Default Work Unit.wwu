@@ -60,10 +60,18 @@
 										</Effect>
 									</Custom>
 								</Reference>
-								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Voice_Reverb" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Normal Voice" ID="{912A7E49-C519-45CF-B6F0-4FB67E51E17F}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Voice_Reverb" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+								<Bus Name="Cellphone Voice" ID="{A9E4664D-1013-4BD7-B844-84D687F9E3B3}"/>
+								<Bus Name="Flashback Voice" ID="{D61C7B49-2E82-4BD7-803D-F449C092DE0E}"/>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
