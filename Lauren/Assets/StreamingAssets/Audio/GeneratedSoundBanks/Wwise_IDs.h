@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID INIT_ALL_STATES = 3327006228U;
+        static const AkUniqueID LPF_EFFECT = 1505908803U;
         static const AkUniqueID PLAY_C1 = 2346744638U;
         static const AkUniqueID PLAY_C2 = 2346744637U;
         static const AkUniqueID PLAY_C3 = 2346744636U;
@@ -41,9 +43,13 @@ namespace AK
         static const AkUniqueID PLAY_R3_2 = 3020012804U;
         static const AkUniqueID PLAY_R3_3 = 3020012805U;
         static const AkUniqueID PLAY_R3_4 = 3020012802U;
+        static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
+        static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
+        static const AkUniqueID SWITCH_MUSIC_FEU_DE_CAMP = 1890048954U;
+        static const AkUniqueID SWITCH_MUSIC_PALAIS_MENTAL = 606726776U;
     } // namespace EVENTS
 
     namespace STATES
