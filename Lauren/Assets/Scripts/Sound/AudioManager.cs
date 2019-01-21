@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-
+    [SerializeField]
+    private GameObject[] sounds3D;
     private bool isSpeaking = false;
     
     public static AudioManager instance;
