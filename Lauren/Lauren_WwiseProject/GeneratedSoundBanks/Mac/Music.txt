@@ -1,0 +1,55 @@
+Event	ID	Name			Wwise Object Path	Notes
+	249732036	Play_Feu_de_camp			\Default Work Unit\Play Music\Play_Feu_de_camp	
+	2363683185	Play_La_Rupture			\Default Work Unit\Play Music\Play_La_Rupture	
+	2526429843	Play_Coup_de_fil			\Default Work Unit\Play Music\Play_Coup_de_fil	
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
+	2932040671	Play_Music			\Default Work Unit\Play_Music	
+	2951726260	Set_State_Exploring			\Default Work Unit\Game states\Set_State_Exploring	
+	4113650174	Play_Palais_mental			\Default Work Unit\Play Music\Play_Palais_mental	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	3388721943	La_Rupture_Wrath_Progression			\Default Work Unit\La_Rupture_Wrath_Progression	
+
+State	ID	Name	State Group			Notes
+	0	None	Coup_de_fil			
+	1718617337	Step4	Coup_de_fil			
+	1718617340	Step1	Coup_de_fil			
+	1718617342	Step3	Coup_de_fil			
+	1718617343	Step2	Coup_de_fil			
+	0	None	La_Rupture_Wrath_Progression			
+	1718617340	Step1	La_Rupture_Wrath_Progression			
+	1718617343	Step2	La_Rupture_Wrath_Progression			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	25545999	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 B-Delay		
+	86045495	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	117058868	Step2	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	156662923	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 10Crash		
+	186594817	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		
+	310300311	Step2	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	361789910	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 A-Reverb		
+	674426258	Step3	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
+	694706536	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
+	1060565225	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 Drone		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	129770791	Palais mental (drone)	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Palais mental (drone)_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container- Palais mental\Palais mental (including Lauren's Theme)\Palais mental (drone)		3763264
+	142233568	La Rupture step2 10Crash	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step2 10Crash_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 10Crash		1459928
+	318342195	La Rupture step3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture3\La Rupture step3\La Rupture step3		8064064
+	333133724	Feu de camp 0	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 0_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp1\Feu de camp 0\Feu de camp 0		3528064
+	384773467	La Rupture step1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture1\La Rupture step1\La Rupture step1		1459928
+	416711375	Feu de camp 2 v2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 2 v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp3\Feu de camp 2 v2\Feu de camp 2 v2		3528064
+	439755788	La Rupture step4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step4_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture4\La Rupture step4\La Rupture step4		2016064
+	445191533	Feu de camp 3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 3 v2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp4\Feu de camp 3\Feu de camp 3		10584064
+	573536811	La Rupture step2 Basses	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step2 Basses_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 Basses		1459928
+	615544018	La Rupture step2 Melody	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step2 Melody_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 Melody		1459928
+	685272064	Coup de fil Basses - 1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Basses - 1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Basses - 1		2666900
+	688072795	Coup de fil Theme Piano - 3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Theme Piano - 3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		2666900
+	755526102	Feu de camp 1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Feu de camp 1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - Feu de camp\Feu de camp2\Feu de camp 1\Feu de camp 1		3528064
+	851880145	Coup de fil Riff Piano - 2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Riff Piano - 2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		2666900
+	932380002	Coup de fil Core Piano - 0	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Coup de fil Core Piano - 0_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Core Piano - 0		2666900
+	942281645	La Rupture step2 B-Delay	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step2 B-Delay_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 B-Delay		1459928
+	961224482	La Rupture step2 Drone	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step2 Drone_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 Drone		1459928
+	993968870	La Rupture step2 A-Reverb	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\La Rupture step2 A-Reverb_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 A-Reverb		1459928
+

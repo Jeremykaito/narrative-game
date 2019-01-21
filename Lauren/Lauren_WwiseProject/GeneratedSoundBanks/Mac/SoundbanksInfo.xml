@@ -25,6 +25,89 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil"/>
+				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp"/>
+				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
+				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="129770791" Language="SFX">
+					<ShortName>Palais mental (drone).wav</ShortName>
+					<Path>SFX\Palais mental (drone)_8956FC97.wem</Path>
+				</File>
+				<File Id="142233568" Language="SFX">
+					<ShortName>La Rupture step2 10Crash.wav</ShortName>
+					<Path>SFX\La Rupture step2 10Crash_8956FC97.wem</Path>
+				</File>
+				<File Id="318342195" Language="SFX">
+					<ShortName>La Rupture step3.wav</ShortName>
+					<Path>SFX\La Rupture step3_8956FC97.wem</Path>
+				</File>
+				<File Id="333133724" Language="SFX">
+					<ShortName>Feu de camp 0.wav</ShortName>
+					<Path>SFX\Feu de camp 0_8956FC97.wem</Path>
+				</File>
+				<File Id="384773467" Language="SFX">
+					<ShortName>La Rupture step1.wav</ShortName>
+					<Path>SFX\La Rupture step1_8956FC97.wem</Path>
+				</File>
+				<File Id="416711375" Language="SFX">
+					<ShortName>Feu de camp 2 v2.wav</ShortName>
+					<Path>SFX\Feu de camp 2 v2_8956FC97.wem</Path>
+				</File>
+				<File Id="439755788" Language="SFX">
+					<ShortName>La Rupture step4.wav</ShortName>
+					<Path>SFX\La Rupture step4_8956FC97.wem</Path>
+				</File>
+				<File Id="445191533" Language="SFX">
+					<ShortName>Feu de camp 3 v2.wav</ShortName>
+					<Path>SFX\Feu de camp 3 v2_8956FC97.wem</Path>
+				</File>
+				<File Id="573536811" Language="SFX">
+					<ShortName>La Rupture step2 Basses.wav</ShortName>
+					<Path>SFX\La Rupture step2 Basses_8956FC97.wem</Path>
+				</File>
+				<File Id="615544018" Language="SFX">
+					<ShortName>La Rupture step2 Melody.wav</ShortName>
+					<Path>SFX\La Rupture step2 Melody_8956FC97.wem</Path>
+				</File>
+				<File Id="685272064" Language="SFX">
+					<ShortName>Coup de fil Basses - 1.wav</ShortName>
+					<Path>SFX\Coup de fil Basses - 1_8956FC97.wem</Path>
+				</File>
+				<File Id="688072795" Language="SFX">
+					<ShortName>Coup de fil Theme Piano - 3.wav</ShortName>
+					<Path>SFX\Coup de fil Theme Piano - 3_8956FC97.wem</Path>
+				</File>
+				<File Id="755526102" Language="SFX">
+					<ShortName>Feu de camp 1.wav</ShortName>
+					<Path>SFX\Feu de camp 1_8956FC97.wem</Path>
+				</File>
+				<File Id="851880145" Language="SFX">
+					<ShortName>Coup de fil Riff Piano - 2.wav</ShortName>
+					<Path>SFX\Coup de fil Riff Piano - 2_8956FC97.wem</Path>
+				</File>
+				<File Id="932380002" Language="SFX">
+					<ShortName>Coup de fil Core Piano - 0.wav</ShortName>
+					<Path>SFX\Coup de fil Core Piano - 0_8956FC97.wem</Path>
+				</File>
+				<File Id="942281645" Language="SFX">
+					<ShortName>La Rupture step2 B-Delay.wav</ShortName>
+					<Path>SFX\La Rupture step2 B-Delay_8956FC97.wem</Path>
+				</File>
+				<File Id="961224482" Language="SFX">
+					<ShortName>La Rupture step2 Drone.wav</ShortName>
+					<Path>SFX\La Rupture step2 Drone_8956FC97.wem</Path>
+				</File>
+				<File Id="993968870" Language="SFX">
+					<ShortName>La Rupture step2 A-Reverb.wav</ShortName>
+					<Path>SFX\La Rupture step2 A-Reverb_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="4056684167" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Master</ObjectPath>
