@@ -1,21 +1,11 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1554006019930224}
-  m_IsPrefabAsset: 1
 --- !u!1 &1554006019930224
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4578132148067622}
@@ -33,9 +23,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &4578132148067622
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554006019930224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.5912123, y: 1.6081114, z: -8.071524}
@@ -44,11 +35,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114586836787542386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554006019930224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889484bad41aad144abce0cd581dd22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds3D:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114961384949099486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554006019930224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58346fdc513a0834190b1bc3050c20cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    valueGuid: 
+    groupGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c18ec20377578744b1415b6f2ca4f63,
+      type: 2}
+  valueGuid: 
+  groupGuid: 
+--- !u!114 &114556154515274422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554006019930224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dfd3ebd10dfa9140b8321ba90c89543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114337200845427332
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554006019930224}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -68,9 +122,10 @@ MonoBehaviour:
   valueGuid: 
 --- !u!114 &114431604527308294
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554006019930224}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -94,110 +149,3 @@ MonoBehaviour:
   multiPositionArray: []
   MultiPositionType: 1
   multiPositionTypeLabel: 0
---- !u!114 &114556154515274422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1554006019930224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dfd3ebd10dfa9140b8321ba90c89543, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!114 &114586836787542386
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1554006019930224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889484bad41aad144abce0cd581dd22c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - clip: {fileID: 8300000, guid: 6387b821e9e28c244934e0107922d08c, type: 3}
-    name: just1
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 12f2107583dc1dd4a8b0f1a4470785f2, type: 3}
-    name: just2
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: a3ae5789a443f4b428dfe0f8b436c502, type: 3}
-    name: just3
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: a3ae5789a443f4b428dfe0f8b436c502, type: 3}
-    name: WinSound
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: f376257a02d85be49bd3ca2b8e6043d4, type: 3}
-    name: Theme
-    volume: 0.06
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: 7253fc3444f519348ba551cc9a1a952f, type: 3}
-    name: fire
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: c2658b97f4fbcb8409319bc2f0ac0b96, type: 3}
-    name: CoupDeFil
-    volume: 0.06
-    pitch: 1.84
-    loop: 1
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: c2658b97f4fbcb8409319bc2f0ac0b96, type: 3}
-    name: CoupDeFil
-    volume: 0.115
-    pitch: 0.65
-    loop: 1
-    source: {fileID: 0}
-  - clip: {fileID: 8300000, guid: c2658b97f4fbcb8409319bc2f0ac0b96, type: 3}
-    name: CoupDeFil
-    volume: 0.254
-    pitch: 1
-    loop: 1
-    source: {fileID: 0}
---- !u!114 &114961384949099486
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1554006019930224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58346fdc513a0834190b1bc3050c20cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    valueGuid: 
-    groupGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5c18ec20377578744b1415b6f2ca4f63,
-      type: 2}
-  valueGuid: 
-  groupGuid: 

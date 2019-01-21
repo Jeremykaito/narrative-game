@@ -62,6 +62,7 @@ public class Moveable : Interactive
 
     public override void Interact()
     {
+        //this.transform.gameObject.GetComponent<Sha>
         LevelManager.instance.isInteracting = true;
         this.isInteracting = true;
         this.transform.GetComponent<Rigidbody>().isKinematic = true;
