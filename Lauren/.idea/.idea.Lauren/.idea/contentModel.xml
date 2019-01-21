@@ -13,21 +13,10 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CustomGravity.cs" t="Include" />
-          <e p="Dissolve.cs" t="Include" />
-          <e p="FP Controller" t="Include">
-            <e p="FirstPersonController.cs" t="Include" />
-            <e p="HeadBob.cs" t="Include" />
-            <e p="MouseLook.cs" t="Include" />
-            <e p="RigidbodyFirstPersonController.cs" t="Include" />
-          </e>
-          <e p="FullMaterials.cs" t="Include" />
-          <e p="InfiniteFall.cs" t="Include" />
-          <e p="Interactions" t="Include">
+          <e p="_old" t="Include">
             <e p="ExchangeObjectZone.cs" t="Include" />
             <e p="InteractiveObject.cs" t="Include" />
             <e p="InteractiveZone.cs" t="Include" />
-            <e p="LevelZone.cs" t="Include" />
             <e p="MoveObject.cs" t="Include" />
             <e p="MoveObjectDetector.cs" t="Include" />
             <e p="PickUpObject.cs" t="Include" />
@@ -35,25 +24,32 @@
             <e p="SwitchObjectDetector.cs" t="Include" />
             <e p="UseZone.cs" t="Include" />
           </e>
+          <e p="Interactions" t="Include">
+            <e p="Dissolve.cs" t="Include" />
+            <e p="Distributor.cs" t="Include" />
+            <e p="Interactive.cs" t="Include" />
+            <e p="LevelZone.cs" t="Include" />
+            <e p="MaterialSwitch.cs" t="Include" />
+            <e p="Moveable.cs" t="Include" />
+            <e p="MoveableComplex.cs" t="Include" />
+            <e p="PlayerRaycast.cs" t="Include" />
+            <e p="Rotating.cs" t="Include" />
+            <e p="Switch.cs" t="Include" />
+            <e p="Zone.cs" t="Include" />
+          </e>
           <e p="Levels" t="Include">
             <e p="LevelManager.cs" t="Include" />
             <e p="Step.cs" t="Include" />
           </e>
-          <e p="Rotating.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="MouseLook.cs" t="Include" />
+            <e p="RigidbodyFirstPersonController.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+          </e>
           <e p="Sound" t="Include">
             <e p="AudioManager.cs" t="Include" />
             <e p="EventCBCookie.cs" t="Include" />
           </e>
-          <e p="TestScripts" t="Include">
-            <e p="Distributor.cs" t="Include" />
-            <e p="Interactive.cs" t="Include" />
-            <e p="Moveable.cs" t="Include" />
-            <e p="MoveableComplex.cs" t="Include" />
-            <e p="PlayerRaycast.cs" t="Include" />
-            <e p="Switch.cs" t="Include" />
-            <e p="Zone.cs" t="Include" />
-          </e>
-          <e p="UIManager.cs" t="Include" />
         </e>
         <e p="StreamingAssets" t="Include">
           <e p="desc.txt" t="Include" />
@@ -254,28 +250,6 @@
               <e p="TimedObjectDestructor.cs" t="Include" />
               <e p="WaypointCircuit.cs" t="Include" />
               <e p="WaypointProgressTracker.cs" t="Include" />
-            </e>
-            <e p="Vehicles" t="Include">
-              <e p="Car" t="Include">
-                <e p="CarGuidelines.txt" t="Include" />
-                <e p="Scripts" t="Include">
-                  <e p="BrakeLight.cs" t="Include" />
-                  <e p="CarAIControl.cs" t="Include" />
-                  <e p="CarAudio.cs" t="Include" />
-                  <e p="CarController.cs" t="Include" />
-                  <e p="CarSelfRighting.cs" t="Include" />
-                  <e p="CarUserControl.cs" t="Include" />
-                  <e p="Mudguard.cs" t="Include" />
-                  <e p="SkidTrail.cs" t="Include" />
-                  <e p="Suspension.cs" t="Include" />
-                  <e p="WheelEffects.cs" t="Include" />
-                </e>
-                <e p="Shaders" t="Include">
-                  <e p="DiffuseReflectiveShader.shader" t="Include" />
-                  <e p="ReflectiveDiffuseSpec.shader" t="Include" />
-                  <e p="ReflectiveDiffuseSpecTransp.shader" t="Include" />
-                </e>
-              </e>
             </e>
           </e>
         </e>
