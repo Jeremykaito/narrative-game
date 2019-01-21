@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{FF870457-33AE-4755-9182-7B2FF00DC588}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Master" ID="{8093E9CD-C1ED-4DDC-B99D-E756FECBB489}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Master-Mixer Hierarchy" ID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" WorkUnitID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
