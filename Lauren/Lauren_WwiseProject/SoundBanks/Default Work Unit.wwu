@@ -3,13 +3,18 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{FF870457-33AE-4755-9182-7B2FF00DC588}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main_Soundbank" ID="{8093E9CD-C1ED-4DDC-B99D-E756FECBB489}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Interactive Music Hierarchy" ID="{49FED366-B530-42A8-993B-924873AAB707}" WorkUnitID="{49FED366-B530-42A8-993B-924873AAB707}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Master-Mixer Hierarchy" ID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" WorkUnitID="{2388DAEA-9775-46C6-A2ED-C5222A397756}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
+				<SoundBank Name="Master" ID="{8093E9CD-C1ED-4DDC-B99D-E756FECBB489}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{A4DF5A91-D85E-4F83-B0BC-95471727AD2D}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Actor" ID="{D3C17B43-2743-42D4-9B1D-A05FFC8EE642}">
+					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
