@@ -70,7 +70,19 @@
 									</ReferenceList>
 								</Bus>
 								<Bus Name="Cellphone Voice" ID="{A9E4664D-1013-4BD7-B844-84D687F9E3B3}"/>
-								<Bus Name="Flashback Voice" ID="{D61C7B49-2E82-4BD7-803D-F449C092DE0E}"/>
+								<Bus Name="Flashback Voice" ID="{D61C7B49-2E82-4BD7-803D-F449C092DE0E}">
+									<Comment>Flashback fx :
+duplicate -&gt; reverse -&gt; reverb
+- params de base, pas de damping
+- Room size 10
+- pas de pre-delay
+- reverberance entre 35 et 55
+- Pas de damping
+- wet only
+-&gt; reverse
+Puis reverb Vocal 1 sur la principale
+Puis LPF 6db sur la principale</Comment>
+								</Bus>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
