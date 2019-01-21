@@ -13,13 +13,26 @@ using UnityEngine;
     public void Look()
     {
         UIManager.instance.SetReticule(true);
-        //Surbrillance
+        foreach(MaterialSwitch ms in this.transform.GetComponentsInChildren<MaterialSwitch>())
+        {
+            if (ms != null)
+            {
+                ms.HighLightMat();
+            }
+        }
+
+        
     }
 
     public void StopLooking()
     {
-        UIManager.instance.SetReticule(false);
-        //Surbrillance
+        UIManager.instance.SetReticule(false); foreach (MaterialSwitch ms in this.transform.GetComponentsInChildren<MaterialSwitch>())
+        {
+            if (ms != null)
+            {
+                ms.StandardMat();
+            }
+        }
     }
 
     abstract public void Interact();
