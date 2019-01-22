@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Sound;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class LevelManager : MonoBehaviour {
     public Transform hand;
     public bool isInteracting = false;
     public static LevelManager instance;
-    [SerializeField]
-    private GameObject activeStep;
-    private GameObject lastStep;
 
+    //Cinematic variables
+    public bool isCinematic;
+    private float cinematicMoveSpeed = 0.7f;
+    private float standardMoveSpeed = 1.75f;
+    private float cinematicFootsteps = 0.4f;
+    private float standardFootsteps = 0.85f;
+
+    private GameObject lastStep;
+    RigidbodyFirstPersonController player;
     [SerializeField]
     public Step[] steps;
 
     public string currentZone;
-    private bool stayActive;
     [SerializeField]
     private int nbActivatedItems;
     private bool[] activatedItems;
@@ -35,63 +41,72 @@ public class LevelManager : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
+        // UI init
         UIManager.instance.SetReticule(false);
-        activeStep = null;
+
+        // Steps init
+        lastStep = null;
         foreach (Step s in steps)
         {
-            s.StepGameObject.SetActive(false);
+            if(!s.isIntro)
+            {
+                s.StepGameObject.SetActive(false);
+            }
         }
 
+        // Items init
         activatedItems = new bool[nbActivatedItems];
-        //Set all zones false
+        // Set all zones false
         for (int i = 0;i< activatedItems.Length;i++)
         {
             activatedItems[i] = false;
         }
 
+        // Cinematic init
+        isCinematic = false;
+        player = GameObject.Find("Player").transform.GetComponent<RigidbodyFirstPersonController>();
     }
 
     private IEnumerator StartDissolveAppearFx(Step nextStep)
     {
-        Debug.Log("next step: " + nextStep.name);
-        // Wait 2 seconds then stop the active step
-        if (activeStep && !stayActive)
-        {
-            this.GetComponent<Dissolve>().IsActive = true;
 
-            yield return new WaitForSeconds(3.5f);
-
+        if (lastStep != null)
+         {
+            Debug.Log("disolve");
+            GetComponent<Dissolve>().IsActive = true;
+            yield return new WaitForSeconds(3f);
             lastStep.SetActive(false);
-            
-            this.GetComponent<Dissolve>().IsActive = true;
-            nextStep.StepGameObject.SetActive(true);
         }
+        if(!nextStep.isIntro)
+        {
+            nextStep.StepGameObject.SetActive(true);
+            GetComponent<Dissolve>().IsActive = true;
+        }
+
+        lastStep = nextStep.StepGameObject;
+        if(isCinematic)
+        {
+            CinematicMode(false);
+        }
+
     }
     
     public void OnSpeechEnd(string soundItem, Step nextStep)
     {
-        if (!nextStep.isIntro)
             StartCoroutine(StartDissolveAppearFx(nextStep));
     }
 
-    public IEnumerator StartStep(string name)
+    public void StartStep(string name)
     {
         Step nextStep = Array.Find(steps, step =>step.name == name);
-
-        if (nextStep.isIntro)
+        //Trigger cinematic moment
+        if(nextStep.isIntro)
         {
-            nextStep.StepGameObject.SetActive(true);
+            CinematicMode(true);
         }
-        
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.soundItem, nextStep, nextStep.isIntro, nextStep.sceneTrack));
 
-        lastStep = activeStep;
-        // The new active step
-        activeStep = nextStep.StepGameObject;
-        stayActive = nextStep.stayActive;
-
-        yield return null;
     }
 
 
@@ -104,92 +119,115 @@ public class LevelManager : MonoBehaviour {
         if(activatedItems[0] && !steps[0].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("bureau"));
+            LevelManager.instance.StartStep("bureau");
             steps[0].Activated = true;
         }
         // Lamp
         else if(activatedItems[1] && !steps[1].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("fenetre"));
+            LevelManager.instance.StartStep("fenetre");
             steps[1].Activated = true;
         }
         // Phone
         else if (activatedItems[2] && !steps[2].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("fauteuil"));
+            LevelManager.instance.StartStep("fauteuil");
             steps[2].Activated = true;
         }
         // Match 1
         else if (activatedItems[3] && !steps[3].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("fin_cdf"));
+            LevelManager.instance.StartStep("fin_cdf");
             steps[3].Activated = true;
         }
         // Level zone 2
         else if (activatedItems[4] && !steps[4].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("feu"));
+            LevelManager.instance.StartStep("feu");
             steps[4].Activated = true;
         }
         // Match 2
         else if (activatedItems[5] && !steps[5].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("marshmallow"));
+            LevelManager.instance.StartStep("marshmallow");
             steps[5].Activated = true;
         }
         // Marshmallow
         else if (activatedItems[6] && activatedItems[7] && !steps[6].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("guepe1"));
+            LevelManager.instance.StartStep("guepe1");
             steps[6].Activated = true;
         }
         // Wasp 1
         else if (activatedItems[8] && !steps[7].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("guepe2"));
+            LevelManager.instance.StartStep("guepe2");
             steps[7].Activated = true;
         }
         // Wasp 2
         else if (activatedItems[9] && !steps[8].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("fin_fdc"));
+            LevelManager.instance.StartStep("fin_fdc");
             steps[8].Activated = true;
         }
         // Level zone 3
         else if (activatedItems[10] && !steps[9].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("voiture"));
+            LevelManager.instance.StartStep("voiture");
             steps[9].Activated = true;
         }
         // Car
         else if (activatedItems[11] && !steps[10].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("lauren"));
+            LevelManager.instance.StartStep("lauren");
             steps[10].Activated = true;
         }
         // Road
         else if (activatedItems[12] && !steps[11].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("tommy"));
+            LevelManager.instance.StartStep("tommy");
             steps[11].Activated = true;
         }
         // Deer
         else if (activatedItems[13] && !steps[12].Activated)
         {
             Debug.Log("Step " + i);
-            StartCoroutine(LevelManager.instance.StartStep("fin_Rupture"));
+            LevelManager.instance.StartStep("fin_Rupture");
             steps[12].Activated = true;
+        }
+    }
+
+    private void CinematicMode(bool on)
+    {
+        if(on)
+        {
+            isCinematic = true;
+            UIManager.instance.HideReticule();
+            player.movementSettings.ForwardSpeed /= 3;
+            player.movementSettings.StrafeSpeed /= 3;
+            player.movementSettings.BackwardSpeed /= 3;
+            player.movementSettings.FootstepsDelay *= 3;
+
+        }
+        else
+        {
+            isCinematic = false;
+            UIManager.instance.SetReticule(false);
+            player.movementSettings.ForwardSpeed *= 3;
+            player.movementSettings.StrafeSpeed *= 3;
+            player.movementSettings.BackwardSpeed *= 3;
+            player.movementSettings.FootstepsDelay /= 3;
         }
     }
 }
