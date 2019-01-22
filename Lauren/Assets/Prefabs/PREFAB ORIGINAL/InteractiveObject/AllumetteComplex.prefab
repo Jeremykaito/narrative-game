@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 8980585688234498954}
   - component: {fileID: 3748946826104415117}
   - component: {fileID: 6111813758922684361}
+  - component: {fileID: 1527790156987431563}
+  - component: {fileID: 5884518484340420036}
   m_Layer: 0
   m_Name: AllumetteComplex
   m_TagString: Untagged
@@ -143,6 +145,41 @@ MonoBehaviour:
   zone1: {fileID: 0}
   heldMultiplier: 1.3
   multipleUse: 1
+--- !u!114 &1527790156987431563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2620163856025493468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d6306d2168cc2449a203a8b7b33d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundName: match
+--- !u!114 &5884518484340420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2620163856025493468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dfd3ebd10dfa9140b8321ba90c89543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &6456149579255576090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,11 +187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6860065264812547165}
     m_Modifications:
-    - target: {fileID: 2128926757395930902, guid: 23750d8fad38ab04cb9750cd21097bd1,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire_Allumette
-      objectReference: {fileID: 0}
     - target: {fileID: 8950878014521134740, guid: 23750d8fad38ab04cb9750cd21097bd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -209,6 +241,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2128926757395930902, guid: 23750d8fad38ab04cb9750cd21097bd1,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire_Allumette
       objectReference: {fileID: 0}
     - target: {fileID: 150791021218555814, guid: 23750d8fad38ab04cb9750cd21097bd1,
         type: 3}

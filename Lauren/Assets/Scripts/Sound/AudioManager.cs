@@ -64,6 +64,46 @@ public class AudioManager : MonoBehaviour
         
         AkSoundEngine.PostEvent("Play_" + soundItem, gameObject,
             (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, cookie);
+        if(soundItem == "R2_1")
+        {
+            AkSoundEngine.PostEvent("Play_Car_Drive", gameObject);
+        }
+        else if(soundItem == "R3_1")
+        {
+            AkSoundEngine.PostEvent("Play_Rain_in_car", gameObject);
+        }
+        else if(soundItem =="C4")
+        {
+            AkSoundEngine.PostEvent("Play_cigarette", sounds3D[0]);
+        }
+        else if (soundItem == "F2")
+        {
+            AkSoundEngine.PostEvent("Play_fire", sounds3D[1]);
+        }
+        /*
+        else if (soundItem == "F3_1")
+        {
+            AkSoundEngine.PostEvent("Set_wasp_iddle", sounds3D[3]);
+            AkSoundEngine.PostEvent("Play_wasp", sounds3D[2]);
+        }
+        else if (soundItem == "F3_2")
+        {
+            AkSoundEngine.PostEvent("Stop_wasp", sounds3D[2]);
+            AkSoundEngine.PostEvent("Set_wasp_crazy", sounds3D[3]);
+            AkSoundEngine.PostEvent("Play_wasp", sounds3D[3]);
+        }
+        else if (soundItem == "F3_4")
+        {
+            AkSoundEngine.PostEvent("Stop_wasp", sounds3D[3]);
+            AkSoundEngine.PostEvent("Set_wasp_away", sounds3D[3]);
+            AkSoundEngine.PostEvent("Play_wasp", sounds3D[3]);
+        }
+        else if (soundItem == "Crash")
+        {
+            AkSoundEngine.PostEvent("Play_gas", sounds3D[4]);
+        }
+        */
+
         AkLogger.Message("Play_" + soundItem);
     }
 
