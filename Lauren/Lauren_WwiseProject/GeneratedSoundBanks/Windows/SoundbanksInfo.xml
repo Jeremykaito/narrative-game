@@ -360,11 +360,13 @@
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
+				<Event Id="3262020357" Name="Play_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Play_Lauren_Theme"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="1546983082" Name="Play_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Play_Tommy_Theme"/>
 				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
+				<Event Id="3013733207" Name="Stop_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Stop_Lauren_Theme" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 				<Event Id="152938524" Name="Stop_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Stop_Tommy_Theme" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -449,6 +451,10 @@
 					<ShortName>Julian's Theme.wav</ShortName>
 					<Path>SFX\Julian's Theme_8956FC97.wem</Path>
 				</File>
+				<File Id="1072249050" Language="SFX">
+					<ShortName>Palais mental (including Lauren's Theme).wav</ShortName>
+					<Path>SFX\Palais mental (including Lauren's Theme)_8956FC97.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="4056684167" Language="SFX">
@@ -479,6 +485,7 @@
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
 				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture" MaxAttenuation="0.000000"/>
+				<Event Id="3262020357" Name="Play_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Play_Lauren_Theme"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
 				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
@@ -498,6 +505,7 @@
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
+				<Event Id="3013733207" Name="Stop_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Stop_Lauren_Theme" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 				<Event Id="152938524" Name="Stop_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Stop_Tommy_Theme" MaxAttenuation="0.000000"/>
 				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
@@ -807,6 +815,10 @@
 				<File Id="1068101995" Language="SFX">
 					<ShortName>footsteps_palacen_3.wav</ShortName>
 					<Path>SFX\footsteps_palacen_3_4FA97B58.wem</Path>
+				</File>
+				<File Id="1072249050" Language="SFX">
+					<ShortName>Palais mental (including Lauren's Theme).wav</ShortName>
+					<Path>SFX\Palais mental (including Lauren's Theme)_8956FC97.wem</Path>
 				</File>
 			</ExcludedMemoryFiles>
 		</SoundBank>
