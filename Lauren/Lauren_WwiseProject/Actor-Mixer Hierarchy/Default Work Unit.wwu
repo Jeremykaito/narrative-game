@@ -439,13 +439,44 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="F3-2-fx" ID="{F189754C-E36E-4156-8941-6F8166B6EA5C}" ShortID="108980559">
+										<AudioFileSource Name="F3-2-fx" ID="{06F60010-3458-462F-AD38-CA23D874DF33}" ShortID="140531985">
 											<Language>SFX</Language>
 											<AudioFile>F3-2-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="F3-2-fx" ID="{F189754C-E36E-4156-8941-6F8166B6EA5C}" Platform="Linked"/>
+										<ActiveSource Name="F3-2-fx" ID="{06F60010-3458-462F-AD38-CA23D874DF33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="F3-3" ID="{C50E178A-565C-4FEC-AEC6-0D460C0F9D6A}" ShortID="47049154">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F3-3-fx" ID="{49F66827-C59D-453E-AA0D-758F64098FEB}" ShortID="788390175">
+											<Language>SFX</Language>
+											<AudioFile>F3-3-fx.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F3-3-fx" ID="{49F66827-C59D-453E-AA0D-758F64098FEB}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -464,10 +495,19 @@
 										<ItemRef Name="F3-2" ID="{A7D32580-AB28-40E1-B7E0-21260B462277}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="F3-3" ID="{C50E178A-565C-4FEC-AEC6-0D460C0F9D6A}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="F4" ID="{30C238E0-2684-4EB5-82C7-4C9ACD31485C}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="F3_3" ID="{AA7C7C0B-CD83-4D90-882D-BB00330904FD}"/>
+										<ItemList>
+											<ItemRef Name="F3-3" ID="{C50E178A-565C-4FEC-AEC6-0D460C0F9D6A}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="F2" ID="{F9C5D81E-E0C5-4C0C-A1A8-D38150FF3227}"/>
 										<ItemList>

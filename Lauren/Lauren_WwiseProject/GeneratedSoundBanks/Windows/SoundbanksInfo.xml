@@ -9,13 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
-		<File Id="108980559" Language="SFX">
+		<File Id="140531985" Language="SFX">
 			<ShortName>F3-2-fx.wav</ShortName>
 			<Path>SFX\F3-2-fx_56D34C19.wem</Path>
 		</File>
 		<File Id="674499736" Language="SFX">
 			<ShortName>F3-1-fx.wav</ShortName>
 			<Path>SFX\F3-1-fx_56D34C19.wem</Path>
+		</File>
+		<File Id="788390175" Language="SFX">
+			<ShortName>F3-3-fx.wav</ShortName>
+			<Path>SFX\F3-3-fx_56D34C19.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
@@ -42,6 +46,7 @@
 				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
 				<Event Id="3454329123" Name="Play_F3_1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_1"/>
 				<Event Id="3454329120" Name="Play_F3_2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_2"/>
+				<Event Id="3454329121" Name="Play_F3_3" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_3"/>
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
@@ -58,8 +63,9 @@
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
-				<File Id="108980559"/>
+				<File Id="140531985"/>
 				<File Id="674499736"/>
+				<File Id="788390175"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
 				<File Id="5066742" Language="SFX">
@@ -298,6 +304,7 @@
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -395,6 +402,7 @@
 				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
 				<Event Id="3454329123" Name="Play_F3_1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_1"/>
 				<Event Id="3454329120" Name="Play_F3_2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_2"/>
+				<Event Id="3454329121" Name="Play_F3_3" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_3"/>
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
 				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
@@ -421,8 +429,9 @@
 				<Event Id="606726776" Name="Switch_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Palais_mental" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
-				<File Id="108980559"/>
+				<File Id="140531985"/>
 				<File Id="674499736"/>
+				<File Id="788390175"/>
 			</ReferencedStreamedFiles>
 			<ExcludedMemoryFiles>
 				<File Id="5066742" Language="SFX">
