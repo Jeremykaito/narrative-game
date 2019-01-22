@@ -1531,6 +1531,63 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Play_Button" ID="{9CC4220A-35C3-4DAB-A2A9-35317CF7999F}">
+							<ChildrenList>
+								<Action Name="" ID="{8ACDC332-6AAB-4EE6-A081-17FA840BAED3}" ShortID="379251950">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Play Button" ID="{D3E603E1-8DDE-40ED-9A9A-67C48178F10F}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Credits" ID="{C90278B4-1FBD-4F0B-A8EB-AD3C9F83C1C6}" ShortID="758698178">
+					<ChildrenList>
+						<Event Name="Stop_Lauren_Theme" ID="{032E3BC1-D427-4A4B-9F41-E99CEFD32A95}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{DC51FA4C-1B4D-430C-9F97-216CEC322514}" ShortID="833707262">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lauren's Theme" ID="{A6252C83-87D7-4EBC-823D-B17A8E2385B2}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Lauren_Theme" ID="{ADF01D2E-CF10-4545-A73D-03F7F31AFEC3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{A1FBE4E6-A17C-4442-82B4-7B4FD6A26363}" ShortID="541673735">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="10"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lauren's Theme" ID="{A6252C83-87D7-4EBC-823D-B17A8E2385B2}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

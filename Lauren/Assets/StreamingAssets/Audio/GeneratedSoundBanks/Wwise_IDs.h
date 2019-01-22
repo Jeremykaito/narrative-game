@@ -36,10 +36,12 @@ namespace AK
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_LA_RUPTURE = 2363683185U;
+        static const AkUniqueID PLAY_LAUREN_THEME = 3262020357U;
         static const AkUniqueID PLAY_LIGHTSWITCH = 979756790U;
         static const AkUniqueID PLAY_MATCH = 913351269U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
+        static const AkUniqueID PLAY_PLAY_BUTTON = 1177493371U;
         static const AkUniqueID PLAY_R1 = 2061525117U;
         static const AkUniqueID PLAY_R2_1 = 1946098158U;
         static const AkUniqueID PLAY_R2_2 = 1946098157U;
@@ -55,6 +57,7 @@ namespace AK
         static const AkUniqueID SET_STATE_INTRO = 242827154U;
         static const AkUniqueID SET_STATE_OTHER = 3638057186U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
+        static const AkUniqueID STOP_LAUREN_THEME = 3013733207U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_TOMMY_THEME = 152938524U;
         static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
