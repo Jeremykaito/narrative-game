@@ -7,11 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dissolve_V1
-  m_Shader: {fileID: 4800000, guid: 21ea1a69289071048b8ff725b65b94be, type: 3}
+  m_Name: Bridge
+  m_Shader: {fileID: 4800000, guid: a24e0a84f6a66684d9746be72df6239d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -19,6 +19,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_BD90C083:
+        m_Texture: {fileID: 2800000, guid: c30a84f0fcc3b5a42a8a09794cc1c037, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -104,9 +108,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_C8F99E70: 0
-    - Vector1_C2B26B8F: 0
-    - Vector1_D3B2B4: 0.06
+    - Vector1_511BE581: 0.2
+    - Vector1_7ABDB769: 2.5
+    - Vector1_8ED349C7: 4.83
+    - Vector1_F66CD685: -0.45
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -217,7 +222,9 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_EDAE03A5: {r: 1, g: 0.6052512, b: 0.109803915, a: 0}
+    - Color_9B37D8A6: {r: 0.43529412, g: 0.43529412, b: 0.43529412, a: 0}
+    - Vector2_B644D006: {r: 0, g: -0.3, b: 0, a: 0}
+    - Vector2_EF450658: {r: -0.1, g: -0.2, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
