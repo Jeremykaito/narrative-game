@@ -42,7 +42,7 @@ public class AudioManager : MonoBehaviour
     {
         // Init
         shouldPlayAfter.Add("C4", "C5");
-        shouldPlayAfter.Add("F3_3", "F4");
+        shouldPlayAfter.Add("F3_4", "F4");
         shouldPlayAfter.Add("R2_1", "R2_2");
         shouldPlayAfter.Add("R3_1", "R3_2");
         shouldPlayAfter.Add("R3_2", "R3_3");
