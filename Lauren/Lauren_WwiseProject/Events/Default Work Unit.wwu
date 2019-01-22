@@ -565,17 +565,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{28C779D4-1CEC-4C34-9584-829176D196F4}" ShortID="79838069">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Palais_mental" ID="{87A68802-B126-4221-9731-307F77DA4BA6}">
@@ -597,17 +586,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{A34D9719-8FBD-4CF1-9ECE-1DB075DE1B58}" ShortID="432014530">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="3"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -639,17 +617,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{929EFEE1-5791-4AA1-80DC-8D9639091031}" ShortID="15123865">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="Delay" Type="Real64" Value="1.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_La_Rupture" ID="{AA626F8F-427E-41CB-84F0-503543003622}">
@@ -675,16 +642,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{70071A76-523E-47F4-B281-1B187865B870}" ShortID="101471905">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -1313,6 +1270,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B1C24B77-6EE5-4A58-A63C-0986FEC37BA8}" ShortID="907145864">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

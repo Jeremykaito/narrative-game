@@ -2119,40 +2119,6 @@
 										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{D6670FCA-74B2-42D3-AF52-49DAB933FDAA}">
-									<PropertyList>
-										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-										<Property Name="SourceContextType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Music Switch Container - Feu de camp" ID="{AF513879-10CD-41ED-831C-A73EB95E9626}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
-										</Reference>
-									</ReferenceList>
-									<TransitionInfo>
-										<DestinationFadeIn>
-											<MusicFade Name="Destination Fade-in" ID="{D610A898-7FC1-429C-A3A3-842357070684}"/>
-										</DestinationFadeIn>
-									</TransitionInfo>
-								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{6BAD40B3-1A60-49BB-A671-F92C9DCA347F}">
-									<PropertyList>
-										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-										<Property Name="SourceContextType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Music Switch Container - La Rupture" ID="{EDFF2660-D71D-465D-9A74-4430A3A1775F}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
-										</Reference>
-									</ReferenceList>
-									<TransitionInfo>
-										<DestinationFadeIn>
-											<MusicFade Name="Destination Fade-in" ID="{08A93A96-A6B0-4278-A6D7-574C80804FEA}"/>
-										</DestinationFadeIn>
-									</TransitionInfo>
-								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
