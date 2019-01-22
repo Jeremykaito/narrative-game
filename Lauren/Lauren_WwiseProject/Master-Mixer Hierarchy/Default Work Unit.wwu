@@ -76,7 +76,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Step4" ID="{7F853644-BDB5-4738-8896-D4C881D3838C}"/>
-										<State Name="" ID="{C5AD9AA8-F46F-43E4-907B-D0B43CA5D627}" ShortID="73337333"/>
+										<State Name="" ID="{C5AD9AA8-F46F-43E4-907B-D0B43CA5D627}" ShortID="73337333">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="10"/>
+											</PropertyList>
+										</State>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Step2" ID="{629B4534-2E88-477D-91CF-BCC4CE761291}"/>

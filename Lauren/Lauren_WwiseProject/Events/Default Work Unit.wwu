@@ -545,16 +545,6 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{87ED854E-DE3A-4F6F-9BD5-7356AFA192D2}" ShortID="215938388">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{CB5993DF-E44B-402E-B825-E452E7616388}" ShortID="87535285">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -569,16 +559,6 @@
 						</Event>
 						<Event Name="Play_Palais_mental" ID="{87A68802-B126-4221-9731-307F77DA4BA6}">
 							<ChildrenList>
-								<Action Name="" ID="{08FAB6EF-AD8B-4C4B-B7BC-FF1251C9066F}" ShortID="299661022">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{86322EF6-31AF-498F-BF9F-A15A6ABCD6FF}" ShortID="654293717">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -597,16 +577,6 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{AA899568-7661-41CE-8572-249CFF148FF2}" ShortID="167070048">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{5E9489C6-795E-44A9-8ED5-DD70539160BC}" ShortID="659920096">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -625,16 +595,6 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<Action Name="" ID="{A382E207-756D-4BAB-93B9-F2CD6C4AB04A}" ShortID="326358747">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{8C3B68B7-F94E-4B98-875C-E5E290A27651}" ShortID="680676617">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>
@@ -1207,6 +1167,7 @@
 								<Action Name="" ID="{1D2ED988-AD86-4781-B893-A15F49873FEE}" ShortID="316143448">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -1248,28 +1209,85 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{EA902794-A8B0-43E6-BE09-56B7B39822F8}" ShortID="140309133">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="41"/>
-										<Property Name="Delay" Type="Real64" Value="3"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Set_State_Exploring" ID="{55B1768E-37BB-4EC0-9995-E20EE79A8421}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Crash" ID="{9DE3831F-482D-4FE1-A47F-A30F34DD0E46}">
 							<ChildrenList>
+								<Action Name="" ID="{C9136AD9-F028-43C3-9F8A-ED40F82DB241}" ShortID="186451670">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{1083C6FC-9CB9-4720-9BB3-426E4A6C9C19}" ShortID="709973188">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Crash" ID="{7EE84216-F989-4B46-BE0B-2920893D2A1C}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+											<ObjectRef Name="Crash_CarV2" ID="{9006BC2C-9D45-49F6-ACC0-F90C12535661}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{59A1C99D-17E2-4801-9483-488AB243CAC0}" ShortID="809473497">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Step4" ID="{7F853644-BDB5-4738-8896-D4C881D3838C}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_R4" ID="{CED0A520-2D26-4AA3-8FDB-49EEB4F8CAF6}">
+							<ChildrenList>
+								<Action Name="" ID="{2CC8F324-075B-4F33-9AE8-CF154EF92D0A}" ShortID="718989106">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Switch Container - Music" ID="{FE444655-EE7C-4253-9F94-0F4B7ABC5C88}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9CDD804E-BE50-4554-871B-F81447DC5F85}" ShortID="946654411">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="R4" ID="{C7E39771-84DF-420D-9079-9F4D0D247E50}" WorkUnitID="{DB835D0F-0144-44A4-B838-7092304E28C6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CE898D61-1038-42FD-8B94-F9A0B9461097}" ShortID="378383706">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Speaking" ID="{CF74F192-9720-4BC5-A23B-A660AAD487CA}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FD5BC9F2-C1C9-4025-9D61-3A75EF42426F}" ShortID="69817354">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="La Rupture" ID="{DC97EA2A-FD93-491E-913E-CD62E914C100}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

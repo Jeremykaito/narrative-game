@@ -44,6 +44,7 @@ namespace AK
         static const AkUniqueID PLAY_R3_2 = 3020012804U;
         static const AkUniqueID PLAY_R3_3 = 3020012805U;
         static const AkUniqueID PLAY_R3_4 = 3020012802U;
+        static const AkUniqueID PLAY_R4 = 2061525112U;
         static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_INTRO = 242827154U;

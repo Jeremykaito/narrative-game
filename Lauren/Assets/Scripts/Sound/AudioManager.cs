@@ -47,6 +47,7 @@ public class AudioManager : MonoBehaviour
         shouldPlayAfter.Add("R3_1", "R3_2");
         shouldPlayAfter.Add("R3_2", "R3_3");
         shouldPlayAfter.Add("R3_3", "R3_4");
+        shouldPlayAfter.Add("Crash", "R4");
         
         AkSoundEngine.PostEvent("Init_all_states", gameObject);
         AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
@@ -81,7 +82,7 @@ public class AudioManager : MonoBehaviour
         if (!shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
         {
             AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
-            AkLogger.Message("Set_State_Exploring");
+            AkLogger.Message("Set_State_Exploring : " + callbackCookie.soundItem);
         }
             
 //            // If the last zone is different from where the player stands, switch the music accordingly

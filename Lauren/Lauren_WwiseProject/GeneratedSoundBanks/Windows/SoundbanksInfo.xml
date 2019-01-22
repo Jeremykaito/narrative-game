@@ -58,7 +58,7 @@
 				<Event Id="3020012804" Name="Play_R3_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_2"/>
 				<Event Id="3020012805" Name="Play_R3_3" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_3"/>
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
-				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
+				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -74,7 +74,7 @@
 				</File>
 				<File Id="9032680" Language="SFX">
 					<ShortName>R2-1.wav</ShortName>
-					<Path>SFX\R2-1_56D34C19.wem</Path>
+					<Path>SFX\R2-1_55142F5C.wem</Path>
 				</File>
 				<File Id="17898788" Language="SFX">
 					<ShortName>Footsteps_carpet_3.wav</ShortName>
@@ -158,7 +158,7 @@
 				</File>
 				<File Id="467794893" Language="SFX">
 					<ShortName>Match_crack.wav</ShortName>
-					<Path>SFX\Match_crack_9647D85B.wem</Path>
+					<Path>SFX\Match_crack_388E545A.wem</Path>
 				</File>
 				<File Id="500796836" Language="SFX">
 					<ShortName>Wasp_foufou.wav</ShortName>
@@ -182,7 +182,7 @@
 				</File>
 				<File Id="669800585" Language="SFX">
 					<ShortName>Match_fire.wav</ShortName>
-					<Path>SFX\Match_fire_AB5A56E4.wem</Path>
+					<Path>SFX\Match_fire_CC730569.wem</Path>
 				</File>
 				<File Id="672282388" Language="SFX">
 					<ShortName>Footsteps_carpet_1.wav</ShortName>
@@ -202,7 +202,7 @@
 				</File>
 				<File Id="689853728" Language="SFX">
 					<ShortName>Crash_CarV2.wav</ShortName>
-					<Path>SFX\Crash_CarV2_F9E7D50C.wem</Path>
+					<Path>SFX\Crash_CarV2_987DBC38.wem</Path>
 				</File>
 				<File Id="697592777" Language="SFX">
 					<ShortName>R1.wav</ShortName>
@@ -214,7 +214,7 @@
 				</File>
 				<File Id="708958729" Language="SFX">
 					<ShortName>Phone Dial.wav</ShortName>
-					<Path>SFX\Phone Dial_B9A4190A.wem</Path>
+					<Path>SFX\Phone Dial_299AE4C7.wem</Path>
 				</File>
 				<File Id="718661293" Language="SFX">
 					<ShortName>Wasp_away.wav</ShortName>
@@ -295,8 +295,11 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
+				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
+				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -410,6 +413,7 @@
 				<Event Id="3020012804" Name="Play_R3_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_2"/>
 				<Event Id="3020012805" Name="Play_R3_3" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_3"/>
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
+				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="3448676939" Name="Reset_Voice_Low_pass_Filter_All" ObjectPath="\Events\Default Work Unit\Reset_Voice_Low_pass_Filter_All" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
@@ -432,7 +436,7 @@
 				</File>
 				<File Id="9032680" Language="SFX">
 					<ShortName>R2-1.wav</ShortName>
-					<Path>SFX\R2-1_56D34C19.wem</Path>
+					<Path>SFX\R2-1_55142F5C.wem</Path>
 				</File>
 				<File Id="17898788" Language="SFX">
 					<ShortName>Footsteps_carpet_3.wav</ShortName>
@@ -457,10 +461,6 @@
 				<File Id="142233568" Language="SFX">
 					<ShortName>La Rupture step2 10Crash.wav</ShortName>
 					<Path>SFX\La Rupture step2 10Crash_8956FC97.wem</Path>
-				</File>
-				<File Id="159739514" Language="SFX">
-					<ShortName>crash_fuite_1.wav</ShortName>
-					<Path>SFX\crash_fuite_1_4E334D61.wem</Path>
 				</File>
 				<File Id="163332930" Language="SFX">
 					<ShortName>Footsteps_concrete_4.wav</ShortName>
@@ -548,7 +548,7 @@
 				</File>
 				<File Id="467794893" Language="SFX">
 					<ShortName>Match_crack.wav</ShortName>
-					<Path>SFX\Match_crack_9647D85B.wem</Path>
+					<Path>SFX\Match_crack_388E545A.wem</Path>
 				</File>
 				<File Id="533466052" Language="SFX">
 					<ShortName>Switch_light.wav</ShortName>
@@ -576,7 +576,7 @@
 				</File>
 				<File Id="669800585" Language="SFX">
 					<ShortName>Match_fire.wav</ShortName>
-					<Path>SFX\Match_fire_AB5A56E4.wem</Path>
+					<Path>SFX\Match_fire_CC730569.wem</Path>
 				</File>
 				<File Id="672282388" Language="SFX">
 					<ShortName>Footsteps_carpet_1.wav</ShortName>
@@ -604,7 +604,7 @@
 				</File>
 				<File Id="689853728" Language="SFX">
 					<ShortName>Crash_CarV2.wav</ShortName>
-					<Path>SFX\Crash_CarV2_F9E7D50C.wem</Path>
+					<Path>SFX\Crash_CarV2_987DBC38.wem</Path>
 				</File>
 				<File Id="697592777" Language="SFX">
 					<ShortName>R1.wav</ShortName>
@@ -616,7 +616,7 @@
 				</File>
 				<File Id="708958729" Language="SFX">
 					<ShortName>Phone Dial.wav</ShortName>
-					<Path>SFX\Phone Dial_B9A4190A.wem</Path>
+					<Path>SFX\Phone Dial_299AE4C7.wem</Path>
 				</File>
 				<File Id="722194588" Language="SFX">
 					<ShortName>F2.wav</ShortName>
@@ -633,10 +633,6 @@
 				<File Id="766792368" Language="SFX">
 					<ShortName>Footsteps_leaves_2.wav</ShortName>
 					<Path>SFX\Footsteps_leaves_2_56D34C19.wem</Path>
-				</File>
-				<File Id="780788035" Language="SFX">
-					<ShortName>crash_fuiteloop_1.wav</ShortName>
-					<Path>SFX\crash_fuiteloop_1_7D7F260A.wem</Path>
 				</File>
 				<File Id="785791119" Language="SFX">
 					<ShortName>Footsteps_leaves_6.wav</ShortName>
@@ -677,10 +673,6 @@
 				<File Id="967193595" Language="SFX">
 					<ShortName>C3-fx.wav</ShortName>
 					<Path>SFX\C3-fx_6CB5FC2D.wem</Path>
-				</File>
-				<File Id="970006306" Language="SFX">
-					<ShortName>crash_fuitedrone_1.wav</ShortName>
-					<Path>SFX\crash_fuitedrone_1_578DC2FA.wem</Path>
 				</File>
 				<File Id="993968870" Language="SFX">
 					<ShortName>La Rupture step2 A-Reverb.wav</ShortName>
