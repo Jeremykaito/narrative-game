@@ -1176,7 +1176,7 @@
 										<Property Name="Tempo" Type="Real64" Value="116"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1933,7 +1933,7 @@
 												</SourceFadeOut>
 											</TransitionInfo>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{1C0C3FA6-5795-4278-918C-6C10580EF4BE}">
+										<MusicTransition Name="Transition" ID="{0407058C-7EB3-4400-97F8-7461D9804D53}">
 											<PropertyList>
 												<Property Name="DestinationContextType" Type="int16" Value="2"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
@@ -1951,19 +1951,19 @@
 											</ReferenceList>
 											<TransitionInfo>
 												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{5B7456F8-D30F-4638-BE65-ACBAC6A85075}">
+													<MusicFade Name="Source Fade-out" ID="{1E46C230-143E-462E-AD7E-ABB8F4A8ABF8}">
 														<PropertyList>
-															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeCurve" Type="int16" Value="0"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
 												</SourceFadeOut>
 												<DestinationFadeIn>
-													<MusicFade Name="Destination Fade-in" ID="{4A5D5BF2-2AF9-475E-9C91-291A8DB34ADE}">
+													<MusicFade Name="Destination Fade-in" ID="{4B72CCF9-BE43-428C-873C-F12A5812CB34}">
 														<PropertyList>
 															<Property Name="FadeCurve" Type="int16" Value="1"/>
-															<Property Name="FadeOffset" Type="Real64" Value="3"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
 															<Property Name="FadeTime" Type="Real64" Value="1"/>
 														</PropertyList>
 													</MusicFade>

@@ -114,9 +114,9 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
-						<CurrentStateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
 						<CurrentStateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
-						<CurrentStateRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
+						<CurrentStateRef Name="Step2" ID="{629B4534-2E88-477D-91CF-BCC4CE761291}"/>
 						<CurrentStateRef Name="Step3" ID="{849DFA6A-C96A-4616-9156-5E9247121ADB}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -170,6 +170,10 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Set_State_Other" ID="{53F94357-1BD2-4042-BBA3-2B06494A54A7}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_R3_4" ID="{62FD0D06-9C41-489A-BCD7-B2BBF87EF25A}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 							<Position X="3" Y="2"/>
 						</Module>
@@ -178,15 +182,17 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
 						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
-						<CurrentStateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+						<CurrentStateRef Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}"/>
+						<CurrentStateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
+						<CurrentStateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
 						<CurrentStateRef Name="Step3" ID="{539F25C1-D67D-4260-B5F3-78810F2CE1EB}"/>
 						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+						<CurrentSwitchRef Name="La_Rupture" ID="{D1197281-E074-4AE3-B870-BAC9154BF1B3}"/>
 						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 						<CurrentSwitchRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
-						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
+						<CurrentSwitchRef Name="R3_4" ID="{48BD1787-3F81-4845-966E-F9D143AABAF0}"/>
 						<CurrentSwitchRef Name="Palace" ID="{D29D9B62-0F19-4C57-970B-9D3F1355CBB8}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

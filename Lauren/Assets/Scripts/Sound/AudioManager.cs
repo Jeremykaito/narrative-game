@@ -45,6 +45,7 @@ public class AudioManager : MonoBehaviour
         shouldPlayAfter.Add("F3_3", "F4");
         shouldPlayAfter.Add("R2_1", "R2_2");
         shouldPlayAfter.Add("R3_1", "R3_2");
+        shouldPlayAfter.Add("R3_2", "R3_3");
         shouldPlayAfter.Add("R3_3", "R3_4");
         
         AkSoundEngine.PostEvent("Init_all_states", gameObject);
