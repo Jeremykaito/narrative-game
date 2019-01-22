@@ -21,7 +21,6 @@ namespace AK
         static const AkUniqueID PLAY_C4 = 2346744635U;
         static const AkUniqueID PLAY_C5 = 2346744634U;
         static const AkUniqueID PLAY_CIGARETTE = 1982384146U;
-        static const AkUniqueID PLAY_CIGARETTEALLUME = 749864114U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_CRASH = 303595419U;
         static const AkUniqueID PLAY_F1 = 2262856449U;
@@ -35,6 +34,7 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_LA_RUPTURE = 2363683185U;
         static const AkUniqueID PLAY_LIGHTSWITCH = 979756790U;
+        static const AkUniqueID PLAY_MATCH = 913351269U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID PLAY_R1 = 2061525117U;
