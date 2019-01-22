@@ -138,15 +138,15 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
-						<CurrentStateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
+						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
 						<CurrentStateRef Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}"/>
-						<CurrentStateRef Name="Intro" ID="{8DF89100-5627-4EC9-962F-2CB97C28CB1A}"/>
+						<CurrentStateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
 						<CurrentStateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
 						<CurrentStateRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
-						<CurrentStateRef Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}"/>
+						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+						<CurrentSwitchRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
 						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 						<CurrentSwitchRef Name="F3_4" ID="{F61497BB-A83E-450F-A5B6-4501DC64FBD0}"/>
 						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
@@ -252,6 +252,35 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
+						<CurrentSwitchRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
+						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
+						<CurrentSwitchRef Name="Carpet" ID="{89B50C0C-4A48-45D4-86D7-7F2D63E3F253}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Menu" ID="{6F1D1F9A-3F10-4363-A2F2-9C67E7F5E3F0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Tommy_Theme" ID="{D11F1929-9AF3-495E-A750-C338C80AF34A}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Play_Button" ID="{9CC4220A-35C3-4DAB-A2A9-35317CF7999F}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
+						<CurrentStateRef Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}"/>
+						<CurrentStateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
+						<CurrentStateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+						<CurrentStateRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
+						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
 						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 						<CurrentSwitchRef Name="F1" ID="{FA901C9B-032D-4D90-BB71-6F7AE8674ED9}"/>
 						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>

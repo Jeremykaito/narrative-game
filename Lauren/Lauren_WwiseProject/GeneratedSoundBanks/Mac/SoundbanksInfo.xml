@@ -91,6 +91,7 @@
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
 				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
+				<Event Id="1177493371" Name="Play_Play_Button" ObjectPath="\Events\Default Work Unit\Menu\Play_Play_Button"/>
 				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
 				<Event Id="1946098158" Name="Play_R2_1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_1"/>
 				<Event Id="1946098157" Name="Play_R2_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_2"/>
@@ -318,6 +319,10 @@
 					<ShortName>R2-2-fx.wav</ShortName>
 					<Path>SFX\R2-2-fx_56D34C19.wem</Path>
 				</File>
+				<File Id="1026840341" Language="SFX">
+					<ShortName>Play Button.wav</ShortName>
+					<Path>SFX\Play Button_56D34C19.wem</Path>
+				</File>
 				<File Id="1036772537" Language="SFX">
 					<ShortName>Fire_ignit.wav</ShortName>
 					<Path>SFX\Fire_ignit_56D34C19.wem</Path>
@@ -490,6 +495,7 @@
 				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental" MaxAttenuation="0.000000"/>
+				<Event Id="1177493371" Name="Play_Play_Button" ObjectPath="\Events\Default Work Unit\Menu\Play_Play_Button"/>
 				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
 				<Event Id="1946098158" Name="Play_R2_1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_1"/>
 				<Event Id="1946098157" Name="Play_R2_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_2"/>
@@ -803,6 +809,10 @@
 				<File Id="1023496046" Language="SFX">
 					<ShortName>R2-2-fx.wav</ShortName>
 					<Path>SFX\R2-2-fx_56D34C19.wem</Path>
+				</File>
+				<File Id="1026840341" Language="SFX">
+					<ShortName>Play Button.wav</ShortName>
+					<Path>SFX\Play Button_56D34C19.wem</Path>
 				</File>
 				<File Id="1036772537" Language="SFX">
 					<ShortName>Fire_ignit.wav</ShortName>

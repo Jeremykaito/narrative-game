@@ -1531,6 +1531,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Play_Button" ID="{9CC4220A-35C3-4DAB-A2A9-35317CF7999F}">
+							<ChildrenList>
+								<Action Name="" ID="{8ACDC332-6AAB-4EE6-A081-17FA840BAED3}" ShortID="379251950">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Play Button" ID="{D3E603E1-8DDE-40ED-9A9A-67C48178F10F}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Credits" ID="{C90278B4-1FBD-4F0B-A8EB-AD3C9F83C1C6}" ShortID="758698178">

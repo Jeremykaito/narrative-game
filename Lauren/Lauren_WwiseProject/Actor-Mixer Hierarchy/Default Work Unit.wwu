@@ -2444,6 +2444,32 @@
 						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<Sound Name="Play Button" ID="{D3E603E1-8DDE-40ED-9A9A-67C48178F10F}" ShortID="319615574">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Play Button" ID="{106A6F63-3955-47AB-B83C-F94DD2D4D5AE}" ShortID="1026840341">
+							<Language>SFX</Language>
+							<AudioFile>Play Button.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Play Button" ID="{106A6F63-3955-47AB-B83C-F94DD2D4D5AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

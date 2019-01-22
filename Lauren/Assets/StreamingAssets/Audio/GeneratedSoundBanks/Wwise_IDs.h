@@ -41,6 +41,7 @@ namespace AK
         static const AkUniqueID PLAY_MATCH = 913351269U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
+        static const AkUniqueID PLAY_PLAY_BUTTON = 1177493371U;
         static const AkUniqueID PLAY_R1 = 2061525117U;
         static const AkUniqueID PLAY_R2_1 = 1946098158U;
         static const AkUniqueID PLAY_R2_2 = 1946098157U;
