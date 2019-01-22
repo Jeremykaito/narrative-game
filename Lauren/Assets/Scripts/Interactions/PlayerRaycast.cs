@@ -47,11 +47,13 @@ public class PlayerRaycast : MonoBehaviour
         if(LevelManager.instance.isInteracting)
         {
             objectParticles.gameObject.SetActive(true);
+            UIManager.instance.HideReticule();
             objectParticles.Play();
         }
         else
         {
             objectParticles.Stop();
+            UIManager.instance.SetReticule(false);
             objectParticles.gameObject.SetActive(false);
         }
     }

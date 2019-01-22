@@ -26,7 +26,8 @@ using UnityEngine;
 
     public void StopLooking()
     {
-        UIManager.instance.SetReticule(false); foreach (MaterialSwitch ms in this.transform.GetComponentsInChildren<MaterialSwitch>())
+        UIManager.instance.SetReticule(false);
+        foreach (MaterialSwitch ms in this.transform.GetComponentsInChildren<MaterialSwitch>())
         {
             if (ms != null)
             {
