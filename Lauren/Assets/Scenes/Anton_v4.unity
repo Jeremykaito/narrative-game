@@ -126,6 +126,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ILOT_FeuDeCamp_bk
       objectReference: {fileID: 0}
+    - target: {fileID: 767629350989554086, guid: 07f68fc0ff8287b4c9edd302c1711b5d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5207142873858923428, guid: 07f68fc0ff8287b4c9edd302c1711b5d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20838,10 +20843,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1248530955}
     m_Modifications:
+    - target: {fileID: 4406467277672119383, guid: a197b8f2f0708c04b94c39e15c6365f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3924894625232949826, guid: a197b8f2f0708c04b94c39e15c6365f0,
         type: 3}
       propertyPath: m_Name
       value: ILOTS_Rupture
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924894625232949826, guid: a197b8f2f0708c04b94c39e15c6365f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3924894625232949825, guid: a197b8f2f0708c04b94c39e15c6365f0,
         type: 3}
