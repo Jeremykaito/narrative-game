@@ -119,7 +119,7 @@
 											<PropertyList>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
-														<Value>10</Value>
+														<Value>8</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -147,7 +147,6 @@
 										</Sound>
 										<Sound Name="Phone Dial" ID="{08D6FD0B-66D0-44DB-8610-AB8F6EDDE4DE}" ShortID="898649642">
 											<PropertyList>
-												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
 												<Property Name="OverrideOutput" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
@@ -167,10 +166,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="Phone Dial" ID="{4C73E20D-F9AF-4950-A50F-2B094650AE55}" ShortID="708958729">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.39072905477981"/>
-														<Property Name="LoopEnd" Type="Real64" Value="6.03275711600434"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.608612149640638"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="6.28647120032228"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.61401173667693"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Phone Dial.wav</AudioFile>
