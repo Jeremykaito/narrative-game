@@ -39,8 +39,7 @@
 				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
 				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
-				<Event Id="1982384146" Name="Play_Cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_Cigarette"/>
-				<Event Id="749864114" Name="Play_cigaretteallume" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigaretteallume"/>
+				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
 				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
@@ -51,6 +50,7 @@
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
+				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
 				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
 				<Event Id="1946098158" Name="Play_R2_1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_1"/>
 				<Event Id="1946098157" Name="Play_R2_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_2"/>
@@ -114,7 +114,7 @@
 				</File>
 				<File Id="234507553" Language="SFX">
 					<ShortName>cigarette_loop_iddle.wav</ShortName>
-					<Path>SFX\cigarette_loop_iddle_0FC1849C.wem</Path>
+					<Path>SFX\cigarette_loop_iddle_450D25A2.wem</Path>
 				</File>
 				<File Id="258200734" Language="SFX">
 					<ShortName>footsteps_palacen_2.wav</ShortName>
@@ -158,15 +158,11 @@
 				</File>
 				<File Id="467794893" Language="SFX">
 					<ShortName>Match_crack.wav</ShortName>
-					<Path>SFX\Match_crack_5C305587.wem</Path>
+					<Path>SFX\Match_crack_9647D85B.wem</Path>
 				</File>
 				<File Id="500796836" Language="SFX">
 					<ShortName>Wasp_foufou.wav</ShortName>
 					<Path>SFX\Wasp_foufou_8956FC97.wem</Path>
-				</File>
-				<File Id="522725829" Language="SFX">
-					<ShortName>matches_loop_fire.wav</ShortName>
-					<Path>SFX\matches_loop_fire_5D393EC8.wem</Path>
 				</File>
 				<File Id="533466052" Language="SFX">
 					<ShortName>Switch_light.wav</ShortName>
@@ -186,7 +182,7 @@
 				</File>
 				<File Id="669800585" Language="SFX">
 					<ShortName>Match_fire.wav</ShortName>
-					<Path>SFX\Match_fire_6A894A21.wem</Path>
+					<Path>SFX\Match_fire_AB5A56E4.wem</Path>
 				</File>
 				<File Id="672282388" Language="SFX">
 					<ShortName>Footsteps_carpet_1.wav</ShortName>
@@ -259,10 +255,6 @@
 				<File Id="877832525" Language="SFX">
 					<ShortName>C4-fx.wav</ShortName>
 					<Path>SFX\C4-fx_56D34C19.wem</Path>
-				</File>
-				<File Id="901589655" Language="SFX">
-					<ShortName>Match_crack.wav</ShortName>
-					<Path>SFX\Match_crack_7FA25173.wem</Path>
 				</File>
 				<File Id="910159220" Language="SFX">
 					<ShortName>Footsteps_concrete_1.wav</ShortName>
@@ -394,8 +386,7 @@
 				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
 				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
-				<Event Id="1982384146" Name="Play_Cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_Cigarette"/>
-				<Event Id="749864114" Name="Play_cigaretteallume" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigaretteallume"/>
+				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette"/>
 				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
@@ -409,6 +400,7 @@
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
 				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture" MaxAttenuation="0.000000"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
+				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental" MaxAttenuation="0.000000"/>
 				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
@@ -486,6 +478,10 @@
 					<ShortName>footsteps_palacen_6.wav</ShortName>
 					<Path>SFX\footsteps_palacen_6_82B052F8.wem</Path>
 				</File>
+				<File Id="234507553" Language="SFX">
+					<ShortName>cigarette_loop_iddle.wav</ShortName>
+					<Path>SFX\cigarette_loop_iddle_450D25A2.wem</Path>
+				</File>
 				<File Id="258200734" Language="SFX">
 					<ShortName>footsteps_palacen_2.wav</ShortName>
 					<Path>SFX\footsteps_palacen_2_8BA4E025.wem</Path>
@@ -552,11 +548,7 @@
 				</File>
 				<File Id="467794893" Language="SFX">
 					<ShortName>Match_crack.wav</ShortName>
-					<Path>SFX\Match_crack_5C305587.wem</Path>
-				</File>
-				<File Id="522725829" Language="SFX">
-					<ShortName>matches_loop_fire.wav</ShortName>
-					<Path>SFX\matches_loop_fire_5D393EC8.wem</Path>
+					<Path>SFX\Match_crack_9647D85B.wem</Path>
 				</File>
 				<File Id="533466052" Language="SFX">
 					<ShortName>Switch_light.wav</ShortName>
@@ -584,7 +576,7 @@
 				</File>
 				<File Id="669800585" Language="SFX">
 					<ShortName>Match_fire.wav</ShortName>
-					<Path>SFX\Match_fire_6A894A21.wem</Path>
+					<Path>SFX\Match_fire_AB5A56E4.wem</Path>
 				</File>
 				<File Id="672282388" Language="SFX">
 					<ShortName>Footsteps_carpet_1.wav</ShortName>
@@ -665,10 +657,6 @@
 				<File Id="877832525" Language="SFX">
 					<ShortName>C4-fx.wav</ShortName>
 					<Path>SFX\C4-fx_56D34C19.wem</Path>
-				</File>
-				<File Id="901589655" Language="SFX">
-					<ShortName>Match_crack.wav</ShortName>
-					<Path>SFX\Match_crack_7FA25173.wem</Path>
 				</File>
 				<File Id="910159220" Language="SFX">
 					<ShortName>Footsteps_concrete_1.wav</ShortName>

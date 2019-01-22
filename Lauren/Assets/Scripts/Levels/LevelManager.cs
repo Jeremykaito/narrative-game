@@ -12,10 +12,6 @@ public class LevelManager : MonoBehaviour {
 
     //Cinematic variables
     public bool isCinematic;
-    private float cinematicMoveSpeed = 0.7f;
-    private float standardMoveSpeed = 1.75f;
-    private float cinematicFootsteps = 0.4f;
-    private float standardFootsteps = 0.85f;
 
     private GameObject lastStep;
     RigidbodyFirstPersonController player;
@@ -74,7 +70,7 @@ public class LevelManager : MonoBehaviour {
          {
             Debug.Log("disolve");
             GetComponent<Dissolve>().IsActive = true;
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(4f);
             lastStep.SetActive(false);
         }
         if(!nextStep.isIntro)
@@ -214,20 +210,12 @@ public class LevelManager : MonoBehaviour {
         {
             isCinematic = true;
             UIManager.instance.HideReticule();
-            player.movementSettings.ForwardSpeed /= 3;
-            player.movementSettings.StrafeSpeed /= 3;
-            player.movementSettings.BackwardSpeed /= 3;
-            player.movementSettings.FootstepsDelay *= 3;
 
         }
         else
         {
             isCinematic = false;
             UIManager.instance.SetReticule(false);
-            player.movementSettings.ForwardSpeed *= 3;
-            player.movementSettings.StrafeSpeed *= 3;
-            player.movementSettings.BackwardSpeed *= 3;
-            player.movementSettings.FootstepsDelay /= 3;
         }
     }
 }

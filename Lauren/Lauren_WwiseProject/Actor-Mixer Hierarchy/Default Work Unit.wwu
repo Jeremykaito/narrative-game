@@ -823,217 +823,6 @@
 				</ActorMixer>
 				<Folder Name="Coup de fil" ID="{1CA3BDAA-8BB4-4818-8671-48D1C5C985D1}" ShortID="72731888">
 					<ChildrenList>
-						<RandomSequenceContainer Name="cigarette+allumette" ID="{B84B1FEB-F9C5-4E70-83AA-9C4D967861DD}" ShortID="520319662">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" ShortID="1068039169">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-14</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="cigarette_loop_iddle" ID="{ED9FADFE-1004-40F6-B484-3B616E689C61}" ShortID="234507553">
-											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.223758801766321"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.15849581791781"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.13052596769702"/>
-												<Property Name="LoopEnd" Type="Real64" Value="8.43757148327167"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>cigarette_loop_iddle.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="cigarette_loop_iddle" ID="{ED9FADFE-1004-40F6-B484-3B616E689C61}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="Cigarette" ID="{CB4C2D48-480A-4122-BBA3-735AB3857508}" ShortID="1066779966">
-									<PropertyList>
-										<Property Name="Color" Type="int16" Value="23"/>
-										<Property Name="OverrideColor" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Match_crack" ID="{37B484A2-A702-4D0C-9A00-3E043F6EB464}" ShortID="994751051">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" ShortID="467794893">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="9.33270676691729E-02"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.306646079484425"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Match_crack.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<BlendContainer Name="Loop_match" ID="{8514A2DD-4F33-493E-9EBC-E45A971F5F02}" ShortID="534092871">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Match_fire" ID="{7C5F5447-F475-4663-929A-31812A730274}" ShortID="889347278">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-4</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Match_fire" ID="{C6EFD55D-B9E5-45F9-A15F-3A0EC9878933}" ShortID="669800585">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.36213649202371"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.116590285236902"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0.745471217726857"/>
-																<Property Name="LoopEnd" Type="Real64" Value="1.51567370807972"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Match_fire.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Match_fire" ID="{C6EFD55D-B9E5-45F9-A15F-3A0EC9878933}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="matches_loop_fire" ID="{B228AC37-E564-4ABF-8E96-FEBCB251A13F}" ShortID="489498738">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-19</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="matches_loop_fire" ID="{0F3C47D2-E5E4-4E89-8EA9-9832190E4F2A}" ShortID="522725829">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.169970461868958"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0.056656820622986"/>
-																<Property Name="LoopEnd" Type="Real64" Value="1.87839151450054"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>matches_loop_fire.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="matches_loop_fire" ID="{0F3C47D2-E5E4-4E89-8EA9-9832190E4F2A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Match_crack" ID="{CDF459C2-A839-4EF5-AB70-342DF9C458DE}" ShortID="743740835">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-16</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Match_crack" ID="{FFC89567-72FD-49FA-B185-010E5D5CE41D}" ShortID="901589655">
-															<PropertyList>
-																<Property Name="FadeInDuration" Type="Real64" Value="0.178654672395274"/>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.217318743286789"/>
-																<Property Name="LoopBegin" Type="Real64" Value="0.294646885069817"/>
-																<Property Name="LoopEnd" Type="Real64" Value="1.02526450053706"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.187987379162191"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Match_crack.wav</AudioFile>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Match_crack" ID="{FFC89567-72FD-49FA-B185-010E5D5CE41D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</BlendContainer>
-									</ChildrenList>
-									<Playlist>
-										<ItemRef Name="Match_crack" ID="{37B484A2-A702-4D0C-9A00-3E043F6EB464}"/>
-										<ItemRef Name="Loop_match" ID="{8514A2DD-4F33-493E-9EBC-E45A971F5F02}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-							</ChildrenList>
-							<Playlist>
-								<ItemRef Name="Cigarette" ID="{CB4C2D48-480A-4122-BBA3-735AB3857508}"/>
-							</Playlist>
-						</RandomSequenceContainer>
 						<ActorMixer Name="Lightswitch" ID="{3E3D068C-B866-4026-A004-51D310273D36}" ShortID="631296079">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="23"/>
@@ -1049,7 +838,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+									<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1083,6 +872,132 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
+						<Sound Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" ShortID="1068039169">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>45</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="cigarette_loop_iddle" ID="{ED9FADFE-1004-40F6-B484-3B616E689C61}" ShortID="234507553">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.223758801766321"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.15849581791781"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.13052596769702"/>
+										<Property Name="LoopEnd" Type="Real64" Value="8.43757148327167"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>cigarette_loop_iddle.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="cigarette_loop_iddle" ID="{ED9FADFE-1004-40F6-B484-3B616E689C61}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="Match" ID="{CB1DDDD1-A864-4CA7-998D-3DBFAD434F2A}" ShortID="440105497">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Match_fire" ID="{7C5F5447-F475-4663-929A-31812A730274}" ShortID="889347278">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Match_fire" ID="{C6EFD55D-B9E5-45F9-A15F-3A0EC9878933}" ShortID="669800585">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.322635755360101"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.434508103299697"/>
+												<Property Name="FadeOutShape" Type="int16" Value="2"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.33456060299193"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Match_fire.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Match_fire" ID="{C6EFD55D-B9E5-45F9-A15F-3A0EC9878933}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Match_crack" ID="{37B484A2-A702-4D0C-9A00-3E043F6EB464}" ShortID="994751051">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" ShortID="467794893">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.269007041935587"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.732536926190883"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Match_crack.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<SwitchContainer Name="Footsteps" ID="{09956A13-9137-4FEB-9CA8-F7655F2A45DA}" ShortID="684407606">
