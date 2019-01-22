@@ -98,6 +98,7 @@ public class LevelManager : MonoBehaviour {
         //Trigger cinematic moment
         if(nextStep.isIntro)
         {
+            lastStep = null;
             CinematicMode(true);
         }
         AudioManager.instance.ItemValidation(nextStep.soundItem,
