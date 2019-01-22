@@ -68,7 +68,6 @@ public class LevelManager : MonoBehaviour {
 
         if (lastStep != null)
          {
-            Debug.Log("disolve");
             GetComponent<Dissolve>().IsActive = true;
             yield return new WaitForSeconds(4f);
             lastStep.SetActive(false);

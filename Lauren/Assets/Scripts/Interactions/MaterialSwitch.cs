@@ -27,7 +27,6 @@ public class MaterialSwitch : MonoBehaviour
     public void DisolveMat()
     {
         this.transform.GetComponent<MeshRenderer>().material = mats[0];
-
     }
 
     public void HighLightMat()
