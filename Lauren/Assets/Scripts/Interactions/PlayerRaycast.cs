@@ -53,7 +53,6 @@ public class PlayerRaycast : MonoBehaviour
         else
         {
             objectParticles.Stop();
-            UIManager.instance.SetReticule(false);
             objectParticles.gameObject.SetActive(false);
         }
     }
