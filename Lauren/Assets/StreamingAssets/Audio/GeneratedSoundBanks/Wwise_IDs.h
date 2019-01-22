@@ -29,6 +29,7 @@ namespace AK
         static const AkUniqueID PLAY_F3_1 = 3454329123U;
         static const AkUniqueID PLAY_F3_2 = 3454329120U;
         static const AkUniqueID PLAY_F3_3 = 3454329121U;
+        static const AkUniqueID PLAY_F3_4 = 3454329126U;
         static const AkUniqueID PLAY_F4 = 2262856452U;
         static const AkUniqueID PLAY_FEU_DE_CAMP = 249732036U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
@@ -172,6 +173,7 @@ namespace AK
                 static const AkUniqueID F3_1 = 2234653492U;
                 static const AkUniqueID F3_2 = 2234653495U;
                 static const AkUniqueID F3_3 = 2234653494U;
+                static const AkUniqueID F3_4 = 2234653489U;
                 static const AkUniqueID F4 = 1802970447U;
             } // namespace SWITCH
         } // namespace FEU_DE_CAMP

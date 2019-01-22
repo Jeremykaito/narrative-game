@@ -439,13 +439,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="F3-2-fx" ID="{06F60010-3458-462F-AD38-CA23D874DF33}" ShortID="140531985">
+										<AudioFileSource Name="F3-2-fx" ID="{6F7C154B-A899-42FB-9070-289997876565}" ShortID="924225478">
 											<Language>SFX</Language>
 											<AudioFile>F3-2-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="F3-2-fx" ID="{06F60010-3458-462F-AD38-CA23D874DF33}" Platform="Linked"/>
+										<ActiveSource Name="F3-2-fx" ID="{6F7C154B-A899-42FB-9070-289997876565}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="F3-3" ID="{C50E178A-565C-4FEC-AEC6-0D460C0F9D6A}" ShortID="47049154">
@@ -470,13 +470,50 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="F3-3-fx" ID="{49F66827-C59D-453E-AA0D-758F64098FEB}" ShortID="788390175">
+										<AudioFileSource Name="F3-3-fx" ID="{3904A925-B75A-4810-90D9-F66A7B88C633}" ShortID="889470145">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="0.108957968476357"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>F3-3-fx.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="788390175"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="F3-3-fx" ID="{49F66827-C59D-453E-AA0D-758F64098FEB}" Platform="Linked"/>
+										<ActiveSource Name="F3-3-fx" ID="{3904A925-B75A-4810-90D9-F66A7B88C633}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="F3-4" ID="{6315F93E-D120-4254-BCC8-504F2264AFAB}" ShortID="999179425">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="F3-4-fx" ID="{0C45945F-2B7F-4E07-9D30-39B4BB171BD3}" ShortID="25306614">
+											<Language>SFX</Language>
+											<AudioFile>F3-4-fx.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="F3-4-fx" ID="{0C45945F-2B7F-4E07-9D30-39B4BB171BD3}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -490,6 +527,9 @@
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="F3-1" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="F3-4" ID="{6315F93E-D120-4254-BCC8-504F2264AFAB}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="F3-2" ID="{A7D32580-AB28-40E1-B7E0-21260B462277}"/>
@@ -536,6 +576,12 @@
 										<SwitchRef Name="F3_1" ID="{CA4F0EA4-C8D3-4991-A4C0-5A37E1547F4C}"/>
 										<ItemList>
 											<ItemRef Name="F3-1" ID="{0B700D29-B4E3-4818-982C-B8D0B595D1FF}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="F3_4" ID="{F61497BB-A83E-450F-A5B6-4501DC64FBD0}"/>
+										<ItemList>
+											<ItemRef Name="F3-4" ID="{6315F93E-D120-4254-BCC8-504F2264AFAB}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
