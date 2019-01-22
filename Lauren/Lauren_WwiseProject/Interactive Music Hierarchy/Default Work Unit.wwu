@@ -2235,6 +2235,116 @@
 						</MusicCue>
 					</CueList>
 				</MusicSegment>
+				<MusicPlaylistContainer Name="Tommy's Theme" ID="{9D4BEE24-941E-4131-A779-F7A5A6C84891}" ShortID="377402218">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Tommy's Theme" ID="{0F8B0FA9-B947-4508-A7AB-89474C27D0D3}" ShortID="335658890">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="105000"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{2EF7709D-1ED4-47B9-AAD6-B13782734660}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Tommy's Theme" ID="{C1D8D74C-8E28-46ED-BC88-033D2F4072EF}" ShortID="756261964">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Tommy's Theme" ID="{177DC8FA-C1F3-4310-9675-72965CBB5EEC}" ShortID="1020716760">
+											<Language>SFX</Language>
+											<AudioFile>Julian's Theme.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7E7AABB6-252E-4E34-8B01-E004FBCE794C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{05019698-D99E-42B9-88D3-1EEDB9626FA1}">
+											<ClipList>
+												<MusicClip Name="Julian's Theme" ID="{7630582B-F2CE-4D69-A22C-29B889CD552A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="105000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Tommy's Theme" ID="{177DC8FA-C1F3-4310-9675-72965CBB5EEC}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{C25B49FD-61AD-4CAB-8DA4-339D0BE5EAC8}"/>
+								<MusicCue Name="Exit Cue" ID="{6D564F9B-87FC-4EEB-945B-3D695F6932B3}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="105000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{3074BBF0-D79D-49F4-AF76-E2C9D2262BB1}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{A1D03192-662B-43D1-9EA7-8B9FD3E625C1}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{A1C03A5A-BCE5-45F9-883B-F8E4B516F60B}" ShortID="487913292">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{877A38BE-07E6-4F37-A7BA-5AEA7F7065E3}" ShortID="43409904">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="Tommy's Theme" ID="{0F8B0FA9-B947-4508-A7AB-89474C27D0D3}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
