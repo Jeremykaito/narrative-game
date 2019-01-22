@@ -104,13 +104,13 @@ public class PickUpObject : MonoBehaviour
         target.transform.rotation = new Quaternion(0, 0, 0, 0);
         target.transform.gameObject.SetActive(false);
 
-        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
+        //StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
         pickUpObject = false;
     }
 
     private void Interact(InteractiveObject target)
     {
         //Changer l'état de l'objet
-        StartCoroutine(LevelManager.instance.StartStep(target.Step));
+        //StartCoroutine(LevelManager.instance.StartStep(target.Step));
     }
 }

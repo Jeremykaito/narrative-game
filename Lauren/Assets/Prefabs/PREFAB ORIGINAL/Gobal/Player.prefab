@@ -59,8 +59,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 1000
-  field of view: 55
+  far clip plane: 200
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -98,10 +98,10 @@ MonoBehaviour:
   finalBlitToCameraTarget: 1
   antialiasingMode: 3
   temporalAntialiasing:
-    jitterSpread: 0.75
+    jitterSpread: 0.808
     sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
+    stationaryBlending: 0.902
+    motionBlending: 0.823
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 1
   clearColorMode: 0
-  backgroundColorHDR: {r: 0.025, g: 0.07, b: 0.19, a: 0}
+  backgroundColorHDR: {r: 0, g: 0, b: 0, a: 0}
   clearDepth: 1
   renderingPath: 0
   volumeLayerMask:
@@ -287,8 +287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectParticles: {fileID: 5644170973322655564}
-  rangeArm: 2
-  rangeTofoot: 2
+  rangeArm: 1.2
+  rangeTofoot: 4
   fpsCamera: {fileID: 1408039905753890316}
 --- !u!1 &1408039907675822399
 GameObject:
@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 1408039907675822396}
   - component: {fileID: 1408039907675822397}
   - component: {fileID: 1408039907675822398}
+  - component: {fileID: 8099354879306094954}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -368,11 +369,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1408039905753890316}
   movementSettings:
-    ForwardSpeed: 2
-    BackwardSpeed: 2
-    StrafeSpeed: 2
-    RunMultiplier: 1
-    FootstepsDelay: 0.75
+    ForwardSpeed: 1.75
+    BackwardSpeed: 1.75
+    StrafeSpeed: 1.75
+    RunMultiplier: 5
+    FootstepsDelay: 0.85
     RunKey: 304
     SlopeCurveModifier:
       serializedVersion: 2
@@ -422,6 +423,28 @@ MonoBehaviour:
     stickToGroundHelperDistance: 0.6
     slowDownRate: 20
     shellOffset: 0.1
+--- !u!114 &8099354879306094954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408039907675822399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dfd3ebd10dfa9140b8321ba90c89543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &2795958337273012302
 GameObject:
   m_ObjectHideFlags: 0

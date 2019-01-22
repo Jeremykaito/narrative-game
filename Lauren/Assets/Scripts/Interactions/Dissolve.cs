@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dissolve : MonoBehaviour
 {
     public Material dissolveMat;
+    [SerializeField]
     private float dissolveVal;
 
     [SerializeField]
@@ -28,8 +29,7 @@ public class Dissolve : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dissolveVal = dissolveMat.GetFloat("Vector1_D3B2B4");
-        dissolveMat.SetFloat("Vector1_D3B2B4",0.06f);
+        dissolveMat.SetFloat("Vector1_D3B2B4",dissolveVal);
     }
 
     // Update is called once per frame
@@ -41,7 +41,7 @@ public class Dissolve : MonoBehaviour
             {
                 if(dissolveVal > 0.06f)
                 {
-                    dissolveVal -= disolveFrameRate;
+                    dissolveVal -= disolveFrameRate*Time.deltaTime;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
                 }
                 else
@@ -54,7 +54,7 @@ public class Dissolve : MonoBehaviour
             {
                 if (dissolveVal < 0.94f)
                 {
-                    dissolveVal += disolveFrameRate;
+                    dissolveVal += disolveFrameRate*Time.deltaTime;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
                 }
                 else

@@ -97,6 +97,16 @@
 						<State Name="away" ID="{AF376491-6087-4102-BBCD-C7875D48B859}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Speech_States" ID="{24E4A25C-2D34-4AF8-B62C-D895D5F70B94}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="2.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{0E6DE4D9-00C8-4674-81CF-2C532A649D86}"/>
+						<State Name="Intro" ID="{8DF89100-5627-4EC9-962F-2CB97C28CB1A}"/>
+						<State Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

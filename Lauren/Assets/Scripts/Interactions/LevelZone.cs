@@ -31,7 +31,7 @@ public class LevelZone : MonoBehaviour
             else
             {
                 // Start the Level theme clip
-                AudioManager.instance.PlayMusicTrack(chapterClip);
+                AudioManager.instance.SwitchMusicTrack(chapterClip);
             }
 
             LevelManager.instance.currentZone = chapterClip;
@@ -43,7 +43,7 @@ public class LevelZone : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             LevelManager.instance.currentZone = defaultChapterClip;
-            AudioManager.instance.PlayMusicTrack(defaultChapterClip);
+            AudioManager.instance.SwitchMusicTrack(defaultChapterClip);
         }
     }
 }

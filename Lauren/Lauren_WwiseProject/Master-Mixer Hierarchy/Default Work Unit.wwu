@@ -30,8 +30,15 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Game_States" ID="{129272AE-C27C-480A-9A01-77A5A8B82B0F}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Speech_States" ID="{24E4A25C-2D34-4AF8-B62C-D895D5F70B94}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
+										<State Name="" ID="{929D02B1-F781-4283-93EA-BEA3C14F0879}" ShortID="162641155"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
 										<State Name="" ID="{6CAF5AB8-CD70-4147-9968-3628A5C5DE8D}" ShortID="322049327">
@@ -44,6 +51,14 @@
 									<CustomState>
 										<StateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
 										<State Name="" ID="{3D9B2806-4C75-4B2D-BD39-5A962BEDAB07}" ShortID="181146857"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Intro" ID="{8DF89100-5627-4EC9-962F-2CB97C28CB1A}"/>
+										<State Name="" ID="{EAE5790A-0F93-4292-8726-A9B6BC760D0B}" ShortID="845355564">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -60,10 +75,30 @@
 										</Effect>
 									</Custom>
 								</Reference>
-								<Reference Name="Effect1" CompanyID="4095" PluginID="65535" PluginType="15">
-									<ObjectRef Name="Voice_Reverb" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Normal Voice" ID="{912A7E49-C519-45CF-B6F0-4FB67E51E17F}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Voice_Reverb" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+								<Bus Name="Cellphone Voice" ID="{A9E4664D-1013-4BD7-B844-84D687F9E3B3}"/>
+								<Bus Name="Flashback Voice" ID="{D61C7B49-2E82-4BD7-803D-F449C092DE0E}">
+									<Comment>Flashback fx :
+duplicate -&gt; reverse -&gt; reverb
+- params de base, pas de damping
+- Room size 10
+- pas de pre-delay
+- reverberance entre 35 et 55
+- Pas de damping
+- wet only
+-&gt; reverse
+Puis reverb Vocal 1 sur la principale
+Puis LPF 6db sur la principale</Comment>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>

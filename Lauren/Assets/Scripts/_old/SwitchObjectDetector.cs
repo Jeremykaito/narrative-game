@@ -46,7 +46,7 @@ public class SwitchObjectDetector : MonoBehaviour
                     targetObject.Switch();
                     if(!nextstep)
                     {
-                        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
+                        //StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
                         nextstep = true;
                     }
                 }

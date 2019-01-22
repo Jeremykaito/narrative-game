@@ -44,72 +44,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0bf04be5db7bb4c9ae74889fb7f68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 235641059068265072, guid: 8d909eda4f46e4046ac35adfe8288c11, type: 3}
+  hand: {fileID: 0}
   isInteracting: 0
-  activeStep: {fileID: 0}
+  isCinematic: 0
   steps:
   - isIntro: 1
     name: bureau
     soundItem: C1
     sceneTrack: Coup_de_fil
-    StepGameObject: {fileID: 235641057488267470, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fenetre
     soundItem: C2
     sceneTrack: Coup_de_fil
-    StepGameObject: {fileID: 235641058841656592, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fauteuil
     soundItem: C3
     sceneTrack: Coup_de_fil
-    StepGameObject: {fileID: 235641058568789985, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fin_cdf
     soundItem: C4
     sceneTrack: Coup_de_fil
-    StepGameObject: {fileID: 235641057757571259, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 1
     name: feu
     soundItem: F1
     sceneTrack: Feu_de_camp
-    StepGameObject: {fileID: 235641057845094826, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: marshmallow
     soundItem: F2
     sceneTrack: Feu_de_camp
-    StepGameObject: {fileID: 235641057833894303, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: guepe1
     soundItem: F3_1
     sceneTrack: Feu_de_camp
-    StepGameObject: {fileID: 235641058111428060, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: guepe2
     soundItem: F3_2
     sceneTrack: Feu_de_camp
-    StepGameObject: {fileID: 235641058966458410, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 0
     name: fin_fdc
-    soundItem: F4
+    soundItem: F3_3
     sceneTrack: Feu_de_camp
-    StepGameObject: {fileID: 235641058214987090, guid: 8d909eda4f46e4046ac35adfe8288c11,
-      type: 3}
+    StepGameObject: {fileID: 0}
     stayActive: 0
   - isIntro: 1
     name: voiture
@@ -150,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dissolveMat: {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
-  disolveFrameRate: 0.007
+  dissolveVal: 0
+  disolveFrameRate: 1
   isActive: 0
   isDisolved: 0

@@ -12,7 +12,9 @@ public class Switch : Interactive
     private bool isActivatedItem;
     [SerializeField]
     private int itemNumber;
-
+    [SerializeField]
+    private string soundName = "";
+    
     protected void Start()
     {
         switchTarget.SetActive(state);
@@ -26,6 +28,11 @@ public class Switch : Interactive
         {
             LevelManager.instance.ActivateObject(itemNumber);
             isActivatedItem = false;
+        }
+
+        if (soundName != "")
+        {
+            AudioManager.instance.PlaySoundEffect(soundName, gameObject);
         }
     }
 }
