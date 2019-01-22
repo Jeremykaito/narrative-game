@@ -19,7 +19,7 @@
 		</File>
 		<File Id="788390175" Language="SFX">
 			<ShortName>F3-3-fx.wav</ShortName>
-			<Path>SFX\F3-3-fx_FEC4B32C.wem</Path>
+			<Path>SFX\F3-3-fx_5C55BD9C.wem</Path>
 		</File>
 		<File Id="924225478" Language="SFX">
 			<ShortName>F3-2-fx.wav</ShortName>
@@ -39,6 +39,9 @@
 			<Path>Ambiances.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1193561773" Name="Play_Ambiances" ObjectPath="\Events\Default Work Unit\Play_Ambiances"/>
+				<Event Id="3773493117" Name="Play_Car_Drive" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Car_Drive"/>
+				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
+				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="43522204" Language="SFX">
@@ -55,11 +58,11 @@
 				</File>
 				<File Id="702977149" Language="SFX">
 					<ShortName>Car_Drive.wav</ShortName>
-					<Path>SFX\Car_Drive_56D34C19.wem</Path>
+					<Path>SFX\Car_Drive_D488B2F2.wem</Path>
 				</File>
 				<File Id="916312285" Language="SFX">
 					<ShortName>Rain_in_car.wav</ShortName>
-					<Path>SFX\Rain_in_car_56D34C19.wem</Path>
+					<Path>SFX\Rain_in_car_C5F24B1B.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -74,6 +77,7 @@
 				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
 				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
+				<Event Id="3773493117" Name="Play_Car_Drive" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Car_Drive"/>
 				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
@@ -95,6 +99,7 @@
 				<Event Id="3020012805" Name="Play_R3_3" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_3"/>
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
+				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -341,11 +346,11 @@
 				</File>
 				<File Id="702977149" Language="SFX">
 					<ShortName>Car_Drive.wav</ShortName>
-					<Path>SFX\Car_Drive_56D34C19.wem</Path>
+					<Path>SFX\Car_Drive_D488B2F2.wem</Path>
 				</File>
 				<File Id="916312285" Language="SFX">
 					<ShortName>Rain_in_car.wav</ShortName>
-					<Path>SFX\Rain_in_car_56D34C19.wem</Path>
+					<Path>SFX\Rain_in_car_C5F24B1B.wem</Path>
 				</File>
 			</ExcludedMemoryFiles>
 		</SoundBank>
@@ -449,6 +454,7 @@
 				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
 				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
+				<Event Id="3773493117" Name="Play_Car_Drive" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Car_Drive"/>
 				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette"/>
 				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
@@ -475,6 +481,7 @@
 				<Event Id="3020012805" Name="Play_R3_3" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_3"/>
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
+				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
 				<Event Id="3448676939" Name="Reset_Voice_Low_pass_Filter_All" ObjectPath="\Events\Default Work Unit\Reset_Voice_Low_pass_Filter_All" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
@@ -684,6 +691,10 @@
 					<ShortName>Footsteps_concrete_6.wav</ShortName>
 					<Path>SFX\Footsteps_concrete_6_56D34C19.wem</Path>
 				</File>
+				<File Id="702977149" Language="SFX">
+					<ShortName>Car_Drive.wav</ShortName>
+					<Path>SFX\Car_Drive_D488B2F2.wem</Path>
+				</File>
 				<File Id="708958729" Language="SFX">
 					<ShortName>Phone Dial.wav</ShortName>
 					<Path>SFX\Phone Dial_299AE4C7.wem</Path>
@@ -727,6 +738,10 @@
 				<File Id="910159220" Language="SFX">
 					<ShortName>Footsteps_concrete_1.wav</ShortName>
 					<Path>SFX\Footsteps_concrete_1_56D34C19.wem</Path>
+				</File>
+				<File Id="916312285" Language="SFX">
+					<ShortName>Rain_in_car.wav</ShortName>
+					<Path>SFX\Rain_in_car_C5F24B1B.wem</Path>
 				</File>
 				<File Id="932380002" Language="SFX">
 					<ShortName>Coup de fil Core Piano - 0.wav</ShortName>

@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_C3 = 2346744636U;
         static const AkUniqueID PLAY_C4 = 2346744635U;
         static const AkUniqueID PLAY_C5 = 2346744634U;
+        static const AkUniqueID PLAY_CAR_DRIVE = 3773493117U;
         static const AkUniqueID PLAY_CIGARETTE = 1982384146U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_CRASH = 303595419U;
@@ -47,6 +48,7 @@ namespace AK
         static const AkUniqueID PLAY_R3_3 = 3020012805U;
         static const AkUniqueID PLAY_R3_4 = 3020012802U;
         static const AkUniqueID PLAY_R4 = 2061525112U;
+        static const AkUniqueID PLAY_RAIN_IN_CAR = 929251997U;
         static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_INTRO = 242827154U;

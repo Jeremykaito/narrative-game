@@ -2144,6 +2144,16 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Rain_in_car" ID="{4031A9F1-E641-4067-80BF-F25E341553E8}" ShortID="276726405">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -2154,6 +2164,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Rain_in_car" ID="{61A2F9F7-D4F1-4878-9F89-E6D95BB2E4AE}" ShortID="916312285">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="2.88952726449599"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="2.98584483997919"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Rain_in_car.wav</AudioFile>
 								</AudioFileSource>
@@ -2163,6 +2177,16 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Car_Drive" ID="{3E276E39-0C66-41D3-8473-A9D5CAC01A9D}" ShortID="657191751">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -2173,6 +2197,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Car_Drive" ID="{24B494B2-4515-49A4-864D-3F1D5896E449}" ShortID="702977149">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.08349389025896"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.916802522526822"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.916802522526816"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="94.6806968718602"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Car_Drive.wav</AudioFile>
 								</AudioFileSource>
