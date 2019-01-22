@@ -29,6 +29,11 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="1404066300" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambiances</ObjectPath>
+			<ShortName>Ambiances</ShortName>
+			<Path>Ambiances.bnk</Path>
+		</SoundBank>
 		<SoundBank Id="2213570372" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Actor</ObjectPath>
 			<ShortName>Actor</ShortName>
@@ -384,6 +389,7 @@
 			<IncludedEvents>
 				<Event Id="3327006228" Name="Init_all_states" ObjectPath="\Events\Default Work Unit\Init_all_states" MaxAttenuation="0.000000"/>
 				<Event Id="1505908803" Name="LPF_Effect" ObjectPath="\Events\Default Work Unit\LPF_Effect" MaxAttenuation="0.000000"/>
+				<Event Id="1193561773" Name="Play_Ambiances" ObjectPath="\Events\Default Work Unit\Play_Ambiances"/>
 				<Event Id="2346744638" Name="Play_C1" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C1"/>
 				<Event Id="2346744637" Name="Play_C2" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C2"/>
 				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>

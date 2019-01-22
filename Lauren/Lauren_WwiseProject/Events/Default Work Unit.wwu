@@ -1356,6 +1356,20 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Ambiances" ID="{38B29CE6-43CA-45A3-A5DF-ACC0F9B1D4AD}">
+					<ChildrenList>
+						<Action Name="" ID="{B01AA8B1-F8C6-498B-8E26-D4CECAF58D61}" ShortID="346701386">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiances" ID="{4D29C134-2833-4890-A398-DD6C13557683}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

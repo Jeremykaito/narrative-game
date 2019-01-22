@@ -27,6 +27,7 @@
 						<ObjectRef Name="R2-2" ID="{1A876A6A-A803-417E-91AB-78204D780AC5}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="Footsteps_leaves_1" ID="{D7BEC3E3-E269-417E-B130-A580A3C1C6A8}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="Feu de camp 2 v2" ID="{4AD915A0-E79A-41C7-BC28-760F960E7699}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+						<ObjectRef Name="Amb_city_night" ID="{8B7761E1-CD9B-41EE-B49F-300A049974CA}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="R2-2-fx" ID="{0E5516B6-6DFE-41F1-9364-D33515987C7A}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="La Rupture step4" ID="{7E17AE99-DBE4-420A-8B56-7349C882993F}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
 						<ObjectRef Name="Match_crack" ID="{DA8058BE-6F3C-421B-A794-8AE560ACA27D}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
@@ -87,6 +88,7 @@
 						<ObjectRef Name="F3-1-fx" ID="{3D555FEC-8F3A-4EEB-8B73-41A93C58AA59}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="Bip_phone" ID="{51358F8D-DECB-4F11-983D-38FBB7D76CA2}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="Footsteps_concrete_4" ID="{B6464177-E605-4F9F-998C-2D364E54C460}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+						<ObjectRef Name="RoomTone_office" ID="{E85BB1FE-B4F0-4FB0-AC72-9CE58DA5883F}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="Footsteps_concrete_5" ID="{5425C685-EC5B-4FC4-9EC1-D2D260EBB278}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 						<ObjectRef Name="F1" ID="{93940CC1-E5A1-4FFB-8732-F3576E2553E6}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 					</ObjectExclusionList>
@@ -103,6 +105,14 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Actor-Mixer Hierarchy" ID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" WorkUnitID="{5EA7BBF8-64C0-4A50-8821-A07E8BE21D68}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
+					<ObjectExclusionList>
+						<ObjectRef Name="Amb_city_night" ID="{8B7761E1-CD9B-41EE-B49F-300A049974CA}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+						<ObjectRef Name="RoomTone_office" ID="{E85BB1FE-B4F0-4FB0-AC72-9CE58DA5883F}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+					</ObjectExclusionList>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambiances" ID="{6C950ACD-DA67-43BB-BC9F-BB1D77567519}">
+					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

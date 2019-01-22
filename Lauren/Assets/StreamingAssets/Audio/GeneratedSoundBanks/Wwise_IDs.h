@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID INIT_ALL_STATES = 3327006228U;
         static const AkUniqueID LPF_EFFECT = 1505908803U;
+        static const AkUniqueID PLAY_AMBIANCES = 1193561773U;
         static const AkUniqueID PLAY_C1 = 2346744638U;
         static const AkUniqueID PLAY_C2 = 2346744637U;
         static const AkUniqueID PLAY_C3 = 2346744636U;
@@ -224,6 +225,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ACTOR = 2213570372U;
+        static const AkUniqueID AMBIANCES = 1404066300U;
         static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS

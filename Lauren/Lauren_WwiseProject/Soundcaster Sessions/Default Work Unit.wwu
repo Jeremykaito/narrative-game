@@ -49,6 +49,10 @@
 							<ObjectRef Name="Play_C5" ID="{38444461-231E-4F55-8344-2455079E93C1}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 							<Position X="2" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambiances" ID="{38B29CE6-43CA-45A3-A5DF-ACC0F9B1D4AD}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
@@ -61,7 +65,7 @@
 						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+						<CurrentSwitchRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
 						<CurrentSwitchRef Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
 						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>

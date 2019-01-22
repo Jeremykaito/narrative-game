@@ -50,6 +50,7 @@ public class AudioManager : MonoBehaviour
         shouldPlayAfter.Add("Crash", "R4");
         
         AkSoundEngine.PostEvent("Init_all_states", gameObject);
+        AkSoundEngine.PostEvent("Play_Ambiances", gameObject);
         AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
         AkLogger.Message("Switch_Music_Palais_mental");
     }
