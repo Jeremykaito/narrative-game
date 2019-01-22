@@ -97,19 +97,21 @@ public class AudioManager : MonoBehaviour
         }
 
         this.isSpeaking = false;
-        SwitchMusicTrack(LevelManager.instance.currentZone);
+        SwitchMusicTrack(LevelManager.instance.currentZone, false);
         this.lastZone = LevelManager.instance.currentZone;
         
         if (callbackCookie.nextStep != null)
             LevelManager.instance.OnSpeechEnd(callbackCookie.soundItem, callbackCookie.nextStep);
     }
 
-    public void SwitchMusicTrack(string clipName)
+    public void SwitchMusicTrack(string clipName, bool lpf = true)
     {
         if (isSpeaking) return;
+
+        string action = lpf ? "Switch_Music" : "Play";
         
-        AkSoundEngine.PostEvent("Switch_Music_" + clipName, gameObject);
-        AkLogger.Message("Switch_Music " + clipName);
+        AkSoundEngine.PostEvent(action + "_" + clipName, gameObject);
+        AkLogger.Message(action + "_ " + clipName);
     }
     
     public void PlaySoundEffect(string soundName, GameObject theGameobject = null)

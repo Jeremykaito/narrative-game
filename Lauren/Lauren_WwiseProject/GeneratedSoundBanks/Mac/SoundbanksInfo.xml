@@ -212,7 +212,7 @@
 				</File>
 				<File Id="708958729" Language="SFX">
 					<ShortName>Phone Dial.wav</ShortName>
-					<Path>SFX\Phone Dial_0DC8BD64.wem</Path>
+					<Path>SFX\Phone Dial_B9A4190A.wem</Path>
 				</File>
 				<File Id="718661293" Language="SFX">
 					<ShortName>Wasp_away.wav</ShortName>
@@ -297,12 +297,7 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil"/>
-				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp"/>
-				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
-				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
-				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -394,20 +389,20 @@
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
 				<Event Id="1982384146" Name="Play_Cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_Cigarette"/>
 				<Event Id="749864114" Name="Play_cigaretteallume" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigaretteallume"/>
-				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil"/>
+				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
 				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
 				<Event Id="3454329123" Name="Play_F3_1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_1"/>
 				<Event Id="3454329120" Name="Play_F3_2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F3_2"/>
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
-				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp"/>
+				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
-				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture"/>
+				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture" MaxAttenuation="0.000000"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
-				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental"/>
+				<Event Id="4113650174" Name="Play_Palais_mental" ObjectPath="\Events\Default Work Unit\Play Music\Play_Palais_mental" MaxAttenuation="0.000000"/>
 				<Event Id="2061525117" Name="Play_R1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R1"/>
 				<Event Id="1946098158" Name="Play_R2_1" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_1"/>
 				<Event Id="1946098157" Name="Play_R2_2" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R2_2"/>
@@ -620,7 +615,7 @@
 				</File>
 				<File Id="708958729" Language="SFX">
 					<ShortName>Phone Dial.wav</ShortName>
-					<Path>SFX\Phone Dial_0DC8BD64.wem</Path>
+					<Path>SFX\Phone Dial_B9A4190A.wem</Path>
 				</File>
 				<File Id="722194588" Language="SFX">
 					<ShortName>F2.wav</ShortName>
