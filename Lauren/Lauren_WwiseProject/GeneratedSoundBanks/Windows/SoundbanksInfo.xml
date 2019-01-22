@@ -362,9 +362,11 @@
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
+				<Event Id="1546983082" Name="Play_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Play_Tommy_Theme"/>
 				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="152938524" Name="Stop_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Stop_Tommy_Theme" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="129770791" Language="SFX">
@@ -443,6 +445,10 @@
 					<ShortName>La Rupture step2 A-Reverb.wav</ShortName>
 					<Path>SFX\La Rupture step2 A-Reverb_8956FC97.wem</Path>
 				</File>
+				<File Id="1020716760" Language="SFX">
+					<ShortName>Julian's Theme.wav</ShortName>
+					<Path>SFX\Julian's Theme_8956FC97.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="4056684167" Language="SFX">
@@ -486,12 +492,14 @@
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
+				<Event Id="1546983082" Name="Play_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Play_Tommy_Theme"/>
 				<Event Id="3448676939" Name="Reset_Voice_Low_pass_Filter_All" ObjectPath="\Events\Default Work Unit\Reset_Voice_Low_pass_Filter_All" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
+				<Event Id="152938524" Name="Stop_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Stop_Tommy_Theme" MaxAttenuation="0.000000"/>
 				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="1890048954" Name="Switch_Music_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="606726776" Name="Switch_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Palais_mental" MaxAttenuation="0.000000"/>
@@ -779,6 +787,10 @@
 				<File Id="1018098808" Language="SFX">
 					<ShortName>Footsteps_leaves_5.wav</ShortName>
 					<Path>SFX\Footsteps_leaves_5_56D34C19.wem</Path>
+				</File>
+				<File Id="1020716760" Language="SFX">
+					<ShortName>Julian's Theme.wav</ShortName>
+					<Path>SFX\Julian's Theme_8956FC97.wem</Path>
 				</File>
 				<File Id="1023496046" Language="SFX">
 					<ShortName>R2-2-fx.wav</ShortName>

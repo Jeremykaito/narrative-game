@@ -1491,6 +1491,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Menu" ID="{A644382B-6B94-41F9-ACCA-DAAB16D8EE25}" ShortID="395919645">
+					<ChildrenList>
+						<Event Name="Stop_Tommy_Theme" ID="{1DD88795-57BB-4E74-9F78-769B766C267A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="3"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{8502E208-051A-4770-95CA-FB034767530C}" ShortID="84729899">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tommy's Theme" ID="{9D4BEE24-941E-4131-A779-F7A5A6C84891}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Tommy_Theme" ID="{D11F1929-9AF3-495E-A750-C338C80AF34A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="3"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{75E7C06B-97B0-4B52-A89E-2B9BC9A55132}" ShortID="349924014">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tommy's Theme" ID="{9D4BEE24-941E-4131-A779-F7A5A6C84891}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
