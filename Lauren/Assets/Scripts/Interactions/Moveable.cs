@@ -16,7 +16,7 @@ public class Moveable : Interactive
 
     protected virtual void Update()
     {
-        if (this.isInteracting && !timerInteractOn && Input.GetButtonDown("Fire1"))
+        if (this.isInteracting && !timerInteractOn && Input.GetButtonDown("Fire1") && !LevelManager.instance.isCinematic)
         {
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out targetZone, range, 1 << 11))
             {

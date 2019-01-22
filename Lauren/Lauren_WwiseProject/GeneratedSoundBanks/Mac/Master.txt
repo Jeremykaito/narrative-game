@@ -4,14 +4,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	303595419	Play_Crash			\Default Work Unit\La Rupture\Play_Crash	
 	606726776	Switch_Music_Palais_mental			\Default Work Unit\Switch Music\Switch_Music_Palais_mental	
 	625636842	Set_State_Speaking			\Default Work Unit\Game states\Set_State_Speaking	
-	749864114	Play_cigaretteallume			\Default Work Unit\Coup de fil\Play_cigaretteallume	
+	913351269	Play_match			\Default Work Unit\Coup de fil\Play_match	
+	929251997	Play_Rain_in_car			\Default Work Unit\La Rupture\Play_Rain_in_car	
 	979756790	Play_lightswitch			\Default Work Unit\Coup de fil\Play_lightswitch	
+	1020642679	Trigger_Scene_over			\Default Work Unit\Trigger_Scene_over	
+	1193561773	Play_Ambiances			\Default Work Unit\Play_Ambiances	
 	1379977405	Switch_Music_Coup_de_fil			\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil	
 	1505908803	LPF_Effect			\Default Work Unit\LPF_Effect	
 	1890048954	Switch_Music_Feu_de_camp			\Default Work Unit\Switch Music\Switch_Music_Feu_de_camp	
 	1946098157	Play_R2_2			\Default Work Unit\La Rupture\Play_R2_2	
 	1946098158	Play_R2_1			\Default Work Unit\La Rupture\Play_R2_1	
-	1982384146	Play_Cigarette			\Default Work Unit\Coup de fil\Play_Cigarette	
+	1982384146	Play_cigarette			\Default Work Unit\Coup de fil\Play_cigarette	
+	2061525112	Play_R4			\Default Work Unit\La Rupture\Play_R4	
 	2061525117	Play_R1			\Default Work Unit\La Rupture\Play_R1	
 	2262856449	Play_F1			\Default Work Unit\Feu de camp\Play_F1	
 	2262856450	Play_F2			\Default Work Unit\Feu de camp\Play_F2	
@@ -34,14 +38,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	3327006228	Init_all_states			\Default Work Unit\Init_all_states	
 	3448676939	Reset_Voice_Low_pass_Filter_All			\Default Work Unit\Reset_Voice_Low_pass_Filter_All	
 	3454329120	Play_F3_2			\Default Work Unit\Feu de camp\Play_F3_2	
+	3454329121	Play_F3_3			\Default Work Unit\Feu de camp\Play_F3_3	
 	3454329123	Play_F3_1			\Default Work Unit\Feu de camp\Play_F3_1	
+	3454329126	Play_F3_4			\Default Work Unit\Feu de camp\Play_F3_4	
 	3638057186	Set_State_Other			\Default Work Unit\Speech states\Set_State_Other	
+	3773493117	Play_Car_Drive			\Default Work Unit\La Rupture\Play_Car_Drive	
 	3854155799	Play_footsteps			\Default Work Unit\Footsteps\Play_footsteps	
 	4113650174	Play_Palais_mental			\Default Work Unit\Play Music\Play_Palais_mental	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1544306542	Scenes			\Default Work Unit\Scenes	Controls which music track should play, according to the current scene
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
 
@@ -49,13 +57,19 @@ Switch	ID	Name	Switch Group			Notes
 	1802970441	F2	Feu_de_camp			
 	1802970442	F1	Feu_de_camp			
 	1802970447	F4	Feu_de_camp			
+	2234653489	F3_4	Feu_de_camp			
 	2234653492	F3_1	Feu_de_camp			
+	2234653494	F3_3	Feu_de_camp			
 	2234653495	F3_2	Feu_de_camp			
 	1853303296	C4	Coup_de_fil			
 	1853303297	C5	Coup_de_fil			
 	1853303301	C1	Coup_de_fil			
 	1853303302	C2	Coup_de_fil			
 	1853303303	C3	Coup_de_fil			
+	791499361	Feu_de_camp	Scenes			
+	866457171	Palais_mental	Scenes			
+	1174450734	Coup_de_fil	Scenes			
+	2910108590	La_Rupture	Scenes			
 	582824249	Leaves	Footsteps			
 	841620460	Concrete	Footsteps			
 	2412606308	Carpet	Footsteps			
@@ -73,6 +87,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
 	1424981396	Speech_States			\Default Work Unit\Speech_States	
 	2721494480	Game_States			\Default Work Unit\Game_States	
+	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
 	3388721943	La_Rupture_Wrath_Progression			\Default Work Unit\La_Rupture_Wrath_Progression	
 
 State	ID	Name	State Group			Notes
@@ -87,12 +102,18 @@ State	ID	Name	State Group			Notes
 	0	None	Game_States			
 	1823678183	Exploring	Game_States			
 	2418513123	Speaking	Game_States			
+	0	None	La_Rupture			
+	1718617337	Step4	La_Rupture			
+	1718617340	Step1	La_Rupture			
+	1718617342	Step3	La_Rupture			
+	1718617343	Step2	La_Rupture			
 	0	None	La_Rupture_Wrath_Progression			
 	1718617340	Step1	La_Rupture_Wrath_Progression			
 	1718617343	Step2	La_Rupture_Wrath_Progression			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	25545999	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 B-Delay		
+	73337333	Step4	La_Rupture	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	86045495	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
 	117058868	Step2	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
 	156662923	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 10Crash		
@@ -100,10 +121,17 @@ Custom State	ID	Name	State Group	Owner		Notes
 	310300311	Step2	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
 	322049327	Speaking	Game_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	361789910	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 A-Reverb		
+	455223274	Step1	La_Rupture	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	512081558	Step2	La_Rupture_Wrath_Progression	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	674426258	Step3	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Theme Piano - 3		
 	694706536	Step1	Coup_de_fil	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Playlist Container - Coup de fil\Coup de fil\Coup de fil Riff Piano - 2		
 	845355564	Intro	Speech_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	875908317	Step2	La_Rupture	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	1022602022	Step3	La_Rupture	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	1060565225	Step1	La_Rupture_Wrath_Progression	\Interactive Music Hierarchy\Default Work Unit\Switch Container - Music\Music Switch Container - La Rupture\La Rupture2\Wrath\La Rupture step2 Drone		
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	3445987540	Scene_over			\Default Work Unit\Scene_over	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
@@ -118,7 +146,12 @@ Effect plug-ins	ID	Name	Type				Notes
 	120271863	Wwise Gain (Custom)	Wwise Gain			
 	805692816	Voice_Reverb	Wwise Matrix Reverb			
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	399131223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Silence\Wwise Silence	
+
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	108980559	F3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-2-fx_56D34C19.wem	108980559.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-2	
-	674499736	F3-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-1-fx_56D34C19.wem	674499736.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-1	
+	25306614	F3-4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-4-fx_56D34C19.wem	25306614.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-4	
+	788390175	F3-3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-3-fx_5C55BD9C.wem	788390175.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-3	
+	924225478	F3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-2-fx_56D34C19.wem	924225478.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-2	
+	1030156792	F3-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-1-fx_56D34C19.wem	1030156792.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-1	
 

@@ -7,7 +7,12 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -33,11 +38,37 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="Speech_States" ID="{24E4A25C-2D34-4AF8-B62C-D895D5F70B94}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="La_Rupture" ID="{35877710-E7CA-4E08-8150-8B927A4BC07B}"/>
+									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
 										<State Name="" ID="{929D02B1-F781-4283-93EA-BEA3C14F0879}" ShortID="162641155"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
+										<State Name="" ID="{F7F5E0D2-812C-4C17-A6FC-4E49FC9BE328}" ShortID="512081558">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="4"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Step3" ID="{539F25C1-D67D-4260-B5F3-78810F2CE1EB}"/>
+										<State Name="" ID="{342F373A-AD44-48F5-AD1D-D94810F44C2C}" ShortID="1022602022">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="6"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
+										<State Name="" ID="{DD0DF522-FB5C-49B5-8824-99D98154A15B}" ShortID="668621096"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
@@ -49,8 +80,32 @@
 										</State>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="Step4" ID="{7F853644-BDB5-4738-8896-D4C881D3838C}"/>
+										<State Name="" ID="{C5AD9AA8-F46F-43E4-907B-D0B43CA5D627}" ShortID="73337333">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="10"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Step2" ID="{629B4534-2E88-477D-91CF-BCC4CE761291}"/>
+										<State Name="" ID="{A8AABE65-2DE9-4AD0-83B9-2E043D8FFA94}" ShortID="875908317">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="2"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
 										<State Name="" ID="{3D9B2806-4C75-4B2D-BD39-5A962BEDAB07}" ShortID="181146857"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Step1" ID="{3A11182D-F471-48FD-9D27-064B73269047}"/>
+										<State Name="" ID="{4830D85D-411D-4258-B7A0-AC9B03375F5D}" ShortID="455223274">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-5"/>
+											</PropertyList>
+										</State>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Intro" ID="{8DF89100-5627-4EC9-962F-2CB97C28CB1A}"/>

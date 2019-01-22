@@ -2,11 +2,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	242827154	Set_State_Intro			\Default Work Unit\Speech states\Set_State_Intro	
 	303595419	Play_Crash			\Default Work Unit\La Rupture\Play_Crash	
 	625636842	Set_State_Speaking			\Default Work Unit\Game states\Set_State_Speaking	
-	749864114	Play_cigaretteallume			\Default Work Unit\Coup de fil\Play_cigaretteallume	
+	913351269	Play_match			\Default Work Unit\Coup de fil\Play_match	
+	929251997	Play_Rain_in_car			\Default Work Unit\La Rupture\Play_Rain_in_car	
 	979756790	Play_lightswitch			\Default Work Unit\Coup de fil\Play_lightswitch	
+	1193561773	Play_Ambiances			\Default Work Unit\Play_Ambiances	
 	1946098157	Play_R2_2			\Default Work Unit\La Rupture\Play_R2_2	
 	1946098158	Play_R2_1			\Default Work Unit\La Rupture\Play_R2_1	
-	1982384146	Play_Cigarette			\Default Work Unit\Coup de fil\Play_Cigarette	
+	1982384146	Play_cigarette			\Default Work Unit\Coup de fil\Play_cigarette	
+	2061525112	Play_R4			\Default Work Unit\La Rupture\Play_R4	
 	2061525117	Play_R1			\Default Work Unit\La Rupture\Play_R1	
 	2262856449	Play_F1			\Default Work Unit\Feu de camp\Play_F1	
 	2262856450	Play_F2			\Default Work Unit\Feu de camp\Play_F2	
@@ -16,19 +19,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	2346744636	Play_C3			\Default Work Unit\Coup de fil\Play_C3	
 	2346744637	Play_C2			\Default Work Unit\Coup de fil\Play_C2	
 	2346744638	Play_C1			\Default Work Unit\Coup de fil\Play_C1	
-	2951726260	Set_State_Exploring			\Default Work Unit\Game states\Set_State_Exploring	
 	3015324718	Play_fire			\Default Work Unit\Feu de camp\Play_fire	
 	3020012802	Play_R3_4			\Default Work Unit\La Rupture\Play_R3_4	
 	3020012804	Play_R3_2			\Default Work Unit\La Rupture\Play_R3_2	
 	3020012805	Play_R3_3			\Default Work Unit\La Rupture\Play_R3_3	
 	3020012807	Play_R3_1			\Default Work Unit\La Rupture\Play_R3_1	
 	3454329120	Play_F3_2			\Default Work Unit\Feu de camp\Play_F3_2	
+	3454329121	Play_F3_3			\Default Work Unit\Feu de camp\Play_F3_3	
 	3454329123	Play_F3_1			\Default Work Unit\Feu de camp\Play_F3_1	
+	3454329126	Play_F3_4			\Default Work Unit\Feu de camp\Play_F3_4	
+	3773493117	Play_Car_Drive			\Default Work Unit\La Rupture\Play_Car_Drive	
 	3854155799	Play_footsteps			\Default Work Unit\Footsteps\Play_footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1544306542	Scenes			\Default Work Unit\Scenes	Controls which music track should play, according to the current scene
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
 
@@ -36,13 +42,19 @@ Switch	ID	Name	Switch Group			Notes
 	1802970441	F2	Feu_de_camp			
 	1802970442	F1	Feu_de_camp			
 	1802970447	F4	Feu_de_camp			
+	2234653489	F3_4	Feu_de_camp			
 	2234653492	F3_1	Feu_de_camp			
+	2234653494	F3_3	Feu_de_camp			
 	2234653495	F3_2	Feu_de_camp			
 	1853303296	C4	Coup_de_fil			
 	1853303297	C5	Coup_de_fil			
 	1853303301	C1	Coup_de_fil			
 	1853303302	C2	Coup_de_fil			
 	1853303303	C3	Coup_de_fil			
+	791499361	Feu_de_camp	Scenes			
+	866457171	Palais_mental	Scenes			
+	1174450734	Coup_de_fil	Scenes			
+	2910108590	La_Rupture	Scenes			
 	582824249	Leaves	Footsteps			
 	841620460	Concrete	Footsteps			
 	2412606308	Carpet	Footsteps			
@@ -65,19 +77,21 @@ State	ID	Name	State Group			Notes
 	3013208399	iddle	Wasp			
 	3552757243	away	Wasp			
 
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	399131223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Silence\Wwise Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	5066742	R3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R3-2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R3-2		1033622
-	9032680	R2-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R2-1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R2-1		373936
+	178371	R3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R3-2-fx_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R3-2		1033622
+	9032680	R2-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R2-1_55142F5C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R2-1		208608
 	17898788	Footsteps_carpet_3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_carpet_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\Footsteps_carpet_3		89472
-	39455890	R2-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R2-2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R2-2		1395854
-	76854743	R3-4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R3-4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R3-4		442556
+	123079201	R3-4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R3-4-fx_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R3-4		442556
 	139295601	C5	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C5		529782
-	159739514	crash_fuite_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\crash_fuite_1_4E334D61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Crash\Fuite\crash_fuite_1		567028
+	159739514	crash_fuite_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\crash_fuite_1_4E334D61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Fuite\crash_fuite_1		567028
 	163332930	Footsteps_concrete_4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_concrete_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_concrete_4		51280
 	214384745	Footsteps_palace_5	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\footsteps_palacen_5_1090C408.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Palace\Footsteps_palace_5		160148
 	221251703	Footsteps_carpet_4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_carpet_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\Footsteps_carpet_4		82160
 	229344842	Footsteps_palace_6	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\footsteps_palacen_6_82B052F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Palace\Footsteps_palace_6		165256
-	234507553	Cigaret_sparks	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\cigarette_loop_iddle_0FC1849C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\cigarette+allumette\Cigaret_sparks		1499964
+	234507553	Cigaret_sparks	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\cigarette_loop_iddle_450D25A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\Cigaret_sparks		1500028
 	258200734	Footsteps_palace_2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\footsteps_palacen_2_8BA4E025.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Palace\Footsteps_palace_2		153048
 	263734306	Footsteps_concrete_5	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_concrete_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_concrete_5		52968
 	275291589	C1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C1		1009944
@@ -88,43 +102,44 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	401037475	Footsteps_concrete_2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_concrete_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_concrete_2		55748
 	425693163	Footsteps_carpet_2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_carpet_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\Footsteps_carpet_2		108000
 	446986608	Footsteps_leaves_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_leaves_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Leaves\Footsteps_leaves_1		78836
-	467794893	Match_crack	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Match_crack_5C305587.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\cigarette+allumette\Cigarette\Match_crack		54156
+	467794893	Match_crack	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Match_crack_388E545A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\Match\Match_crack		129284
 	500796836	Wasp_foufou	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Wasp_foufou_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wasp\Wasp_foufou		1415280
-	522725829	matches_loop_fire	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\matches_loop_fire_5D393EC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\cigarette+allumette\Cigarette\Loop_match\matches_loop_fire		701200
 	533466052	Light_switch	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Switch_light_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\Lightswitch\Light_switch		59416
 	582111185	R4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R4		1691728
 	610991903	Footsteps_leaves_4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_leaves_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Leaves\Footsteps_leaves_4		92884
 	647562819	F4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F4		600674
-	669800585	Match_fire	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Match_fire_6A894A21.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\cigarette+allumette\Cigarette\Loop_match\Match_fire		284320
+	669800585	Match_fire	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Match_fire_CC730569.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\Match\Match_fire		235480
 	672282388	Footsteps_carpet_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_carpet_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\Footsteps_carpet_1		72548
 	682574176	Bip_phone	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Bip_phone_345BFC9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C4+phone_off\Bip_phone		36952
 	688157937	Footsteps_carpet_5	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_carpet_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Carpet\Footsteps_carpet_5		140132
 	689694357	Footsteps_palace_4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\footsteps_palacen_4_0FCBBAD8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Palace\Footsteps_palace_4		176936
-	689853728	Crash_CarV2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Crash_CarV2_F9E7D50C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Crash\Crash_CarV2		3464324
+	689853728	Crash_CarV2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Crash_CarV2_987DBC38.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Crash_CarV2		3000200
 	697592777	R1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R1		1801068
 	701358030	Footsteps_concrete_6	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_concrete_6_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_concrete_6		67924
-	708958729	Phone Dial	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Phone Dial_0DC8BD64.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C3+dial\Phone Dial		1109060
+	708958729	Phone Dial	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Phone Dial_299AE4C7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C3+dial\Phone Dial		1343176
 	718661293	Wasp_away	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Wasp_away_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wasp\Wasp_away		443824
 	722194588	F2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F2		1310968
 	726474621	C2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C2		1222950
 	766792368	Footsteps_leaves_2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_leaves_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Leaves\Footsteps_leaves_2		61452
-	780788035	crash_fuiteloop_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\crash_fuiteloop_1_7D7F260A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Crash\Fuite\crash_fuiteloop_1		3993936
+	780788035	crash_fuiteloop_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\crash_fuiteloop_1_7D7F260A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Fuite\crash_fuiteloop_1		3993936
 	785791119	Footsteps_leaves_6	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_leaves_6_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Leaves\Footsteps_leaves_6		90756
 	789175688	Footsteps_palace_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\footsteps_palacen_1_61F207B0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Palace\Footsteps_palace_1		188264
 	827415396	Wasp_iddle	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Wasp_iddle_477654BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Wasp\Wasp_iddle		3052556
 	845284810	F1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F1		881300
 	877832525	C4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C4-fx_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C4+phone_off\C4		1924506
-	901589655	Match_crack	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Match_crack_7FA25173.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coup de fil\cigarette+allumette\Cigarette\Loop_match\Match_crack		181456
 	910159220	Footsteps_concrete_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_concrete_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Concrete\Footsteps_concrete_1		35752
 	967193595	C3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\C3-fx_6CB5FC2D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Coup de fil\C3+dial\C3		1998756
-	970006306	crash_fuitedrone_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\crash_fuitedrone_1_578DC2FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Crash\Fuite\crash_fuitedrone_1		2786920
+	970006306	crash_fuitedrone_1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\crash_fuitedrone_1_578DC2FA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Crash\Fuite\crash_fuitedrone_1		2786920
 	1011062777	Footsteps_leaves_3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_leaves_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Leaves\Footsteps_leaves_3		75136
 	1018098808	Footsteps_leaves_5	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Footsteps_leaves_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Leaves\Footsteps_leaves_5		84288
+	1023496046	R2-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R2-2-fx_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R2-2		1395854
 	1036772537	Fire_ignit	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\Fire_ignit_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Fire\Fire_ignit		264844
 	1054691929	R3-3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\R3-3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R3-3		852188
 	1068101995	Footsteps_palace_3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\footsteps_palacen_3_4FA97B58.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Palace\Footsteps_palace_3		121944
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	108980559	F3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-2-fx_56D34C19.wem	108980559.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-2	
-	674499736	F3-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-1-fx_56D34C19.wem	674499736.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-1	
+	25306614	F3-4	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-4-fx_56D34C19.wem	25306614.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-4	
+	788390175	F3-3	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-3-fx_FEC4B32C.wem	788390175.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-3	
+	924225478	F3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-2-fx_56D34C19.wem	924225478.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-2	
+	1030156792	F3-1	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-1-fx_56D34C19.wem	1030156792.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-1	
 

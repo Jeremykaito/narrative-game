@@ -165,7 +165,7 @@ public class MoveObjectDetector : MonoBehaviour {
             objectParticles.Stop();
         }
 
-        StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
+        //StartCoroutine(LevelManager.instance.StartStep(targetObject.Step));
 
     }
 }

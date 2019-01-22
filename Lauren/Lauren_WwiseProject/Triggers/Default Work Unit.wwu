@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{82281320-8DA9-45DE-BFE2-F91FFEAD489F}" SchemaVersion="89">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{82281320-8DA9-45DE-BFE2-F91FFEAD489F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{82281320-8DA9-45DE-BFE2-F91FFEAD489F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Scene_over" ID="{0409C737-A76F-4C4F-A228-5757928D9430}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

@@ -15,25 +15,29 @@ namespace AK
     {
         static const AkUniqueID INIT_ALL_STATES = 3327006228U;
         static const AkUniqueID LPF_EFFECT = 1505908803U;
+        static const AkUniqueID PLAY_AMBIANCES = 1193561773U;
         static const AkUniqueID PLAY_C1 = 2346744638U;
         static const AkUniqueID PLAY_C2 = 2346744637U;
         static const AkUniqueID PLAY_C3 = 2346744636U;
         static const AkUniqueID PLAY_C4 = 2346744635U;
         static const AkUniqueID PLAY_C5 = 2346744634U;
+        static const AkUniqueID PLAY_CAR_DRIVE = 3773493117U;
         static const AkUniqueID PLAY_CIGARETTE = 1982384146U;
-        static const AkUniqueID PLAY_CIGARETTEALLUME = 749864114U;
         static const AkUniqueID PLAY_COUP_DE_FIL = 2526429843U;
         static const AkUniqueID PLAY_CRASH = 303595419U;
         static const AkUniqueID PLAY_F1 = 2262856449U;
         static const AkUniqueID PLAY_F2 = 2262856450U;
         static const AkUniqueID PLAY_F3_1 = 3454329123U;
         static const AkUniqueID PLAY_F3_2 = 3454329120U;
+        static const AkUniqueID PLAY_F3_3 = 3454329121U;
+        static const AkUniqueID PLAY_F3_4 = 3454329126U;
         static const AkUniqueID PLAY_F4 = 2262856452U;
         static const AkUniqueID PLAY_FEU_DE_CAMP = 249732036U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_LA_RUPTURE = 2363683185U;
         static const AkUniqueID PLAY_LIGHTSWITCH = 979756790U;
+        static const AkUniqueID PLAY_MATCH = 913351269U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PALAIS_MENTAL = 4113650174U;
         static const AkUniqueID PLAY_R1 = 2061525117U;
@@ -43,6 +47,8 @@ namespace AK
         static const AkUniqueID PLAY_R3_2 = 3020012804U;
         static const AkUniqueID PLAY_R3_3 = 3020012805U;
         static const AkUniqueID PLAY_R3_4 = 3020012802U;
+        static const AkUniqueID PLAY_R4 = 2061525112U;
+        static const AkUniqueID PLAY_RAIN_IN_CAR = 929251997U;
         static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_INTRO = 242827154U;
@@ -52,6 +58,7 @@ namespace AK
         static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
         static const AkUniqueID SWITCH_MUSIC_FEU_DE_CAMP = 1890048954U;
         static const AkUniqueID SWITCH_MUSIC_PALAIS_MENTAL = 606726776U;
+        static const AkUniqueID TRIGGER_SCENE_OVER = 1020642679U;
     } // namespace EVENTS
 
     namespace STATES
@@ -168,6 +175,8 @@ namespace AK
                 static const AkUniqueID F2 = 1802970441U;
                 static const AkUniqueID F3_1 = 2234653492U;
                 static const AkUniqueID F3_2 = 2234653495U;
+                static const AkUniqueID F3_3 = 2234653494U;
+                static const AkUniqueID F3_4 = 2234653489U;
                 static const AkUniqueID F4 = 1802970447U;
             } // namespace SWITCH
         } // namespace FEU_DE_CAMP
@@ -217,10 +226,16 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace TRIGGERS
+    {
+        static const AkUniqueID SCENE_OVER = 3445987540U;
+    } // namespace TRIGGERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID ACTOR = 2213570372U;
+        static const AkUniqueID AMBIANCES = 1404066300U;
         static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BANKS

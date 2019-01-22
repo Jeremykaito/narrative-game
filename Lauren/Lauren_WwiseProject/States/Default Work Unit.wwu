@@ -80,14 +80,6 @@
 						<State Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
 						<State Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
 					</ChildrenList>
-					<TransitionList>
-						<Transition>
-							<StartState Name="Step1" ID="{8F56FF29-A45E-43E6-AD42-1FD56ADC4AB4}"/>
-							<EndState Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
-							<Time>0</Time>
-							<IsShared>false</IsShared>
-						</Transition>
-					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="Wasp" ID="{9D1A98F1-897E-4813-BB7E-5834790B34AF}">
 					<ChildrenList>
