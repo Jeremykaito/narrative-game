@@ -172,32 +172,38 @@ public class LevelManager : MonoBehaviour {
         else if (activatedItems[9] && !steps[8].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fin_fdc");
+            LevelManager.instance.StartStep("soin");
             steps[8].Activated = true;
         }
         // Level zone 3
         else if (activatedItems[10] && !steps[9].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("voiture");
+            LevelManager.instance.StartStep("fin_fdc");
             steps[9].Activated = true;
         }
         // Car
         else if (activatedItems[11] && !steps[10].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("lauren");
+            LevelManager.instance.StartStep("voiture");
             steps[10].Activated = true;
         }
         // Road
         else if (activatedItems[12] && !steps[11].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("tommy");
+            LevelManager.instance.StartStep("lauren");
             steps[11].Activated = true;
         }
         // Deer
         else if (activatedItems[13] && !steps[12].Activated)
+        {
+            Debug.Log("Step " + i);
+            LevelManager.instance.StartStep("tommy");
+            steps[12].Activated = true;
+        }
+        else if (activatedItems[14] && !steps[13].Activated)
         {
             Debug.Log("Step " + i);
             LevelManager.instance.StartStep("fin_Rupture");
