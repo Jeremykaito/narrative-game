@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1965035923708801293
+--- !u!1 &7056323714455418155
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1965035923708801289}
-  - component: {fileID: 1965035923708801288}
-  - component: {fileID: 1965035923708801291}
-  - component: {fileID: 1965035923708801290}
+  - component: {fileID: 7056323714455418159}
+  - component: {fileID: 7056323714455418158}
+  - component: {fileID: 7056323714455418157}
+  - component: {fileID: 7056323714455418156}
   m_Layer: 0
-  m_Name: ColdDL
+  m_Name: ColdDL 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1965035923708801289
+--- !u!4 &7056323714455418159
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965035923708801293}
-  m_LocalRotation: {x: 0.16296306, y: -0.4108046, z: 0.047231324, w: 0.8957968}
+  m_GameObject: {fileID: 7056323714455418155}
+  m_LocalRotation: {x: 0.19157712, y: 0.8210933, z: -0.38172922, w: 0.3786645}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 19.315, y: -49.781002, z: -2.993}
---- !u!108 &1965035923708801288
+  m_LocalEulerAnglesHint: {x: 50.53, y: -588.43, z: 2.3000002}
+--- !u!108 &7056323714455418158
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965035923708801293}
+  m_GameObject: {fileID: 7056323714455418155}
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9292453, g: 0.9885263, b: 1, a: 1}
+  m_Color: {r: 0.9529412, g: 1, b: 0.97574824, a: 1}
   m_Intensity: 6.17
   m_Range: 10
   m_SpotAngle: 30
@@ -71,13 +71,13 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1965035923708801291
+--- !u!114 &7056323714455418157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965035923708801293}
+  m_GameObject: {fileID: 7056323714455418155}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_InnerSpotPercent: 0
   lightDimmer: 1
   m_VolumetricDimmer: 1
-  lightUnit: 0
+  lightUnit: 2
   sunDiskSize: 1
   sunHaloSize: 0.1
   fadeDistance: 10000
@@ -120,27 +120,27 @@ MonoBehaviour:
   blockerSampleCount: 24
   filterSampleCount: 16
   minFilterSize: 0.00001
---- !u!114 &1965035923708801290
+--- !u!114 &7056323714455418156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965035923708801293}
+  m_GameObject: {fileID: 7056323714455418155}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6c2871f720b2af4e9210febdac74517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Version: 1
-  shadowResolution: 4096
+  shadowResolution: 2048
   shadowDimmer: 1
   volumetricShadowDimmer: 1
   shadowFadeDistance: 10000
   contactShadows: 0
   viewBiasMin: 0.2
   viewBiasMax: 100
-  viewBiasScale: 4
+  viewBiasScale: 15
   normalBiasMin: 0.5
   normalBiasMax: 0.5
   normalBiasScale: 1
