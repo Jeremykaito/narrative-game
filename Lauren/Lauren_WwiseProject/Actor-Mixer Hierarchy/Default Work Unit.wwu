@@ -970,6 +970,7 @@
 						</ActorMixer>
 						<Sound Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" ShortID="1068039169">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
@@ -983,6 +984,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Default Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 								</Reference>
@@ -1764,10 +1768,19 @@
 				</SwitchContainer>
 				<SwitchContainer Name="Wasp" ID="{21698F0C-E5A4-4D60-A7BD-2E23F3740910}" ShortID="794638585">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Color" Type="int16" Value="6"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Default Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
 						</Reference>
@@ -1775,7 +1788,7 @@
 							<ObjectRef Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+							<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Wasp" ID="{9D1A98F1-897E-4813-BB7E-5834790B34AF}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
@@ -1783,6 +1796,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="Wasp_away" ID="{0B5D0A53-806F-4971-B52D-A4E599D631E5}" ShortID="495229583">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -1797,6 +1815,38 @@
 									<AudioFile>Wasp_away.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{F0700D70-3BDE-4756-83B1-F8C9310546E3}">
+									<ChildrenList>
+										<Path2D Name="Wasp_away_Path" ID="{FAFB41EF-3E1B-44B3-9A31-B93E090F3362}">
+											<PropertyList>
+												<Property Name="Duration" Type="int32" Value="6000"/>
+												<Property Name="LinearTime" Type="bool" Value="False"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-0.00001</XPos>
+													<YPos>-90.44585</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-63.92405</XPos>
+													<YPos>24.84077</YPos>
+													<Flags>0</Flags>
+													<Time>5000</Time>
+												</Point>
+												<Point>
+													<XPos>-100</XPos>
+													<YPos>100</YPos>
+													<Flags>0</Flags>
+													<Time>6000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Wasp_away" ID="{58CFDD88-C868-40A0-9D6A-D607F576984A}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -1989,6 +2039,11 @@
 								<Property Name="InitialDelay" Type="Real64">
 									<ValueList>
 										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

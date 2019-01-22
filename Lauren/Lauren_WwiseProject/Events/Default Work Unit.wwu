@@ -428,6 +428,7 @@
 								<Action Name="" ID="{61748043-B536-47AE-8915-9C05D6A31343}" ShortID="896013763">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -945,6 +946,36 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_wasp" ID="{0FA39A23-EAD2-4576-B8AD-6C73305D3570}">
+							<ChildrenList>
+								<Action Name="" ID="{6CE2F932-6143-43B8-8738-020EF55B9DDF}" ShortID="132243368">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wasp" ID="{21698F0C-E5A4-4D60-A7BD-2E23F3740910}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_wasp" ID="{F538C194-2C87-40AF-912E-C5A6A9FF17FB}">
+							<ChildrenList>
+								<Action Name="" ID="{1856EB98-4A37-4E3B-91A8-7F3DBBD42928}" ShortID="388442760">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Wasp" ID="{21698F0C-E5A4-4D60-A7BD-2E23F3740910}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="La Rupture" ID="{F03DF352-D4CF-40D6-AD14-47FFC1C656D1}" ShortID="10759938">
@@ -1380,6 +1411,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_gas" ID="{52FB6F83-C764-4C2C-80D6-798DAEA5385B}">
+							<ChildrenList>
+								<Action Name="" ID="{20861899-DE69-4A6A-B3F5-99639D44EF8B}" ShortID="320757970">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fuite" ID="{54FCAEF7-43AE-4DD2-A82A-20245A7AA683}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{C26B4D88-4D8A-4491-A1A2-26A20DA505EA}" ShortID="614258129">
@@ -1563,6 +1608,56 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Lauren's Theme" ID="{A6252C83-87D7-4EBC-823D-B17A8E2385B2}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Wasp states" ID="{1104532A-029B-4A74-A838-7F29F3468ABE}" ShortID="152305018">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="6"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Event Name="Set_wasp_iddle" ID="{81493C5B-62C5-46CB-BC1A-887EF3B1D8CB}">
+							<ChildrenList>
+								<Action Name="" ID="{04552A5C-CDF7-4985-BD6A-41A9273B676B}" ShortID="122155977">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_wasp_crazy" ID="{2B4C5762-E36E-4EBD-B0A9-AF5CAEFBDC77}">
+							<ChildrenList>
+								<Action Name="" ID="{D8D28F2D-A450-4EAF-8C13-DC87350BE050}" ShortID="1072271538">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="crazy" ID="{F3D4B411-50A8-4BD7-ABF2-DEB1EEAEAD9A}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_wasp_away" ID="{E168644D-2548-4659-8120-5A613D5BCC6E}">
+							<ChildrenList>
+								<Action Name="" ID="{8BA0FB2D-113C-46AE-BB25-2E8AD0DC890D}" ShortID="105050213">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="away" ID="{AF376491-6087-4102-BBCD-C7875D48B859}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

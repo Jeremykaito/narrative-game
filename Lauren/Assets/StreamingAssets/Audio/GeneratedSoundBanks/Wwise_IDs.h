@@ -35,6 +35,7 @@ namespace AK
         static const AkUniqueID PLAY_FEU_DE_CAMP = 249732036U;
         static const AkUniqueID PLAY_FIRE = 3015324718U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_GAS = 2287442805U;
         static const AkUniqueID PLAY_LA_RUPTURE = 2363683185U;
         static const AkUniqueID PLAY_LAUREN_THEME = 3262020357U;
         static const AkUniqueID PLAY_LIGHTSWITCH = 979756790U;
@@ -52,14 +53,19 @@ namespace AK
         static const AkUniqueID PLAY_R4 = 2061525112U;
         static const AkUniqueID PLAY_RAIN_IN_CAR = 929251997U;
         static const AkUniqueID PLAY_TOMMY_THEME = 1546983082U;
+        static const AkUniqueID PLAY_WASP = 1236949039U;
         static const AkUniqueID RESET_VOICE_LOW_PASS_FILTER_ALL = 3448676939U;
         static const AkUniqueID SET_STATE_EXPLORING = 2951726260U;
         static const AkUniqueID SET_STATE_INTRO = 242827154U;
         static const AkUniqueID SET_STATE_OTHER = 3638057186U;
         static const AkUniqueID SET_STATE_SPEAKING = 625636842U;
+        static const AkUniqueID SET_WASP_AWAY = 854662212U;
+        static const AkUniqueID SET_WASP_CRAZY = 3121772425U;
+        static const AkUniqueID SET_WASP_IDDLE = 2812200270U;
         static const AkUniqueID STOP_LAUREN_THEME = 3013733207U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_TOMMY_THEME = 152938524U;
+        static const AkUniqueID STOP_WASP = 3392628901U;
         static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
         static const AkUniqueID SWITCH_MUSIC_FEU_DE_CAMP = 1890048954U;
         static const AkUniqueID SWITCH_MUSIC_PALAIS_MENTAL = 606726776U;

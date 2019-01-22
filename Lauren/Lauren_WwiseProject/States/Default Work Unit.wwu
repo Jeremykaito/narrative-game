@@ -82,6 +82,10 @@
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Wasp" ID="{9D1A98F1-897E-4813-BB7E-5834790B34AF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="6"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{38C2E8F8-76F7-47D3-AFB5-4E893623F1D4}"/>
 						<State Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}"/>

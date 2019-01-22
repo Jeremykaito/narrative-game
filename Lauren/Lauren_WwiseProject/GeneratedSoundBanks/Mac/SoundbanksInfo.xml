@@ -78,7 +78,7 @@
 				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
 				<Event Id="3773493117" Name="Play_Car_Drive" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Car_Drive"/>
-				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette"/>
+				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette" MaxAttenuation="5.000000"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
 				<Event Id="2262856450" Name="Play_F2" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F2"/>
@@ -89,6 +89,7 @@
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
+				<Event Id="2287442805" Name="Play_gas" ObjectPath="\Events\Default Work Unit\La Rupture\Play_gas"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
 				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
 				<Event Id="1177493371" Name="Play_Play_Button" ObjectPath="\Events\Default Work Unit\Menu\Play_Play_Button"/>
@@ -101,8 +102,10 @@
 				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
+				<Event Id="1236949039" Name="Play_wasp" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_wasp" MaxAttenuation="5.000000"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
+				<Event Id="3392628901" Name="Stop_wasp" ObjectPath="\Events\Default Work Unit\Feu de camp\Stop_wasp" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="25306614"/>
@@ -476,7 +479,7 @@
 				<Event Id="2346744635" Name="Play_C4" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C4"/>
 				<Event Id="2346744634" Name="Play_C5" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C5"/>
 				<Event Id="3773493117" Name="Play_Car_Drive" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Car_Drive"/>
-				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette"/>
+				<Event Id="1982384146" Name="Play_cigarette" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_cigarette" MaxAttenuation="5.000000"/>
 				<Event Id="2526429843" Name="Play_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Play Music\Play_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
 				<Event Id="2262856449" Name="Play_F1" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F1"/>
@@ -489,6 +492,7 @@
 				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
+				<Event Id="2287442805" Name="Play_gas" ObjectPath="\Events\Default Work Unit\La Rupture\Play_gas"/>
 				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture" MaxAttenuation="0.000000"/>
 				<Event Id="3262020357" Name="Play_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Play_Lauren_Theme"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
@@ -506,14 +510,19 @@
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
 				<Event Id="1546983082" Name="Play_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Play_Tommy_Theme"/>
+				<Event Id="1236949039" Name="Play_wasp" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_wasp" MaxAttenuation="5.000000"/>
 				<Event Id="3448676939" Name="Reset_Voice_Low_pass_Filter_All" ObjectPath="\Events\Default Work Unit\Reset_Voice_Low_pass_Filter_All" MaxAttenuation="0.000000"/>
 				<Event Id="2951726260" Name="Set_State_Exploring" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Exploring" MaxAttenuation="0.000000"/>
 				<Event Id="242827154" Name="Set_State_Intro" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Intro" MaxAttenuation="0.000000"/>
 				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
+				<Event Id="854662212" Name="Set_wasp_away" ObjectPath="\Events\Default Work Unit\Wasp states\Set_wasp_away" MaxAttenuation="0.000000"/>
+				<Event Id="3121772425" Name="Set_wasp_crazy" ObjectPath="\Events\Default Work Unit\Wasp states\Set_wasp_crazy" MaxAttenuation="0.000000"/>
+				<Event Id="2812200270" Name="Set_wasp_iddle" ObjectPath="\Events\Default Work Unit\Wasp states\Set_wasp_iddle" MaxAttenuation="0.000000"/>
 				<Event Id="3013733207" Name="Stop_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Stop_Lauren_Theme" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
 				<Event Id="152938524" Name="Stop_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Stop_Tommy_Theme" MaxAttenuation="0.000000"/>
+				<Event Id="3392628901" Name="Stop_wasp" ObjectPath="\Events\Default Work Unit\Feu de camp\Stop_wasp" MaxAttenuation="0.000000"/>
 				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="1890048954" Name="Switch_Music_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="606726776" Name="Switch_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Palais_mental" MaxAttenuation="0.000000"/>
@@ -557,6 +566,10 @@
 				<File Id="142233568" Language="SFX">
 					<ShortName>La Rupture step2 10Crash.wav</ShortName>
 					<Path>SFX\La Rupture step2 10Crash_8956FC97.wem</Path>
+				</File>
+				<File Id="159739514" Language="SFX">
+					<ShortName>crash_fuite_1.wav</ShortName>
+					<Path>SFX\crash_fuite_1_4E334D61.wem</Path>
 				</File>
 				<File Id="163332930" Language="SFX">
 					<ShortName>Footsteps_concrete_4.wav</ShortName>
@@ -654,6 +667,10 @@
 					<ShortName>Forest_amb.wav</ShortName>
 					<Path>SFX\Forest_amb_0F0A92A0.wem</Path>
 				</File>
+				<File Id="500796836" Language="SFX">
+					<ShortName>Wasp_foufou.wav</ShortName>
+					<Path>SFX\Wasp_foufou_8956FC97.wem</Path>
+				</File>
 				<File Id="532052039" Language="SFX">
 					<ShortName>Stinger endzone fade.wav</ShortName>
 					<Path>SFX\Stinger endzone fade_8956FC97.wem</Path>
@@ -730,6 +747,10 @@
 					<ShortName>Phone Dial.wav</ShortName>
 					<Path>SFX\Phone Dial_299AE4C7.wem</Path>
 				</File>
+				<File Id="718661293" Language="SFX">
+					<ShortName>Wasp_away.wav</ShortName>
+					<Path>SFX\Wasp_away_56D34C19.wem</Path>
+				</File>
 				<File Id="722194588" Language="SFX">
 					<ShortName>F2.wav</ShortName>
 					<Path>SFX\F2_56D34C19.wem</Path>
@@ -746,6 +767,10 @@
 					<ShortName>Footsteps_leaves_2.wav</ShortName>
 					<Path>SFX\Footsteps_leaves_2_56D34C19.wem</Path>
 				</File>
+				<File Id="780788035" Language="SFX">
+					<ShortName>crash_fuiteloop_1.wav</ShortName>
+					<Path>SFX\crash_fuiteloop_1_7D7F260A.wem</Path>
+				</File>
 				<File Id="785791119" Language="SFX">
 					<ShortName>Footsteps_leaves_6.wav</ShortName>
 					<Path>SFX\Footsteps_leaves_6_56D34C19.wem</Path>
@@ -753,6 +778,10 @@
 				<File Id="789175688" Language="SFX">
 					<ShortName>footsteps_palacen_1.wav</ShortName>
 					<Path>SFX\footsteps_palacen_1_61F207B0.wem</Path>
+				</File>
+				<File Id="827415396" Language="SFX">
+					<ShortName>Wasp_iddle.wav</ShortName>
+					<Path>SFX\Wasp_iddle_477654BA.wem</Path>
 				</File>
 				<File Id="845284810" Language="SFX">
 					<ShortName>F1.wav</ShortName>
@@ -789,6 +818,10 @@
 				<File Id="967193595" Language="SFX">
 					<ShortName>C3-fx.wav</ShortName>
 					<Path>SFX\C3-fx_6CB5FC2D.wem</Path>
+				</File>
+				<File Id="970006306" Language="SFX">
+					<ShortName>crash_fuitedrone_1.wav</ShortName>
+					<Path>SFX\crash_fuitedrone_1_578DC2FA.wem</Path>
 				</File>
 				<File Id="993968870" Language="SFX">
 					<ShortName>La Rupture step2 A-Reverb.wav</ShortName>
