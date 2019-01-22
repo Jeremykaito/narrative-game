@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	625636842	Set_State_Speaking			\Default Work Unit\Game states\Set_State_Speaking	
 	913351269	Play_match			\Default Work Unit\Coup de fil\Play_match	
 	979756790	Play_lightswitch			\Default Work Unit\Coup de fil\Play_lightswitch	
+	1193561773	Play_Ambiances			\Default Work Unit\Play_Ambiances	
 	1946098157	Play_R2_2			\Default Work Unit\La Rupture\Play_R2_2	
 	1946098158	Play_R2_1			\Default Work Unit\La Rupture\Play_R2_1	
 	1982384146	Play_cigarette			\Default Work Unit\Coup de fil\Play_cigarette	
@@ -30,6 +31,7 @@ Event	ID	Name			Wwise Object Path	Notes
 Switch Group	ID	Name			Wwise Object Path	Notes
 	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1544306542	Scenes			\Default Work Unit\Scenes	Controls which music track should play, according to the current scene
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
 
@@ -45,6 +47,10 @@ Switch	ID	Name	Switch Group			Notes
 	1853303301	C1	Coup_de_fil			
 	1853303302	C2	Coup_de_fil			
 	1853303303	C3	Coup_de_fil			
+	791499361	Feu_de_camp	Scenes			
+	866457171	Palais_mental	Scenes			
+	1174450734	Coup_de_fil	Scenes			
+	2910108590	La_Rupture	Scenes			
 	582824249	Leaves	Footsteps			
 	841620460	Concrete	Footsteps			
 	2412606308	Carpet	Footsteps			
@@ -66,6 +72,9 @@ State	ID	Name	State Group			Notes
 	2930662992	crazy	Wasp			
 	3013208399	iddle	Wasp			
 	3552757243	away	Wasp			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	399131223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	178371	R3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\R3-2-fx_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lauren\La Rupture\R3-2		1033622

@@ -33,12 +33,26 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\Ambiances</ObjectPath>
 			<ShortName>Ambiances</ShortName>
 			<Path>Ambiances.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1193561773" Name="Play_Ambiances" ObjectPath="\Events\Default Work Unit\Play_Ambiances"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="43522204" Language="SFX">
+					<ShortName>RoomTone_office.wav</ShortName>
+					<Path>SFX\RoomTone_office_E811A0E2.wem</Path>
+				</File>
+				<File Id="257835635" Language="SFX">
+					<ShortName>Amb_city_night.wav</ShortName>
+					<Path>SFX\Amb_city_night_77A631BA.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="2213570372" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Actor</ObjectPath>
 			<ShortName>Actor</ShortName>
 			<Path>Actor.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1193561773" Name="Play_Ambiances" ObjectPath="\Events\Default Work Unit\Play_Ambiances"/>
 				<Event Id="2346744638" Name="Play_C1" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C1"/>
 				<Event Id="2346744637" Name="Play_C2" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C2"/>
 				<Event Id="2346744636" Name="Play_C3" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_C3"/>
@@ -294,6 +308,16 @@
 					<Path>SFX\footsteps_palacen_3_4FA97B58.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
+			<ExcludedMemoryFiles>
+				<File Id="43522204" Language="SFX">
+					<ShortName>RoomTone_office.wav</ShortName>
+					<Path>SFX\RoomTone_office_E811A0E2.wem</Path>
+				</File>
+				<File Id="257835635" Language="SFX">
+					<ShortName>Amb_city_night.wav</ShortName>
+					<Path>SFX\Amb_city_night_77A631BA.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
@@ -448,6 +472,10 @@
 					<ShortName>Footsteps_carpet_3.wav</ShortName>
 					<Path>SFX\Footsteps_carpet_3_56D34C19.wem</Path>
 				</File>
+				<File Id="43522204" Language="SFX">
+					<ShortName>RoomTone_office.wav</ShortName>
+					<Path>SFX\RoomTone_office_E811A0E2.wem</Path>
+				</File>
 				<File Id="123079201" Language="SFX">
 					<ShortName>R3-4-fx.wav</ShortName>
 					<Path>SFX\R3-4-fx_56D34C19.wem</Path>
@@ -483,6 +511,10 @@
 				<File Id="234507553" Language="SFX">
 					<ShortName>cigarette_loop_iddle.wav</ShortName>
 					<Path>SFX\cigarette_loop_iddle_450D25A2.wem</Path>
+				</File>
+				<File Id="257835635" Language="SFX">
+					<ShortName>Amb_city_night.wav</ShortName>
+					<Path>SFX\Amb_city_night_77A631BA.wem</Path>
 				</File>
 				<File Id="258200734" Language="SFX">
 					<ShortName>footsteps_palacen_2.wav</ShortName>

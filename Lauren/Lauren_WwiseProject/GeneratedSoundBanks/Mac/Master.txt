@@ -45,6 +45,7 @@ Event	ID	Name			Wwise Object Path	Notes
 Switch Group	ID	Name			Wwise Object Path	Notes
 	791499361	Feu_de_camp			\Default Work Unit\Feu_de_camp	
 	1174450734	Coup_de_fil			\Default Work Unit\Coup_de_fil	
+	1544306542	Scenes			\Default Work Unit\Scenes	Controls which music track should play, according to the current scene
 	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2910108590	La_Rupture			\Default Work Unit\La_Rupture	
 
@@ -60,6 +61,10 @@ Switch	ID	Name	Switch Group			Notes
 	1853303301	C1	Coup_de_fil			
 	1853303302	C2	Coup_de_fil			
 	1853303303	C3	Coup_de_fil			
+	791499361	Feu_de_camp	Scenes			
+	866457171	Palais_mental	Scenes			
+	1174450734	Coup_de_fil	Scenes			
+	2910108590	La_Rupture	Scenes			
 	582824249	Leaves	Footsteps			
 	841620460	Concrete	Footsteps			
 	2412606308	Carpet	Footsteps			
@@ -132,6 +137,9 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	120271863	Wwise Gain (Custom)	Wwise Gain			
 	805692816	Voice_Reverb	Wwise Matrix Reverb			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	399131223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Silence\Wwise Silence	
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	140531985	F3-2	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Mac\SFX\F3-2-fx_56D34C19.wem	140531985.wem	\Actor-Mixer Hierarchy\Default Work Unit\Lauren\Feu de camp\F3-2	

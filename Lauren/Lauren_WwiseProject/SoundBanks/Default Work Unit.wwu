@@ -112,7 +112,9 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Ambiances" ID="{6C950ACD-DA67-43BB-BC9F-BB1D77567519}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambiances" ID="{6A812444-B396-415C-BD81-92884E4C5EED}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
