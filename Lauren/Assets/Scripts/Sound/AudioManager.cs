@@ -80,7 +80,7 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_fire", sounds3D[1]);
         }
-        /*
+        
         else if (soundItem == "F3_1")
         {
             AkSoundEngine.PostEvent("Set_wasp_iddle", sounds3D[3]);
@@ -102,7 +102,6 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_gas", sounds3D[4]);
         }
-        */
 
         AkLogger.Message("Play_" + soundItem);
     }

@@ -104,6 +104,7 @@ public class LevelManager : MonoBehaviour {
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.soundItem, nextStep, nextStep.isIntro, nextStep.sceneTrack));
 
+
     }
 
 
@@ -206,7 +207,7 @@ public class LevelManager : MonoBehaviour {
         else if (activatedItems[14] && !steps[13].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fin_Rupture");
+            LevelManager.instance.StartStep("fin_rupture");
             steps[12].Activated = true;
         }
     }
