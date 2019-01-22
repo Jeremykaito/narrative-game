@@ -53,10 +53,18 @@
 							<ObjectRef Name="Play_Ambiances" ID="{38B29CE6-43CA-45A3-A5DF-ACC0F9B1D4AD}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Trigger_Scene_over" ID="{363E2233-B7DA-4CC3-A0BD-96FB969B53DE}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Other" ID="{53F94357-1BD2-4042-BBA3-2B06494A54A7}" WorkUnitID="{BEBBCAFE-44FA-46A6-AA3F-8AEFB5825D35}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+						<CurrentStateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
 						<CurrentStateRef Name="Exploring" ID="{B1F9A242-61C7-485F-A29B-6165A3CB9009}"/>
 						<CurrentStateRef Name="iddle" ID="{E61A7C94-B77A-4AA5-9BA7-A1BB7EF12D92}"/>
 						<CurrentStateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
@@ -65,8 +73,8 @@
 						<CurrentStateRef Name="Step1" ID="{274857C9-E98D-4039-A666-4017D163A1CD}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
-						<CurrentSwitchRef Name="C1" ID="{FA85DE76-F613-4ABA-AC0C-E958762CF4DA}"/>
+						<CurrentSwitchRef Name="Coup_de_fil" ID="{00BE137F-FBCB-4390-BBBA-6767D373EE26}"/>
+						<CurrentSwitchRef Name="C5" ID="{BABD6775-8114-4B08-9AD8-4B90D6F82EBF}"/>
 						<CurrentSwitchRef Name="F4" ID="{C4A8F797-82BF-4429-A208-C6098D8B5139}"/>
 						<CurrentSwitchRef Name="R1" ID="{055B725F-8B58-41FF-8161-72F6622C65D4}"/>
 						<CurrentSwitchRef Name="Carpet" ID="{89B50C0C-4A48-45D4-86D7-7F2D63E3F253}"/>

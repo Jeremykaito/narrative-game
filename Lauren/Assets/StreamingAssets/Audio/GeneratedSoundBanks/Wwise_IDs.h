@@ -58,6 +58,7 @@ namespace AK
         static const AkUniqueID SWITCH_MUSIC_COUP_DE_FIL = 1379977405U;
         static const AkUniqueID SWITCH_MUSIC_FEU_DE_CAMP = 1890048954U;
         static const AkUniqueID SWITCH_MUSIC_PALAIS_MENTAL = 606726776U;
+        static const AkUniqueID TRIGGER_SCENE_OVER = 1020642679U;
     } // namespace EVENTS
 
     namespace STATES
@@ -224,6 +225,11 @@ namespace AK
         } // namespace SCENES
 
     } // namespace SWITCHES
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID SCENE_OVER = 3445987540U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

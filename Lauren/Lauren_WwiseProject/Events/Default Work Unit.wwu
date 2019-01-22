@@ -1477,6 +1477,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Trigger_Scene_over" ID="{363E2233-B7DA-4CC3-A0BD-96FB969B53DE}">
+					<ChildrenList>
+						<Action Name="" ID="{9164882B-A32C-498E-A939-064B233EC597}" ShortID="585470065">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scene_over" ID="{0409C737-A76F-4C4F-A228-5757928D9430}" WorkUnitID="{82281320-8DA9-45DE-BFE2-F91FFEAD489F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

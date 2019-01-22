@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
      */
     private readonly Dictionary<string, string> shouldPlayAfter = new Dictionary<string,string>();
     
+    private readonly string[] endZoneDialogues = new[] { "C5", "F4", "R4" };
+    
     void Awake()
     {
 
@@ -79,19 +81,19 @@ public class AudioManager : MonoBehaviour
             AkLogger.Message("Set_State_Other");
         }
        
+        // Endzone
+        if (Array.IndexOf(endZoneDialogues, callbackCookie.soundItem) > -1)
+        {
+            AkSoundEngine.PostEvent("Trigger_Scene_over", gameObject);
+            AkLogger.Message("Trigger_Scene_over");
+        }
+        
         // Don't reset the exploring state if we are going to speak in the few seconds
         if (!shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
         {
             AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
             AkLogger.Message("Set_State_Exploring : " + callbackCookie.soundItem);
         }
-            
-//            // If the last zone is different from where the player stands, switch the music accordingly
-//            if (this.lastZone != LevelManager.instance.currentZone)
-//            {
-//                AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
-//                AkLogger.Message("Play_" + LevelManager.instance.currentZone);
-//            }
         
         
         if (shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))

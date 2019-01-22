@@ -126,7 +126,7 @@
 								<Property Name="Tempo" Type="Real64" Value="127"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2124,6 +2124,15 @@
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<StingerList>
+						<MusicStinger Name="" ID="{39290B44-E64F-4B27-A48C-4FF8B9865DA7}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+							</PropertyList>
+							<TriggerRef Name="Scene_over" ID="{0409C737-A76F-4C4F-A228-5757928D9430}" WorkUnitID="{82281320-8DA9-45DE-BFE2-F91FFEAD489F}"/>
+							<SegmentRef Name="Stinger endzone fade" ID="{54EE968F-87BD-4E1C-80D1-DAC5EE360FE9}" WorkUnitID="{F4227AF9-D54E-48FA-B83E-00A6AC7A8A9E}"/>
+						</MusicStinger>
+					</StingerList>
 					<ArgumentList>
 						<ArgumentRef Name="Scenes" ID="{9817E4D5-BA91-4258-AF6B-3A57077FBD9C}"/>
 					</ArgumentList>
@@ -2162,6 +2171,70 @@
 						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
+				<MusicSegment Name="Stinger endzone fade" ID="{54EE968F-87BD-4E1C-80D1-DAC5EE360FE9}" ShortID="531902886">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="5333.33333333333"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Stinger endzone fade" ID="{EA32A0E7-3B84-4DF4-8719-01FF01B9B436}" ShortID="847946942">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Stinger endzone fade" ID="{75AD3172-F7CF-4B1A-83A5-C3991A50A773}" ShortID="532052039">
+									<Language>SFX</Language>
+									<AudioFile>Stinger endzone fade.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{A15030A4-8CF8-43F5-8021-1D7E03366676}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{B36825D3-1566-46B6-BAFF-93EE72DBFA7B}">
+									<ClipList>
+										<MusicClip Name="Stinger endzone fade" ID="{7078797C-3DDE-424C-B6E5-49A780119A5A}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="5333.33333333333"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="Stinger endzone fade" ID="{75AD3172-F7CF-4B1A-83A5-C3991A50A773}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{7D0EECFD-8B06-4FC8-A5E2-267257075699}"/>
+						<MusicCue Name="Exit Cue" ID="{33B74C0E-ED51-49C0-A816-9FE884A7EF74}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="5333.33333333333"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>
