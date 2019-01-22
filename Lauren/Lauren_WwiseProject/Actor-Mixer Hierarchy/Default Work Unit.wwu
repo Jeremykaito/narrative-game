@@ -616,6 +616,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="R2-2" ID="{A89F9819-C9E2-428A-BD6B-6E0409A41145}" ShortID="897594839">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -625,13 +632,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="R2-2" ID="{1A876A6A-A803-417E-91AB-78204D780AC5}" ShortID="39455890">
+										<AudioFileSource Name="R2-2-fx" ID="{0E5516B6-6DFE-41F1-9364-D33515987C7A}" ShortID="1023496046">
 											<Language>SFX</Language>
-											<AudioFile>R2-2.wav</AudioFile>
+											<AudioFile>R2-2-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="R2-2" ID="{1A876A6A-A803-417E-91AB-78204D780AC5}" Platform="Linked"/>
+										<ActiveSource Name="R2-2-fx" ID="{0E5516B6-6DFE-41F1-9364-D33515987C7A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="R3-1" ID="{A915D5BC-B04E-400E-948C-16F1E57FD067}" ShortID="395338849">
@@ -662,6 +669,11 @@
 								</Sound>
 								<Sound Name="R3-2" ID="{9E9D29A6-1763-43BE-A570-1250B3E23345}" ShortID="931438119">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>6</Value>
@@ -677,13 +689,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="R3-2" ID="{30E0C570-A5E0-404E-AEE2-32A0B9CA2AEB}" ShortID="5066742">
+										<AudioFileSource Name="R3-2-fx" ID="{1791FE98-6D41-4BBF-91DA-70C121E48D74}" ShortID="178371">
 											<Language>SFX</Language>
-											<AudioFile>R3-2.wav</AudioFile>
+											<AudioFile>R3-2-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="R3-2" ID="{30E0C570-A5E0-404E-AEE2-32A0B9CA2AEB}" Platform="Linked"/>
+										<ActiveSource Name="R3-2-fx" ID="{1791FE98-6D41-4BBF-91DA-70C121E48D74}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="R3-3" ID="{89D0158F-2F09-4046-9DD7-E1E75B21CF0B}" ShortID="818633571">
@@ -714,6 +726,11 @@
 								</Sound>
 								<Sound Name="R3-4" ID="{2149CD5D-78D9-47BC-9D06-AB8B2BBD7221}" ShortID="313043197">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>6</Value>
@@ -729,13 +746,13 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="R3-4" ID="{86D2199F-14EB-4032-BE71-3E38B2F19C9B}" ShortID="76854743">
+										<AudioFileSource Name="R3-4-fx" ID="{8329EB6A-34E1-4548-BD08-9653A958E09B}" ShortID="123079201">
 											<Language>SFX</Language>
-											<AudioFile>R3-4.wav</AudioFile>
+											<AudioFile>R3-4-fx.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="R3-4" ID="{86D2199F-14EB-4032-BE71-3E38B2F19C9B}" Platform="Linked"/>
+										<ActiveSource Name="R3-4-fx" ID="{8329EB6A-34E1-4548-BD08-9653A958E09B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="R4" ID="{2E6109E0-8F07-48A0-826D-21050EDBD95F}" ShortID="678072157">
