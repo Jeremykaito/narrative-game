@@ -423,7 +423,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Cigarette" ID="{AAD6BD39-B338-4B75-9306-CF1E819D408B}">
+						<Event Name="Play_cigarette" ID="{AAD6BD39-B338-4B75-9306-CF1E819D408B}">
 							<ChildrenList>
 								<Action Name="" ID="{61748043-B536-47AE-8915-9C05D6A31343}" ShortID="896013763">
 									<PropertyList>
@@ -431,21 +431,21 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Cigarette" ID="{CB4C2D48-480A-4122-BBA3-735AB3857508}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+											<ObjectRef Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_cigaretteallume" ID="{A35ABA55-BB0C-4882-8896-9FAB134E7C45}">
+						<Event Name="Play_match" ID="{A35ABA55-BB0C-4882-8896-9FAB134E7C45}">
 							<ChildrenList>
-								<Action Name="" ID="{559011CB-8104-464B-A474-B1DD2D411798}" ShortID="827761484">
+								<Action Name="" ID="{9BF7AC2A-24BD-4A71-9A2F-CE713B465E71}" ShortID="504570570">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Match_crack" ID="{37B484A2-A702-4D0C-9A00-3E043F6EB464}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+											<ObjectRef Name="Match" ID="{CB1DDDD1-A864-4CA7-998D-3DBFAD434F2A}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

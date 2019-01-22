@@ -9868,29 +9868,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.data[9].StepGameObject
-      value: 
-      objectReference: {fileID: 2072007019}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[10].StepGameObject
-      value: 
-      objectReference: {fileID: 1625971193}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[11].StepGameObject
-      value: 
-      objectReference: {fileID: 347992742}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[12].StepGameObject
-      value: 
-      objectReference: {fileID: 754211697}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
       propertyPath: hand
       value: 
       objectReference: {fileID: 840117315}
+    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
+        type: 3}
+      propertyPath: steps.Array.data[0].StepGameObject
+      value: 
+      objectReference: {fileID: 235641057350686262}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: steps.Array.data[1].StepGameObject
@@ -9933,23 +9918,24 @@ PrefabInstance:
       objectReference: {fileID: 235641058637233066}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.data[0].StepGameObject
+      propertyPath: steps.Array.data[9].StepGameObject
       value: 
-      objectReference: {fileID: 235641057350686262}
+      objectReference: {fileID: 2072007019}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.data[7].soundItem
-      value: F3_2
-      objectReference: {fileID: 0}
+      propertyPath: steps.Array.data[10].StepGameObject
+      value: 
+      objectReference: {fileID: 1625971193}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.data[8].soundItem
-      value: F3_3
-      objectReference: {fileID: 0}
-    - target: {fileID: 148851087, guid: d64d907207bb83840baea6e87fe0c6d6, type: 3}
-      propertyPath: disolveFrameRate
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: steps.Array.data[11].StepGameObject
+      value: 
+      objectReference: {fileID: 347992742}
+    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
+        type: 3}
+      propertyPath: steps.Array.data[12].StepGameObject
+      value: 
+      objectReference: {fileID: 754211697}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d64d907207bb83840baea6e87fe0c6d6, type: 3}
 --- !u!1001 &3924894625041584267
