@@ -42,11 +42,14 @@ public class AudioManager : MonoBehaviour
     {
         // Init
         shouldPlayAfter.Add("C4", "C5");
-        shouldPlayAfter.Add("F3_2", "F4");
+        shouldPlayAfter.Add("F3_3", "F4");
+        shouldPlayAfter.Add("R2_1", "R2_2");
+        shouldPlayAfter.Add("R3_1", "R3_2");
+        shouldPlayAfter.Add("R3_3", "R3_4");
         
         AkSoundEngine.PostEvent("Init_all_states", gameObject);
         AkSoundEngine.PostEvent("Switch_Music_Palais_mental", gameObject);
-        AkLogger.Message("Init Palais mental theme");
+        AkLogger.Message("Switch_Music_Palais_mental");
     }
 
 
@@ -66,27 +69,27 @@ public class AudioManager : MonoBehaviour
         
         AkLogger.Message("OnSpeechEnd: " + callbackCookie.soundItem);
         
+        // Intro
         if (callbackCookie.isIntro)
         {
-            AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
-            AkLogger.Message("Play_" + LevelManager.instance.currentZone);
+            AkSoundEngine.PostEvent("Set_State_Other", gameObject);
+            AkLogger.Message("Set_State_Other");
         }
-        else
+       
+        // Don't reset the exploring state if we are going to speak in the few seconds
+        if (!shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
         {
-            // Don't reset the exploring state if we are going to speak in the few seconds
-            if (!shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
-            {
-                AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
-                AkLogger.Message("Set_State_Exploring");
-            }
-            
-            // If the last zone is different from where the player stands, switch the music accordingly
-            if (this.lastZone != LevelManager.instance.currentZone)
-            {
-                AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
-                AkLogger.Message("Play_" + LevelManager.instance.currentZone);
-            }
+            AkSoundEngine.PostEvent("Set_State_Exploring", gameObject);
+            AkLogger.Message("Set_State_Exploring");
         }
+            
+//            // If the last zone is different from where the player stands, switch the music accordingly
+//            if (this.lastZone != LevelManager.instance.currentZone)
+//            {
+//                AkSoundEngine.PostEvent("Play_" + LevelManager.instance.currentZone, gameObject);
+//                AkLogger.Message("Play_" + LevelManager.instance.currentZone);
+//            }
+        
         
         if (shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
         {
@@ -94,13 +97,14 @@ public class AudioManager : MonoBehaviour
         }
 
         this.isSpeaking = false;
+        SwitchMusicTrack(LevelManager.instance.currentZone);
         this.lastZone = LevelManager.instance.currentZone;
         
         if (callbackCookie.nextStep != null)
             LevelManager.instance.OnSpeechEnd(callbackCookie.soundItem, callbackCookie.nextStep);
     }
 
-    public void PlayMusicTrack(string clipName)
+    public void SwitchMusicTrack(string clipName)
     {
         if (isSpeaking) return;
         
@@ -108,9 +112,21 @@ public class AudioManager : MonoBehaviour
         AkLogger.Message("Switch_Music " + clipName);
     }
     
-    public void PlaySoundEffect(string soundName, GameObject theGameobject)
+    public void PlaySoundEffect(string soundName, GameObject theGameobject = null)
     {
-        AkSoundEngine.PostEvent("Play_" + soundName, theGameobject);
+        GameObject gameObjectToUse;
+        if (theGameobject) gameObjectToUse = theGameobject;
+        else
+        {
+            switch (soundName)
+            {
+                case "fire":
+                    gameObjectToUse = this.sounds3D[1];
+                    break;
+                default: throw new ArgumentException("Wrong soundName");
+            }
+        }
+        AkSoundEngine.PostEvent("Play_" + soundName, gameObjectToUse);
         AkLogger.Message("Play_" + soundName);
     }
 }
