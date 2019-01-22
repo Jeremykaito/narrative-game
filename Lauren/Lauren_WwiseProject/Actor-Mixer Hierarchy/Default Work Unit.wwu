@@ -2097,25 +2097,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Forest_amb" ID="{1CAAC2D1-942F-4C74-9F44-ACE1A85BC0B6}" ShortID="430624288">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Forest_amb" ID="{EB362BC6-B080-44DF-9E26-1293AA8C800A}" ShortID="469880599">
-									<Language>SFX</Language>
-									<AudioFile>Forest_amb.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Forest_amb" ID="{EB362BC6-B080-44DF-9E26-1293AA8C800A}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Rain_in_car" ID="{4031A9F1-E641-4067-80BF-F25E341553E8}" ShortID="276726405">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2283,6 +2264,44 @@
 										<ActiveSource Name="Wwise Silence" ID="{26316AEF-A906-41AB-A2D5-ECB3860D23E7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Forest_amb" ID="{1CAAC2D1-942F-4C74-9F44-ACE1A85BC0B6}" ShortID="430624288">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="7"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{D823C5AA-AD56-4106-9CEC-C89A5439C7DC}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Forest_amb" ID="{EB362BC6-B080-44DF-9E26-1293AA8C800A}" ShortID="469880599">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.372500387195159"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.74500077439032"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Forest_amb.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Forest_amb" ID="{EB362BC6-B080-44DF-9E26-1293AA8C800A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
@@ -2304,6 +2323,21 @@
 									<GroupingBehavior>
 										<ItemRef Name="Silence" ID="{C12CB5B1-121D-4210-91E8-A1A330B1B6C7}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Forest_amb" ID="{1CAAC2D1-942F-4C74-9F44-ACE1A85BC0B6}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
@@ -2316,6 +2350,12 @@
 										<SwitchRef Name="Palais_mental" ID="{8AB17396-CB05-4D77-8D63-147E4B8461C3}"/>
 										<ItemList>
 											<ItemRef Name="Silence" ID="{C12CB5B1-121D-4210-91E8-A1A330B1B6C7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Feu_de_camp" ID="{DF0FA799-6FA4-4ECB-BB6D-0B0E09C4E985}"/>
+										<ItemList>
+											<ItemRef Name="Forest_amb" ID="{1CAAC2D1-942F-4C74-9F44-ACE1A85BC0B6}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
