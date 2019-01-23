@@ -75,12 +75,19 @@ Switch	ID	Name	Switch Group			Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1857115720	Wasp			\Default Work Unit\Wasp	
+	2721494480	Game_States			\Default Work Unit\Game_States	
 
 State	ID	Name	State Group			Notes
 	0	None	Wasp			
 	2930662992	crazy	Wasp			
 	3013208399	iddle	Wasp			
 	3552757243	away	Wasp			
+	0	None	Game_States			
+	1823678183	Exploring	Game_States			
+	2418513123	Speaking	Game_States			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	671821367	Speaking	Game_States	\Actor-Mixer Hierarchy\Default Work Unit\Footsteps		
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	399131223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Silence\Wwise Silence	
