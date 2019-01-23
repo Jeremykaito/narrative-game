@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class UIManager : MonoBehaviour {
 
@@ -58,20 +59,7 @@ public class UIManager : MonoBehaviour {
         HideReticule();
     }
 
-    public void StartGame()
-    {
-        SetReticule(false);
-    }
 
-    public void PlayGame()
-    {
-        GameObject.Find("Menu").gameObject.SetActive(false);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 
 
 }
