@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
     // Singleton
     public static GameManager instance = null;
 
-
     // Singletion initialization
     void Awake()
     {
@@ -24,6 +23,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+ 
     void Update()
     {
         // Command to restart the level

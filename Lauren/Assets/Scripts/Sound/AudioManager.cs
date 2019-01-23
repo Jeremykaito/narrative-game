@@ -104,6 +104,10 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_gas", sounds3D[4]);
         }
+        else if (soundItem == "R4")
+        {
+            AkSoundEngine.PostEvent("Stop_Music", gameObject);
+        }
 
         AkLogger.Message("Play_" + soundItem);
     }
