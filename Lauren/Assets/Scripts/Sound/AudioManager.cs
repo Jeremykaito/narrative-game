@@ -76,6 +76,10 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_cigarette", sounds3D[0]);
         }
+        else if (soundItem == "C5")
+        {
+            AkSoundEngine.PostEvent("Stop_cigarette", sounds3D[0]);
+        }
         else if (soundItem == "F2")
         {
             AkSoundEngine.PostEvent("Play_fire", sounds3D[1]);
@@ -92,11 +96,9 @@ public class AudioManager : MonoBehaviour
             AkSoundEngine.PostEvent("Set_wasp_crazy", sounds3D[3]);
             AkSoundEngine.PostEvent("Play_wasp", sounds3D[3]);
         }
-        else if (soundItem == "F3_4")
+        else if (soundItem == "F3_3")
         {
-            AkSoundEngine.PostEvent("Stop_wasp", sounds3D[3]);
             AkSoundEngine.PostEvent("Set_wasp_away", sounds3D[3]);
-            AkSoundEngine.PostEvent("Play_wasp", sounds3D[3]);
         }
         else if (soundItem == "Crash")
         {

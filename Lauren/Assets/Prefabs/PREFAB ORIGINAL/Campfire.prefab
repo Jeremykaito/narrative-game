@@ -31837,6 +31837,7 @@ GameObject:
   - component: {fileID: 2715444039187052686}
   - component: {fileID: 3065422352077487415}
   - component: {fileID: 1324724091721539840}
+  - component: {fileID: 1299865912}
   m_Layer: 0
   m_Name: Campfire
   m_TagString: Untagged
@@ -31853,7 +31854,7 @@ Transform:
   m_GameObject: {fileID: 4905456065530325260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 30.712, y: -0.143, z: 23.069}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0046942, y: 1, z: 1.0046942}
   m_Children:
   - {fileID: 3983804650379860016}
   - {fileID: 619556381530029907}
@@ -36392,6 +36393,28 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1299865912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905456065530325260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dfd3ebd10dfa9140b8321ba90c89543, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &5351018529338813250
 GameObject:
   m_ObjectHideFlags: 0

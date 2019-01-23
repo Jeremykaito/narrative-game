@@ -452,6 +452,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_cigarette" ID="{167928AD-3F13-474F-9EF8-3479D7891BC9}">
+							<ChildrenList>
+								<Action Name="" ID="{E46F47C0-395F-4872-9289-155F43FC7F9A}" ShortID="470052962">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cigaret_sparks" ID="{5036B219-C31B-43B8-9427-990233E482E7}" WorkUnitID="{1C59F845-4A0D-46D9-89EF-F431CDD0A7CF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Init_all_states" ID="{8169E906-9D6F-4BD7-B71B-FA3D6C649B6B}">
@@ -856,16 +871,6 @@
 						</Event>
 						<Event Name="Play_F3_3" ID="{2AFB7C91-7C74-4F80-BDD0-083F942D0F89}">
 							<ChildrenList>
-								<Action Name="" ID="{2CBC31A8-B6D8-4EA0-A6B6-26F489D07CD1}" ShortID="263760271">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Step4" ID="{8F3BFEBA-DF5B-4552-9556-38B1B06DA4E0}" WorkUnitID="{EE5DD103-E4CB-4D36-927D-443BC1A4CD67}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 								<Action Name="" ID="{FC38A5BC-1024-4D00-A7CE-83B6DC5B4BE1}" ShortID="1037334010">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="23"/>

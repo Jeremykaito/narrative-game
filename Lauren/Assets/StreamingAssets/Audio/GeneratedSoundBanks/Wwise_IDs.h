@@ -62,6 +62,7 @@ namespace AK
         static const AkUniqueID SET_WASP_AWAY = 854662212U;
         static const AkUniqueID SET_WASP_CRAZY = 3121772425U;
         static const AkUniqueID SET_WASP_IDDLE = 2812200270U;
+        static const AkUniqueID STOP_CIGARETTE = 1462883136U;
         static const AkUniqueID STOP_LAUREN_THEME = 3013733207U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_TOMMY_THEME = 152938524U;
