@@ -9,8 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3924402206812382487}
-  - component: {fileID: 1907492222226283059}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Voiture_R2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,25 +58,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -132.917, z: 0}
---- !u!95 &1907492222226283059
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 244970111254576943}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: df7495afdce80f54694ff3d2fae828ac, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &367390151526667163
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +69,7 @@ GameObject:
   - component: {fileID: 6019270531910843681}
   - component: {fileID: 651725517348129750}
   - component: {fileID: 2809224252202980313}
+  - component: {fileID: 1711389815}
   m_Layer: 0
   m_Name: Tocus_Hood_Front
   m_TagString: Untagged
@@ -156,6 +137,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1711389815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367390151526667163}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &455269266874314136
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +163,7 @@ GameObject:
   - component: {fileID: 970039483085276135}
   - component: {fileID: 4232683706860648261}
   - component: {fileID: 7305992730148898589}
+  - component: {fileID: 217444034}
   m_Layer: 0
   m_Name: Tocus_Win_Door_Left
   m_TagString: Untagged
@@ -233,6 +230,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &217444034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455269266874314136}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &660579194815964479
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +256,7 @@ GameObject:
   - component: {fileID: 3814716219352587378}
   - component: {fileID: 7697086593462871553}
   - component: {fileID: 6973706586255198295}
+  - component: {fileID: 14731111}
   m_Layer: 0
   m_Name: Tocus_Win_Door_Right_Front
   m_TagString: Untagged
@@ -310,6 +323,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &14731111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660579194815964479}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &839156686112863077
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +349,7 @@ GameObject:
   - component: {fileID: 5071188248949389306}
   - component: {fileID: 3928164435307336851}
   - component: {fileID: 2027186955104733970}
+  - component: {fileID: 350173691}
   m_Layer: 0
   m_Name: Tocus_Wheel_Left_Back
   m_TagString: Untagged
@@ -387,6 +416,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &350173691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839156686112863077}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &1211171446214196247
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,6 +442,7 @@ GameObject:
   - component: {fileID: 8530834733830288040}
   - component: {fileID: 2034810308954066789}
   - component: {fileID: 1795917814819947003}
+  - component: {fileID: 338991407}
   m_Layer: 0
   m_Name: Tocus_Light_Front_Right
   m_TagString: Untagged
@@ -464,6 +509,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &338991407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211171446214196247}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &1817240199449195290
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,6 +535,7 @@ GameObject:
   - component: {fileID: 8948892226638801611}
   - component: {fileID: 5115466669976031347}
   - component: {fileID: 2764974569757562506}
+  - component: {fileID: 282278401}
   m_Layer: 0
   m_Name: Tocus_Door_Right_Back
   m_TagString: Untagged
@@ -542,6 +603,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &282278401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817240199449195290}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &1844089683731223398
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +629,7 @@ GameObject:
   - component: {fileID: 6969992598315284330}
   - component: {fileID: 5238661591921525925}
   - component: {fileID: 7486246737529803343}
+  - component: {fileID: 746923501}
   m_Layer: 0
   m_Name: Tocus_Bamper_Front
   m_TagString: Untagged
@@ -623,6 +700,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &746923501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844089683731223398}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &1963497977243844929
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +726,7 @@ GameObject:
   - component: {fileID: 8494897218136792915}
   - component: {fileID: 8421218562006692153}
   - component: {fileID: 5646456583282062599}
+  - component: {fileID: 2120849454}
   m_Layer: 0
   m_Name: Tocus_Wheel_Right_Front
   m_TagString: Untagged
@@ -700,6 +793,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2120849454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963497977243844929}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &2002650057813674470
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +819,7 @@ GameObject:
   - component: {fileID: 3793975706235202379}
   - component: {fileID: 9018235030245567425}
   - component: {fileID: 3829780783610199688}
+  - component: {fileID: 202301351}
   m_Layer: 0
   m_Name: Tocus_Bottom
   m_TagString: Untagged
@@ -779,6 +888,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &202301351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002650057813674470}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &2055605972050729856
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,13 +914,14 @@ GameObject:
   - component: {fileID: 6200770131474360535}
   - component: {fileID: 8618186495756090076}
   - component: {fileID: 6149517494984983801}
+  - component: {fileID: 1067053457}
   m_Layer: 0
   m_Name: Tocus_Light_Back_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6200770131474360535
 Transform:
   m_ObjectHideFlags: 0
@@ -856,6 +981,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1067053457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055605972050729856}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &2356471204514968716
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,6 +1007,7 @@ GameObject:
   - component: {fileID: 594678761721771011}
   - component: {fileID: 7320647557398678337}
   - component: {fileID: 5588988804588860201}
+  - component: {fileID: 724912577}
   m_Layer: 0
   m_Name: Tocus_Body
   m_TagString: Untagged
@@ -935,6 +1076,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &724912577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2356471204514968716}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &2483601330018544300
 GameObject:
   m_ObjectHideFlags: 0
@@ -946,6 +1102,7 @@ GameObject:
   - component: {fileID: 4195134576932614874}
   - component: {fileID: 6727579032689122417}
   - component: {fileID: 1399080888969345074}
+  - component: {fileID: 1772808622}
   m_Layer: 0
   m_Name: Tocus_Door_Left_Back
   m_TagString: Untagged
@@ -1013,6 +1170,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1772808622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2483601330018544300}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &2524178628046097974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,6 +1196,7 @@ GameObject:
   - component: {fileID: 383733793617846074}
   - component: {fileID: 3929102804909515127}
   - component: {fileID: 1373024652213335473}
+  - component: {fileID: 1133337999}
   m_Layer: 0
   m_Name: Tocus_Win_Back
   m_TagString: Untagged
@@ -1090,6 +1263,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1133337999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2524178628046097974}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &3613009089472013337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1289,7 @@ GameObject:
   - component: {fileID: 3433676559545843445}
   - component: {fileID: 6393549908428130470}
   - component: {fileID: 8096787069844209433}
+  - component: {fileID: 1978645319}
   m_Layer: 0
   m_Name: Tocus_Salon
   m_TagString: Untagged
@@ -1170,6 +1359,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1978645319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3613009089472013337}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &3633426621451871829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1385,7 @@ GameObject:
   - component: {fileID: 3781581863053602134}
   - component: {fileID: 7085959954593662360}
   - component: {fileID: 4732727735957010355}
+  - component: {fileID: 1000591546}
   m_Layer: 0
   m_Name: Tocus_Win_Door_Left_Back
   m_TagString: Untagged
@@ -1247,6 +1452,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1000591546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3633426621451871829}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &4278195248632155549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1258,6 +1478,7 @@ GameObject:
   - component: {fileID: 7407197917821790930}
   - component: {fileID: 2505493810577308600}
   - component: {fileID: 3255028865845870988}
+  - component: {fileID: 2125556862}
   m_Layer: 0
   m_Name: Tocus_Wheel_Left_Font
   m_TagString: Untagged
@@ -1324,6 +1545,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2125556862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278195248632155549}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &4329939235555745615
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,13 +1571,14 @@ GameObject:
   - component: {fileID: 6640235804267301561}
   - component: {fileID: 6267815956571788560}
   - component: {fileID: 1363180961632982586}
+  - component: {fileID: 1529166251}
   m_Layer: 0
   m_Name: Tocus_Light_Back_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6640235804267301561
 Transform:
   m_ObjectHideFlags: 0
@@ -1401,6 +1638,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1529166251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4329939235555745615}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &4489395526856728510
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1664,7 @@ GameObject:
   - component: {fileID: 7441285995692727483}
   - component: {fileID: 3426848419174075931}
   - component: {fileID: 7092648183594533443}
+  - component: {fileID: 1512822458}
   m_Layer: 0
   m_Name: Tocus_Light_Front_Left
   m_TagString: Untagged
@@ -1478,6 +1731,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1512822458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489395526856728510}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &5736180117655983825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1757,7 @@ GameObject:
   - component: {fileID: 7451124273347632204}
   - component: {fileID: 1561338415082327294}
   - component: {fileID: 9163217206296700245}
+  - component: {fileID: 695463102}
   m_Layer: 0
   m_Name: Tocus_Win_Door_Right_Back
   m_TagString: Untagged
@@ -1555,6 +1824,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &695463102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736180117655983825}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &5891925035587621695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1850,7 @@ GameObject:
   - component: {fileID: 6073008650676927141}
   - component: {fileID: 9140945029877688925}
   - component: {fileID: 62021710567384838}
+  - component: {fileID: 593852785}
   m_Layer: 0
   m_Name: Tocus_Win_Door_Left_Front
   m_TagString: Untagged
@@ -1632,6 +1917,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &593852785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5891925035587621695}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &5993441623151959014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1943,7 @@ GameObject:
   - component: {fileID: 1543572149148756870}
   - component: {fileID: 3995140703559956014}
   - component: {fileID: 3760770830653985470}
+  - component: {fileID: 1288672549}
   m_Layer: 0
   m_Name: Tocus_Door_Left_Front
   m_TagString: Untagged
@@ -1711,6 +2012,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1288672549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993441623151959014}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &6309393741007330974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +2038,7 @@ GameObject:
   - component: {fileID: 7285601871125073142}
   - component: {fileID: 2573406011056377255}
   - component: {fileID: 6286824771101723836}
+  - component: {fileID: 688059668}
   m_Layer: 0
   m_Name: Tocus_Win_Front
   m_TagString: Untagged
@@ -1788,6 +2105,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &688059668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6309393741007330974}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &7610423469741178035
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +2131,7 @@ GameObject:
   - component: {fileID: 6767593736026027336}
   - component: {fileID: 1106461446440966126}
   - component: {fileID: 5169652064544436643}
+  - component: {fileID: 1745763888}
   m_Layer: 0
   m_Name: Tocus_Win_Light_Left
   m_TagString: Untagged
@@ -1866,6 +2199,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1745763888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7610423469741178035}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &7780140234889383766
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +2225,7 @@ GameObject:
   - component: {fileID: 4900944910884892258}
   - component: {fileID: 3618778218521540211}
   - component: {fileID: 145314439381140202}
+  - component: {fileID: 901095514}
   m_Layer: 0
   m_Name: Tocus_Hood_Back
   m_TagString: Untagged
@@ -1945,6 +2294,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &901095514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7780140234889383766}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &7832130197563021717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1956,6 +2320,7 @@ GameObject:
   - component: {fileID: 5246303522268211657}
   - component: {fileID: 215411642013056068}
   - component: {fileID: 9093688786904127723}
+  - component: {fileID: 1481456465}
   m_Layer: 0
   m_Name: Tocus_Bamper_Back
   m_TagString: Untagged
@@ -2023,6 +2388,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1481456465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7832130197563021717}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &7858522942506066564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,6 +2414,7 @@ GameObject:
   - component: {fileID: 4443344243460242856}
   - component: {fileID: 4252546289545019767}
   - component: {fileID: 3573551957222502709}
+  - component: {fileID: 261361892}
   m_Layer: 0
   m_Name: Tocus_Win_Door_Right
   m_TagString: Untagged
@@ -2100,6 +2481,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &261361892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7858522942506066564}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &8574840385322158766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2539,7 @@ GameObject:
   - component: {fileID: 3333761453367649305}
   - component: {fileID: 7640716128058136410}
   - component: {fileID: 2540385936235365713}
+  - component: {fileID: 1275694140}
   m_Layer: 0
   m_Name: Tocus_Door_Right_Front
   m_TagString: Untagged
@@ -2211,6 +2608,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1275694140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8596405274763885872}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &8846755311283593806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2222,6 +2634,7 @@ GameObject:
   - component: {fileID: 1425281615676658502}
   - component: {fileID: 2500964471422085733}
   - component: {fileID: 1001012080745048758}
+  - component: {fileID: 1090894623}
   m_Layer: 0
   m_Name: Tocus_Wheel_Right_Back
   m_TagString: Untagged
@@ -2288,6 +2701,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1090894623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8846755311283593806}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1 &9155142804959123912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,6 +2727,7 @@ GameObject:
   - component: {fileID: 3485009117082752722}
   - component: {fileID: 5613269081355224976}
   - component: {fileID: 8048657926335039775}
+  - component: {fileID: 108161578}
   m_Layer: 0
   m_Name: Tocus_Win_Light_Right
   m_TagString: Untagged
@@ -2366,6 +2795,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &108161578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9155142804959123912}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 747966152ee63004a8aef547290e26bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mats:
+  - {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
+  - {fileID: 2100000, guid: ffcb8d518f75fbf4a91c45afa8695f2e, type: 2}
 --- !u!1001 &5264185945095156998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2373,11 +2817,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6767593736026027336}
     m_Modifications:
-    - target: {fileID: 1869825254643572451, guid: 5eb6795f4f1b19a42838587af73117bd,
-        type: 3}
-      propertyPath: m_Name
-      value: Spot_Volu_Phare
-      objectReference: {fileID: 0}
     - target: {fileID: 845628782204640336, guid: 5eb6795f4f1b19a42838587af73117bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2433,6 +2872,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 63.046
       objectReference: {fileID: 0}
+    - target: {fileID: 1869825254643572451, guid: 5eb6795f4f1b19a42838587af73117bd,
+        type: 3}
+      propertyPath: m_Name
+      value: Spot_Volu_Phare
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb6795f4f1b19a42838587af73117bd, type: 3}
 --- !u!4 &4806013550212901206 stripped
@@ -2448,11 +2892,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3485009117082752722}
     m_Modifications:
-    - target: {fileID: 5835769085527698405, guid: 418eea967181af24c80b7856f496b87a,
-        type: 3}
-      propertyPath: m_Name
-      value: Spot_Volu_Phare2
-      objectReference: {fileID: 0}
     - target: {fileID: 4806013550212901206, guid: 418eea967181af24c80b7856f496b87a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2507,6 +2946,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 63.046
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835769085527698405, guid: 418eea967181af24c80b7856f496b87a,
+        type: 3}
+      propertyPath: m_Name
+      value: Spot_Volu_Phare2
       objectReference: {fileID: 0}
     - target: {fileID: 6871138915158610963, guid: 418eea967181af24c80b7856f496b87a,
         type: 3}
