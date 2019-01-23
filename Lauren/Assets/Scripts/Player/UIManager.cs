@@ -13,6 +13,8 @@ public class UIManager : MonoBehaviour {
     private Image reticuleOn;
     [SerializeField]
     private Image reticuleOff;
+    [SerializeField]
+    private RawImage endd;
 
     // Singletion initialization
     void Awake()
@@ -48,4 +50,12 @@ public class UIManager : MonoBehaviour {
         reticuleOn.enabled = false;
         reticuleOff.enabled = false;
     }
+
+    public void EndTitle()
+    {
+        Debug.Log("e");
+        endd.enabled = true;
+    }
+
+
 }
