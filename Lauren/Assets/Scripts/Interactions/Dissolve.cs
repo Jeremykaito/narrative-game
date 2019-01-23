@@ -5,6 +5,8 @@ using UnityEngine;
 public class Dissolve : MonoBehaviour
 {
     public Material dissolveMat;
+    public Material dissolveMatPhares;
+
     [SerializeField]
     private float dissolveVal;
 
@@ -30,6 +32,7 @@ public class Dissolve : MonoBehaviour
     void Start()
     {
         dissolveMat.SetFloat("Vector1_D3B2B4",dissolveVal);
+        dissolveMatPhares.SetFloat("Vector1_D3B2B4", dissolveVal);
     }
 
     // Update is called once per frame
