@@ -20,6 +20,10 @@ public class EndGame : MonoBehaviour
         {
             GameObject.Find("Player").transform.position = Vector3.MoveTowards(GameObject.Find("Player").transform.position, pos.position, 2 * Time.deltaTime);
         }
+        if (GameObject.Find("Player").transform.position.y > 20)
+        {
+
+        }
 
     }
 
