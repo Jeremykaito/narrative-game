@@ -54,9 +54,8 @@ public class UIManager : MonoBehaviour {
 
     public void EndTitle()
     {
-
-
         end.gameObject.SetActive( true );
+        HideReticule();
     }
 
 
