@@ -5116,7 +5116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &679902289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18699,6 +18699,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5510135220540653762, guid: 5cfeb19dfc2412041b2b5ab680732703,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3353620591357409033, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -18718,17 +18723,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: ac516a74feb8361439fd6dce619440c8,
-        type: 3}
+      objectReference: {fileID: 679902289}
     - target: {fileID: 3353620591357409033, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: PlayGame
       objectReference: {fileID: 0}
     - target: {fileID: 3353620591357409033, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: 
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3353620591357409033, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
