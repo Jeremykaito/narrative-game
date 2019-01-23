@@ -104,10 +104,6 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_gas", sounds3D[4]);
         }
-        else if (soundItem == "R4")
-        {
-            AkSoundEngine.PostEvent("Stop_Music", gameObject);
-        }
 
         AkLogger.Message("Play_" + soundItem);
     }
@@ -131,6 +127,12 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Trigger_Scene_over", gameObject);
             AkLogger.Message("Trigger_Scene_over");
+        }
+
+        if (callbackCookie.soundItem == "R4")
+        {
+            AkSoundEngine.PostEvent("Stop_Music", gameObject);
+            AkSoundEngine.PostEvent("Play_Lauren_Theme", gameObject);
         }
         
         // Don't reset the exploring state if we are going to speak in the few seconds
