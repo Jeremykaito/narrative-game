@@ -36,7 +36,13 @@ public class EndGame : MonoBehaviour
             other.transform.GetComponent<RigidbodyFirstPersonController>().movementSettings.StrafeSpeed = 0;
             other.transform.GetComponent<RigidbodyFirstPersonController>().advancedSettings.stickToGroundHelperDistance = 0;
             other.transform.GetComponent<Rigidbody>().isKinematic = true;
-         up = true;
+            StartCoroutine(fly());
         }
+    }
+
+    private IEnumerator fly()
+    {
+        yield return new WaitForSeconds(2f);
+        up = true;
     }
 }
