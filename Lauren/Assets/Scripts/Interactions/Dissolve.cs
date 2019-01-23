@@ -46,6 +46,8 @@ public class Dissolve : MonoBehaviour
                 {
                     dissolveVal -= disolveFrameRate*Time.deltaTime;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
+
+                    dissolveMatPhares.SetFloat("Vector1_D3B2B4", dissolveVal);
                 }
                 else
                 {
@@ -60,6 +62,8 @@ public class Dissolve : MonoBehaviour
                 {
                     dissolveVal += disolveFrameRate*Time.deltaTime;
                     dissolveMat.SetFloat("Vector1_D3B2B4", dissolveVal);
+
+                    dissolveMatPhares.SetFloat("Vector1_D3B2B4", dissolveVal);
                 }
                 else
                 {
