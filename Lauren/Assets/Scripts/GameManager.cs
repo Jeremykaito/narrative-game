@@ -26,24 +26,10 @@ public class GameManager : MonoBehaviour
  
     void Update()
     {
-        // Command to restart the level
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Restart();
-        }
-        //Command Exit
-        else if (Input.GetKeyDown(KeyCode.Escape))
-        {
-
                 Application.Quit();
- 
         }
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        Time.timeScale = 1;
     }
 
     public void PlayGame()
