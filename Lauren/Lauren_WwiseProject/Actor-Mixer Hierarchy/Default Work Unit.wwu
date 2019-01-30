@@ -724,6 +724,7 @@
 												<Value>10</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>6</Value>
@@ -733,6 +734,9 @@
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
+										</Reference>
+										<Reference Name="Effect0" CompanyID="4095" PluginID="65535" PluginType="15">
+											<ObjectRef Name="Gentle_Program_Compressor_Minus_20dB_RMS" ID="{D3F1F88E-4123-4C05-946B-1B036BAC2DFD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3F0CBF39-6F79-4F39-A65B-2F63DD3D1BCD}"/>
@@ -809,7 +813,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2103,13 +2107,13 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>10</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Default Attenuation" ID="{0918A60E-AE9A-4977-A212-31450C08E38C}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
+									<ObjectRef Name="Gas Attenuation" ID="{84F178E6-F4AF-49D4-A5D0-343E118738AD}" WorkUnitID="{8182614B-5707-40CD-A459-363BE15600BE}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F4A22E02-4C5B-48CC-9737-9753EC3A84CC}"/>
@@ -2221,7 +2225,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-20</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2236,9 +2240,10 @@
 							<ChildrenList>
 								<AudioFileSource Name="Crash_CarV2" ID="{3EF79FB5-0E7C-4B2B-AB23-36DEC8154422}" ShortID="689853728">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="4.11895550409152"/>
-										<Property Name="FadeInShape" Type="int16" Value="9"/>
-										<Property Name="TrimBegin" Type="Real64" Value="2.6310992172701"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.699786303907987"/>
+										<Property Name="FadeInShape" Type="int16" Value="4"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.34383395186693"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Crash_CarV2.wav</AudioFile>
@@ -2307,7 +2312,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

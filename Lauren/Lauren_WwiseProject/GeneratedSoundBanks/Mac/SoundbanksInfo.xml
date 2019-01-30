@@ -41,7 +41,9 @@
 				<Event Id="1193561773" Name="Play_Ambiances" ObjectPath="\Events\Default Work Unit\Play_Ambiances"/>
 				<Event Id="3773493117" Name="Play_Car_Drive" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Car_Drive"/>
 				<Event Id="303595419" Name="Play_Crash" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Crash"/>
+				<Event Id="3020012802" Name="Play_R3_4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R3_4"/>
 				<Event Id="929251997" Name="Play_Rain_in_car" ObjectPath="\Events\Default Work Unit\La Rupture\Play_Rain_in_car"/>
+				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="43522204" Language="SFX">
@@ -89,7 +91,7 @@
 				<Event Id="2262856452" Name="Play_F4" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_F4"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
-				<Event Id="2287442805" Name="Play_gas" ObjectPath="\Events\Default Work Unit\La Rupture\Play_gas" MaxAttenuation="5.000000"/>
+				<Event Id="2287442805" Name="Play_gas" ObjectPath="\Events\Default Work Unit\La Rupture\Play_gas" MaxAttenuation="30.000000"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
 				<Event Id="913351269" Name="Play_match" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_match"/>
 				<Event Id="1177493371" Name="Play_Play_Button" ObjectPath="\Events\Default Work Unit\Menu\Play_Play_Button"/>
@@ -245,7 +247,7 @@
 				</File>
 				<File Id="689853728" Language="SFX">
 					<ShortName>Crash_CarV2.wav</ShortName>
-					<Path>SFX\Crash_CarV2_987DBC38.wem</Path>
+					<Path>SFX\Crash_CarV2_8F92686A.wem</Path>
 				</File>
 				<File Id="697592777" Language="SFX">
 					<ShortName>R1.wav</ShortName>
@@ -373,7 +375,6 @@
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music"/>
 				<Event Id="2061525112" Name="Play_R4" ObjectPath="\Events\Default Work Unit\La Rupture\Play_R4"/>
 				<Event Id="1546983082" Name="Play_Tommy_Theme" ObjectPath="\Events\Default Work Unit\Menu\Play_Tommy_Theme"/>
-				<Event Id="3638057186" Name="Set_State_Other" ObjectPath="\Events\Default Work Unit\Speech states\Set_State_Other" MaxAttenuation="0.000000"/>
 				<Event Id="625636842" Name="Set_State_Speaking" ObjectPath="\Events\Default Work Unit\Game states\Set_State_Speaking" MaxAttenuation="0.000000"/>
 				<Event Id="3013733207" Name="Stop_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Stop_Lauren_Theme" MaxAttenuation="0.000000"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000"/>
@@ -396,6 +397,10 @@
 					<ShortName>Feu de camp 0.wav</ShortName>
 					<Path>SFX\Feu de camp 0_8956FC97.wem</Path>
 				</File>
+				<File Id="379565513" Language="SFX">
+					<ShortName>Feu de camp 3 v2.wav</ShortName>
+					<Path>SFX\Feu de camp 3 v2_8956FC97.wem</Path>
+				</File>
 				<File Id="384773467" Language="SFX">
 					<ShortName>La Rupture step1.wav</ShortName>
 					<Path>SFX\La Rupture step1_8956FC97.wem</Path>
@@ -407,10 +412,6 @@
 				<File Id="439755788" Language="SFX">
 					<ShortName>La Rupture step4.wav</ShortName>
 					<Path>SFX\La Rupture step4_8956FC97.wem</Path>
-				</File>
-				<File Id="445191533" Language="SFX">
-					<ShortName>Feu de camp 3 v2.wav</ShortName>
-					<Path>SFX\Feu de camp 3 v2_8956FC97.wem</Path>
 				</File>
 				<File Id="532052039" Language="SFX">
 					<ShortName>Stinger endzone fade.wav</ShortName>
@@ -493,7 +494,7 @@
 				<Event Id="249732036" Name="Play_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Play Music\Play_Feu_de_camp" MaxAttenuation="0.000000"/>
 				<Event Id="3015324718" Name="Play_fire" ObjectPath="\Events\Default Work Unit\Feu de camp\Play_fire" MaxAttenuation="5.000000"/>
 				<Event Id="3854155799" Name="Play_footsteps" ObjectPath="\Events\Default Work Unit\Footsteps\Play_footsteps"/>
-				<Event Id="2287442805" Name="Play_gas" ObjectPath="\Events\Default Work Unit\La Rupture\Play_gas" MaxAttenuation="5.000000"/>
+				<Event Id="2287442805" Name="Play_gas" ObjectPath="\Events\Default Work Unit\La Rupture\Play_gas" MaxAttenuation="30.000000"/>
 				<Event Id="2363683185" Name="Play_La_Rupture" ObjectPath="\Events\Default Work Unit\Play Music\Play_La_Rupture" MaxAttenuation="0.000000"/>
 				<Event Id="3262020357" Name="Play_Lauren_Theme" ObjectPath="\Events\Default Work Unit\Credits\Play_Lauren_Theme"/>
 				<Event Id="979756790" Name="Play_lightswitch" ObjectPath="\Events\Default Work Unit\Coup de fil\Play_lightswitch"/>
@@ -527,6 +528,7 @@
 				<Event Id="3392628901" Name="Stop_wasp" ObjectPath="\Events\Default Work Unit\Feu de camp\Stop_wasp" MaxAttenuation="0.000000"/>
 				<Event Id="1379977405" Name="Switch_Music_Coup_de_fil" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Coup_de_fil" MaxAttenuation="0.000000"/>
 				<Event Id="1890048954" Name="Switch_Music_Feu_de_camp" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Feu_de_camp" MaxAttenuation="0.000000"/>
+				<Event Id="3847120695" Name="Switch_Music_La_Rupture" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_La_Rupture" MaxAttenuation="0.000000"/>
 				<Event Id="606726776" Name="Switch_Music_Palais_mental" ObjectPath="\Events\Default Work Unit\Switch Music\Switch_Music_Palais_mental" MaxAttenuation="0.000000"/>
 				<Event Id="1020642679" Name="Trigger_Scene_over" ObjectPath="\Events\Default Work Unit\Trigger_Scene_over" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -629,6 +631,10 @@
 					<ShortName>R3-1.wav</ShortName>
 					<Path>SFX\R3-1_56D34C19.wem</Path>
 				</File>
+				<File Id="379565513" Language="SFX">
+					<ShortName>Feu de camp 3 v2.wav</ShortName>
+					<Path>SFX\Feu de camp 3 v2_8956FC97.wem</Path>
+				</File>
 				<File Id="384773467" Language="SFX">
 					<ShortName>La Rupture step1.wav</ShortName>
 					<Path>SFX\La Rupture step1_8956FC97.wem</Path>
@@ -652,10 +658,6 @@
 				<File Id="439755788" Language="SFX">
 					<ShortName>La Rupture step4.wav</ShortName>
 					<Path>SFX\La Rupture step4_8956FC97.wem</Path>
-				</File>
-				<File Id="445191533" Language="SFX">
-					<ShortName>Feu de camp 3 v2.wav</ShortName>
-					<Path>SFX\Feu de camp 3 v2_8956FC97.wem</Path>
 				</File>
 				<File Id="446986608" Language="SFX">
 					<ShortName>Footsteps_leaves_1.wav</ShortName>
@@ -731,7 +733,7 @@
 				</File>
 				<File Id="689853728" Language="SFX">
 					<ShortName>Crash_CarV2.wav</ShortName>
-					<Path>SFX\Crash_CarV2_987DBC38.wem</Path>
+					<Path>SFX\Crash_CarV2_8F92686A.wem</Path>
 				</File>
 				<File Id="697592777" Language="SFX">
 					<ShortName>R1.wav</ShortName>

@@ -36,19 +36,19 @@
 										<StateGroupRef Name="Game_States" ID="{129272AE-C27C-480A-9A01-77A5A8B82B0F}"/>
 									</StateGroupInfo>
 									<StateGroupInfo>
-										<StateGroupRef Name="Speech_States" ID="{24E4A25C-2D34-4AF8-B62C-D895D5F70B94}"/>
-									</StateGroupInfo>
-									<StateGroupInfo>
 										<StateGroupRef Name="La_Rupture" ID="{35877710-E7CA-4E08-8150-8B927A4BC07B}"/>
 									</StateGroupInfo>
 									<StateGroupInfo>
 										<StateGroupRef Name="La_Rupture_Wrath_Progression" ID="{DC2D6E41-4A73-4CFF-952F-8338CF54FE3B}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="Coup_de_fil" ID="{D3C8B452-BC02-44C9-B057-170C1B251760}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="Other" ID="{6FBD87A1-61DE-4132-BC84-FBE4208EC35D}"/>
-										<State Name="" ID="{929D02B1-F781-4283-93EA-BEA3C14F0879}" ShortID="162641155"/>
+										<StateRef Name="Step2" ID="{106BBD7F-08CA-4042-99F2-C002900BF1FB}"/>
+										<State Name="" ID="{5A372584-9DF7-4156-8CD1-41FF3C1F4CB0}" ShortID="306226203"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="Step2" ID="{6579AB32-B666-4192-ABB4-D9C8042E3B7D}"/>
@@ -71,6 +71,14 @@
 										<State Name="" ID="{DD0DF522-FB5C-49B5-8824-99D98154A15B}" ShortID="668621096"/>
 									</CustomState>
 									<CustomState>
+										<StateRef Name="Step4" ID="{D228A14E-6DB5-4440-BC48-E12A8BB27434}"/>
+										<State Name="" ID="{7074DBB6-A65C-4382-8651-2B2A6F0C05CE}" ShortID="481119069"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Step3" ID="{F9FE3620-9412-444E-96B4-346FC8D8EC6D}"/>
+										<State Name="" ID="{5F4995A2-BE44-4428-846F-74A4BEFDF50B}" ShortID="122089305"/>
+									</CustomState>
+									<CustomState>
 										<StateRef Name="Speaking" ID="{08A9FD48-2628-46E6-818A-4F984D0CBEB5}"/>
 										<State Name="" ID="{6CAF5AB8-CD70-4147-9968-3628A5C5DE8D}" ShortID="322049327">
 											<PropertyList>
@@ -83,7 +91,7 @@
 										<StateRef Name="Step4" ID="{7F853644-BDB5-4738-8896-D4C881D3838C}"/>
 										<State Name="" ID="{C5AD9AA8-F46F-43E4-907B-D0B43CA5D627}" ShortID="73337333">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="10"/>
+												<Property Name="Volume" Type="Real64" Value="4"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -108,12 +116,8 @@
 										</State>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="Intro" ID="{8DF89100-5627-4EC9-962F-2CB97C28CB1A}"/>
-										<State Name="" ID="{EAE5790A-0F93-4292-8726-A9B6BC760D0B}" ShortID="845355564">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-96"/>
-											</PropertyList>
-										</State>
+										<StateRef Name="Step1" ID="{A9906D43-4BD1-4DAF-A5E2-C7C4AA898822}"/>
+										<State Name="" ID="{B36A4D42-3E6F-4777-ACF4-5163D9E29DD9}" ShortID="847979943"/>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>

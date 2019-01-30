@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
     
     private readonly string[] endZoneDialogues = new[] { "C5", "F4", "R4" };
     
-    void Awake()
+    private void Awake()
     {
 
         if (instance == null)
@@ -58,9 +58,9 @@ public class AudioManager : MonoBehaviour
     }
 
 
-    public void ItemValidation(string soundItem, EventCbCookie cookie, bool isSpeaking = true)
+    public void ItemValidation(string soundItem, EventCbCookie cookie, bool speaking = true)
     {
-        if (isSpeaking) this.isSpeaking = true;
+        if (speaking) this.isSpeaking = true;
         
         AkSoundEngine.PostEvent("Play_" + soundItem, gameObject,
             (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, cookie);
@@ -68,10 +68,10 @@ public class AudioManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_Car_Drive", gameObject);
         }
-        else if(soundItem == "R3_1")
-        {
-            AkSoundEngine.PostEvent("Play_Rain_in_car", gameObject);
-        }
+        // else if(soundItem == "R3_1")
+        // {
+        //     AkSoundEngine.PostEvent("Play_Rain_in_car", gameObject);
+        // }
         else if(soundItem =="C4")
         {
             AkSoundEngine.PostEvent("Play_cigarette", sounds3D[0]);
@@ -128,12 +128,6 @@ public class AudioManager : MonoBehaviour
             AkSoundEngine.PostEvent("Trigger_Scene_over", gameObject);
             AkLogger.Message("Trigger_Scene_over");
         }
-
-        if (callbackCookie.soundItem == "R4")
-        {
-            AkSoundEngine.PostEvent("Stop_Music", gameObject);
-            AkSoundEngine.PostEvent("Play_Lauren_Theme", gameObject);
-        }
         
         // Don't reset the exploring state if we are going to speak in the few seconds
         if (!shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
@@ -182,5 +176,11 @@ public class AudioManager : MonoBehaviour
         }
         AkSoundEngine.PostEvent("Play_" + soundName, gameObjectToUse);
         AkLogger.Message("Play_" + soundName);
+    }
+
+    public void PlayCreditsMusic()
+    {
+        AkSoundEngine.PostEvent("Stop_Music", gameObject);
+        AkSoundEngine.PostEvent("Play_Lauren_Theme", gameObject);
     }
 }

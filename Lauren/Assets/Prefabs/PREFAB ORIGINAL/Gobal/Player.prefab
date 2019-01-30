@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 8099354879306094954}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,11 +369,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1408039905753890316}
   movementSettings:
-    ForwardSpeed: 1.75
-    BackwardSpeed: 1.75
-    StrafeSpeed: 1.75
+    ForwardSpeed: 2
+    BackwardSpeed: 2
+    StrafeSpeed: 2
     RunMultiplier: 5
-    FootstepsDelay: 0.85
+    FootstepsDelay: 0.75
     RunKey: 304
     SlopeCurveModifier:
       serializedVersion: 2
