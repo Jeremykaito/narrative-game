@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     // Singleton
     public static GameManager instance = null;
+    [SerializeField] private GameObject menu;
 
     // Singletion initialization
     void Awake()
@@ -23,7 +24,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
- 
+    private void Start()
+    {
+        UIManager.instance.HideReticule();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -34,10 +38,10 @@ public class GameManager : MonoBehaviour
 
     public void PlayGame()
     {
-        GameObject.Find("Menu").gameObject.SetActive(false);
+        menu.SetActive(false);
         UIManager.instance.SetReticule(false);
-        GameObject.Find("Player").GetComponent<Rigidbody>().isKinematic = false;
         GameObject.Find("Player").GetComponent<RigidbodyFirstPersonController>().enabled = true;
+        GameObject.Find("Player").GetComponent<RigidbodyFirstPersonController>().mouseLook.lockCursor = true;
     }
 
     public void QuitGame()

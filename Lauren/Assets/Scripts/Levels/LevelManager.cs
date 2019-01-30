@@ -38,7 +38,6 @@ public class LevelManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         // UI init
-        UIManager.instance.SetReticule(false);
 
         // Steps init
         lastStep = null;

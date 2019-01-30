@@ -1,0 +1,27 @@
+Event	ID	Name			Wwise Object Path	Notes
+	303595419	Play_Crash			\Default Work Unit\La Rupture\Play_Crash	
+	625636842	Set_State_Speaking			\Default Work Unit\Game states\Set_State_Speaking	
+	929251997	Play_Rain_in_car			\Default Work Unit\La Rupture\Play_Rain_in_car	
+	1193561773	Play_Ambiances			\Default Work Unit\Play_Ambiances	
+	3020012802	Play_R3_4			\Default Work Unit\La Rupture\Play_R3_4	
+	3773493117	Play_Car_Drive			\Default Work Unit\La Rupture\Play_Car_Drive	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1544306542	Scenes			\Default Work Unit\Scenes	Controls which music track should play, according to the current scene
+
+Switch	ID	Name	Switch Group			Notes
+	791499361	Feu_de_camp	Scenes			
+	866457171	Palais_mental	Scenes			
+	1174450734	Coup_de_fil	Scenes			
+	2910108590	La_Rupture	Scenes			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	399131223	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	43522204	RoomTone_office	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\RoomTone_office_DF8943A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Coup de fil\RoomTone_office		11021492
+	257835635	Amb_city_night	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Amb_city_night_E2BC19E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Coup de fil\Amb_city_night		9786372
+	469880599	Forest_amb	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Forest_amb_0F0A92A0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Ambiances\Forest_amb		25013316
+	702977149	Car_Drive	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Car_Drive_D488B2F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Car_Drive		16701804
+	916312285	Rain_in_car	C:\Users\Pyriceti\Desktop\Jeu narratif\Lauren\Lauren_WwiseProject\.cache\Windows\SFX\Rain_in_car_C5F24B1B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiances\Rain_in_car		19403124
+
