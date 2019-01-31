@@ -5,24 +5,29 @@ using System;
 using Sound;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class LevelManager : MonoBehaviour {
-    public Transform hand;
-    public bool isInteracting = false;
+public class LevelManager : MonoBehaviour
+{
+    // Singleton instance
     public static LevelManager instance;
-
-    //Cinematic variables
+    // Player
+    public RigidbodyFirstPersonController player;
+    // Position of a held object
+    public Transform hand;
+    // Player is interacting
+    public bool isInteracting = false;
+    // Menu UI
+    public GameObject menu;
+    // Cinematic state
     public bool isCinematic;
-
-    private GameObject lastStep;
-    RigidbodyFirstPersonController player;
-    [SerializeField]
+    // Levels variables
     public Step[] steps;
-
     public string currentZone;
     [SerializeField]
     private int nbActivatedItems;
     private bool[] activatedItems;
+    private GameObject lastStep;
 
+    // Singleton
     void Awake()
     {
         if (instance == null)
@@ -36,14 +41,16 @@ public class LevelManager : MonoBehaviour {
         }
     }
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         // UI init
-
+        UIManager.instance.HideReticule();
         // Steps init
         lastStep = null;
+        // Disable steps
         foreach (Step s in steps)
         {
-            if(!s.isIntro)
+            if (!s.isIntro)
             {
                 s.StepGameObject.SetActive(false);
             }
@@ -51,75 +58,108 @@ public class LevelManager : MonoBehaviour {
 
         // Items init
         activatedItems = new bool[nbActivatedItems];
-        // Set all zones false
-        for (int i = 0;i< activatedItems.Length;i++)
+        // Uncheck all items
+        for (int i = 0; i < activatedItems.Length; i++)
         {
             activatedItems[i] = false;
         }
 
         // Cinematic init
         isCinematic = false;
-        player = GameObject.Find("Player").transform.GetComponent<RigidbodyFirstPersonController>();
     }
 
-    private IEnumerator StartDissolveAppearFx(Step nextStep)
+    private void Update()
     {
-
-        if (lastStep != null)
-         {
-            GetComponent<Dissolve>().IsActive = true;
-            yield return new WaitForSeconds(4f);
-            lastStep.SetActive(false);
-        }
-        if(!nextStep.isIntro)
+        // Quit
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            nextStep.StepGameObject.SetActive(true);
-            GetComponent<Dissolve>().IsActive = true;
+            Application.Quit();
         }
-
-        lastStep = nextStep.StepGameObject;
-        if(isCinematic)
-        {
-            CinematicMode(false);
-        }
-
     }
-    
-    public void OnSpeechEnd(string soundItem, Step nextStep)
+    // Play
+    public void PlayGame()
     {
-            StartCoroutine(StartDissolveAppearFx(nextStep));
+        menu.SetActive(false);
+        UIManager.instance.SetReticule(false);
+        player.enabled = true;
+        player.mouseLook.lockCursor = true;
+    }
+    // Quit
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    // Set the cinematic mode
+    private void CinematicMode(bool on)
+    {
+        if (on)
+        {
+            isCinematic = true;
+            UIManager.instance.HideReticule();
+        }
+        else
+        {
+            isCinematic = false;
+            UIManager.instance.SetReticule(false);
+        }
     }
 
+    // Activate the next step
     public void StartStep(string name)
     {
-        Step nextStep = Array.Find(steps, step =>step.name == name);
+        Step nextStep = Array.Find(steps, step => step.name == name);
         //Trigger cinematic moment
-        if(nextStep.isIntro)
+        if (nextStep.isIntro)
         {
             lastStep = null;
             CinematicMode(true);
         }
         AudioManager.instance.ItemValidation(nextStep.soundItem,
             new EventCbCookie(nextStep.soundItem, nextStep, nextStep.isIntro, nextStep.sceneTrack));
-
-
     }
+
+    // Launch the next step when dialogue is finished
+    public void OnSpeechEnd(string soundItem, Step nextStep)
+    {
+        StartCoroutine(StartDissolveAppearFx(nextStep));
+    }
+
+    // Disolve elements
+    private IEnumerator StartDissolveAppearFx(Step nextStep)
+    {
+        if (lastStep != null)
+        {
+            GetComponent<Dissolve>().IsActive = true;
+            yield return new WaitForSeconds(4f);
+            lastStep.SetActive(false);
+        }
+        if (!nextStep.isIntro)
+        {
+            nextStep.StepGameObject.SetActive(true);
+            GetComponent<Dissolve>().IsActive = true;
+        }
+
+        lastStep = nextStep.StepGameObject;
+        if (isCinematic)
+        {
+            CinematicMode(false);
+        }
+    }
+
 
 
     public void ActivateObject(int i)
     {
         activatedItems[i] = true;
-        Debug.Log("Item " + i);
-
         // Level zone 1
-        if(activatedItems[0] && !steps[0].Activated)
+        if (activatedItems[0] && !steps[0].Activated)
         {
             Debug.Log("Step " + i);
             LevelManager.instance.StartStep("bureau");
             steps[0].Activated = true;
         }
         // Lamp
-        else if(activatedItems[1] && !steps[1].Activated)
+        else if (activatedItems[1] && !steps[1].Activated)
         {
             Debug.Log("Step " + i);
             LevelManager.instance.StartStep("fenetre");
@@ -207,21 +247,6 @@ public class LevelManager : MonoBehaviour {
             Debug.Log("Step " + i);
             LevelManager.instance.StartStep("fin_rupture");
             steps[12].Activated = true;
-        }
-    }
-
-    private void CinematicMode(bool on)
-    {
-        if(on)
-        {
-            isCinematic = true;
-            UIManager.instance.HideReticule();
-
-        }
-        else
-        {
-            isCinematic = false;
-            UIManager.instance.SetReticule(false);
         }
     }
 }

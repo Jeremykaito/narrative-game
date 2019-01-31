@@ -8,7 +8,6 @@ public class Step
     public string soundItem;
     public string sceneTrack = null;
     public GameObject StepGameObject;
-    public bool stayActive;
     private bool activated;
 
     public bool Activated

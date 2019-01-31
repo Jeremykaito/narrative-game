@@ -5819,7 +5819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &679902289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11419,6 +11419,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 935143758}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &935143760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1408039907675822398, guid: a1a113329a16c6848a61f435288da27a,
+    type: 3}
+  m_PrefabInstance: {fileID: 935143758}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c9795a96c094f4cbde4d65546aa9b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &939402100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3926503747944257598, guid: a197b8f2f0708c04b94c39e15c6365f0,
@@ -19885,7 +19897,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 679902289}
+      objectReference: {fileID: 3958827111198375502}
     - target: {fileID: 2327457965060579237, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -19920,7 +19932,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 679902289}
+      objectReference: {fileID: 3958827111198375502}
     - target: {fileID: 5206701872056568243, guid: 5cfeb19dfc2412041b2b5ab680732703,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -34243,11 +34255,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelManager
       objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375496, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3958827111198375497, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34305,14 +34312,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.size
-      value: 14
-      objectReference: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 935143760}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: hand
       value: 
       objectReference: {fileID: 840117315}
+    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
+        type: 3}
+      propertyPath: menu
+      value: 
+      objectReference: {fileID: 593531423}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: steps.Array.data[0].StepGameObject
@@ -34370,9 +34382,9 @@ PrefabInstance:
       objectReference: {fileID: 2072007019}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.data[8].soundItem
-      value: F3_3
-      objectReference: {fileID: 0}
+      propertyPath: steps.Array.data[11].StepGameObject
+      value: 
+      objectReference: {fileID: 1625971193}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
       propertyPath: steps.Array.data[12].StepGameObject
@@ -34380,123 +34392,9 @@ PrefabInstance:
       objectReference: {fileID: 347992742}
     - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
         type: 3}
-      propertyPath: steps.Array.data[11].StepGameObject
-      value: 
-      objectReference: {fileID: 1625971193}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[4].isIntro
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[13].name
-      value: fin_rupture
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[13].soundItem
-      value: Crash
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[13].sceneTrack
-      value: La_Rupture
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
       propertyPath: steps.Array.data[13].StepGameObject
       value: 
       objectReference: {fileID: 754211697}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[12].soundItem
-      value: R3_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[11].soundItem
-      value: R2_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[12].name
-      value: tommy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[11].name
-      value: lauren
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[10].name
-      value: voiture
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[10].soundItem
-      value: R1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[9].name
-      value: fin_fdc
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[9].soundItem
-      value: F3_4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[8].name
-      value: soin
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[7].soundItem
-      value: F3_2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[6].soundItem
-      value: F3_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[9].isIntro
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[10].isIntro
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[9].sceneTrack
-      value: Feu_de_camp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[10].sceneTrack
-      value: La_Rupture
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[11].sceneTrack
-      value: La_Rupture
-      objectReference: {fileID: 0}
-    - target: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
-        type: 3}
-      propertyPath: steps.Array.data[12].sceneTrack
-      value: La_Rupture
-      objectReference: {fileID: 0}
-    - target: {fileID: 148851087, guid: d64d907207bb83840baea6e87fe0c6d6, type: 3}
-      propertyPath: dissolveMatPhares
-      value: 
-      objectReference: {fileID: 2100000, guid: 626769991af24604ebcb3222e24fe804, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d64d907207bb83840baea6e87fe0c6d6, type: 3}
 --- !u!4 &3924402206206268692 stripped
@@ -34743,6 +34641,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5743805, y: 1.4624505, z: 4.4106402}
   m_Center: {x: 0.028433451, y: 0.3222022, z: 0.005390889}
+--- !u!114 &3958827111198375502 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3958827111198375502, guid: d64d907207bb83840baea6e87fe0c6d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 3870208376264115659}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0bf04be5db7bb4c9ae74889fb7f68e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5025610744387179738
 PrefabInstance:
   m_ObjectHideFlags: 0

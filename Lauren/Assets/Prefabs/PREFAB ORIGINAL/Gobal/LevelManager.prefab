@@ -44,8 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0bf04be5db7bb4c9ae74889fb7f68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   hand: {fileID: 0}
   isInteracting: 0
+  menu: {fileID: 0}
   isCinematic: 0
   steps:
   - isIntro: 1
@@ -53,79 +55,71 @@ MonoBehaviour:
     soundItem: C1
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: fenetre
     soundItem: C2
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: fauteuil
     soundItem: C3
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: fin_cdf
     soundItem: C4
     sceneTrack: Coup_de_fil
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 1
     name: feu
     soundItem: F1
     sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: marshmallow
     soundItem: F2
     sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: guepe1
     soundItem: F3_1
     sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: guepe2
     soundItem: F3_2
     sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
-    name: fin_fdc
+    name: soin
     soundItem: F3_3
     sceneTrack: Feu_de_camp
     StepGameObject: {fileID: 0}
-    stayActive: 0
+  - isIntro: 0
+    name: fin_fdc
+    soundItem: F3_4
+    sceneTrack: Feu_de_camp
+    StepGameObject: {fileID: 0}
   - isIntro: 1
     name: voiture
     soundItem: R1
     sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: lauren
     soundItem: R2_1
     sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
     name: tommy
     soundItem: R3_1
     sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
-    stayActive: 0
   - isIntro: 0
-    name: fin_Rupture
+    name: fin_rupture
     soundItem: Crash
     sceneTrack: La_Rupture
     StepGameObject: {fileID: 0}
-    stayActive: 0
   currentZone: 
   nbActivatedItems: 20
 --- !u!114 &148851087
@@ -141,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dissolveMat: {fileID: 2100000, guid: d42f6e35daa5a1542b0b3c24ffde89d6, type: 2}
-  dissolveMatPhares: {fileID: 2100000, guid: 555310e662b8c1941828f669b08bb632, type: 2}
+  dissolveMatPhares: {fileID: 2100000, guid: 626769991af24604ebcb3222e24fe804, type: 2}
   dissolveVal: 0
   disolveFrameRate: 0.25
   isActive: 0
