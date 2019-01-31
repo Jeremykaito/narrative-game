@@ -94,13 +94,11 @@ public class GameManager : MonoBehaviour
     {
         if (on)
         {
-            Debug.Log("CINEEE");
             isCinematic = true;
             UIManager.instance.HideReticule();
         }
         else
         {
-            Debug.Log("pasCINEEE");
             isCinematic = false;
             UIManager.instance.SetReticule(false);
         }

@@ -83,7 +83,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_YRotation;
         private Vector3 m_GroundContactNormal;
         private bool m_PreviouslyGrounded, m_IsGrounded;
-
+        private Vector3 respawnPoint = new Vector3(0,0,0);
 
         public Vector3 Velocity
         {
@@ -241,6 +241,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_IsGrounded = false;
                 m_GroundContactNormal = Vector3.up;
             }
+        }
+
+        public void RespawnPlayer()
+        {
+            this.transform.position = respawnPoint;
+        }
+
+        public void SetRespawnPoint(Vector3 position)
+        {
+            respawnPoint = position;
+            Debug.Log("hello");
         }
     }
 }
