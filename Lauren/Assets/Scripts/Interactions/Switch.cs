@@ -26,7 +26,7 @@ public class Switch : Interactive
         switchTarget.SetActive(state);
         if(isActivatedItem)
         {
-            LevelManager.instance.ActivateObject(itemNumber);
+            GameManager.instance.ActivateObject(itemNumber);
             isActivatedItem = false;
         }
 

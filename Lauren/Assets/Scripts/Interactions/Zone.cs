@@ -30,7 +30,7 @@ public class Zone : MonoBehaviour
         if (!isActivated)
         {
             Debug.Log("Zone " + " activée");
-            LevelManager.instance.ActivateObject(itemNumber);
+            GameManager.instance.ActivateObject(itemNumber);
             isActivated = true;
             substituteObject.SetActive(true);
         }

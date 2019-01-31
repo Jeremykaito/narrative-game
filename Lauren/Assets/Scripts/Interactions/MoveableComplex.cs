@@ -16,7 +16,7 @@ public class MoveableComplex : Moveable
 
     protected override void Update()
     {
-        if (this.isInteracting && !timerInteractOn && Input.GetButtonDown("Fire1") && !LevelManager.instance.isCinematic)
+        if (this.isInteracting && !timerInteractOn && Input.GetButtonDown("Fire1") && !GameManager.instance.isCinematic)
         {
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out targetZone, range, 1 << 11))
             {
@@ -46,7 +46,7 @@ public class MoveableComplex : Moveable
             timer += Time.deltaTime;
             if (timer > maxTime)
             {
-                LevelManager.instance.isInteracting = false;
+                GameManager.instance.isInteracting = false;
                 timer = 0;
                 timerStopInteractOn = false;
             }
@@ -67,14 +67,14 @@ public class MoveableComplex : Moveable
         if(!multipleUse)
         {
             this.isInteracting = false;
-            LevelManager.instance.isInteracting = false;
+            GameManager.instance.isInteracting = false;
             this.gameObject.SetActive(false);
         }
 
         if(zone1.IsActivated && zone2.IsActivated)
         {
             this.isInteracting = false;
-            LevelManager.instance.isInteracting = false;
+            GameManager.instance.isInteracting = false;
             this.gameObject.SetActive(false);
         }
     }

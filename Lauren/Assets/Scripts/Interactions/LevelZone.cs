@@ -24,11 +24,11 @@ public class LevelZone : MonoBehaviour
         if (isActivatedItem)
         {
             // Start the firstStep of the zone
-            LevelManager.instance.ActivateObject(itemNumber);
+            GameManager.instance.ActivateObject(itemNumber);
             isActivatedItem = false;
         }
 
-        LevelManager.instance.currentZone = chapterClip;
+        GameManager.instance.currentZone = chapterClip;
     }
 
     // When the player exit the level
@@ -36,7 +36,7 @@ public class LevelZone : MonoBehaviour
     {
         if (other.gameObject.name != "Player") return;
 
-        LevelManager.instance.currentZone = defaultChapterClip;
+        GameManager.instance.currentZone = defaultChapterClip;
         AudioManager.instance.SwitchMusicTrack(defaultChapterClip);
     }
 }

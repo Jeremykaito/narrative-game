@@ -50,7 +50,6 @@ public class UIManager : MonoBehaviour {
     {
         reticuleOn.enabled = false;
         reticuleOff.enabled = false;
-        
     }
 
     public void EndTitle()
@@ -58,8 +57,4 @@ public class UIManager : MonoBehaviour {
         end.gameObject.SetActive( true );
         HideReticule();
     }
-
-
-
-
 }

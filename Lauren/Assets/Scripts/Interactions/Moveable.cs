@@ -16,7 +16,7 @@ public class Moveable : Interactive
 
     protected virtual void Update()
     {
-        if (this.isInteracting && !timerInteractOn && Input.GetButtonDown("Fire1") && !LevelManager.instance.isCinematic)
+        if (this.isInteracting && !timerInteractOn && Input.GetButtonDown("Fire1") && !GameManager.instance.isCinematic)
         {
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out targetZone, range, 1 << 11))
             {
@@ -44,7 +44,7 @@ public class Moveable : Interactive
             timer += Time.deltaTime;
             if (timer > maxTime)
             {
-                LevelManager.instance.isInteracting = false;
+                GameManager.instance.isInteracting = false;
                 timer = 0;
                 timerStopInteractOn = false;
             }
@@ -63,16 +63,15 @@ public class Moveable : Interactive
     public override void Interact()
     {
         //this.transform.gameObject.GetComponent<Sha>
-        LevelManager.instance.isInteracting = true;
+        GameManager.instance.isInteracting = true;
         this.isInteracting = true;
         this.transform.GetComponent<Rigidbody>().isKinematic = true;
         this.transform.gameObject.layer = 9; // HeldObject : avoid collisions
-        this.transform.position = LevelManager.instance.hand.position;
+        this.transform.position = GameManager.instance.hand.position;
         this.transform.localScale = this.transform.localScale * heldMultiplier;
         this.transform.parent = Camera.main.transform;
         this.transform.rotation = new Quaternion(0, 0, 0, 0);
         this.transform.GetComponent<Rotating>().isRotate = true;
-        UIManager.instance.HideReticule();
         timerInteractOn = true;
     }
 
@@ -90,7 +89,7 @@ public class Moveable : Interactive
     protected virtual void ReleasedInZone()
     {
         this.isInteracting = false;
-        LevelManager.instance.isInteracting = false;
+        GameManager.instance.isInteracting = false;
         this.gameObject.SetActive(false);
        
     }

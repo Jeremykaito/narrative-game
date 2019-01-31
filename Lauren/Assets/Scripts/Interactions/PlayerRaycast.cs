@@ -28,7 +28,7 @@ public class PlayerRaycast : MonoBehaviour
         }
         
         // Raycast detect an interactive object
-        if (!LevelManager.instance.isCinematic && !LevelManager.instance.isInteracting && Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
+        if (!GameManager.instance.isCinematic && !GameManager.instance.isInteracting && Physics.Raycast(fpsCamera.transform.position, fpsCamera.transform.forward, out target, range, 1 << 10))
         {
             targetObject = target.transform.GetComponent<Interactive>();
             targetObject.Look();
@@ -37,7 +37,7 @@ public class PlayerRaycast : MonoBehaviour
                 targetObject.Interact();
             }
         }
-        else if(targetObject!=null)
+        else if(!GameManager.instance.isCinematic && targetObject !=null)
         {
             targetObject.StopLooking();
         }

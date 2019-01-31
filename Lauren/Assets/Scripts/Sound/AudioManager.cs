@@ -139,15 +139,15 @@ public class AudioManager : MonoBehaviour
         
         if (shouldPlayAfter.TryGetValue(callbackCookie.soundItem, out nextDialogue))
         {
-           ItemValidation(nextDialogue, new EventCbCookie(nextDialogue, null, false, LevelManager.instance.currentZone));
+           ItemValidation(nextDialogue, new EventCbCookie(nextDialogue, null, false, GameManager.instance.currentZone));
         }
 
         this.isSpeaking = false;
-        SwitchMusicTrack(LevelManager.instance.currentZone, false);
-        this.lastZone = LevelManager.instance.currentZone;
+        SwitchMusicTrack(GameManager.instance.currentZone, false);
+        this.lastZone = GameManager.instance.currentZone;
         
         if (callbackCookie.nextStep != null)
-            LevelManager.instance.OnSpeechEnd(callbackCookie.soundItem, callbackCookie.nextStep);
+            GameManager.instance.OnSpeechEnd(callbackCookie.soundItem, callbackCookie.nextStep);
     }
 
     public void SwitchMusicTrack(string clipName, bool lpf = true)

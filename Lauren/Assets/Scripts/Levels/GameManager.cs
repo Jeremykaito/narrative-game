@@ -5,10 +5,10 @@ using System;
 using Sound;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class LevelManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     // Singleton instance
-    public static LevelManager instance;
+    public static GameManager instance;
     // Player
     public RigidbodyFirstPersonController player;
     // Position of a held object
@@ -94,11 +94,13 @@ public class LevelManager : MonoBehaviour
     {
         if (on)
         {
+            Debug.Log("CINEEE");
             isCinematic = true;
             UIManager.instance.HideReticule();
         }
         else
         {
+            Debug.Log("pasCINEEE");
             isCinematic = false;
             UIManager.instance.SetReticule(false);
         }
@@ -155,97 +157,97 @@ public class LevelManager : MonoBehaviour
         if (activatedItems[0] && !steps[0].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("bureau");
+            GameManager.instance.StartStep("bureau");
             steps[0].Activated = true;
         }
         // Lamp
         else if (activatedItems[1] && !steps[1].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fenetre");
+            GameManager.instance.StartStep("fenetre");
             steps[1].Activated = true;
         }
         // Phone
         else if (activatedItems[2] && !steps[2].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fauteuil");
+            GameManager.instance.StartStep("fauteuil");
             steps[2].Activated = true;
         }
         // Match 1
         else if (activatedItems[3] && !steps[3].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fin_cdf");
+            GameManager.instance.StartStep("fin_cdf");
             steps[3].Activated = true;
         }
         // Level zone 2
         else if (activatedItems[4] && !steps[4].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("feu");
+            GameManager.instance.StartStep("feu");
             steps[4].Activated = true;
         }
         // Match 2
         else if (activatedItems[5] && !steps[5].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("marshmallow");
+            GameManager.instance.StartStep("marshmallow");
             steps[5].Activated = true;
         }
         // Marshmallow
         else if (activatedItems[6] && activatedItems[7] && !steps[6].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("guepe1");
+            GameManager.instance.StartStep("guepe1");
             steps[6].Activated = true;
         }
         // Wasp 1
         else if (activatedItems[8] && !steps[7].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("guepe2");
+            GameManager.instance.StartStep("guepe2");
             steps[7].Activated = true;
         }
         // Wasp 2
         else if (activatedItems[9] && !steps[8].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("soin");
+            GameManager.instance.StartStep("soin");
             steps[8].Activated = true;
         }
         // Level zone 3
         else if (activatedItems[10] && !steps[9].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fin_fdc");
+            GameManager.instance.StartStep("fin_fdc");
             steps[9].Activated = true;
         }
         // Car
         else if (activatedItems[11] && !steps[10].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("voiture");
+            GameManager.instance.StartStep("voiture");
             steps[10].Activated = true;
         }
         // Road
         else if (activatedItems[12] && !steps[11].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("lauren");
+            GameManager.instance.StartStep("lauren");
             steps[11].Activated = true;
         }
         // Deer
         else if (activatedItems[13] && !steps[12].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("tommy");
+            GameManager.instance.StartStep("tommy");
             steps[12].Activated = true;
         }
         else if (activatedItems[14] && !steps[13].Activated)
         {
             Debug.Log("Step " + i);
-            LevelManager.instance.StartStep("fin_rupture");
+            GameManager.instance.StartStep("fin_rupture");
             steps[12].Activated = true;
         }
     }
