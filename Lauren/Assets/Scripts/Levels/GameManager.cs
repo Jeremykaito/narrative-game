@@ -66,6 +66,9 @@ public class GameManager : MonoBehaviour
 
         // Cinematic init
         isCinematic = false;
+        
+        // Music init
+        AudioManager.instance.PlayMenuMusic();
     }
 
     private void Update()
@@ -83,6 +86,7 @@ public class GameManager : MonoBehaviour
         UIManager.instance.SetReticule(false);
         player.enabled = true;
         player.mouseLook.lockCursor = true;
+        AudioManager.instance.PlayMusicOnStart();
     }
     // Quit
     public void QuitGame()

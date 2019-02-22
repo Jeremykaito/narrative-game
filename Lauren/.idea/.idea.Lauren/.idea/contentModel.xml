@@ -390,6 +390,7 @@
                   <e p="AkUtilities.cs" t="Include" />
                   <e p="AkVertexArray.cs" t="Include" />
                   <e p="AkWwiseInitializationSettings.cs" t="Include" />
+                  <e p="AkWwiseXMLWatcher.cs" t="Include" />
                   <e p="WwiseObjects" t="Include">
                     <e p="WwiseAcousticTextureReference.cs" t="Include" />
                     <e p="WwiseAuxBusReference.cs" t="Include" />
@@ -477,37 +478,6 @@
               <e p="AkTriggerMouseUp.cs" t="Include" />
               <e p="AkUnityEventHandler.cs" t="Include" />
             </e>
-            <e p="Plugins" t="Include">
-              <e p="Mac" t="Include">
-                <e p="Debug" t="Include">
-                  <e p="AkSoundEngine.bundle" t="Include">
-                    <e p="Contents" t="Include">
-                      <e p="Resources" t="Include">
-                        <e p="Readme.txt" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                </e>
-                <e p="Profile" t="Include">
-                  <e p="AkSoundEngine.bundle" t="Include">
-                    <e p="Contents" t="Include">
-                      <e p="Resources" t="Include">
-                        <e p="Readme.txt" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                </e>
-                <e p="Release" t="Include">
-                  <e p="AkSoundEngine.bundle" t="Include">
-                    <e p="Contents" t="Include">
-                      <e p="Resources" t="Include">
-                        <e p="Readme.txt" t="Include" />
-                      </e>
-                    </e>
-                  </e>
-                </e>
-              </e>
-            </e>
           </e>
           <e p="Editor" t="Include">
             <e p="WwiseComponents" t="Include">
@@ -531,7 +501,6 @@
               <e p="AkStateInspector.cs" t="Include" />
               <e p="AkSwitchInspector.cs" t="Include" />
               <e p="AkUnityEventHandlerInspector.cs" t="Include" />
-              <e p="AkWwiseXMLWatcher.cs" t="Include" />
             </e>
             <e p="WwiseMenu" t="Include">
               <e p="Common" t="Include">

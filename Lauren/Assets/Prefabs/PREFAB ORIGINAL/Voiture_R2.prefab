@@ -2179,7 +2179,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 555310e662b8c1941828f669b08bb632, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2775,7 +2775,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 555310e662b8c1941828f669b08bb632, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2817,6 +2817,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6767593736026027336}
     m_Modifications:
+    - target: {fileID: 1869825254643572451, guid: 5eb6795f4f1b19a42838587af73117bd,
+        type: 3}
+      propertyPath: m_Name
+      value: Spot_Volu_Phare
+      objectReference: {fileID: 0}
     - target: {fileID: 845628782204640336, guid: 5eb6795f4f1b19a42838587af73117bd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2872,11 +2877,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 63.046
       objectReference: {fileID: 0}
-    - target: {fileID: 1869825254643572451, guid: 5eb6795f4f1b19a42838587af73117bd,
-        type: 3}
-      propertyPath: m_Name
-      value: Spot_Volu_Phare
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb6795f4f1b19a42838587af73117bd, type: 3}
 --- !u!4 &4806013550212901206 stripped
@@ -2892,6 +2892,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3485009117082752722}
     m_Modifications:
+    - target: {fileID: 5835769085527698405, guid: 418eea967181af24c80b7856f496b87a,
+        type: 3}
+      propertyPath: m_Name
+      value: Spot_Volu_Phare2
+      objectReference: {fileID: 0}
     - target: {fileID: 4806013550212901206, guid: 418eea967181af24c80b7856f496b87a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2946,11 +2951,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 63.046
-      objectReference: {fileID: 0}
-    - target: {fileID: 5835769085527698405, guid: 418eea967181af24c80b7856f496b87a,
-        type: 3}
-      propertyPath: m_Name
-      value: Spot_Volu_Phare2
       objectReference: {fileID: 0}
     - target: {fileID: 6871138915158610963, guid: 418eea967181af24c80b7856f496b87a,
         type: 3}

@@ -57,13 +57,34 @@ public class AudioManager : MonoBehaviour
         AkLogger.Message("Switch_Music_Palais_mental");
     }
 
+    public void PlayMenuMusic()
+    {
+        AkSoundEngine.PostEvent("Play_Tommy_Theme", gameObject);
+    }
+    
+    public void StopMenuMusic()
+    {
+        AkSoundEngine.PostEvent("Stop_Tommy_Theme", gameObject);
+    }
+
+    public void PlayMusicOnStart()
+    {
+        AkSoundEngine.PostEvent("Play_Music", gameObject);
+    }
+    
+    public void PlayMenuClickSfx()
+    {
+        AkSoundEngine.PostEvent("Play_Play_Button", gameObject);
+    }
+
 
     public void ItemValidation(string soundItem, EventCbCookie cookie, bool speaking = true)
     {
         if (speaking) this.isSpeaking = true;
-        
+
         AkSoundEngine.PostEvent("Play_" + soundItem, gameObject,
-            (uint)AkCallbackType.AK_EndOfEvent, OnSpeechEnd, cookie);
+            (uint) AkCallbackType.AK_EndOfEvent, OnSpeechEnd, cookie);
+        
         if(soundItem == "R2_1")
         {
             AkSoundEngine.PostEvent("Play_Car_Drive", gameObject);
