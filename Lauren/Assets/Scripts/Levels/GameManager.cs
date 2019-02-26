@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
     public void PlayGame()
     {
         menu.SetActive(false);
+        GameObject.Find("Elements_start").SetActive(false);
         UIManager.instance.SetReticule(false);
         player.enabled = true;
         player.mouseLook.lockCursor = true;
