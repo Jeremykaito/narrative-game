@@ -22,7 +22,7 @@ public class EndGame : MonoBehaviour
                 Vector3.MoveTowards(player.transform.position, pos.position, 2 * Time.deltaTime);
         }
 
-        if (player.transform.position.y > 30)
+        if (player.transform.position.y > 20)
         {
             UIManager.instance.EndTitle();
         }
@@ -43,7 +43,7 @@ public class EndGame : MonoBehaviour
 
     private IEnumerator Fly()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         up = true;
         AudioManager.instance.PlayCreditsMusic();
     }
