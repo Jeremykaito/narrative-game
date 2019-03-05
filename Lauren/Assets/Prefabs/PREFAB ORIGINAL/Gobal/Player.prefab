@@ -286,7 +286,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d020a63effadd4db6821d4d919e3ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectParticles: {fileID: 5644170973322655564}
   rangeArm: 1.2
   rangeTofoot: 4
   fpsCamera: {fileID: 1408039905753890316}
@@ -374,7 +373,7 @@ MonoBehaviour:
     StrafeSpeed: 2
     RunMultiplier: 5
     FootstepsDelay: 0.75
-    RunKey: 304
+    RunKey: 0
     SlopeCurveModifier:
       serializedVersion: 2
       m_Curve:
@@ -5084,7 +5083,7 @@ ParticleSystem:
 --- !u!199 &7830805704723076125
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
